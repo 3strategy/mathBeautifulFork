@@ -1,4 +1,5 @@
 ###########################################################
+# https://3strategy.github.io/mathBeautifulFork/
 ### Welcome to Beautiful Jekyll!
 ### This config file is meant for settings that affect your entire website. When you first
 ### set up your website you should go through all these settings and edit them, but after
@@ -28,7 +29,7 @@ navbar-links:
     - 571 ממוקדת: "/hovrot/571.pdf"
     - 482 ממוקדת: "/hovrot/482.pdf"
     - אינדוקציה גבע: "/hovrot/InductionGeva.pdf"
-  Author's home: "https://www.youtube.com/@guys9793"
+  youtube: "https://www.youtube.com/@guys9793"
 
 ################
 # --- Logo --- #
@@ -163,8 +164,8 @@ footer-hover-col: "#0085A1"
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
-#site-css:
-#  - "/assets/css/custom-styles.css"
+site-css:
+  - "/assets/css/custom-styles.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 #site-js:
@@ -306,4 +307,5 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
-
+lang: he
+darkmode: true
