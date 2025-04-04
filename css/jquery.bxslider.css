@@ -1,0 +1,334 @@
+/**
+ * BxSlider v4.1.2 - Fully loaded, responsive content slider
+ * http://bxslider.com
+ *
+ * Written by: Steven Wanderski, 2014
+ * http://stevenwanderski.com
+ * (while drinking Belgian ales and listening to jazz)
+ *
+ * CEO and founder of bxCreative, LTD
+ * http://bxcreative.com
+ */
+
+
+/** RESET AND LAYOUT
+===================================*/
+
+.bx-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	*zoom: 1;
+}
+
+.bx-wrapper img {
+	max-width: 100%;
+	display: block;
+}
+
+/** THEME
+===================================*/
+@media screen and (max-width:991px){
+	
+.bx-wrapper img {
+    width: 100%;
+    display: block;
+    height: 300px;
+}	
+	
+}
+
+.bx-wrapper .bx-viewport {
+	background: #fff;
+
+	/*fix other elements on the page moving (on Chrome)*/
+	-webkit-transform: translatez(0);
+	-moz-transform: translatez(0);
+    	-ms-transform: translatez(0);
+    	-o-transform: translatez(0);
+    	transform: translatez(0);
+}
+
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    left: 50%;
+    margin-left: -50px;
+}
+
+/* LOADER */
+
+.bx-wrapper .bx-loading {
+	min-height: 50px;
+	background: url(images/bx_loader.gif) center center no-repeat #fff;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+}
+
+/* PAGER */
+
+.bx-wrapper .bx-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	padding-top: 20px;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+	display: inline-block;
+	*zoom: 1;
+	*display: inline;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #a6a6a6;
+	text-indent: -9999px;
+	display: block;
+	width: 14px;
+	height: 10px;
+	margin: 0 3px;
+	outline: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 3px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+	background: #e77817;
+}
+/*
+.mainimgCtrlPC .bx-prev {
+    background: rgba(0, 0, 0, 0) url("img/left01.png") no-repeat scroll 0 0;
+    height: 40px;
+    left: 60px;
+    margin-top: -20px;
+    position: absolute;
+    top: 50%;
+    width: 39px;
+    z-index: 99;
+	text-indent: -9999px;
+}
+
+.mainimgCtrlPC .bx-next {
+	background: url("img/right01.png") no-repeat scroll 0 0;
+    height: 40px;
+    right: 60px;
+    position: absolute;
+    top: 50%;
+	margin-top: -20px;
+    width: 39px;
+    z-index: 9999;
+	text-indent: -9999px;
+}
+
+*/
+
+.dharma .bx-prev {
+    background:url(../../img/icon_multileft.png) no-repeat scroll 0 0 / 24px auto;
+    height: 70px;
+    left: 0;
+    margin-top: -35px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 24px;
+    z-index: 9999;
+}
+
+.dharma .bx-next {
+    background:url(../../img/icon_multiright.png) no-repeat scroll 0 0 / 24px auto;
+    height: 70px;
+    margin-top: -35px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 24px;
+    z-index: 9999;
+	text-indent:-9999px;
+	
+}
+@media screen and (max-width:959px){
+.dharma .bx-prev {
+     background:url(../../img/icon_multileft.png) no-repeat scroll 0 0 / 14px auto;
+}
+.dharma .bx-next {
+     background:url(../../img/icon_multiright.png) no-repeat scroll 0 0 / 14px auto;
+
+}
+}
+
+
+/* DIRECTION CONTROLS (NEXT / PREV)------both slide use div name slide01 slide01==== */
+
+.slideTop01 .bx-wrapper .bx-prev {
+	left:30px;
+	top: 50%;
+	background:url(../img/icon_leftarrow.png) no-repeat scroll 0 0 / 38px auto;
+	}
+
+.slideTop01 .bx-wrapper .bx-next {
+	right:32px;
+	top: 50%;
+	background:url(../img/icon_rightarrow.png) no-repeat scroll 0 0 / 38px auto;
+}
+
+
+@media screen and (max-width:991px){
+.slideTop01 .bx-wrapper .bx-prev {
+	left:16px;
+	background:url(../img/icon_leftarrow.png) no-repeat scroll 0 0 /28px auto;
+	display:none;
+
+	}
+
+.slideTop01 .bx-wrapper .bx-next {
+	right:16px;
+		background:url(../img/icon_rightarrow.png) no-repeat scroll 0 0 / 28px auto;
+	display:none;
+}
+	
+}
+
+.slideTop02 .bx-wrapper .bx-prev {
+	left:-50px;
+	background:url(../img/left-arrow01.png) no-repeat scroll 0 0 / 30px auto;
+	
+}
+
+.slideTop02 .bx-wrapper .bx-next {
+	right:-50px;
+	background:url(../img/right-arrow01.png) no-repeat scroll 0 0 / 30px auto;
+	
+}
+@media screen and (max-width:991px){
+
+.slideTop02 .bx-wrapper .bx-prev {
+    left: 18px;
+    top: 83%;
+	display:none;
+}
+.slideTop02 .bx-wrapper .bx-next {
+	left: 54px;
+    top: 83%;
+	display:none;
+	
+}
+
+}
+.slideTop03 .bx-wrapper .bx-prev {
+	left:50%;
+	top:23px;
+	background:url(../img/up.png) no-repeat scroll 0 0 / 24px auto;
+}
+
+.slideTop03 .bx-wrapper .bx-next {
+	left:50%;
+	background: url(../img/up.png) no-repeat scroll 0 0 / 24px auto;
+	bottom:0px;
+}
+	
+/*---------end------------------*/
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-next:hover {
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+
+
+.bx-wrapper .bx-controls-direction a {
+	position: absolute;
+	top: 47%;
+	margin-top: -20px;
+	outline: 0;
+	width: 40px;
+	height: 40px;
+	text-indent: -9999px;
+	z-index: 9999;
+	background:red;
+}
+
+
+
+
+.bx-wrapper .bx-controls-direction a.disabled {
+	display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+
+.bx-wrapper .bx-controls-auto {
+	text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+	display: block;
+	text-indent: -9999px;
+	width: 10px;
+	height: 11px;
+	outline: 0;
+	background: url(../img/up.png) -86px -11px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+	background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+	display: block;
+	text-indent: -9999px;
+	width: 9px;
+	height: 11px;
+	outline: 0;
+	background: url(../img/up.png) -86px -44px no-repeat;
+	margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+	background-position: -86px -33px;
+}
+
+/* PAGER WITH AUTO-CONTROLS HYBRID LAYOUT */
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+	text-align: left;
+	width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+	right: 0;
+	width: 35px;
+}
+
+/* IMAGE CAPTIONS */
+
+.bx-wrapper .bx-caption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #666;
+	background: rgba(80, 80, 80, 0.75);
+	width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+	color: #fff;
+	font-family: Arial;
+	display: block;
+	font-size: .85em;
+	padding: 10px;
+}
