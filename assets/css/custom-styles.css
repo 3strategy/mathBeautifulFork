@@ -112,3 +112,11 @@ margin:0;
     padding-right: 0.1em;
     padding-bottom:0em;
 }
+
+pre code {
+  color:#5696D6
+}
+
+code .mi {
+  color:#dddd00;
+}
