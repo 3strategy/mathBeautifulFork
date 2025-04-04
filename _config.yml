@@ -34,7 +34,7 @@ navbar-links:
 
   תוכן:
     - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
-    - אימון טריגו: "/ttrainer.html"
+    - אימון טריגו: "/ttrainer/"
     - שיעורים: "/lessons.html"
 ################
 # --- Logo --- #
