@@ -73,6 +73,7 @@ canvas {
 }
 .hidden {
     display: none;
+    visibility: hidden;
 }
 #name-input {
     margin: 20px 0;
