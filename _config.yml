@@ -33,9 +33,9 @@ navbar-links:
     - אינדוקציה גבע: "/hovrot/InductionGeva.pdf"
 
   תוכן:
-    - אימון טריגו: "TrigoTrainer.html"
     - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
-    - שיעורים: "/mcontent/lessons.html"
+    - אימון טריגו: "/TrigoTrainer.html"
+    - שיעורים: "/lessons.html"
 ################
 # --- Logo --- #
 ################
