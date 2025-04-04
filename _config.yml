@@ -34,7 +34,7 @@ navbar-links:
 
   תוכן:
     - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
-    - אימון טריגו: "/TrigoTrainer.html"
+    - אימון טריגו: "/ttrainer.html"
     - שיעורים: "/lessons.html"
 ################
 # --- Logo --- #
@@ -324,4 +324,3 @@ plugins:
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
 lang: he
-darkmode: true
