@@ -6,3 +6,105 @@ html {
     text-align: right;
   }
   
+  #canvas-container {
+    position: relative;
+    
+    border: none;
+    background-color: black;
+}
+canvas {
+    display: block;
+}
+#answer-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+    box-sizing: border-box;
+    padding:25px;
+    /* margin: 5px; */
+}
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(237, 237, 208);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #3367d6;
+}
+#status-message {
+
+    font-size: 3rem;
+    font-weight: bold;
+    text-align:center;
+    border: none;
+    height: 60px;
+    color: #daa;
+    background-color: transparent;
+}
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000;
+    max-width: 380px;
+    width: 90%;
+    display: flex;
+}
+.results-head{
+    white-space: pre-line;
+    color:rgb(87, 255, 45);
+    font-size: 1.3em;
+}
+#result-text {
+
+    white-space: pre-line;
+    color:greenyellow;
+    font-size: 1.3em;
+}
+.device-toggle {
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none;
+}
+#name-input {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+button {
+    padding: 15px 8px;
+    font-size: 18px;
+    background-color: #4682B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #36648B;
+}
+.math-button {
+    display: inline-block;
+background-color: #000;
+margin:0;
+}
+/* Increase the size of MathJax output */
+.MathJax {
+    font-weight: bold;
+    font-size: 120% !important;
+    padding-top:0em;
+    padding-left:0.1em;
+    padding-right: 0.1em;
+    padding-bottom:0em;
+}
