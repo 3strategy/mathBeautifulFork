@@ -5,7 +5,8 @@ author: הכשרת מורים למדעי המחשב
 lang: he
 ---
 
-{: .box-note} **הערה:** בפרק זה נכיר את שפת C#, סביבת הפיתוח Visual Studio, נלמד על משתנים, קלט, פלט והמרות בין סוגים שונים של משתנים.
+{: .box-note}
+**הערה:** בפרק זה נכיר את שפת C#, סביבת הפיתוח Visual Studio, נלמד על משתנים, קלט, פלט והמרות בין סוגים שונים של משתנים.
 
 ## סביבת העבודה (Visual Studio)
 
@@ -18,8 +19,7 @@ lang: he
 1. פתחו פרויקט חדש מסוג Console App.
 2. כתבו את קוד התוכנית הראשונה:
 
-{% highlight csharp linenos %} 
-namespace HelloWorld 
+{% highlight csharp linenos %}namespace HelloWorld 
 { 
     class Program 
     { 
@@ -66,10 +66,10 @@ Console.WriteLine("שלום, " + name); // פלט
 מה שמך? דנה
 שלום, דנה
 ```
-
+פלט עברי בדרך כלל לא נתמך ב-Console לכן מומלץ לעבוד באנגלית. ניתן להנחות את התלמידים לעבוד פונטי במקרה שאינם מכירים מילה מסויימת באנגלית
 ## המרת קלט מטקסט למספר
 
-פקודת `Console.ReadLine()` מחזירה תמיד טקסט. כדי להמיר טקסט למספר, נשתמש ב- `int.Parse()` או `double.Parse()`:
+פקודת `()Console.ReadLine` מחזירה תמיד טקסט. כדי להמיר טקסט למספר, נשתמש ב- `()int.Parse` או `()double.Parse`:
 
 {% highlight csharp linenos %}Console.Write("הזן את גילך: "); 
 int age = int.Parse(Console.ReadLine());
