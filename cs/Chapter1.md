@@ -10,21 +10,32 @@ lang: he
 ## סביבת העבודה (Visual Studio)
 
 סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#.
-
-שלבי יצירת תוכנית ראשונה:
+בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [netfiddle](https://dotnetfiddle.net/) או [programiz](https://www.programiz.com/csharp-programming/online-compiler/)
+שלבי יצירת תוכנית ראשונה ב-Visual Studio  - להמשך:
 
 1. פתחו פרויקט חדש מסוג Console App.
 2. כתבו את קוד התוכנית הראשונה:
 
-{% highlight csharp linenos %} using System;
+{% highlight csharp linenos %} 
 
-namespace HelloWorld { class Program { public static void Main(string[] args) { Console.WriteLine("Hello, World!"); } } } {% endhighlight %}
+namespace HelloWorld 
+{ 
+    class Program 
+    { 
+        public static void Main(string[] args) 
+        { 
+            Console.WriteLine("Hello, World!"); 
+        } 
+    } 
+} 
+{% endhighlight %}
 
 הריצו את התוכנית (F5) וראו שהיא מדפיסה:
 
 ```
 Hello, World!
 ```
+אם אתם בסביבת Online לחצו על כפתור ההרצה
 
 ## משתנים והשמה
 

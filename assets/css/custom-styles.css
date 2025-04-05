@@ -146,6 +146,7 @@ table tr:nth-child(2n) {
 }
 
 pre code {
+  direction: ltr !important;
   color:#5696D6
 }
 
