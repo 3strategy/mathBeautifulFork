@@ -145,7 +145,7 @@ table tr:nth-child(2n) {
   background-color: #222222;
 }
 
-pre code {
+pre {
   direction: ltr !important;
   color:#5696D6
 }
