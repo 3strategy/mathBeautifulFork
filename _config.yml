@@ -43,9 +43,9 @@ navbar-links:
     - 75 שאלות קצרות: "/hovrot/75short_questions.pdf"
 
   סיכומים:
-    - יא:
+    יא:
       - אינדוקציה: "/summaries/induction.pdf"
-    - יוד:
+    יוד:
       - פונקציות שורש: "/summaries/RadicalFunctions.pdf"
       - קדם אנליזה: "/summaries/PreAnalysis.pdf"
 
