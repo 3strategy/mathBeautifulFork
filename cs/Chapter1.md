@@ -93,6 +93,7 @@ Console.WriteLine(result); {% endhighlight %}
 | -------- | ------- | ------- | ------------ |
 | הגדרה    | 5       | 2       |              |
 | חישוב    | 5       | 2       | 2.5          |
+{: .table-en}
 
 ## שימוש ב-breakpoints
 

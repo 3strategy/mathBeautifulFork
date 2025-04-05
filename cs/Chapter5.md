@@ -110,6 +110,7 @@ while (continueLoop)
 | איטרציה 2 | 2     | 2   |
 | איטרציה 3 | 3     | 3   |
 | איטרציה 4 | 4     | 4   |
+{: .table-en}
 
 {: .box-warning}
 
