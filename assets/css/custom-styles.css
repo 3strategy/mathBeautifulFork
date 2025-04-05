@@ -136,7 +136,8 @@ table {
 
 
 table.rouge-table {
-  border-color: #333333 !important; 
+  border-color: #444444 !important; 
+  background-color: #1E1E1E !important;
   border-bottom-color: #555555 !important; 
 }
 
@@ -146,11 +147,11 @@ table tr:nth-child(2n) {
 
 /* Code formatting for both table and non-table contexts */
 pre code span.kd {
-  color: #dddd00;
+  color: #5696D6;
 }
 
-pre code span.nx {
-  color: #00aa00;
+pre code span.nx { /* most stuff */
+  color: #9CDCFE;
 }
 
 pre code span.o { /* operators */
@@ -166,10 +167,22 @@ pre code span.k { /* keywords */
 }
 
 pre code span.mi { /* mishtanim variables */
-  color: #9CDCFE;
+  color: #88FF88;
+}
+
+pre code span.dl { /* גרשיים */
+  color: #F4BBA3;
+}
+
+pre code span.s2 { /* מחרוזות מצוטטות */
+  color: #D69D85;
+}
+
+pre code span.kc { /* קבועי true false */
+  color: #569CD6;
 }
 
 /* Line numbers */
-.lineno {
+pre .lineno {
   color: #666666;
 }
