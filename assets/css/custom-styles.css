@@ -132,6 +132,11 @@ margin:0;
 }
 
 /* table formatting */
+.table-en {
+  direction:ltr;
+  
+}
+
 table {
   border-color: #444444 !important; 
 }
