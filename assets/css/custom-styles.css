@@ -147,6 +147,7 @@ table tr:nth-child(2n) {
 
 pre {
   direction: ltr !important;
+  text-align: left !important;
   color:#5696D6
 }
 

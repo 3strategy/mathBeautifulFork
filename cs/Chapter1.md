@@ -36,7 +36,7 @@ namespace HelloWorld
 ```
 Hello, World!
 ```
-אם אתם בסביבת Online לחצו על כפתור ההרצה
+אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה
 
 ## משתנים והשמה
 
@@ -54,8 +54,7 @@ string name = "Sara";
 
 נשתמש בפקודות Console לכתיבה ולקבלת קלט:
 
-{% highlight csharp linenos %} 
-Console.Write("מה שמך? "); // פלט ובו בקשת קלט מהמשתמש
+{% highlight csharp linenos %}Console.Write("מה שמך? "); // פלט ובו בקשת קלט מהמשתמש
 string name = Console.ReadLine(); // קלט מהשמתמש והשמה לתוך המשתנה name
 
 Console.WriteLine("שלום, " + name); // פלט
@@ -72,8 +71,7 @@ Console.WriteLine("שלום, " + name); // פלט
 
 פקודת `Console.ReadLine()` מחזירה תמיד טקסט. כדי להמיר טקסט למספר, נשתמש ב- `int.Parse()` או `double.Parse()`:
 
-{% highlight csharp linenos %} 
-Console.Write("הזן את גילך: "); 
+{% highlight csharp linenos %}Console.Write("הזן את גילך: "); 
 int age = int.Parse(Console.ReadLine());
 
 Console.WriteLine("בעוד שנה תהיה בן " + (age + 1)); 
@@ -83,8 +81,7 @@ Console.WriteLine("בעוד שנה תהיה בן " + (age + 1));
 
 לעיתים נדרש להמיר משתנה מסוג אחד לאחר. נשתמש ב-casting:
 
-{% highlight csharp linenos %} 
-int a = 5; 
+{% highlight csharp linenos %}int a = 5; 
 int b = 2; 
 double result = (double)a / b; // 2.5
 
@@ -100,5 +97,6 @@ Console.WriteLine(result); {% endhighlight %}
 ## שימוש ב-breakpoints
 
 
-{: .box-warning} **אזהרה:** אם תקלידו קלט שאינו מספרי לפונקציית `int.Parse()`, התוכנית תקרוס!
+{: .box-warning}
+**אזהרה:** אם תקלידו קלט שאינו מספרי לפונקציית `int.Parse`, התוכנית תקרוס!
 
