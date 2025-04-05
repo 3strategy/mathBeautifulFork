@@ -126,7 +126,7 @@ margin:0;
 .box-error {
   background-color: #521212;
 }
-table {
+table td {
   border-color: #444444 !important; 
   background-color: #1E1E1E !important;
   border-bottom-color: #775555 !important; 
@@ -183,20 +183,17 @@ pre .lineno {
 }
 /*=====================================================================*/
 /* CSharp Code formatting for both table and non-table contexts */
-pre code span.k {
-  color: #5696D6 !important;
-}
 
 pre code span.nf { /* methods */
   color: #DCDCAA !important;
 }
 
-pre code span.n { /* class names */
-  color: #4EC9B0 !important;
+pre code span.n { /* variables names and class names 9CDCFE */
+  color: #9CDCFE !important;
 }
 
-pre code span.kt { /* most stuff */
-  color: #9CDCFE !important;
+pre code span.kt { /* types * 5696D6*/
+  color: #5696D6 !important; 
 }
 
 pre code span.m { /* misparim */
