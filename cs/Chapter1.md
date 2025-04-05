@@ -10,14 +10,15 @@ lang: he
 ## סביבת העבודה (Visual Studio)
 
 סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#.
+
 בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [netfiddle](https://dotnetfiddle.net/) או [programiz](https://www.programiz.com/csharp-programming/online-compiler/)
+
 שלבי יצירת תוכנית ראשונה ב-Visual Studio  - להמשך:
 
 1. פתחו פרויקט חדש מסוג Console App.
 2. כתבו את קוד התוכנית הראשונה:
 
 {% highlight csharp linenos %} 
-
 namespace HelloWorld 
 { 
     class Program 
@@ -43,15 +44,22 @@ Hello, World!
 
 דוגמאות להגדרת משתנים בשפת C#:
 
-{% highlight csharp linenos %} int age = 30; double average = 85.5; string name = "Sara"; {% endhighlight %}
+{% highlight csharp linenos %}
+int age = 30; 
+double average = 85.5;
+string name = "Sara";
+{% endhighlight %}
 
 ## הדפסה וקלט מהמשתמש
 
 נשתמש בפקודות Console לכתיבה ולקבלת קלט:
 
-{% highlight csharp linenos %} Console.Write("מה שמך? "); string name = Console.ReadLine();
+{% highlight csharp linenos %} 
+Console.Write("מה שמך? "); // פלט ובו בקשת קלט מהמשתמש
+string name = Console.ReadLine(); // קלט מהשמתמש והשמה לתוך המשתנה name
 
-Console.WriteLine("שלום, " + name); {% endhighlight %}
+Console.WriteLine("שלום, " + name); // פלט
+{% endhighlight %}
 
 אם המשתמש יכתוב "דנה", הפלט יהיה:
 
@@ -64,15 +72,21 @@ Console.WriteLine("שלום, " + name); {% endhighlight %}
 
 פקודת `Console.ReadLine()` מחזירה תמיד טקסט. כדי להמיר טקסט למספר, נשתמש ב- `int.Parse()` או `double.Parse()`:
 
-{% highlight csharp linenos %} Console.Write("הזן את גילך: "); int age = int.Parse(Console.ReadLine());
+{% highlight csharp linenos %} 
+Console.Write("הזן את גילך: "); 
+int age = int.Parse(Console.ReadLine());
 
-Console.WriteLine("בעוד שנה תהיה בן " + (age + 1)); {% endhighlight %}
+Console.WriteLine("בעוד שנה תהיה בן " + (age + 1)); 
+{% endhighlight %}
 
 ## חישובים והמרות (casting)
 
 לעיתים נדרש להמיר משתנה מסוג אחד לאחר. נשתמש ב-casting:
 
-{% highlight csharp linenos %} int a = 5; int b = 2; double result = (double)a / b; // 2.5
+{% highlight csharp linenos %} 
+int a = 5; 
+int b = 2; 
+double result = (double)a / b; // 2.5
 
 Console.WriteLine(result); {% endhighlight %}
 
@@ -84,11 +98,6 @@ Console.WriteLine(result); {% endhighlight %}
 | חישוב    | 5       | 2       | 2.5          |
 
 ## שימוש ב-breakpoints
-
-{: .box-success} **מומלץ:** השתמשו ב-breakpoints (נקודות עצירה) ב-Visual Studio כדי לעקוב אחר ערכי המשתנים.
-
-להוספת breakpoint, לחצו על השוליים ליד מספר השורה.
-
 
 
 {: .box-warning} **אזהרה:** אם תקלידו קלט שאינו מספרי לפונקציית `int.Parse()`, התוכנית תקרוס!
