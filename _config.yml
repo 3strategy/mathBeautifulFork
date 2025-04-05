@@ -57,8 +57,8 @@ navbar-links:
   סיכומי יוד:
     - קדם אנליזה: "/summaries/PreAnalysis.pdf"
     - גיאומטריה וטריגו: "/summaries/GeometryAndTrigo.pdf"
-    - פונקציות מנה: "/summaries/RationalFunctions.pdf"
-    - פונקציות שורש: "/summaries/RadicalFunctions.pdf"
+    - פונקציות מנה: "/summaries/RationalFunctionAnalysis.pdf"
+    - פונקציות שורש: "/summaries/RadicalFunctionAnalysis.pdf"
 
 
   תכנים:
