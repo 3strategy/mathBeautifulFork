@@ -177,5 +177,33 @@ if (found)
 | בדיקה    | 55    | נכשלת במבחן, נסה שוב |
 {: .table-en}
 
+## סגנונות כתיבת סוגריים בקוד
+### סגנון C# מקובל (Allman) הופיע עד כה ואנו נכתוב רק בצורה זו
+### סגנון Java (K&R) כאן פתיחת הסוגריים היא בהמשך להוראה הפותחת את הבלוק
+{% highlight csharp linenos %}bool found = false;
+int number = 5;
+
+if (number == 5) {
+    found = true;
+}
+
+if (found) {
+    Console.WriteLine("המספר נמצא");
+}
+{% endhighlight %}
+
+{: .box-success}
+**כתיבה ללא סוגריים:** בדוגמא שלנו ניתן גם להתעלם מסוגריים מפני שבתוך הבלוק מופיעה הוראה בודדת. כתיבה זו מומלצת מרגע שתרגישו בנח איתה. גם כאשר כותבים ללא סוגריים מקובל מאד מעבר שורה
+
+{% highlight csharp linenos %}bool found = false;
+int number = 5;
+
+if (number == 5)
+    found = true;
+
+if (found) 
+    Console.WriteLine("המספר נמצא");
+{% endhighlight %}
+
 {: .box-warning}
 **אזהרה:** שימו לב להשתמש תמיד בשני סימני שוויון (`==`) לבדיקת שוויון בתנאים.
