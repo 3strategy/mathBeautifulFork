@@ -28,11 +28,17 @@ navbar-links:
     - שרית, לצוות החינוכי: "https://saritsamuel2016.mozello.co.il/"
     - my geva: "https://my.geva.co.il/"
   חוברות:
+    - 581 ממוקדת: "/hovrot/581.pdf"
     - 571 ממוקדת: "/hovrot/571.pdf"
+    - 471 ממוקדת: "/hovrot/471.pdf"
     - 482 ממוקדת: "/hovrot/482.pdf"
-    - אינדוקציה גבע: "/hovrot/InductionGeva.pdf"
+    - 582 ממוקדת: "/hovrot/582.pdf"
+    - 482 ממוקדת: "/hovrot/482.pdf"
 
-  תוכן:
+    - אינדוקציה גבע: "/hovrot/InductionGeva.pdf"
+  סיכומים:
+    - אינדוקציה: "/summaries/induction.pdf"
+  תכנים:
     - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
     - אימון טריגו: "/ttrainer/"
     - שיעורים: "/lessons.html"

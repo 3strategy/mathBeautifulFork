@@ -113,15 +113,15 @@ margin:0;
     padding-bottom:0em;
 }
 
-code {
+pre code {
   color:#5696D6
 }
 
 code.kd {  color:#dddd00; }
 code.nx {  color:#00aa00; }
-code.o {  color:#ffaaaa; }
-code.p {  color:#702888; }
-code.k {  color:#ff7700; }
+td code.o {  color:#ffaaaa; }
+td code.p {  color:#702888; }
+td code.k {  color:#ff7700; }
 code.mi {  color:#0000ff; }
 code.mi {  color:#00ff00; }
 
@@ -129,4 +129,9 @@ code.mi {  color:#00ff00; }
 
 table tr:nth-child(2n) {
   background-color: #352712;
+}
+
+table {
+  border-color: #333333;
+  border-bottom-color: #555555;
 }
