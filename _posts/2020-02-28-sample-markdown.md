@@ -76,6 +76,35 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
+and here again sample C# code:
+{% highlight javascript linenos %}
+static void Main(string[] args)
+{
+    int count = 0;
+    double countOldWife = 0;
+    foreach (string i in args) {
+
+        int n = int.Parse(Console.ReadLine());
+        count += n;
+    }
+    while (true)
+    {
+        Console.WriteLine("input wife's age");
+        int nW = int.Parse(Console.ReadLine());
+        Console.WriteLine("input husband's");
+        int nH = int.Parse(Console.ReadLine());
+        if (nW == 0 && nH == 0)
+            break;
+
+        if (nW > nH)
+            countOldWife++;
+
+        count++;
+    }
+    Console.WriteLine("percentage is " + countOldWife / count);
+
+}
+{% endhighlight %}
 ## Boxes
 You can add notification, warning and error boxes like this:
 

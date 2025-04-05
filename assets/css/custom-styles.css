@@ -153,20 +153,20 @@ pre code span.nx {
   color: #00aa00;
 }
 
-pre code span.o {
-  color: #ffaaaa;
+pre code span.o { /* operators */
+  color: #B4B4B4;
 }
 
-pre code span.p {
-  color: #702888;
+pre code span.p { /* brackets */
+  color: #EFB839;
 }
 
-pre code span.k {
-  color: #ff7700;
+pre code span.k { /* keywords */
+  color: #D8A0DF;
 }
 
-pre code span.mi {
-  color: #00ff00;
+pre code span.mi { /* mishtanim variables */
+  color: #9CDCFE;
 }
 
 /* Line numbers */
