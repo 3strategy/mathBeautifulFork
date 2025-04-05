@@ -113,10 +113,20 @@ margin:0;
     padding-bottom:0em;
 }
 
-pre code {
+code {
   color:#5696D6
 }
 
-code .mi {
-  color:#dddd00;
+code.kd {  color:#dddd00; }
+code.nx {  color:#00aa00; }
+code.o {  color:#ffaaaa; }
+code.p {  color:#702888; }
+code.k {  color:#ff7700; }
+code.mi {  color:#0000ff; }
+code.mi {  color:#00ff00; }
+
+.lineno {color:#666666;}
+
+table tr:nth-child(2n) {
+  background-color: #352712;
 }
