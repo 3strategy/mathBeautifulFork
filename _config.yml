@@ -27,17 +27,28 @@ navbar-links:
   קישורים חיצוניים:
     - שרית, לצוות החינוכי: "https://saritsamuel2016.mozello.co.il/"
     - my geva: "https://my.geva.co.il/"
+    - שולחן המפמר: "https://mathematics.education.gov.il/"
+    - מבני היבחנות: "https://pop.education.gov.il/tchumey_daat/matmatika/chativa-elyona/teaching-mathematics/examination-evaluation/"
+    - בגרויות משרד החינוך: "https://meyda.education.gov.il/bagmgr/default.html#/"
+    - דף נוסחאות 5: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/5-MATH-Formula_NEW.pdf"
+    - דף נוסחאות 5: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/4-MATH-Formula_NEW.pdf"
   חוברות:
     - 581 ממוקדת: "/hovrot/581.pdf"
     - 571 ממוקדת: "/hovrot/571.pdf"
     - 471 ממוקדת: "/hovrot/471.pdf"
-    - 482 ממוקדת: "/hovrot/482.pdf"
     - 582 ממוקדת: "/hovrot/582.pdf"
     - 482 ממוקדת: "/hovrot/482.pdf"
 
     - אינדוקציה גבע: "/hovrot/InductionGeva.pdf"
+    - 75 שאלות קצרות: "/hovrot/75short_questions.pdf"
+
   סיכומים:
-    - אינדוקציה: "/summaries/induction.pdf"
+    - יא:
+      - אינדוקציה: "/summaries/induction.pdf"
+    - יוד:
+      - פונקציות שורש: "/summaries/RadicalFunctions.pdf"
+      - קדם אנליזה: "/summaries/PreAnalysis.pdf"
+
   תכנים:
     - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
     - אימון טריגו: "/ttrainer/"
@@ -48,7 +59,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/assets/img/avatar-icon.png"
+avatar: "favicon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: true
