@@ -175,7 +175,7 @@ pre code span.dl { /* גרשיים */
 }
 
 pre code span.s2 { /* מחרוזות מצוטטות */
-  color: #D69D85;
+  color: #D69D85 !important;
 }
 
 pre code span.kc { /* קבועי true false */
@@ -184,5 +184,5 @@ pre code span.kc { /* קבועי true false */
 
 /* Line numbers */
 pre .lineno {
-  color: #666666;
+  color: #666666 !important;
 }

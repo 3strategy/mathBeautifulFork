@@ -77,7 +77,7 @@ foo(3)
 {% endhighlight %}
 
 and here again sample C# code:
-{% highlight javascript linenos %}
+{% highlight csharp linenos %}
 static void Main(string[] args)
 {
     int count = 0;
