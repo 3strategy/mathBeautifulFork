@@ -68,8 +68,8 @@ navbar-links:
     - מי אני: "aboutme"
 
   מדמח:
-    -פרק 1: "/cs/Chapter1"
-    -פרק 2: "/cs/Chapter2"
+    -פרק 1: "/cs/Chapter1/"
+
 ################
 # --- Logo --- #
 ################
