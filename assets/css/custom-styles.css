@@ -214,5 +214,9 @@ pre code span.m { /* misparim */
 pre code span.s { /* מחרוזות מצוטטות */
   color: #D69D85 !important;
 }
-
+pre code span.c1 { /* הערות בעברית */
+  color: #85CC85 !important;
+  font-family: 'Arimo';
+  font-weight: bold;
+}
 /*=====================================================================*/

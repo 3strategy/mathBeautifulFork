@@ -23,7 +23,14 @@ Console.WriteLine(result);
 
 result = Math.Abs(-10); // ערך מוחלט - התוצאה 10
 Console.WriteLine(result);
+
+result = Math.Round(3.567, 2); // עיגול ל-2 ספרות אחרי הנקודה - התוצאה 3.57
+Console.WriteLine(result);
+
+result = Math.Floor(3.9); // עיגול כלפי מטה - התוצאה 3
+Console.WriteLine(result);
 {% endhighlight %}
+
 
 ## מספרים אקראיים (Random)
 
