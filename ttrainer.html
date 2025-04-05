@@ -1,6 +1,5 @@
 ---
 layout: page
-title: אימון טריגו
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -8,24 +7,15 @@ title: אימון טריגו
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script> -->
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+<!-- note - above math jax is needed regardless of the template's mathjax support -->
 
 
   <title>Triangle Trainer</title>
 </head>
 
 <body>
-  <h2 class="mb-4">תרגול טריגו <input style="max-width: 90%;" type="text" id="name-input" placeholder="שם: " /></h2>
-  <!-- <div class="device-toggle">
-
-    <label>
-      <input type="radio" name="device" value="desktop" checked> Desktop
-    </label>
-    <label>
-      <input type="radio" name="device" value="mobile"> Mobile
-    </label>
-  </div> -->
+  <h2 class="mb-4">אימון טריגו <input style="max-width: 90%;" type="text" id="name-input" placeholder="שם: " /></h2>
 
   <div id="answer-buttons" class="math-button">
     <!-- must have btn class to be clickable -->
@@ -109,17 +99,6 @@ title: אימון טריגו
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
 
-      // (Device toggle code remains commented out)
-      // const deviceRadios = document.querySelectorAll('input[name="device"]');
-      // deviceRadios.forEach(function(radio) {
-      //   radio.addEventListener("change", function(e) {
-      //     mobileMode = e.target.value === 'mobile';
-      //     setupCanvas();
-      //     if (flag) {
-      //       setTimeout(triangle1, 100);
-      //     }
-      //   });
-      // });
 
       setupCanvas();
 
