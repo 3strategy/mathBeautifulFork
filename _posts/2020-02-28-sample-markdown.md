@@ -7,7 +7,7 @@ gh-badge: [star, fork, follow]
 tags: [test]
 comments: true
 mathjax: true
-author: Dean Attali
+author: Dean Attali, Dark CSS - Guy Siedes
 lang: en
 ---
 

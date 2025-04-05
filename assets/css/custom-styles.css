@@ -127,6 +127,11 @@ margin:0;
   background-color: #521212;
 }
 
+.avatar-img {
+  border-radius: 0;
+}
+
+/* table formatting */
 table {
   border-color: #444444 !important; 
 }

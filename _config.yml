@@ -31,7 +31,7 @@ navbar-links:
     - מבני היבחנות: "https://pop.education.gov.il/tchumey_daat/matmatika/chativa-elyona/teaching-mathematics/examination-evaluation/"
     - בגרויות משרד החינוך: "https://meyda.education.gov.il/bagmgr/default.html#/"
     - דף נוסחאות 5: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/5-MATH-Formula_NEW.pdf"
-    - דף נוסחאות 5: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/4-MATH-Formula_NEW.pdf"
+    - דף נוסחאות 4: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/4-MATH-Formula_NEW.pdf"
   חוברות:
     - 581 ממוקדת: "/hovrot/581.pdf"
     - 571 ממוקדת: "/hovrot/571.pdf"
@@ -42,11 +42,24 @@ navbar-links:
     - אינדוקציה גבע: "/hovrot/InductionGeva.pdf"
     - 75 שאלות קצרות: "/hovrot/75short_questions.pdf"
 
+  סיכומי יב:
+    - מרוכבים: "/summaries/ComplexNumbers.pdf"
+    - וקטורים: "/summaries/Vectors.pdf"
+
   סיכומי יא:
+    - מציאת אס' וחורים: "/summaries/CheckingDerivativesAsymptotesAndHoles.pdf"
+    - חקירות טריגו: "/summaries/TrigonomtricFunctionAnalysis.pdf"
+    - בעיות קיצון: "/summaries/Optimization.pdf"
+    - הסתברות מושגי יסוד: "/summaries/ProbabilityNotions.pdf"
+    - הסתברות:  "/summaries/Probability.pdf"
     - אינדוקציה: "/summaries/induction.pdf"
+
   סיכומי יוד:
-    - פונקציות שורש: "/summaries/RadicalFunctions.pdf"
     - קדם אנליזה: "/summaries/PreAnalysis.pdf"
+    - גיאומטריה וטריגו: "/summaries/GeometryAndTrigo.pdf"
+    - פונקציות מנה: "/summaries/RationalFunctions.pdf"
+    - פונקציות שורש: "/summaries/RadicalFunctions.pdf"
+
 
   תכנים:
     - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
@@ -54,18 +67,9 @@ navbar-links:
     - שיעורים: "/lessons.html"
     - מי אני: "aboutme"
 
-  עוד1 יא:
-    - אינדוקציה: "/summaries/induction.pdf"
-  עוד2 יא:
-    - אינדוקציה: "/summaries/induction.pdf"
-  עוד3 יא:
-    - אינדוקציה: "/summaries/induction.pdf"
-  עוד 4 יא:
-    - אינדוקציה: "/summaries/induction.pdf"
-  עוד35יא:
-    - אינדוקציה: "/summaries/induction.pdf"
-  עוד 46יא:
-    - אינדוקציה: "/summaries/induction.pdf"
+  מדמח:
+    -פרק 1: "/cs/Chapter1"
+    -פרק 2: "/cs/Chapter2"
 ################
 # --- Logo --- #
 ################
