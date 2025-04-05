@@ -120,6 +120,9 @@ margin:0;
 .box-note {
   background-color: #424242;
 }
+.box-warning {
+  background-color: #545146;
+}
 .box-error {
   background-color: #521212;
 }
@@ -151,19 +154,19 @@ pre code span.o { /* operators */
 }
 
 pre code span.p { /* brackets */
-  color: #EFB839;
+  color: #EFB839 !important;
 }
 
 pre code span.k { /* keywords */
-  color: #D8A0DF;
+  color: #D8A0DF !important;
 }
 
 pre code span.mi { /* mishtanim variables */
-  color: #88FF88;
+  color: #88FF88 !important;
 }
 
 pre code span.dl { /* גרשיים */
-  color: #F4BBA3;
+  color: #F4BBA3 !important;
 }
 
 pre code span.s2 { /* מחרוזות מצוטטות */
@@ -171,7 +174,7 @@ pre code span.s2 { /* מחרוזות מצוטטות */
 }
 
 pre code span.kc { /* קבועי true false */
-  color: #569CD6;
+  color: #569CD6 !important;
 }
 
 /* Line numbers */
@@ -181,23 +184,23 @@ pre .lineno {
 /*=====================================================================*/
 /* CSharp Code formatting for both table and non-table contexts */
 pre code span.k {
-  color: #5696D6;
+  color: #5696D6 !important;
 }
 
 pre code span.nf { /* methods */
-  color: #DCDCAA;
+  color: #DCDCAA !important;
 }
 
 pre code span.n { /* class names */
-  color: #4EC9B0;
+  color: #4EC9B0 !important;
 }
 
 pre code span.kt { /* most stuff */
-  color: #9CDCFE;
+  color: #9CDCFE !important;
 }
 
 pre code span.m { /* misparim */
-  color: #88FF88;
+  color: #88FF88 !important;
 }
 
 pre code span.s { /* מחרוזות מצוטטות */
