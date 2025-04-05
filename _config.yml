@@ -23,7 +23,7 @@ author: גיא סידס
 #  youtube: "https://www.youtube.com/@guys9793"
 
 navbar-links:
-  מי אני: "aboutme"
+
   קישורים חיצוניים:
     - שרית, לצוות החינוכי: "https://saritsamuel2016.mozello.co.il/"
     - my geva: "https://my.geva.co.il/"
@@ -42,17 +42,30 @@ navbar-links:
     - אינדוקציה גבע: "/hovrot/InductionGeva.pdf"
     - 75 שאלות קצרות: "/hovrot/75short_questions.pdf"
 
-  סיכומים:
-    יא:
-      - אינדוקציה: "/summaries/induction.pdf"
-    יוד:
-      - פונקציות שורש: "/summaries/RadicalFunctions.pdf"
-      - קדם אנליזה: "/summaries/PreAnalysis.pdf"
+  סיכומי יא:
+    - אינדוקציה: "/summaries/induction.pdf"
+  סיכומי יוד:
+    - פונקציות שורש: "/summaries/RadicalFunctions.pdf"
+    - קדם אנליזה: "/summaries/PreAnalysis.pdf"
 
   תכנים:
     - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
     - אימון טריגו: "/ttrainer/"
     - שיעורים: "/lessons.html"
+    - מי אני: "aboutme"
+
+  עוד1 יא:
+    - אינדוקציה: "/summaries/induction.pdf"
+  עוד2 יא:
+    - אינדוקציה: "/summaries/induction.pdf"
+  עוד3 יא:
+    - אינדוקציה: "/summaries/induction.pdf"
+  עוד 4 יא:
+    - אינדוקציה: "/summaries/induction.pdf"
+  עוד35יא:
+    - אינדוקציה: "/summaries/induction.pdf"
+  עוד 46יא:
+    - אינדוקציה: "/summaries/induction.pdf"
 ################
 # --- Logo --- #
 ################
@@ -62,7 +75,7 @@ navbar-links:
 avatar: "favicon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-round-avatar: true
+round-avatar: "false"
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
