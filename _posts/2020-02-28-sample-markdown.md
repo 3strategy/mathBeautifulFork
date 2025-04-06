@@ -41,6 +41,9 @@ Here's a table:
 You can use [MathJax](https://www.mathjax.org/) to write LaTeX expressions. For example:
 When \\(a \ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\) and they are $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
+וכאן בדיקה קצרה - עד כמה הדברים משתלבים עם עברית. למשל פתרונות המשוואה הריבועית כאשר \\(a \ne 0\\), הם: $$x_{1,2} = \frac{-b \pm \sqrt {b^2 - 4ac}}{2a}$$
+{: .table-he}
+
 How about a yummy crepe?
 
 ![Crepe](https://beautifuljekyll.com/assets/img/crepe.jpg)
@@ -58,13 +61,20 @@ var foo = function(x) {
 foo(3)
 ~~~
 
-And here is the same code with syntax highlighting:
+Here is the same code with syntax highlighting:
 
 ```javascript
 var foo = function(x) {
   return(x + 5);
 }
 foo(3)
+```
+And here is an example with CSharp higlighting (which you can flag using either CS or csharp):
+
+```CS
+...
+double f = 5.26;
+return(f + 5);
 ```
 
 And here is the same code yet again but with line numbers:

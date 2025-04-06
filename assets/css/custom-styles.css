@@ -132,9 +132,13 @@ margin:0;
 }
 
 /* table formatting */
-.table-en {
+.table-en { /* to override rtl on any section that needs ltr */
   direction:ltr;
   
+}
+.table-he { /* to overide ltr on any section that needs rtl */
+  direction:rtl;
+  text-align: right;
 }
 
 table {
