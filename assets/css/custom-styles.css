@@ -146,7 +146,7 @@ table {
 }
 table td,th {
   border-color: #333333 !important; 
-  background-color: #1E1E1E !important;
+  background-color: #1e2525 !important; /*main background for all code*/
   border-bottom-color: #775555 !important; 
 }
 
@@ -157,7 +157,14 @@ table tr:nth-child(2n) {
 pre {
   direction: ltr !important;
   text-align: left !important;
-  color:#5696D6
+  color:#5696D6; /*main color for all code*/
+  
+}
+
+/* inline code highliging*/
+.language-plaintext .highlighter-rouge {
+  color:#5696D6;  /*main color for all code*/
+  background-color: #1e2525 !important;  /*main background for all code*/
 }
 
 /* JavaScript Code formatting for both table and non-table contexts */
