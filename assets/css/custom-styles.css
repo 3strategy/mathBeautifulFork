@@ -146,7 +146,7 @@ table {
 }
 table td,th {
   border-color: #333333 !important; 
-  background-color: #1e2525 !important; /*main background for all code*/
+  /* background-color: #1e2525 !important; main background for all code */
   border-bottom-color: #775555 !important; 
 }
 
@@ -154,18 +154,20 @@ table tr:nth-child(2n) {
   background-color: #222222;
 }
 
+/* ====================================== */
+/* main code formatting overriding Rouge */
+code {
+  color:#5696D6 !important; /*main color for all code*/
+  background-color: #1e2525 !important; /*main background for all code*/
+}
+
 pre {
   direction: ltr !important;
   text-align: left !important;
-  color:#5696D6; /*main color for all code*/
+  /* color:#5696D6; main color for all code */
   
 }
-
-/* inline code highliging*/
-.language-plaintext .highlighter-rouge {
-  color:#5696D6;  /*main color for all code*/
-  background-color: #1e2525 !important;  /*main background for all code*/
-}
+/* ====================================== */
 
 /* JavaScript Code formatting for both table and non-table contexts */
 pre code span.kd {
