@@ -6,6 +6,14 @@ date: 2025-04-05
 lang: en
 ---
 
+<style>
+html {
+  direction: ltr !important;
+}
+body {
+  text-align: left !important;
+}
+</style>
 
 # Chapter 1: הדפסה, משתנים והמרות
 
@@ -13,87 +21,102 @@ Introduction to C# language
 
 Environment setup: Visual Studio IDE basics
 
-Structure of a basic C# program (Main method, class, namespace)
+Structure of a basic C# program (Main method, class, namespace) מבנה תכנית בסיסית
 
-Basic output using Console.WriteLine and Console.Write
+Basic output using Console.WriteLine and Console.Write פלט בסיסי
 
-Variables and their types (int, double, string)
+Variables and their types (int, double, string) משתנים וטיפוסי משתנים
 
-Declaration and initialization of variables
+Declaration and initialization of variables הכרזה ואיתחול
 
-Reading input from the console (Console.ReadLine)
+Reading input from the console (Console.ReadLine) ביצוע קלט
 
-Converting strings to numerical types (int.Parse, double.Parse)
+Converting strings to numerical types (int.Parse, double.Parse) המרת משתנים
 
-Arithmetic operations (+, -, *, /)
+Arithmetic operations (+, -, *, /) אופרטורים חשבוניים
 
-Integer division and remainder (modulus %)
+Integer division and remainder (modulus %) האופרטור שארית חלוקה
 
-Explicit type conversions (casting, e.g. (double)x)
+Explicit type conversions (casting, e.g. (double)x) המרת טיפוסים מפורשת
 
-Implicit conversions
+Implicit conversions המרה אוטומטית
 
 Tracking program execution (טבלאות מעקב)
 
-Debugging with breakpoints
+Debugging with breakpoints שימוש ב-breakpoints
 
 # Chapter 2: תנאים, ביטויים לוגיים ושארית חלוקה
 
-Boolean expressions (==, !=, >, <, >=, <=)
+Boolean expressions (==, !=, >, <, >=, <=) ביטויים בוליאניים
 
-Logical operators (&&, ||, !)
+Logical operators (&&, ||, !) אופרטורים לוגיים
 
-Conditional statements (if, else if, else)
+Conditional statements (if, else if, else) משפטי תנאי
 
-Nested conditional statements
+Nested conditional statements משפטי תנאי מקוננים
 
-Modulo operation % in conditional contexts
+Modulo operation % in conditional contexts השימוש בשארית חלוקה בתוך תנאי
 
-Common conditional scenarios (leap year, even/odd checks, etc.)
+Common conditional scenarios (leap year, even/odd checks, etc.) דוגמאות לשימוש בשארית חלוקה
 
-Using logical conditions for decision making
+Using logical conditions for decision making שימוש בתנאי לקבלת החלטות
 
-Flag variables (boolean variables to remember conditions or states)
+Flag variables (boolean variables to remember conditions or states) משתנה המשמש כדגל
 
-Tracking tables (טבלאות מעקב) for conditional logic
+Tracking tables (טבלאות מעקב) for conditional logic טבלאות מעקב
 
 # Chapter 3: המחלקה Math, Random
 
-Introduction to the Math class (Math.Pow, Math.Sqrt, Math.Abs)
+Introduction to the Math class (Math.Pow, Math.Sqrt, Math.Abs) המחלקה המתמטית
 
-Usage examples of Math class methods
+Usage examples of Math class methods דוגמאות שימוש במחלקה המתמטית
 
-Random numbers (Random class, Next, NextDouble)
+Random numbers (Random class, Next, NextDouble) מספרים אקראיים
 
-Generating random numbers within specific ranges
+Generating random numbers within specific ranges הגרלת מספר שלם בטווח מוגדר
 
-Applications of random numbers in simple problems
+Applications of random numbers in simple problems שימושים של ראנדום
 
 # Chapter 4: לולאות for
 
-Basic loop concept and the purpose of repetition
+Basic loop concept and the purpose of repetition הרעיון הבסיסי בלולאות
 
-Structure of a for loop (initialization; condition; increment)
+Structure of a for loop (initialization; condition; increment) מבנה לולאת פור
 
-Loop execution flow
+Loop execution flow מהלך ביצוע הלולאה
 
-Practical examples of for loops
+Practical examples of for loops דוגמאות ללולאות
 
-Using loop counters
+Using loop counters שימוש במונים
 
-Breaking loops prematurely with break
+Breaking loops prematurely with break שימוש בהוראת break ליציאה מוקדמת מלולאה
+
+**ToAdd: as a chapter 3b: stuff we can do inside a for statement נושאים מתקדמים בתחביר לולאת for**
+**3b: Keeping i value after the loop שמירה על האינדקס**
+
+**Multiple initializations**
+
+**multiple conditions, multiple increments or statements**
+
+**omisions of the i initialization**
+
+**omission of the increment statement**
+
+**interfering with i inside the block to extend the loop when a condition is met (for example when an input did not meet criteria and we wish to collect a valid predefined number of inputs)**
+
+**interfering with the loop using continue statement**
 
 Tracking loops execution with tables (טבלאות מעקב)
 
-Using breakpoints to debug loops
+Using breakpoints to debug loops שימוש ב-breakpoints לדיבוג לולאות
 
 # Chapter 5: לולאות while
 
-The concept of a conditional loop (while)
+The concept of a conditional loop (while) העיקרון של לולאת
 
-Structure and syntax of a while loop
+Structure and syntax of a while loop מבנה לולאת while
 
-Differences between for and while loops
+Differences between for and while loops ההבדלים בין while ל-for
 
 Typical use-cases for while loops (unknown iteration counts, input validation)
 
