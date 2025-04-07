@@ -32,6 +32,8 @@ navbar-links:
     - בגרויות משרד החינוך: "https://meyda.education.gov.il/bagmgr/default.html#/"
     - דף נוסחאות 5: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/5-MATH-Formula_NEW.pdf"
     - דף נוסחאות 4: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/4-MATH-Formula_NEW.pdf"
+    - דפי עבודה gool: "https://bagrut.gool.co.il/teachingaids"
+
   חוברות:
     - 581 ממוקדת: "/hovrot/581.pdf"
     - 571 ממוקדת: "/hovrot/571.pdf"
@@ -52,6 +54,7 @@ navbar-links:
     - בעיות קיצון: "/summaries/Optimization.pdf"
     - הסתברות מושגי יסוד: "/summaries/ProbabilityNotions.pdf"
     - הסתברות:  "/summaries/Probability.pdf"
+    - סדרות: "/summaries/Sequences.pdf"
     - אינדוקציה: "/summaries/induction.pdf"
 
   סיכומי יוד:
