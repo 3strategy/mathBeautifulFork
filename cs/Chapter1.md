@@ -17,7 +17,7 @@ lang: he
 שלבי יצירת תוכנית ראשונה ב-Visual Studio  - להמשך:
 
 1. פתחו פרויקט חדש מסוג Console App.
-2. כתבו את קוד התוכנית הראשונה:
+2. יוצג לפניכם קוד התוכנית הראשונה:
 
 {% highlight csharp linenos %}namespace HelloWorld 
 { 
@@ -37,6 +37,12 @@ lang: he
 Hello, World!
 ```
 אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה
+
+## הסבר נוסף: יצירת פרוייקט בויזואל סטודיו
+
+כאן סרטון קצרצר המסביר כיצד ליצור פרוייקט חדש. פעמים רבות כל תכנית שלנו תהיה פרוייקט חדש:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NlFeUFfRkxs" frameborder="0" allowfullscreen></iframe>
 
 ## משתנים והשמה
 

@@ -74,8 +74,8 @@ navbar-links:
     - מי אני: "aboutme"
 
   מדמח מחזור 3:
-    - פרק 0: "/cs/Chapter0"
-    - תרגול 0: "/cs/Chapter0AlgoEx.md"
+ 
+    - תרגול 0: "/cs/Chapter0AlgoEx"
     - פרק 1: "/cs/Chapter1/"
     - קיצורים: "/cs/Shotcuts/"
     - פרק 2 if: "/cs/Chapter2/"
