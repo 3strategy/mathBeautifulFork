@@ -101,7 +101,6 @@ Console.WriteLine(result); {% endhighlight %}
 | חישוב    | 5       | 2       | 2.5          |
 {: .table-en}
 
-## שימוש ב-breakpoints
 
 
 {: .box-warning}
