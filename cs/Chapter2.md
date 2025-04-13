@@ -96,7 +96,7 @@ else
 x = 10;     // השמה
 {% endhighlight %}
 
-דוגמה שגויה:
+שגיאה נפוצה:
 
 {% highlight csharp linenos %}
 int y;
