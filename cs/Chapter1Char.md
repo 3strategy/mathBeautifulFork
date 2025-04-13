@@ -55,3 +55,5 @@ ch = (char)num;
 // חוקי - מחרוזת יכולה להכיל זוגות UTF-16
 string emoji = "😀";
 ```
+
+{% youtube VNlFeUFfRkxs %}
