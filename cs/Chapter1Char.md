@@ -56,4 +56,4 @@ ch = (char)num;
 string emoji = "😀";
 ```
 
-{% youtube VNlFeUFfRkxs %}
+{% include youtube.html id="VNlFeUFfRkxs" %}
