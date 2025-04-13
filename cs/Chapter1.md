@@ -42,7 +42,7 @@ Hello, World!
 
 כאן סרטון קצרצר המסביר כיצד ליצור פרוייקט חדש. פעמים רבות כל תכנית שלנו תהיה פרוייקט חדש:
 
-[![Video Title](https://img.youtube.com/vi/NlFeUFfRkxs/0.jpg)](https://www.youtube.com/watch?v=VNlFeUFfRkxs)
+{% include youtube.html id="NlFeUFfRkxs" %} 
 
 ## משתנים והשמה
 
