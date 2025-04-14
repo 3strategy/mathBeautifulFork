@@ -56,7 +56,7 @@ Console.WriteLine(number);
 
 {% highlight csharp linenos %}Random rand = new Random();
 int dice = rand.Next(1, 7); // 1-6
-Console.WriteLine("תוצאת הטלת הקובייה: " + dice);
+Console.WriteLine("Dice roll result: " + dice);
 {% endhighlight %}
 
 ## טבלת מעקב (דוגמה לשימוש ב-Random)
@@ -64,7 +64,7 @@ Console.WriteLine("תוצאת הטלת הקובייה: " + dice);
 | שורת קוד | dice | פלט                     |
 |-----------|------|-------------------------|
 | הגדרה    | 4    |                         |
-| פלט      | 4    | תוצאת הטלת הקובייה: 4  |
+| פלט      | 4    | Dice roll result: 4  |
 {: .table-en}
 
 {: .box-warning}

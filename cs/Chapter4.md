@@ -17,18 +17,18 @@ lang: he
 
 {% highlight csharp linenos %}for (int i = 0; i < 5; i++)
 {
-    Console.WriteLine("המספר הוא: " + i);
+    Console.WriteLine("The number is: " + i);
 }
 {% endhighlight %}
 
 דוגמת פלט:
 
 ```
-המספר הוא: 0
-המספר הוא: 1
-המספר הוא: 2
-המספר הוא: 3
-המספר הוא: 4
+The number is: 0
+The number is: 1
+The number is: 2
+The number is: 3
+The number is: 4
 ```
 
 ## שימושים נפוצים בלולאות for
@@ -40,7 +40,7 @@ for (int i = 1; i <= 10; i++)
 {
     sum += i;
 }
-Console.WriteLine("הסכום הוא: " + sum); // 55
+Console.WriteLine("The sum is: " + sum); // 55
 {% endhighlight %}
 
 ## יצירת טבלת כפל בעזרת לולאה
@@ -92,18 +92,18 @@ for (int i = 1; i <= 10; i++)
 for (int i = 1; i <= 5; i++)
 {
     sum += i;
-    Console.WriteLine("המספר: " + i + ", סכום מצטבר: " + sum);
+    Console.WriteLine("Number: " + i + ", cumulative sum: " + sum);
 }
 {% endhighlight %}
 
 הפלט של התוכנית יהיה:
 
 ```
-המספר: 1, סכום מצטבר: 1
-המספר: 2, סכום מצטבר: 3
-המספר: 3, סכום מצטבר: 6
-המספר: 4, סכום מצטבר: 10
-המספר: 5, סכום מצטבר: 15
+Number: 1, cumulative sum: 1
+Number: 2, cumulative sum: 3
+Number: 3, cumulative sum: 6
+Number: 4, cumulative sum: 10
+Number: 5, cumulative sum: 15
 ```
 
 ## טבלת מעקב ללולאת for עם צובר

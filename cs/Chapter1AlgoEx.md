@@ -35,8 +35,8 @@ cupCoffee = cupTea;
 // שלב 3: מזוג את התה מהכוס הריקה לספל התה
 cupTea = emptyCup;
 
-Console.WriteLine("ספל תה מכיל: " + cupTea);
-Console.WriteLine("ספל קפה מכיל: " + cupCoffee);
+Console.WriteLine("Cup of tea contains: " + cupTea);
+Console.WriteLine("Cup of coffee contains: " + cupCoffee);
 {% endhighlight %}
 
 </details>
@@ -61,15 +61,15 @@ Console.WriteLine("ספל קפה מכיל: " + cupCoffee);
 
 הצג את total.
 
-{% highlight csharp linenos %}Console.Write("הכנס מספר דקות שיחה: ");
+{% highlight csharp linenos %}Console.Write("Enter call minutes: ");
 double minutes = double.Parse(Console.ReadLine());
 
-Console.Write("הכנס סכום תשלומים קבועים: ");
+Console.Write("Enter fixed charges amount: ");
 double payment = double.Parse(Console.ReadLine());
 
 double total = minutes * 1.20 + payment;
 
-Console.WriteLine("הסכום לתשלום הוא: " + total + " ש\"ח");
+Console.WriteLine("Total amount due: " + total + " ש\"ח");
 {% endhighlight %}
 
 </details>
@@ -89,12 +89,12 @@ Console.WriteLine("הסכום לתשלום הוא: " + total + " ש\"ח");
 
 הצג את square.
 
-{% highlight csharp linenos %}Console.Write("הכנס אורך צלע ריבוע: ");
+{% highlight csharp linenos %}Console.Write("Enter side length of square: ");
 double num = double.Parse(Console.ReadLine());
 
 double square = num * num;
 
-Console.WriteLine("שטח הריבוע הוא: " + square);
+Console.WriteLine("Area of square: " + square);
 {% endhighlight %}
 
 </details>
@@ -105,18 +105,18 @@ Console.WriteLine("שטח הריבוע הוא: " + square);
 
 <details> <summary>פתרון ב-C#</summary>
 
-{% highlight csharp linenos %}Console.Write("הכנס אורך התיבה: ");
+{% highlight csharp linenos %}Console.Write("Enter box length: ");
 int length = int.Parse(Console.ReadLine());
 
-Console.Write("הכנס רוחב התיבה: ");
+Console.Write("Enter box width: ");
 int width = int.Parse(Console.ReadLine());
 
-Console.Write("הכנס גובה התיבה: ");
+Console.Write("Enter box height: ");
 int height = int.Parse(Console.ReadLine());
 
 int volume = length * width * height;
 
-Console.WriteLine("נפח התיבה הוא: " + volume);
+Console.WriteLine("Box volume: " + volume);
 
 {% endhighlight %}
 </details>
@@ -134,7 +134,7 @@ Console.WriteLine("נפח התיבה הוא: " + volume);
 
 הדפס את finalPrice.
 
-{% highlight csharp linenos %}Console.Write("הכנס את מחיר המחשב: ");
+{% highlight csharp linenos %}Console.Write("Enter computer price: ");
 double price = double.Parse(Console.ReadLine());
 
 double finalPrice = price + price * 0.18;

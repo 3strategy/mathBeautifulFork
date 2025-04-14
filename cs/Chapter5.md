@@ -21,7 +21,7 @@ lang: he
 {% highlight csharp linenos %}int counter = 0;
 while (counter < 5)
 {
-    Console.WriteLine("המספר הוא: " + counter);
+    Console.WriteLine("The number is: " + counter);
     counter++;
 }
 {% endhighlight %}
@@ -29,11 +29,11 @@ while (counter < 5)
 דוגמת פלט:
 
 ```
-המספר הוא: 0
-המספר הוא: 1
-המספר הוא: 2
-המספר הוא: 3
-המספר הוא: 4
+The number is: 0
+The number is: 1
+The number is: 2
+The number is: 3
+The number is: 4
 ```
 
 ## לולאה לקבלת קלט מהמשתמש
@@ -46,11 +46,11 @@ number = int.Parse(Console.ReadLine());
 
 while (number <= 0)
 {
-    Console.WriteLine("מספר לא חוקי, נסה שוב.");
+    Console.WriteLine("Invalid number, try again.");
     Console.Write("הזן מספר חיובי: ");
     number = int.Parse(Console.ReadLine());
 }
-Console.WriteLine("המספר שהזנת הוא: " + number);
+Console.WriteLine("The number entered is: " + number);
 {% endhighlight %}
 
 ## לולאות while ושימוש ב-break
@@ -89,7 +89,7 @@ int number;
 
 while (continueLoop)
 {
-    Console.Write("הזן מספר (0 ליציאה): ");
+    Console.Write("Enter a number (0 to exit): ");
     number = int.Parse(Console.ReadLine());
 
     if (number == 0)
@@ -98,7 +98,7 @@ while (continueLoop)
     }
     else
     {
-        Console.WriteLine("המספר שהזנת הוא: " + number);
+        Console.WriteLine("The number entered is: " + number);
     }
 }
 {% endhighlight %}
