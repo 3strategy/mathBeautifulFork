@@ -51,9 +51,9 @@ Hello, World!
 דוגמאות להגדרת משתנים בשפת C#:
 
 {% highlight csharp linenos %}
-int age = 30; 
-double average = 85.5;
-string name = "Sara";
+int age = 30; // משתנה המכיל מספר שלם
+double average = 85.5; // משתנה המכיל מספר ממשי
+string name = "Sara"; // משתנה המכיל מחרוזת
 {% endhighlight %}
 
 ## הדפסה וקלט מהמשתמש
@@ -61,16 +61,16 @@ string name = "Sara";
 נשתמש בפקודות Console לכתיבה ולקבלת קלט:
 
 {% highlight csharp linenos %}Console.Write("Enter your name: "); // פלט ובו בקשת קלט מהמשתמש
-string name = Console.ReadLine(); // קלט מהשמתמש והשמה לתוך המשתנה name
+string name = Console.ReadLine(); // name קלט מהשמתמש והשמה לתוך המשתנה
 
 Console.WriteLine("Hello, " + name); // פלט
 {% endhighlight %}
 
-אם המשתמש יכתוב "דנה", הפלט יהיה:
+אם המשתמש יכתוב "Dan", הפלט יהיה:
 
 ```
-Enter your name: דנה
-Hello, דנה
+Enter your name: Dan
+Hello, Dan
 ```
 פלט עברי בדרך כלל לא נתמך ב-Console לכן מומלץ לעבוד באנגלית. ניתן להנחות את התלמידים לעבוד פונטי במקרה שאינם מכירים מילה מסויימת באנגלית. בסביבת [אונליין כגון netfiddle](https://dotnetfiddle.net/) ניתן להדפיס עברית
 ## המרת קלט מטקסט למספר
@@ -78,9 +78,10 @@ Hello, דנה
 פקודת `()Console.ReadLine` מחזירה תמיד טקסט. כדי להמיר טקסט למספר, נשתמש ב- `()int.Parse` או `()double.Parse`:
 
 {% highlight csharp linenos %}Console.Write("Enter your age: "); 
-int age = int.Parse(Console.ReadLine());
+int age = int.Parse(Console.ReadLine()); // `int` דוגמא לקלט והמרה שלו לתוך משתנה מטיפוס שלם
 
-Console.WriteLine("Next year you will be " + (age + 1)); 
+Console.WriteLine("Next year you will be " + (age + 1)); // הסוגריים מאפשרים לבצע חישוב לפני ההדפסה
+Console.WriteLine("Next year you will NOT be: " + age + 1); // ללא סוגריים נקבל שרשור מחרוזות
 {% endhighlight %}
 
 ## חישובים והמרות (casting)
