@@ -82,9 +82,9 @@ layout: page
       // Retrieve the CSS custom property value and trim any extra whitespace
       //const cblack = rootStyles.getPropertyValue('--page-col').trim();
       const cred = 'red';
-      const cblue = bodyStyles.getPropertyValue('--code-types-col').trim();
+      var cblue = bodyStyles.getPropertyValue('--code-types-col').trim();
       //const cblack = 'blaack';
-      const cgreen = bodyStyles.getPropertyValue('--code-comments-col').trim();
+      var cgreen = bodyStyles.getPropertyValue('--code-comments-col').trim();
       var cblack =   bodyStyles.getPropertyValue('--page-col').trim();//black';
 
       // Set up canvas dimensions
@@ -129,6 +129,8 @@ layout: page
       // Main triangle drawing function with centering
       function triangle1() {
         bodyStyles = getComputedStyle(document.body);
+        cblue = bodyStyles.getPropertyValue('--code-types-col').trim();
+        cgreen = bodyStyles.getPropertyValue('--code-comments-col').trim();
         cblack =   bodyStyles.getPropertyValue('--page-col').trim();//black';
         if (!flag) return;
         ctx.fillStyle = cblack;
