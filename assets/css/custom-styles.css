@@ -1,113 +1,120 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo&subset=hebrew');
 /* Default: Dark theme (as built from _config.yml) */
 :root {
-  --page-col: #121212;
-  --text-col: #E0E0E0;
-  --link-col: #82AAFF;
-  --hover-col: #A0C8FF;
-  --navbar-col: #1F1F1F;
-  --navbar-text-col: #E0E0E0;
-  --navbar-border-col: #333333;
-  --footer-col: #1F1F1F;
-  --footer-text-col: #CCCCCC;
-  --footer-link-col: #82AAFF;
-  --footer-hover-col: #A0C8FF;
+    --page-col: #121212;
+    --text-col: #E0E0E0;
+    --link-col: #82AAFF;
+    --hover-col: #A0C8FF;
+    --navbar-col: #1F1F1F;
+    --navbar-text-col: #E0E0E0;
+    --navbar-border-col: #333333;
+    --footer-col: #1F1F1F;
+    --footer-text-col: #CCCCCC;
+    --footer-link-col: #82AAFF;
+    --footer-hover-col: #A0C8FF;
 }
 
 /* Overrides for Light theme */
 .light-theme {
-  --page-col: #FFFFFF;
-  --text-col: #404040;
-  --link-col: #008AFF;
-  --hover-col: #0085A1;
-  --navbar-col: #EAEAEA;
-  --navbar-text-col: #404040;
-  --navbar-border-col: #DDDDDD;
-  --footer-col: #EAEAEA;
-  --footer-text-col: #777777;
-  --footer-link-col: #404040;
-  --footer-hover-col: #0085A1;
+    --page-col: #FFFFFF;
+    --text-col: #404040;
+    --link-col: #008AFF;
+    --hover-col: #0085A1;
+    --navbar-col: #EAEAEA;
+    --navbar-text-col: #404040;
+    --navbar-border-col: #DDDDDD;
+    --footer-col: #EAEAEA;
+    --footer-text-col: #777777;
+    --footer-link-col: #404040;
+    --footer-hover-col: #0085A1;
 }
 
 html {
     direction: rtl;
-  }
-  
-  body {
+}
+
+body {
     text-align: right;
     font-family: 'Arimo', sans-serif;
-  }
-  
-  #canvas-container {
+}
+
+#canvas-container {
     position: relative;
-    
     border: none;
     background-color: black;
 }
+
 canvas {
     display: block;
 }
+
 #answer-buttons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 3px;
     box-sizing: border-box;
-    padding:25px;
+    padding: 25px;
     /* margin: 5px; */
 }
+
 .btn {
     padding: 10px 20px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: var(--text-col);
-    /*rgb(237, 237, 208); */
-    color: var(--page-col);
+    background-color: rgb(237, 237, 208);
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s;
 }
-.btn:hover {
-    background-color: #3367d6;
-}
-#status-message {
 
+    .btn:hover {
+        background-color: #3367d6;
+    }
+
+#status-message {
     font-size: 3rem;
     font-weight: bold;
-    text-align:center;
+    text-align: center;
     border: none;
     height: 60px;
     color: #daa;
     background-color: transparent;
 }
+
 #results {
     margin-top: 20px;
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: var(--page-col);
+    background-color: #000;
     max-width: 380px;
     width: 90%;
     display: flex;
 }
-.results-head{
-    white-space: pre-line;
-    color:rgb(87, 255, 45);
-    font-size: 1.3em;
-}
-#result-text {
 
+.results-head {
     white-space: pre-line;
-    color:greenyellow;
+    color: rgb(87, 255, 45);
     font-size: 1.3em;
 }
+
+#result-text {
+    white-space: pre-line;
+    color: greenyellow;
+    font-size: 1.3em;
+}
+
 .device-toggle {
     margin-bottom: 20px;
 }
+
 .hidden {
     display: none;
     visibility: hidden;
 }
+
 #name-input {
     margin: 20px 0;
     padding: 10px;
@@ -116,155 +123,162 @@ canvas {
     border-radius: 5px;
     width: 250px;
 }
+
 button {
     padding: 15px 8px;
     font-size: 18px;
     background-color: #4682B4;
-    color: var(--text-col);
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-button:hover {
-    background-color: #36648B;
-}
+
+    button:hover {
+        background-color: #36648B;
+    }
+
 .math-button {
     display: inline-block;
-background-color: var(--page-col);
-margin:0;
+    background-color: #000;
+    margin: 0;
 }
 /* Increase the size of MathJax output */
 .MathJax {
     font-weight: bold;
     font-size: 120% !important;
-    padding-top:0em;
-    padding-left:0.1em;
+    padding-top: 0em;
+    padding-left: 0.1em;
     padding-right: 0.1em;
-    padding-bottom:0em;
+    padding-bottom: 0em;
 }
 
 
-/* .box-success {
-  background-color: #325232;
+.box-success {
+    background-color: #325232;
 }
+
 .box-note {
-  background-color: #424242;
+    background-color: #424242;
 }
+
 .box-warning {
-  background-color: #545146;
+    background-color: #545146;
 }
+
 .box-error {
-  background-color: #521212;
-} */
+    background-color: #521212;
+}
 
 .navbar-custom .avatar-container .avatar-img {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 /* table formatting */
 .table-en { /* to override rtl on any section that needs ltr */
-  direction:ltr;
-  
+    direction: ltr;
 }
+
 .table-he { /* to overide ltr on any section that needs rtl */
-  direction:rtl;
-  text-align: right;
+    direction: rtl;
+    text-align: right;
 }
 
 table {
-  border-color: #444444 !important; 
-}
-table td,th {
-  border-color: #333333 !important; 
-  background-color: #1e2525 !important;    /* main background for all TABLE code */
-  border-bottom-color: #775555 !important; 
+    border-color: #444444 !important;
 }
 
-table tr:nth-child(2n) {
-  background-color: #222222;
-}
+    table td, th {
+        border-color: #333333 !important;
+        background-color: #1e2525 !important; /* main background for all TABLE code */
+        border-bottom-color: #775555 !important;
+    }
+
+    table tr:nth-child(2n) {
+        background-color: #222222;
+    }
 
 /* ====================================== */
 /* main code formatting overriding Rouge */
-/* code {
-  color:#5696D6 !important; /*main color for all code*/
-/*  background-color: #353535 !important; /*main background for all INLINE code*/
-/*} */
+code {
+    color: #5696D6 !important; /*main color for all code*/
+    background-color: #353535 !important; /*main background for all INLINE code*/
+}
 
 pre {
-  direction: ltr !important;
-  text-align: left !important;
-  /* color:#5696D6; main color for all code */
-  
+    direction: ltr !important;
+    text-align: left !important;
+    /* color:#5696D6; main color for all code */
 }
-/* ====================================== */
+    /* ====================================== */
 
-/* JavaScript Code formatting for both table and non-table contexts */
-pre code span.kd {
-  color: #5696D6;
-}
+    /* JavaScript Code formatting for both table and non-table contexts */
+    pre code span.kd {
+        color: #5696D6;
+    }
 
-pre code span.nx { /* most stuff */
-  color: #9CDCFE;
-}
+    pre code span.nx { /* most stuff */
+        color: #9CDCFE;
+    }
 
-pre code span.o { /* operators */
-  color: #B4B4B4;
-}
+    pre code span.o { /* operators */
+        color: #B4B4B4;
+    }
 
-pre code span.p { /* brackets */
-  color: #EEEEDD !important;
-}
+    pre code span.p { /* brackets */
+        color: #EEEEDD !important;
+    }
 
-pre code span.k { /* keywords */
-  color: #D8A0DF !important;
-}
+    pre code span.k { /* keywords */
+        color: #D8A0DF !important;
+    }
 
-pre code span.mi { /* mishtanim variables */
-  color: #88FF88 !important;
-}
+    pre code span.mi { /* mishtanim variables */
+        color: #88FF88 !important;
+    }
 
-pre code span.dl { /* גרשיים */
-  color: #F4BBA3 !important;
-}
+    pre code span.dl { /* גרשיים */
+        color: #F4BBA3 !important;
+    }
 
-pre code span.s2 { /* מחרוזות מצוטטות */
-  color: #D69D85 !important;
-}
+    pre code span.s2 { /* מחרוזות מצוטטות */
+        color: #D69D85 !important;
+    }
 
-pre code span.kc { /* קבועי true false */
-  color: #569CD6 !important;
-}
+    pre code span.kc { /* קבועי true false */
+        color: #569CD6 !important;
+    }
 
-/* Line numbers */
-pre .lineno {
-  color: #666666 !important;
-}
-/*=====================================================================*/
-/* CSharp Code formatting for both table and non-table contexts */
+    /* Line numbers */
+    pre .lineno {
+        color: #666666 !important;
+    }
+    /*=====================================================================*/
+    /* CSharp Code formatting for both table and non-table contexts */
 
-pre code span.nf { /* methods */
-  color: #DCDCAA !important;
-}
+    pre code span.nf { /* methods */
+        color: #DCDCAA !important;
+    }
 
-pre code span.n { /* variables names and class names 9CDCFE */
-  color: #9CDCFE !important;
-}
+    pre code span.n { /* variables names and class names 9CDCFE */
+        color: #9CDCFE !important;
+    }
 
-pre code span.kt { /* types * 5696D6*/
-  color: #5696D6 !important; 
-}
+    pre code span.kt { /* types * 5696D6*/
+        color: #5696D6 !important;
+    }
 
-pre code span.m { /* misparim */
-  color: #B5CEA8 !important;
-}
+    pre code span.m { /* misparim */
+        color: #B5CEA8 !important;
+    }
 
-pre code span.s { /* מחרוזות מצוטטות */
-  color: #D69D85 !important;
-}
-pre code span.c1 { /* הערות בעברית */
-  color: #85CC85 !important;
-  font-family: 'Arimo';
-  font-weight: bold;
-}
+    pre code span.s { /* מחרוזות מצוטטות */
+        color: #D69D85 !important;
+    }
+
+    pre code span.c1 { /* הערות בעברית */
+        color: #85CC85 !important;
+        font-family: 'Arimo';
+        font-weight: bold;
+    }
 /*=====================================================================*/
