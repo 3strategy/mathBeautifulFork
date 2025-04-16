@@ -84,7 +84,7 @@ layout: page
       const cred = 'red';
       const cblue = 'blue';//rootStyles.getPropertyValue('--code-type-col').trim();
       //const cblack = 'blaack';
-      const cgreen = 'green';//rootStyles.getPropertyValue('--code-comments-col').trim();
+      const cgreen = rootStyles.getPropertyValue('--code-comments-col').trim();
       const cblack = 'black';
 
       // Set up canvas dimensions
@@ -130,7 +130,7 @@ layout: page
       function triangle1() {
 
         if (!flag) return;
-        ctx.fillStyle = pageColor;
+        ctx.fillStyle = cblack;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         const canvasWidth = canvas.width;
