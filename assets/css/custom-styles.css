@@ -27,7 +27,7 @@
     --code-bracets-col:#EEEEDD;
     --code-vars-col:#9CDCFE;
     --code-comments-col:  #85CC85;
-    --code-numbers-col:  #fff;
+    --code-numbers-col:  #B5CEA8;
     --code-types-col: #5696D6;
     --tab-nth-child: #222222;
 }
@@ -313,7 +313,7 @@ pre {
     }
 
     pre code span.m { /* misparim */
-        color: #B5CEA8 !important;
+        color: var(--code-numbers-col) !important;
     }
 
     pre code span.s { /* מחרוזות מצוטטות */
