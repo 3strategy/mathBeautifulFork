@@ -26,6 +26,9 @@
     --code-keyw-col:#D8A0DF;
     --code-bracets-col:#EEEEDD;
     --code-vars-col:#9CDCFE;
+    --code-comments-col:  #85CC85;
+    --code-numbers-col:  #fff;
+    --code-types-col: #5696D6;
     --tab-nth-child: #222222;
 }
 
@@ -56,6 +59,9 @@
     --code-keyw-col:#9108C4;
     --code-bracets-col:#040404;
     --code-vars-col:#1F377F;
+    --code-comments-col:  #008000;
+    --code-numbers-col:  #000;
+    --code-types-col: #0000FF;
 
     --tab-nth-child: #f8f8f8;
 }
@@ -301,7 +307,9 @@ pre {
     }
 
     pre code span.kt { /* types * 5696D6*/
-        color: #5696D6 !important;
+        color: var(--code-types-col) !important;
+
+
     }
 
     pre code span.m { /* misparim */
@@ -313,7 +321,7 @@ pre {
     }
 
     pre code span.c1 { /* הערות בעברית */
-        color: #85CC85 !important;
+        color: var(--code-comments-col) !important;
         font-family: 'Arimo';
         font-weight: bold;
     }
