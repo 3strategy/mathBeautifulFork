@@ -177,7 +177,7 @@ button {
 
 .math-button {
     display: inline-block;
-    /* background-color: #000; */
+    background-color: var(--backn-col);
     margin: 0;
 }
 /* Increase the size of MathJax output */
