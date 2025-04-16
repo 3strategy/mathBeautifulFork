@@ -77,10 +77,15 @@ layout: page
       let starttime = 0;
 
       // Colors
+      // Get the computed styles from the root element (or use any element that defines the variable)
+      const rootStyles = getComputedStyle(document.documentElement);
+      // Retrieve the CSS custom property value and trim any extra whitespace
+      const cblack = rootStyles.getPropertyValue('--page-col').trim();
       const cred = 'red';
-      const cblue = 'blue';
-      const cblack = 'black';
-      const cgreen = 'lightgreen';
+      const cblue = rootStyles.getPropertyValue('--code-type-col').trim();
+      //const cblack = 'blaack';
+      const cgreen = rootStyles.getPropertyValue('--code-comments-col').trim();
+      //const cblack = 'blaack';
 
       // Set up canvas dimensions
       function setupCanvas() {
@@ -96,7 +101,7 @@ layout: page
         const btnDivs = document.querySelectorAll('#answer-buttons');
         btnDivs.forEach(div => { div.style.width = canvas.width + "px"; });
         // Set background color
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = cblack;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
 
@@ -123,10 +128,7 @@ layout: page
 
       // Main triangle drawing function with centering
       function triangle1() {
-        // Get the computed styles from the root element (or use any element that defines the variable)
-        const rootStyles = getComputedStyle(document.documentElement);
-        // Retrieve the CSS custom property value and trim any extra whitespace
-        const pageColor = rootStyles.getPropertyValue('--page-col').trim();
+
         if (!flag) return;
         ctx.fillStyle = pageColor;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -268,7 +270,7 @@ layout: page
       }
 
       function showResults() {
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = cblack;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         const name = nameInput.value.trim() || "Anonymous";
         let resultString = `תודה ${name}. ${counter} נכונות מתוך ${total}\n`;
