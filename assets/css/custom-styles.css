@@ -95,20 +95,20 @@ canvas {
     /* margin: 5px; */
 }
 
-.btn {
+/* .btn {
     padding: 10px 20px;
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    /* background-color: rgb(237, 237, 208); */
-    /* color: black; */
+    background-color: rgb(237, 237, 208); 
+    color: black; 
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
     .btn:hover {
         background-color: #3367d6;
-    }
+    } */
 
 #status-message {
     font-size: 3rem;
