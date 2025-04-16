@@ -20,6 +20,7 @@
 
     --code-col:  #5696D6; /*main color for all code*/
     --code-back-col: #353535; /*main background for all INLINE code*/
+    --code-img: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1.5em, rgba(255, 255, 255, 0.02) 1.5em, rgba(255, 255, 255, 0.02) 1.5em);
 }
 
 /* Overrides for Light theme */
@@ -43,6 +44,8 @@
 
     --code-col:  #2666c6; /*main color for all code*/
     --code-back-col: #FFFFFF; /*main background for all INLINE code*/
+    --code-img: linear-gradient(rgba(0,0,0, 0.04), rgba(0,0,0, 0.04) 1.5em, rgba(0,0,0, 0.02) 1.5em, rgba(0,0,0, 0.02) 1.5em);
+    
 }
 
 html {
@@ -206,7 +209,7 @@ table {
 
     table td, th {
         border-color: #333333 !important;
-        background-color: #1e2525 !important; /* main background for all TABLE code */
+        
         border-bottom-color: #775555 !important;
     }
 
@@ -216,6 +219,11 @@ table {
 
 /* ====================================== */
 /* main code formatting overriding Rouge */
+
+.highlight > pre {
+    background-image: var(--code-img);
+}
+
 code {
     color: var(--code-col) !important; /*main color for all code*/
     background-color: var(--codeback-col) !important; /*main background for all INLINE code*/
