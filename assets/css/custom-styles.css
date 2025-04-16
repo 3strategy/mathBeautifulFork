@@ -22,6 +22,10 @@
     --code-back-col: #353535; /*main background for all INLINE code*/
     --code-img: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1.5em, rgba(255, 255, 255, 0.02) 1.5em, rgba(255, 255, 255, 0.02) 1.5em);
 
+    --code-met-col: #DCDCAA;
+    --code-keyw-col:#D8A0DF;
+    --code-bracets-col:#EEEEDD;
+
     --tab-nth-child: #222222;
 }
 
@@ -47,6 +51,10 @@
     --code-col:  #2666c6; /*main color for all code*/
     --code-back-col: #FFFFFF; /*main background for all INLINE code*/
     --code-img: linear-gradient(rgba(0,0,0, 0.04), rgba(0,0,0, 0.04) 1.5em, rgba(0,0,0, 0.02) 1.5em, rgba(0,0,0, 0.02) 1.5em);
+
+    --code-met-col: #37372A;
+    --code-keyw-col:#6C506F;
+    --code-bracets-col:#040404;
 
     --tab-nth-child: #f8f8f8;
 }
@@ -253,11 +261,11 @@ pre {
     }
 
     pre code span.p { /* brackets */
-        color: #EEEEDD !important;
+        color: var(--code-bracets-col) !important;
     }
 
     pre code span.k { /* keywords */
-        color: #D8A0DF !important;
+        color: var(--code-keyw-col) !important;
     }
 
     pre code span.mi { /* mishtanim variables */
@@ -284,7 +292,7 @@ pre {
     /* CSharp Code formatting for both table and non-table contexts */
 
     pre code span.nf { /* methods */
-        color: #DCDCAA !important;
+        color: var(--code-met-col) !important;
     }
 
     pre code span.n { /* variables names and class names 9CDCFE */
