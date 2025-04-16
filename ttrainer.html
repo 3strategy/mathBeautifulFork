@@ -20,11 +20,11 @@ layout: page
 
   <div id="answer-buttons" class="math-button">
     <!-- must have btn class to be clickable -->
-    <button class="MathJax btn" data-value="22">\[\frac{a}{\cos\beta}\]</button>
-    <button class="MathJax btn" data-value="2">\[a\cos\beta\]</button>
+    <button class="MathJax btnn" data-value="22">\[\frac{a}{\cos\beta}\]</button>
+    <button class="MathJax btnn" data-value="2">\[a\cos\beta\]</button>
     <p>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-    <button class="MathJax btn" data-value="11">\[\frac{a}{\sin\beta}\]</button>
-    <button class="MathJax btn" data-value="1">\[a\sin\beta\]</button>
+    <button class="MathJax btnn" data-value="11">\[\frac{a}{\sin\beta}\]</button>
+    <button class="MathJax btnn" data-value="1">\[a\sin\beta\]</button>
   </div>
   <!-- canvas container remains relative -->
   <div id="canvas-container" style="position: relative;">
@@ -36,14 +36,14 @@ layout: page
   flex-direction: column; top: 30%; left: 0; transform: translateY(-50%);">
       <h2 class="results-head">תוצאות:</h2>
       <div id="result-text"></div>
-      <button id="restart-btn" class="btn" style="margin-top: 15px; background-color: #0f9d58;">Restart</button>
+      <button id="restart-btn" class="btnn" style="margin-top: 15px; background-color: #0f9d58;">Restart</button>
     </div>
   </div>
 
   <div id="answer-buttons" class="math-button">
 
 
-    <button class="btn" data-value="9" >Finish</button>
+    <button class="btnn" data-value="9" >Finish</button>
   </div>
   <button id="showLeaderboard">Show Leaderboard</button>
   <div id="leaderboard"></div>
@@ -214,7 +214,7 @@ layout: page
         starttime = performance.now();
       }
 
-      document.querySelectorAll('.btn').forEach(function (button) {
+      document.querySelectorAll('.btnn').forEach(function (button) {
         button.addEventListener('click', function () {
           if (!flag) return;
           const value = parseInt(this.getAttribute('data-value') || '0');
