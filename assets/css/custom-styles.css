@@ -61,8 +61,9 @@ canvas {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(237, 237, 208);
-    color: black;
+    background-color: var(--text-col);
+    /*rgb(237, 237, 208); */
+    color: var(--page-col);
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -84,7 +85,7 @@ canvas {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #000;
+    background-color: var(--page-col);
     max-width: 380px;
     width: 90%;
     display: flex;
@@ -119,7 +120,7 @@ button {
     padding: 15px 8px;
     font-size: 18px;
     background-color: #4682B4;
-    color: white;
+    color: var(--text-col);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -129,7 +130,7 @@ button:hover {
 }
 .math-button {
     display: inline-block;
-background-color: #000;
+background-color: var(--page-col);
 margin:0;
 }
 /* Increase the size of MathJax output */
@@ -143,7 +144,7 @@ margin:0;
 }
 
 
-.box-success {
+/* .box-success {
   background-color: #325232;
 }
 .box-note {
@@ -154,7 +155,7 @@ margin:0;
 }
 .box-error {
   background-color: #521212;
-}
+} */
 
 .navbar-custom .avatar-container .avatar-img {
   border-radius: 0;
@@ -185,10 +186,10 @@ table tr:nth-child(2n) {
 
 /* ====================================== */
 /* main code formatting overriding Rouge */
-code {
+/* code {
   color:#5696D6 !important; /*main color for all code*/
-  background-color: #353535 !important; /*main background for all INLINE code*/
-}
+/*  background-color: #353535 !important; /*main background for all INLINE code*/
+/*} */
 
 pre {
   direction: ltr !important;
