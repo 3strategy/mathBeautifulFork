@@ -25,7 +25,7 @@
     --code-met-col: #DCDCAA;
     --code-keyw-col:#D8A0DF;
     --code-bracets-col:#EEEEDD;
-
+    --code-vars-col:#9CDCFE;
     --tab-nth-child: #222222;
 }
 
@@ -52,9 +52,10 @@
     --code-back-col: #FFFFFF; /*main background for all INLINE code*/
     --code-img: linear-gradient(rgba(0,0,0, 0.04), rgba(0,0,0, 0.04) 1.5em, rgba(0,0,0, 0.02) 1.5em, rgba(0,0,0, 0.02) 1.5em);
 
-    --code-met-col: #37372A;
-    --code-keyw-col:#6C506F;
+    --code-met-col: #74531F;
+    --code-keyw-col:#9108C4;
     --code-bracets-col:#040404;
+    --code-vars-col:#1F377F;
 
     --tab-nth-child: #f8f8f8;
 }
@@ -296,7 +297,7 @@ pre {
     }
 
     pre code span.n { /* variables names and class names 9CDCFE */
-        color: #9CDCFE !important;
+        color: var(--code-vars-col) !important;
     }
 
     pre code span.kt { /* types * 5696D6*/
