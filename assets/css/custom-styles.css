@@ -78,7 +78,7 @@ body {
 #canvas-container {
     position: relative;
     border: none;
-    background-color: black;
+    background-color: var(--page-col);
 }
 
 canvas {
@@ -100,8 +100,8 @@ canvas {
     font-size: 18px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(237, 237, 208);
-    color: black;
+    /* background-color: rgb(237, 237, 208); */
+    /* color: black; */
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -125,7 +125,7 @@ canvas {
     padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #000;
+    background-color: var(--page-col);
     max-width: 380px;
     width: 90%;
     display: flex;
@@ -133,13 +133,13 @@ canvas {
 
 .results-head {
     white-space: pre-line;
-    color: rgb(87, 255, 45);
+    color: var(--code-comments-col);
     font-size: 1.3em;
 }
 
 #result-text {
     white-space: pre-line;
-    color: greenyellow;
+    color: var(--code-comments-col);
     font-size: 1.3em;
 }
 
@@ -164,20 +164,20 @@ canvas {
 button {
     padding: 15px 8px;
     font-size: 18px;
-    background-color: #4682B4;
-    color: white;
+    /* background-color: #4682B4;
+    color: white; */
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-    button:hover {
+    /* button:hover {
         background-color: #36648B;
-    }
+    } */
 
 .math-button {
     display: inline-block;
-    background-color: #000;
+    /* background-color: #000; */
     margin: 0;
 }
 /* Increase the size of MathJax output */
