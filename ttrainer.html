@@ -80,12 +80,12 @@ layout: page
       // Get the computed styles from the root element (or use any element that defines the variable)
       const rootStyles = getComputedStyle(document.documentElement);
       // Retrieve the CSS custom property value and trim any extra whitespace
-      const cblack = rootStyles.getPropertyValue('--page-col').trim();
+      //const cblack = rootStyles.getPropertyValue('--page-col').trim();
       const cred = 'red';
-      const cblue = rootStyles.getPropertyValue('--code-type-col').trim();
+      const cblue = 'blue';//rootStyles.getPropertyValue('--code-type-col').trim();
       //const cblack = 'blaack';
-      const cgreen = rootStyles.getPropertyValue('--code-comments-col').trim();
-      //const cblack = 'blaack';
+      const cgreen = 'green';//rootStyles.getPropertyValue('--code-comments-col').trim();
+      const cblack = 'black';
 
       // Set up canvas dimensions
       function setupCanvas() {
