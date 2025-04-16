@@ -82,10 +82,10 @@ layout: page
       // Retrieve the CSS custom property value and trim any extra whitespace
       //const cblack = rootStyles.getPropertyValue('--page-col').trim();
       const cred = 'red';
-      const cblue = 'blue';//rootStyles.getPropertyValue('--code-type-col').trim();
+      const cblue = rootStyles.getPropertyValue('--code-type-col').trim();
       //const cblack = 'blaack';
       const cgreen = rootStyles.getPropertyValue('--code-comments-col').trim();
-      const cblack = 'black';
+      const cblack =   rootStyles.getPropertyValue('-page-col').trim();//black';
 
       // Set up canvas dimensions
       function setupCanvas() {
