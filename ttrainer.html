@@ -123,8 +123,12 @@ layout: page
 
       // Main triangle drawing function with centering
       function triangle1() {
+        // Get the computed styles from the root element (or use any element that defines the variable)
+        const rootStyles = getComputedStyle(document.documentElement);
+        // Retrieve the CSS custom property value and trim any extra whitespace
+        const pageColor = rootStyles.getPropertyValue('--page-col').trim();
         if (!flag) return;
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = pageColor;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         const canvasWidth = canvas.width;
