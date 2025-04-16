@@ -164,8 +164,8 @@ canvas {
 button {
     padding: 15px 8px;
     font-size: 18px;
-    /* background-color: #4682B4;
-    color: white; */
+    background-color: var(--backn-col);
+    /* color: white; */ 
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -177,7 +177,7 @@ button {
 
 .math-button {
     display: inline-block;
-    background-color: var(--backn-col);
+    /* background-color: #000; */
     margin: 0;
 }
 /* Increase the size of MathJax output */
