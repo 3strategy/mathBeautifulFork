@@ -21,6 +21,8 @@
     --code-col:  #5696D6; /*main color for all code*/
     --code-back-col: #353535; /*main background for all INLINE code*/
     --code-img: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1.5em, rgba(255, 255, 255, 0.02) 1.5em, rgba(255, 255, 255, 0.02) 1.5em);
+
+    --tab-nth-child: #222222;
 }
 
 /* Overrides for Light theme */
@@ -45,7 +47,8 @@
     --code-col:  #2666c6; /*main color for all code*/
     --code-back-col: #FFFFFF; /*main background for all INLINE code*/
     --code-img: linear-gradient(rgba(0,0,0, 0.04), rgba(0,0,0, 0.04) 1.5em, rgba(0,0,0, 0.02) 1.5em, rgba(0,0,0, 0.02) 1.5em);
-    
+
+    --tab-nth-child: #f8f8f8;
 }
 
 html {
@@ -214,7 +217,7 @@ table {
     }
 
     table tr:nth-child(2n) {
-        background-color: #222222;
+        background-color: var(--tab-nth-child);
     }
 
 /* ====================================== */
