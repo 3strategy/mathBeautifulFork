@@ -171,9 +171,9 @@ button {
     cursor: pointer;
 }
 
-    /* button:hover {
+    button:hover {
         background-color: #36648B;
-    } */
+    }
 
 .math-button {
     display: inline-block;
@@ -188,7 +188,7 @@ button {
     padding-left: 0.1em;
     padding-right: 0.1em;
     padding-bottom: 0em;
-    background-color: var(--backn-col);
+    /* background-color: var(--backn-col); */
 }
 
 

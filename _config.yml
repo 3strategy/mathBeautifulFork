@@ -70,7 +70,7 @@ navbar-links:
 
   תכנים:
     - החלפת רקע: "javascript:toggleTheme();"
-    - מעגל יחידה PHET: "/mcontent/TrigoPhet.html"
+    - מעגל יחידה PHET: "/mcontent/TrigoPhet/"
     - אימון טריגו: "/ttrainer/"
     - שיעורים: "/lessons.html"
     - מי אני: "aboutme"
