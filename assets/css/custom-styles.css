@@ -12,6 +12,14 @@
     --footer-text-col: #CCCCCC;
     --footer-link-col: #82AAFF;
     --footer-hover-col: #A0C8FF;
+
+    --backs-col: #325232;
+	--backn-col: #424242;
+	--backw-col: #545146;
+	--backe-col: #521212;
+
+    --code-col:  #5696D6; /*main color for all code*/
+    --code-back-col: #353535; /*main background for all INLINE code*/
 }
 
 /* Overrides for Light theme */
@@ -27,6 +35,14 @@
     --footer-text-col: #777777;
     --footer-link-col: #404040;
     --footer-hover-col: #0085A1;
+
+    --backs-col: #98FB98;
+	--backn-col: #eee;
+	--backw-col: #fdf5d4;
+	--backe-col: #f4dddb;
+
+    --code-col:  #2666c6; /*main color for all code*/
+    --code-back-col: #FFFFFF; /*main background for all INLINE code*/
 }
 
 html {
@@ -155,19 +171,19 @@ button {
 
 
 .box-success {
-    background-color: #325232;
+    background-color:  var(--backs-col);
 }
 
 .box-note {
-    background-color: #424242;
+    background-color: var(--backn-col);
 }
 
 .box-warning {
-    background-color: #545146;
+    background-color: var(--backw-col);
 }
 
 .box-error {
-    background-color: #521212;
+    background-color: var(--backe-col);
 }
 
 .navbar-custom .avatar-container .avatar-img {
@@ -201,8 +217,8 @@ table {
 /* ====================================== */
 /* main code formatting overriding Rouge */
 code {
-    color: #5696D6 !important; /*main color for all code*/
-    background-color: #353535 !important; /*main background for all INLINE code*/
+    color: var(--code-col) !important; /*main color for all code*/
+    background-color: var(--codeback-col) !important; /*main background for all INLINE code*/
 }
 
 pre {
