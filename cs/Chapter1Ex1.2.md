@@ -46,7 +46,7 @@ double g3 = double.Parse(Console.ReadLine());
 
 double average = (g1 + g2 + g3) / 3;
 
-Console.WriteLine("Average: " + average);
+Console.WriteLine("Average: " + average); 
 {% endhighlight %}
 
 </details>
@@ -126,7 +126,7 @@ Console.WriteLine("Area of rectangle: " + area);
 Console.Write("Enter your name: ");
 string name = Console.ReadLine();
 
-char firstChar = name[0];
+char firstChar = name[0]; // name פניה לתו הראשון במחרוזת
 
 Console.WriteLine("First letter: " + firstChar);
 {% endhighlight %}
@@ -203,7 +203,7 @@ Console.WriteLine("Amount in dollars: " + usd);
 ### תרגיל 1.2.10: שם וגיל
 
 כתוב תכנית שקוראת שם וגיל ומדפיסה משפט כמו:  
-`שרה היא בת 17`
+`Sara is 17 y.o.`
 
 <details markdown="1"><summary>פתרון</summary>
 
@@ -215,7 +215,7 @@ string name = Console.ReadLine();
 Console.Write("Enter your age: ");
 int age = int.Parse(Console.ReadLine());
 
-Console.WriteLine(name + " היא בת " + age);
+Console.WriteLine(name + " is " + age + " y.o.");
 {% endhighlight %}
 
 
