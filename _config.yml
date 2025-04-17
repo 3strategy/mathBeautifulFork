@@ -78,7 +78,7 @@ navbar-links:
 
   מדמח מחזור 3:
     - פרק 1: "/cs/Chapter1/"
-    - תרגול 1: "/cs/Chapter1AlgoEx"
+    - תרגול 1.1: "/cs/Chapter1Ex1.1/"
     - הטיפוס תו 1: "/cs/Chapter1Char"
     - קיצורים: "/cs/Shortcuts/"
     - פרק 2 if: "/cs/Chapter2/"
