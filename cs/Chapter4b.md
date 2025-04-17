@@ -130,7 +130,7 @@ for (int i = 3 - 1; i >= 0; i--) // חשוב לזכור תחביר וקיצור 
 }
 ```
 
-<details> <summary>מה התוצאה של לולאה כזו?</summary>
+<details markdown="1"> <summary>מה התוצאה של לולאה כזו?</summary>
 
 תשובה:
 
