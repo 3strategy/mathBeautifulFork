@@ -1,7 +1,7 @@
 ---
 layout: page 
-title: "פרק 1 - מבוא לשפת C#, הדפסה ומשתנים" 
-subtitle: "הדפסה, משתנים, המרות וקלט"
+title: "פרק 1 - מבוא לשפת #C, הדפסה ומשתנים" 
+subtitle: "התקנת הסביבה, הדפסה, משתנים, המרות וקלט"
 lang: he
 ---
 
@@ -12,6 +12,11 @@ lang: he
 ## סביבת העבודה (Visual Studio)
 סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#.
 בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [netfiddle](https://dotnetfiddle.net/) או [programiz](https://www.programiz.com/csharp-programming/online-compiler/)
+
+## התקנת ויזואל סטודיו 2022
+סרטון הדרכה קצר, נח לצפייה בטלפון, צעד אחר צעד להתקנת סביבת העבודה.
+{% include youtube.html id="yhBm8yLmIkM" %} 
+
 
 שלבי יצירת תוכנית ראשונה ב-Visual Studio  - להמשך:
 1. פתחו פרויקט חדש מסוג Console App.
@@ -35,10 +40,6 @@ lang: he
 Hello, World!
 ```
 אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶
-
-## התקנת ויזואל סטודיו 2022
-סרטון הדרכה קצר, נח לצפייה בטלפון, צעד אחר צעד להתקנת סביבת העבודה.
-{% include youtube.html id="yhBm8yLmIkM" %} 
 
 
 ## הסבר נוסף: יצירת פרוייקט בויזואל סטודיו

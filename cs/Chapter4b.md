@@ -1,6 +1,6 @@
 ---
 layout: page
-title: פרק 4ב' - נושאים מתקדמים בתחביר לולאת for
+title: פרק 4ב' - הרחבת תחביר לולאת for
 subtitle: לולאות for — תחביר גמיש ויצירתי
 tags: [csharp, for-loop, beginners, advanced]
 lang: he
@@ -24,7 +24,7 @@ for (i = 0; i < 5; i++)
 }
 Console.WriteLine("Index after loop: " + i);
 ```
-<details> <summary>שאלה: מה יודפס?</summary>
+<details markdown="1"> <summary>שאלה: מה יודפס?</summary>
 
 תשובה:
 
