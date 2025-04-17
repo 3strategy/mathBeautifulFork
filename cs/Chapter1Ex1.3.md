@@ -202,7 +202,7 @@ Console.WriteLine("Pages per day: " + perDay);
 תרגיל בשפת תכנות שווה 30% מהציון, ועבודה שווה 70%.  
 כתוב תכנית שקוראת את שני הציונים ומחשבת את הציון הסופי.
 
-<details><summary>פתרון</summary>
+<details markdown="1"><summary>פתרון</summary>
 
 {% highlight csharp linenos %}
 Console.Write("Enter exercise grade: ");
@@ -215,5 +215,8 @@ double final = ex * 0.3 + pr * 0.7;
 
 Console.WriteLine("Final grade: " + final);
 {% endhighlight %}
+
+
+[⬅ מעבר להסבר על הטיפוס char תו](/cs/Chapter1Char)
 
 </details>

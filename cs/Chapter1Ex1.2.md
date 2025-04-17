@@ -203,7 +203,8 @@ Console.WriteLine("Amount in dollars: " + usd);
 כתוב תכנית שקוראת שם וגיל ומדפיסה משפט כמו:  
 `שרה היא בת 17`
 
-<details><summary>פתרון</summary>
+<details markdown="1"><summary>פתרון</summary>
+
 
 {% highlight csharp linenos %}
 Console.Write("Enter your name: ");
@@ -214,5 +215,14 @@ int age = int.Parse(Console.ReadLine());
 
 Console.WriteLine(name + " היא בת " + age);
 {% endhighlight %}
+
+
+### מוכן.ה לאתגר?
+
+אם סיימת לתרגל תרגילים אלו בהצלחה, זה הזמן ליישם את הידע שלך בתרגול מותאם.
+
+[⬅ מעבר לתרגול 1.3 - חישובים והמרות מתקדמות](/cs/Chapter1Ex1.3)
+
+[⬅ מעבר להסבר על הטיפוס char תו](/cs/Chapter1Char)
 
 </details>
