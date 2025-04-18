@@ -26,6 +26,7 @@ lang: he
 
 ## כתיבת snippet
 יש לכתוב קובץ מתאים בסיומת snippet ולשים אותו בתיקיה הבאה:
+
 %USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
 {: .table-en}
 

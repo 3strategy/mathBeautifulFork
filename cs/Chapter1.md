@@ -10,10 +10,11 @@ lang: he
 
 
 ## סביבת העבודה (Visual Studio)
-סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#.
+סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#. 
+[קישור להורדת גרסת community](https://visualstudio.microsoft.com/vs/community/)
 בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [netfiddle](https://dotnetfiddle.net/) או [programiz](https://www.programiz.com/csharp-programming/online-compiler/)
 
-## התקנת ויזואל סטודיו 202x Community
+## התקנת ויז'ואל סטודיו 202x Community
 
 {: .box-warning}
 שימו לב לבחור בגרסת ה-Community. בכל גרסה אחרת תתקעו בבעיית רישוי לאחר מספר שבועות
@@ -47,7 +48,7 @@ Hello, World!
 אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶
 
 
-## הסבר נוסף: יצירת פרוייקט בויזואל סטדיו 202x
+## הסבר נוסף: יצירת פרוייקט בויז'ואל סטדיו 202x
 לפניכם סרטון הסבר על יצירת פרוייקט חדש. פעמים רבות כל תכנית שלנו תהיה פרוייקט חדש ולכן כדאי לתת שם משמעותי באנגלית לפרוייקט:
 {% include youtube.html id="NlFeUFfRkxs" %} 
 
