@@ -55,6 +55,7 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+    .beautiful-jekyll-footer{display:none;}
 
 
     --page-col: #FFFFFF;
