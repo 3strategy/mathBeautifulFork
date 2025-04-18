@@ -156,4 +156,7 @@ Console.WriteLine("final price including V.A.T is: ₪" + finalPrice);
 
 [⬅ מעבר להסבר על הטיפוס char תו](/cs/Chapter1Char)
 
+[⬅ לקריאה על קיצורים שימושיים וכתיבת קיצורים snippets נוספים](/cs/Shortcuts)
+
+
 </details>

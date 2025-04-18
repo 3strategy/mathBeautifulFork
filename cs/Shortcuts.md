@@ -19,8 +19,68 @@ lang: he
 | `fore`       | בלוק `foreach`                    |
 
 
-{: .box-note}
-**הערה:** בהמשך נראה כיצד ניתן לבנות קיצורים משלנו באמצעות snippets
+{: .box-sucess}
+ניתן לבנות קיצורים משלנו באמצעות snippets.
+
+## כתיבת snippet
+יש לכתוב קובץ מתאים בסיומת snippet ולשים אותו בתיקיה הבאה:
+
+%USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
+{: .table-en}
+
+<details markdown="1"> <summary>דוגמא שימושית לקובץ כזה שמוסיף את הקיצור ip ואת הקיצור cr</summary>
+
+
+```
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>cr</Title>
+            <Shortcut>cr</Shortcut>
+            <Description>Code snippet for Console.ReadLine</Description>
+            <Author>Whoever you want it to be</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="false">
+                    <ID>SystemConsole</ID>
+                    <Function>SimpleTypeName(global::System.Console)</Function>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp"><![CDATA[$SystemConsole$.ReadLine();]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>ip</Title>
+            <Shortcut>ip</Shortcut>
+            <Description>Code snippet for int.Parse(Console.ReadLine</Description>
+            <Author>Whoever you want it to be</Author>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal Editable="false">
+                    <ID>SystemConsole</ID>
+                    <Function>SimpleTypeName(global::System.Console)</Function>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp"><![CDATA[int n = int.Parse($SystemConsole$.ReadLine());]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+
+</CodeSnippets>
+```
+
+</details>
 
 ## קיצורי מקשים לעריכת קוד
 
@@ -32,3 +92,4 @@ lang: he
 | `F12`             | קפיצה להגדרת משתנה/פונקציה              |
 | `Ctrl + Z`        | ביטול פעולה (Undo)                        |
 | `Ctrl + Y`        | חזרה על פעולה (Redo)                      |
+| `Ctrl + D`        | שכפול שורה                     |
