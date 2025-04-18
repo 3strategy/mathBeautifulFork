@@ -101,7 +101,11 @@ Console.WriteLine($"Monthly allowance: {monthly}, Candy: {candy}");
 - כמה שעות שלמות יש בו  
 - כמה דקות נותרות לאחר השעות השלמות  
 לדוגמא עבור הקלט 204 יודפס:  
-`3 minutes and 24 seconds`
+
+```
+3 minutes and 24 seconds
+```
+
 
 <details><summary>פתרון</summary>
 
