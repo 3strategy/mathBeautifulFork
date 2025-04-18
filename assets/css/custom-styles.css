@@ -93,26 +93,6 @@
 
 html {
     direction: rtl;
-
-    .light-theme {
-        font-size: 1.5rem;
-
-        pre {
-            font-size: 1.8rem;
-        }
-
-        h2 {
-            margin-top: 7rem
-        }
-
-        transform: scale(1.6);
-        /* scales up 20% */
-        transform-origin: top right;
-        max-width: 100% !important;
-        width: 100% !important;
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
 }
 
 body {
