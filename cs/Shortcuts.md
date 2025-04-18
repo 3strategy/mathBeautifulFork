@@ -6,7 +6,7 @@ author: גיא סידס
 lang: he
 ---
 
-## קיצורי פקודות נפוצים
+## קיצורים לפקודות נפוצות
 
 | קיצור        | פעולה                             |
 |--------------|-----------------------------------|
@@ -17,14 +17,15 @@ lang: he
 | `forr`       | בלוק `for` מהסוף להתחלה          |
 | `wh`         | בלוק `while`                      |
 | `fore`       | בלוק `foreach`                    |
+| `cr`         | ביצוע קלט. דורש snippet          |
+| `ip`         | קולט מספר שלם. דורש snippet      |
 
 
-{: .box-sucess}
-ניתן לבנות קיצורים משלנו באמצעות snippets.
+{: .box-success}
+בהמשך נראה כיצד לבנות קיצורים משלנו באמצעות snippets. סתם😀, ההמשך כבר כאן. מי שרוצים מוזמנים להוסיף
 
 ## כתיבת snippet
 יש לכתוב קובץ מתאים בסיומת snippet ולשים אותו בתיקיה הבאה:
-
 %USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
 {: .table-en}
 
