@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo&subset=hebrew');
 
+h2 {
+    margin-top: 3rem
+}
+
 /* Default: Dark theme (as built from _config.yml) */
 :root {
     --page-col: #121212;

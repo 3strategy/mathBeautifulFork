@@ -105,9 +105,9 @@ Additional UI tweaks — הקטנת Action Bar ו‑Navigation Bar כדי ל
 ## 5. Alarm Scheduler & Notification ⏰
 
 
-* התראה מיידית בעת פתיחת האפליקציה (ערוץ "welcome")
-* התראה יומית בשעה שמוגדרת בקוד (ערוץ "daily‑reminder")
-* תמיכה ב‑API 34 דרך `ExactAlarmPermissionChecker`
+* התראה מיידית בעת פתיחת האפליקציה (ערוץ "welcome")
+* התראה יומית בשעה שמוגדרת בקוד (ערוץ "daily‑reminder")
+* תמיכה ב‑API 34 דרך `ExactAlarmPermissionChecker`
 {: .box-success}
 
 ```kotlin
