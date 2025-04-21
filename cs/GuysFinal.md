@@ -1,15 +1,19 @@
-# דוח פרוייקט — **GuysFinalAndroidAssignment**
-{: .box-note}
 
-> **Repo:** <https://github.com/3strategy/GuysFinalAndroidAssignment>
->
+<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';<br>mermaid.initialize({ startOnLoad: true });</script>
+
+
+# דוח פרוייקט — **GuysFinalAndroidAssignment**
+
+{: .box-note}
+**Repo:** <https://github.com/3strategy/GuysFinalAndroidAssignment>
+
 > גרסת אנדרואיד ניסיונית למשחק **ttrainer** (HTML + JS) משולב באפליקציה מקורית.
 
 ---
 
 ## 1. תקציר 📜
-{: .box-success}
 
+{: .box-success}
 הפרויקט פותח כחלק מהשתלמות **Android Studio** ומתמקד בשילוב עמוד **WebView** שמריץ משחק HTML שהומר מ‑Python (Colab). האפליקציה מדגימה:
 
 * שילוב **Hybrid‑Web + Native** מלא.
@@ -21,7 +25,6 @@
 ---
 
 ## 2. ארכיטקטורת‑על
-{: .box-note}
 
 ```mermaid
 graph TD
@@ -55,6 +58,7 @@ classDiagram
 ---
 
 ## 3. מודול WebView – המשחק *ttrainer*
+
 {: .box-success}
 
 * **HTML → WebView**: עמוד HTML שעבר ריפקטור מפייתון/Colab כדי לרוץ ב‑Web.
@@ -103,17 +107,18 @@ alarmMgr.setExactAndAllowWhileIdle(
 ---
 
 ## 6. חיישנים – Shake to Close 📳
-{: .box-warning}
+
 
 | אתגר | פתרון |
 |-------|--------|
 | חיווי תנועה רועש | מסנן Low‑Pass + סף תאוצה `> 12 m/s²` |
 | Lifecycle Aware | רישום SensorListener ב‑`onResume` ושחרור ב‑`onPause` |
+{: .table-en}
 
 ---
 
 ## 7. אתגרים מרכזיים & פתרונות
-{: .box-note}
+
 
 1. **סנכרון WebView ↔ Room**  
    > התאמת מבנה JSON מה‑JS למודול DAO ב‑Kotlin ושימוש ב‑`CoroutineScope(Dispatchers.IO)` למניעת ANR.
@@ -126,7 +131,7 @@ alarmMgr.setExactAndAllowWhileIdle(
 ---
 
 ## 8. "Lessons Learned" 🤓
-{: .box-success}
+
 
 * **Hybrid ≠ Hack** — אינטגרציה נכונה (Room + JS Bridge) יוצרת חוויה אחידה.
 * **Early Sensors Planning** — עדיף לתכנן Lifecycle בשלב מוקדם ולחסוך memory leaks.
@@ -135,7 +140,7 @@ alarmMgr.setExactAndAllowWhileIdle(
 ---
 
 ## 9. TODO / הרחבות עתידיות
-{: .box-warning}
+
 
 * **צילומי מסך** — להוסיף ל‑`/docs/assets/img/` ↔ קריאה בתג `![Screen](...)`.
 * **Firebase Analytics** — שיקוף נתוני שימוש ברמת Cloud.
@@ -144,7 +149,7 @@ alarmMgr.setExactAndAllowWhileIdle(
 ---
 
 ## 10. בנייה והרצה ⚙️
-{: .box-note}
+
 
 ```bash
 git clone https://github.com/3strategy/GuysFinalAndroidAssignment.git
@@ -158,14 +163,14 @@ cd GuysFinalAndroidAssignment
 ---
 
 ## 11. קרדיטים 🙏
-{: .box-success}
+
 
 * **Guy Siedes** — פיתוח, עיצוב, בדיקות.
-* **גלעד קפלנסקי** — ייעוץ UI/UX.
-* **קהילת StackOverflow / Firebase / JetBrains** על התשובות.
+* **זאב פריימן** — ייעוץ.
+* **GPT- קוד וסיוע בפתרון בעיות** על התשובות.
 
 ---
 
 > **שאלות / הערות?**
-> מוזמנים לפתוח Issue ב‑GitHub או לפנות במייל: **guy@example.com**
+> מוזמנים לפתוח Issue ב‑GitHub או לפנות במייל: **3strategy@gmail.com**
 
