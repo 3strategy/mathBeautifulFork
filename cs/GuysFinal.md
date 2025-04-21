@@ -29,14 +29,21 @@ lang: he
 ## 2. ארכיטקטורת‑על
 
 
+<!-- FLOWCHART ------------------------------------------------------------>
 <div class="mermaid">
-graph TD
-    LA[LauncherActivity] -->|Intent|  SPLASH[SplashActivity]
-    SPLASH -->|User chooses| MAIN[MainActivity (Fragments)]
-    MAIN --> WVF[WebViewFragment :ttrainer]
+
+flowchart TD
+    LA[LauncherActivity] -->|Intent| SPLASH[SplashActivity]
+    SPLASH -->|User chooses| MAIN["MainActivity<br/>(Fragments)"]
+    MAIN --> WVF["WebViewFragment :ttrainer"]
     MAIN --> DBF[DataFragment]
     MAIN --> SET[SettingsFragment]
-    LA --> WA[WalletActivity\n(Android Template)]
+    LA   --> WA["WalletActivity<br/>(Android Template)"]
+
+</div>
+
+<!-- CLASS DIAGRAM -------------------------------------------------------->
+<div class="mermaid">
 
 classDiagram
     class MainActivity {
@@ -50,10 +57,13 @@ classDiagram
         +postMessageToJS()
         +receiveJSCallbacks()
     }
+    class RoomDB      <!-- stub so the arrow below is valid -->
+
     MainActivity --> WebViewFragment
     MainActivity --> RoomDB
 
 </div>
+
 
 > **הערה:** המרצה מוזמן להריץ את האפליקציה ולוודא את זרימת הנתונים בזמן‑אמת.
 
