@@ -29,7 +29,7 @@ lang: he
 ## 2. ארכיטקטורת‑על
 
 
-```mermaid
+<div class="mermaid">
 graph TD
     LA[LauncherActivity] -->|Intent|  SPLASH[SplashActivity]
     SPLASH -->|User chooses| MAIN[MainActivity (Fragments)]
@@ -37,7 +37,7 @@ graph TD
     MAIN --> DBF[DataFragment]
     MAIN --> SET[SettingsFragment]
     LA --> WA[WalletActivity\n(Android Template)]
-```
+</div>
 
 
 
