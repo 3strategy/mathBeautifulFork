@@ -1,0 +1,171 @@
+# דוח פרוייקט — **GuysFinalAndroidAssignment**
+{: .box-note}
+
+> **Repo:** <https://github.com/3strategy/GuysFinalAndroidAssignment>
+>
+> גרסת אנדרואיד ניסיונית למשחק **ttrainer** (HTML + JS) משולב באפליקציה מקורית.
+
+---
+
+## 1. תקציר 📜
+{: .box-success}
+
+הפרויקט פותח כחלק מהשתלמות **Android Studio** ומתמקד בשילוב עמוד **WebView** שמריץ משחק HTML שהומר מ‑Python (Colab). האפליקציה מדגימה:
+
+* שילוב **Hybrid‑Web + Native** מלא.
+* **Alarm Scheduler & Notification** ↔ התראות בעת פתיחת האפליקציה ובשעה קבועה.
+* **Sensors API** ↔ ניעור ‑> סגירת אפליקציה.
+* שמירת נתונים ב‑**Room DB** לסנכרון בין WebView ל‑Fragments.
+* התאמות UI (הקטנת Action Bar / Navigation Bar, תמיכה במצבי Light / Dark).
+
+---
+
+## 2. ארכיטקטורת‑על
+{: .box-note}
+
+```mermaid
+graph TD
+    LA[LauncherActivity] -->|Intent|  SPLASH[SplashActivity]
+    SPLASH -->|User chooses| MAIN[MainActivity (Fragments)]
+    MAIN --> WVF[WebViewFragment :ttrainer]
+    MAIN --> DBF[DataFragment]
+    MAIN --> SET[SettingsFragment]
+    LA --> WA[WalletActivity\n(Android Template)]
+```
+
+```mermaid
+classDiagram
+    class MainActivity {
+        +onCreate()
+        +scheduleAlarm()
+        +registerShakeSensor()
+        +saveScore()
+    }
+    class WebViewFragment {
+        +loadHtml()
+        +postMessageToJS()
+        +receiveJSCallbacks()
+    }
+    MainActivity --> WebViewFragment
+    MainActivity --> RoomDB
+```
+
+> **הערה:** המרצה מוזמן להריץ את האפליקציה ולוודא את זרימת הנתונים בזמן‑אמת.
+
+---
+
+## 3. מודול WebView – המשחק *ttrainer*
+{: .box-success}
+
+* **HTML → WebView**: עמוד HTML שעבר ריפקטור מפייתון/Colab כדי לרוץ ב‑Web.
+* **Bridge API**: שימוש ב‑`addJavascriptInterface` לשליחת נתונים דו‑כיוונית בין JS ↔ Kotlin.
+* **Persistence**: נקודות/הגדרות נשמרות ב‑Room ונשלפות מחדש בטעינה הבאה.
+
+```kotlin
+@JavascriptInterface
+fun postScore(score: Int) {
+    viewModel.saveScore(score)   // ViewModel ←→ Room
+}
+```
+
+---
+
+## 4. MainActivity & Fragments
+{: .box-note}
+
+| Fragment | תפקיד | טכניקות עיקריות |
+|----------|--------|------------------|
+| **WebViewFragment** | מציג את *ttrainer* | `WebView`, JS Bridge |
+| **DataFragment** | טבלת שיאים מקומית | `RecyclerView`, `LiveData` |
+| **SettingsFragment** | שינוי ערכות צבע והתראות | `PreferenceFragmentCompat` |
+
+Additional UI tweaks — הקטנת Action Bar ו‑Navigation Bar כדי למקסם שטח תצוגה.
+
+---
+
+## 5. Alarm Scheduler & Notification ⏰
+{: .box-success}
+
+* התראה מיידית בעת הפעלת האפליקציה (ערוץ "welcome")
+* התראה יומית בשעה 17:00 (ערוץ "daily‑reminder")
+* תמיכה ב‑API 34 דרך `ExactAlarmPermissionChecker`
+
+```kotlin
+val alarmMgr = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
+// ...
+alarmMgr.setExactAndAllowWhileIdle(
+    AlarmManager.RTC_WAKEUP,
+    triggerTime,
+    pendingIntent
+)
+```
+
+---
+
+## 6. חיישנים – Shake to Close 📳
+{: .box-warning}
+
+| אתגר | פתרון |
+|-------|--------|
+| חיווי תנועה רועש | מסנן Low‑Pass + סף תאוצה `> 12 m/s²` |
+| Lifecycle Aware | רישום SensorListener ב‑`onResume` ושחרור ב‑`onPause` |
+
+---
+
+## 7. אתגרים מרכזיים & פתרונות
+{: .box-note}
+
+1. **סנכרון WebView ↔ Room**  
+   > התאמת מבנה JSON מה‑JS למודול DAO ב‑Kotlin ושימוש ב‑`CoroutineScope(Dispatchers.IO)` למניעת ANR.
+2. **Alarm & Notifications ב‑API 34**  
+   > הגדרת הרשאת `SCHEDULE_EXACT_ALARM` ולוגיקה חלופית במכשירים שמונעים התראה מדויקת.
+3. **Reduce UI Chrome**  
+   > שימוש ב‑`WindowCompat.setDecorFitsSystemWindows(getWindow(), false)`.  
+   > שינוי צבע Status Bar דרך Theme‑overlay.
+
+---
+
+## 8. "Lessons Learned" 🤓
+{: .box-success}
+
+* **Hybrid ≠ Hack** — אינטגרציה נכונה (Room + JS Bridge) יוצרת חוויה אחידה.
+* **Early Sensors Planning** — עדיף לתכנן Lifecycle בשלב מוקדם ולחסוך memory leaks.
+* **גרסאות API** — תכונות כמו Exact Alarm דורשות חשיבה לאחור על מכשירים ישנים.
+
+---
+
+## 9. TODO / הרחבות עתידיות
+{: .box-warning}
+
+* **צילומי מסך** — להוסיף ל‑`/docs/assets/img/` ↔ קריאה בתג `![Screen](...)`.
+* **Firebase Analytics** — שיקוף נתוני שימוש ברמת Cloud.
+* **Leaderboard Online** — סנכרון שיאים גלובלי במקום מקומי.
+
+---
+
+## 10. בנייה והרצה ⚙️
+{: .box-note}
+
+```bash
+git clone https://github.com/3strategy/GuysFinalAndroidAssignment.git
+cd GuysFinalAndroidAssignment
+# Android Studio → Open Folder
+```
+
+1. ודא **Android Studio Giraffe (או חדש יותר)** + `Android SDK 34` מותקנים.
+2. הפעל **`Run → app`** (מכשיר אמיתי מומלץ לניעור 📳).
+
+---
+
+## 11. קרדיטים 🙏
+{: .box-success}
+
+* **Guy Siedes** — פיתוח, עיצוב, בדיקות.
+* **גלעד קפלנסקי** — ייעוץ UI/UX.
+* **קהילת StackOverflow / Firebase / JetBrains** על התשובות.
+
+---
+
+> **שאלות / הערות?**
+> מוזמנים לפתוח Issue ב‑GitHub או לפנות במייל: **guy@example.com**
+

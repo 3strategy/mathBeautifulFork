@@ -9,7 +9,7 @@ layout: page
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
-<!-- note - above math jax is needed regardless of the template's mathjax support -->
+  <!-- note - above math jax is needed regardless of the template's mathjax support -->
 
 
   <title>Triangle Trainer</title>
@@ -43,7 +43,7 @@ layout: page
   <div id="answer-buttons" class="math-button">
 
 
-    <button class="btnn" data-value="9" >Finish</button>
+    <button class="btnn" data-value="9">Finish</button>
   </div>
   <button id="showLeaderboard">Show Leaderboard</button>
   <div id="leaderboard"></div>
@@ -85,7 +85,7 @@ layout: page
       var cblue = bodyStyles.getPropertyValue('--code-types-col').trim();
       //const cblack = 'blaack';
       var cgreen = bodyStyles.getPropertyValue('--code-comments-col').trim();
-      var cblack =   bodyStyles.getPropertyValue('--page-col').trim();//black';
+      var cblack = bodyStyles.getPropertyValue('--page-col').trim();//black';
 
       // Set up canvas dimensions
       function setupCanvas() {
@@ -131,7 +131,7 @@ layout: page
         bodyStyles = getComputedStyle(document.body);
         cblue = bodyStyles.getPropertyValue('--code-types-col').trim();
         cgreen = bodyStyles.getPropertyValue('--code-comments-col').trim();
-        cblack =   bodyStyles.getPropertyValue('--page-col').trim();//black';
+        cblack = bodyStyles.getPropertyValue('--page-col').trim();//black';
         if (!flag) return;
         ctx.fillStyle = cblack;
         ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -347,42 +347,42 @@ layout: page
 
 
     async function addResult(name, score) {
-  const gameID = 1;  // You can make this a parameter if needed.
-  try {
-    // Convert score to a number to ensure correct type
-    const numericScore = Number(score);
+      const gameID = 1;  // You can make this a parameter if needed.
+      try {
+        // Convert score to a number to ensure correct type
+        const numericScore = Number(score);
 
-    // Create a query to check if a document with the same name and gameID exists
-    const q = query(
-      collection(db, "allTimeRecords"),
-      where("name", "==", name),
-      where("gameID", "==", gameID)
-    );
+        // Create a query to check if a document with the same name and gameID exists
+        const q = query(
+          collection(db, "allTimeRecords"),
+          where("name", "==", name),
+          where("gameID", "==", gameID)
+        );
 
-    const querySnapshot = await getDocs(q);
+        const querySnapshot = await getDocs(q);
 
-    if (querySnapshot.empty) {
-      // No existing document: add a new one.
-      const docRef = await addDoc(collection(db, "allTimeRecords"), {
-        name: name,
-        score: numericScore, // now stored as a number
-        gameID: gameID,
-        dateAchieved: serverTimestamp()
-      });
-      console.log("Document written with ID: ", docRef.id);
-    } else {
-      // Document exists: update the first matching document.
-      const docRef = querySnapshot.docs[0].ref;
-      await updateDoc(docRef, {
-        score: numericScore, // update with numeric score
-        dateAchieved: serverTimestamp()
-      });
-      console.log("Document updated with ID: ", querySnapshot.docs[0].id);
+        if (querySnapshot.empty) {
+          // No existing document: add a new one.
+          const docRef = await addDoc(collection(db, "allTimeRecords"), {
+            name: name,
+            score: numericScore, // now stored as a number
+            gameID: gameID,
+            dateAchieved: serverTimestamp()
+          });
+          console.log("Document written with ID: ", docRef.id);
+        } else {
+          // Document exists: update the first matching document.
+          const docRef = querySnapshot.docs[0].ref;
+          await updateDoc(docRef, {
+            score: numericScore, // update with numeric score
+            dateAchieved: serverTimestamp()
+          });
+          console.log("Document updated with ID: ", querySnapshot.docs[0].id);
+        }
+      } catch (error) {
+        console.error("Error adding/updating document: ", error);
+      }
     }
-  } catch (error) {
-    console.error("Error adding/updating document: ", error);
-  }
-}
 
 
 
@@ -398,6 +398,13 @@ layout: page
         tableHTML += "</table>";
         console.log(tableHTML); //For debugging.
         document.getElementById("leaderboard").innerHTML = tableHTML;
+
+        // smooth‑scroll to bottom:
+        window.scrollTo({
+          top: document.body.scrollHeight,
+          behavior: 'smooth'
+        });
+
       } catch (error) {
         console.error("Error fetching leaderboard:", error);
         document.getElementById("leaderboard").innerHTML = "<p>Error fetching leaderboard.</p>";
