@@ -15,7 +15,7 @@ lang: he
 
 ## 1. תקציר 📜
 
-<div class="box-success">
+<div markdown="1" class="box-success">
 הפרויקט פותח כחלק מהשתלמות **Android Studio** ומתמקד בשילוב עמוד **WebView** שמריץ משחק HTML שהומר מ‑Python (Colab). האפליקציה מדגימה:
 
 * שילוב **Hybrid‑Web + Native** מלא.
