@@ -1,13 +1,13 @@
 ---
 layout: page
-title: "דוח פרוייקט — **GuysFinalAndroidAssignment"
-subtitle: "גרסת אנדרואיד ניסיונית למשחק **ttrainer** (HTML + JS) משולב באפליקציה מקורית."
+title: "דוח פרוייקט — GuysFinalAndroidAssignment"
+subtitle: "גרסת אנדרואיד ניסיונית למשחק ttrainer (HTML + JS) משולב באפליקציה מקורית"
 author: גיא סידס
 lang: he
 ---
 
 
-{: .box-note}
+{: .box-note .table-en}
 **Repo:** <https://github.com/3strategy/GuysFinalAndroidAssignment>
 
 > 
@@ -16,14 +16,15 @@ lang: he
 
 ## 1. תקציר 📜
 
-{: .box-success}
+
+
 הפרויקט פותח כחלק מהשתלמות **Android Studio** ומתמקד בשילוב עמוד **WebView** שמריץ משחק HTML שהומר מ‑Python (Colab). האפליקציה מדגימה:
 * שילוב **Hybrid‑Web + Native** מלא.
 * **Alarm Scheduler & Notification** ↔ התראות בעת פתיחת האפליקציה ובשעה קבועה.
 * **Sensors API** ↔ ניעור ‑> סגירת אפליקציה.
 * שמירת נתונים ב‑**Room DB** לסנכרון בין WebView ל‑Fragments.
 * התאמות UI (הקטנת Action Bar / Navigation Bar, תמיכה במצבי Light / Dark).
-
+{: .box-success}
 ---
 
 ## 2. ארכיטקטורת‑על
