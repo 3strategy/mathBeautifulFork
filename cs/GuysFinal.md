@@ -1,5 +1,7 @@
-
-<script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';<br>mermaid.initialize({ startOnLoad: true });</script>
+import { initializeApp } from 
+<script type="module">import {mermaid} from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+mermaid.initialize({ startOnLoad: true });
+</script>
 
 
 # דוח פרוייקט — **GuysFinalAndroidAssignment**
@@ -15,7 +17,6 @@
 
 {: .box-success}
 הפרויקט פותח כחלק מהשתלמות **Android Studio** ומתמקד בשילוב עמוד **WebView** שמריץ משחק HTML שהומר מ‑Python (Colab). האפליקציה מדגימה:
-
 * שילוב **Hybrid‑Web + Native** מלא.
 * **Alarm Scheduler & Notification** ↔ התראות בעת פתיחת האפליקציה ובשעה קבועה.
 * **Sensors API** ↔ ניעור ‑> סגירת אפליקציה.
@@ -26,6 +27,8 @@
 
 ## 2. ארכיטקטורת‑על
 
+markdown
+mermaid
 ```mermaid
 graph TD
     LA[LauncherActivity] -->|Intent|  SPLASH[SplashActivity]
@@ -36,6 +39,9 @@ graph TD
     LA --> WA[WalletActivity\n(Android Template)]
 ```
 
+
+markdown
+mermaid
 ```mermaid
 classDiagram
     class MainActivity {
@@ -59,7 +65,7 @@ classDiagram
 
 ## 3. מודול WebView – המשחק *ttrainer*
 
-{: .box-success}
+{: .box-success .table-en}
 
 * **HTML → WebView**: עמוד HTML שעבר ריפקטור מפייתון/Colab כדי לרוץ ב‑Web.
 * **Bridge API**: שימוש ב‑`addJavascriptInterface` לשליחת נתונים דו‑כיוונית בין JS ↔ Kotlin.
