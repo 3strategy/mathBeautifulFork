@@ -37,11 +37,7 @@ graph TD
     MAIN --> DBF[DataFragment]
     MAIN --> SET[SettingsFragment]
     LA --> WA[WalletActivity\n(Android Template)]
-</div>
 
-
-
-```mermaid
 classDiagram
     class MainActivity {
         +onCreate()
@@ -56,7 +52,8 @@ classDiagram
     }
     MainActivity --> WebViewFragment
     MainActivity --> RoomDB
-```
+
+</div>
 
 > **הערה:** המרצה מוזמן להריץ את האפליקציה ולוודא את זרימת הנתונים בזמן‑אמת.
 
