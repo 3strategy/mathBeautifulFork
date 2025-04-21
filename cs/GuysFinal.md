@@ -1,15 +1,16 @@
-import { initializeApp } from 
-<script type="module">import {mermaid} from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-mermaid.initialize({ startOnLoad: true });
-</script>
+---
+layout: page
+title: "דוח פרוייקט — **GuysFinalAndroidAssignment"
+subtitle: "גרסת אנדרואיד ניסיונית למשחק **ttrainer** (HTML + JS) משולב באפליקציה מקורית."
+author: גיא סידס
+lang: he
+---
 
-
-# דוח פרוייקט — **GuysFinalAndroidAssignment**
 
 {: .box-note}
 **Repo:** <https://github.com/3strategy/GuysFinalAndroidAssignment>
 
-> גרסת אנדרואיד ניסיונית למשחק **ttrainer** (HTML + JS) משולב באפליקציה מקורית.
+> 
 
 ---
 
@@ -27,8 +28,7 @@ mermaid.initialize({ startOnLoad: true });
 
 ## 2. ארכיטקטורת‑על
 
-markdown
-mermaid
+
 ```mermaid
 graph TD
     LA[LauncherActivity] -->|Intent|  SPLASH[SplashActivity]
@@ -40,8 +40,7 @@ graph TD
 ```
 
 
-markdown
-mermaid
+
 ```mermaid
 classDiagram
     class MainActivity {
