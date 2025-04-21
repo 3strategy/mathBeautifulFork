@@ -29,7 +29,7 @@ lang: he
 
 ## 2. ארכיטקטורת‑על
 
-
+### תרשים זרימה
 <!-- FLOWCHART ------------------------------------------------------------>
 <div class="mermaid">
 
@@ -43,6 +43,7 @@ flowchart TD
 
 </div>
 
+### Class Diagram
 <!-- CLASS DIAGRAM -------------------------------------------------------->
 <div class="mermaid">
 
@@ -70,7 +71,7 @@ classDiagram
 
 ## 3. מודול WebView – המשחק *ttrainer*
 
-{: .box-success .table-en}
+{: .box-success}
 
 * **HTML → WebView**: עמוד HTML שעבר ריפקטור מפייתון/Colab כדי לרוץ ב‑Web.
 * **Bridge API**: שימוש ב‑`addJavascriptInterface` לשליחת נתונים דו‑כיוונית בין JS ↔ Kotlin.
