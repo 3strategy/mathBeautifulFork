@@ -57,8 +57,6 @@ classDiagram
         +postMessageToJS()
         +receiveJSCallbacks()
     }
-    class RoomDB      <!-- stub so the arrow below is valid -->
-
     MainActivity --> WebViewFragment
     MainActivity --> RoomDB
 
