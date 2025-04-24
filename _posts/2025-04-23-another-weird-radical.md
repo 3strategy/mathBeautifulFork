@@ -8,6 +8,7 @@ mathjax: true
 author: "גיא סידס"
 lang: he
 ---
+<!-- https://chatgpt.com/c/68090b36-e5d4-800e-98d4-490ae5ff3da3 -->
 
 נתון פולינום $$p(x)=x^{3}+x−1​$$
 
