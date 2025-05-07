@@ -98,23 +98,22 @@ The password is valid
 13, 10, 20, 18, 25, 5
 ```
 
-{% highlight csharp linenos %} int s=0,n,a;
+{% highlight csharp linenos %}int s = 0, n, a;
+Console.WriteLine("Enter a whole positive number");
+n = int.Parse(Console.ReadLine());
 
-Console.WriteLine("הכנס מספר שלם חיובי"); n=int.Parse(Console.ReadLine());
-
-for (int i=1; i<=n; i++) { Console.WriteLine("הכנס מספר שלם חיובי"); a=int.Parse(Console.ReadLine());
-
-```
-if (a>10)
-    if(a>=20)
-        Console.WriteLine("boom");
-    else
-        s=s+a;
-```
-
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine("Enter a whole positive number");
+    a = int.Parse(Console.ReadLine());
+    if (a > 10)
+        if (a >= 20)
+            Console.WriteLine("boom");
+        else
+            s = s + a;
 }
 
-Console.WriteLine(s); // (\*\*) {% endhighlight %}
+Console.WriteLine(s); // (**) {% endhighlight %}
 
 1. בטבלה יש לכלול עמודה עבור כל משתנה, עמודה עבור כל תנאי ועמודה עבור הפלט.
 2. תנו דוגמא לערכי קלט עבורם יתקבל הפלט 0 בהוראה המסומנת (\*\*).
