@@ -2,6 +2,7 @@
 layout: page 
 title: "תרגול 4.1 לולאות for: שארית חלוקה ועוד"
 subtitle: "שאלות תרגול בלולאות for"
+mathjax: true
 lang: he
 ---
 
