@@ -106,9 +106,12 @@ body {
 }
 
 .hebrew-list {
-    padding-left: 2em;
-    text-indent: -2em;
-}
+    padding-right: 2em;  /* Padding on the right side for RTL text */
+    text-indent: -2em;   /* Negative indent to create the hanging effect */
+    direction: rtl;      /* Ensure right-to-left direction */
+    text-align: right;   /* Align text to the right */
+    margin-bottom: 1em;  /* Space between list items */
+  }
 
 #canvas-container {
     position: relative;
