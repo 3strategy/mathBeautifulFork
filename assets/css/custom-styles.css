@@ -105,6 +105,11 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
+.hebrew-list {
+    padding-left: 2em;
+    text-indent: -2em;
+}
+
 #canvas-container {
     position: relative;
     border: none;
