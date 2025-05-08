@@ -105,12 +105,21 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
-.hebrew-list {
-    padding-right: 2em;  /* Padding on the right side for RTL text */
-    text-indent: -2em;   /* Negative indent to create the hanging effect */
-    direction: rtl;      /* Ensure right-to-left direction */
-    text-align: right;   /* Align text to the right */
-    margin-bottom: 1em;  /* Space between list items */
+.subq {
+    /* indent the whole block */
+    margin-inline-start: 2em;
+    /* (optional) if you want hanging-indent so that the א. “sticks out” */
+    text-indent: -1.5em;
+    padding-inline-start: 1.5em;
+  }
+
+  .hebrew-list {
+    /* use Hebrew alphabet for list markers */
+    list-style-type: hebrew;
+    /* indent from the main text—adjust to taste */
+    margin-inline-start: 2em;
+    /* if you want the marker inside the text block: */
+    list-style-position: inside;
   }
 
 #canvas-container {
