@@ -1,7 +1,7 @@
 ---
 layout: page 
-title: "תרגול 4.1 לולאות for: שארית חלוקה ועוד"
-subtitle: "שאלות תרגול בלולאות for"
+title: "35482"
+subtitle: "12 May 2025 Q -question number"
 mathjax: true
 lang: he
 ---

@@ -78,6 +78,7 @@ navbar-links:
 
   מדמח מחזור 3:
     - פרק 1: "/cs/Chapter1/"
+    - מבחן זמני: "/mathtests/582q3/"
     - תרגול 1.1: "/cs/Chapter1Ex1.1/"
     - הטיפוס תו 1: "/cs/Chapter1Char"
     - קיצורים: "/cs/Shortcuts/"
