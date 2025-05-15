@@ -221,3 +221,17 @@ if (found)
 
 {: .box-warning}
 **אזהרה:** שימו לב להשתמש תמיד בשני סימני שוויון (`==`) לבדיקת שוויון בתנאים.
+
+---
+
+{: .box-success}
+ניתן בדוגמא שלנו לותר על התנאי הראשון
+
+{% highlight csharp linenos %}bool found = false;
+int number = 5;
+
+found = number == 5; // true יקבל את הערך found
+
+if (found)
+    Console.WriteLine("Number found");
+    {% endhighlight %}
