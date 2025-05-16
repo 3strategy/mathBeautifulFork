@@ -59,8 +59,24 @@ h2 {
         padding-left: 1rem;
         padding-right: 1rem;
     }
-    .beautiful-jekyll-footer{display:none;}
 
+    .beautiful-jekyll-footer {
+        display: none;
+    }
+
+
+    /* 1) Ensure the subtitle sits above the note */
+    .page-subtitle {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 0.5em;
+    }
+
+    /* 2) Push the first note down out of the way */
+    .box-note:first-of-type {
+        margin-top: 1em;
+        clear: both;
+    }
 
     --page-col: #FFFFFF;
     --text-col: #404040;
@@ -111,16 +127,16 @@ body {
     /* (optional) if you want hanging-indent so that the א. “sticks out” */
     text-indent: -1.5em;
     padding-inline-start: 1.5em;
-  }
+}
 
-  .hebrew-list {
+.hebrew-list {
     /* use Hebrew alphabet for list markers */
     list-style-type: hebrew;
     /* indent from the main text—adjust to taste */
     margin-inline-start: 2em;
     /* if you want the marker inside the text block: */
     list-style-position: inside;
-  }
+}
 
 #canvas-container {
     position: relative;
