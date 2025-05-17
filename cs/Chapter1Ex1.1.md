@@ -7,43 +7,6 @@ lang: he
 ---
 <!-- התרגילים ממוספרים 1.2 עד 1.5 במצגת 1 בהתאמה -->
 
-
-## תרגיל 1.1.2 – חילוף בין ספלים
-
-בבית המלוכה האנגלי שותים שתייה חמה מדי יום בשעה 17:00, תה בספלים המיועדים לתה בלבד, וקפה בספלים המיועדים לקפה בלבד.  
-אחד המשרתים התבלבל ומזג בטעות תה בספל של קפה, וקפה בספל של תה.  
-פתח אלגוריתם שיעזור למשרת להחליף בין תכולת הספלים.
-
-
-
-<details>
-<summary markdown="1">פתרון</summary>
-**פתרון מילולי:**  
-1. קח כוס ריקה.  
-2. העבר את התה הנמצא בספל הקפה אל הכוס הריקה.  
-3. העבר את הקפה הנמצא בספל התה אל ספל הקפה.  
-4. העבר את התה הנמצא בכוס אל ספל התה.  
-
-{% highlight csharp linenos %}string cupTea = "coffee";
-string cupCoffee = "tea";
-string emptyCup;
-
-// שלב 1: כוס ריקה
-emptyCup = cupCoffee;
-
-// שלב 2: מזוג את הקפה מהתה לספל הקפה
-cupCoffee = cupTea;
-
-// שלב 3: מזוג את התה מהכוס הריקה לספל התה
-cupTea = emptyCup;
-
-Console.WriteLine("Cup of tea contains: " + cupTea);
-Console.WriteLine("Cup of coffee contains: " + cupCoffee);
-{% endhighlight %}
-
-</details>
-
-
 ## תרגיל 1.1.3 – חשבון טלפון חודשי
 
 פתחו אלגוריתם המקבל כקלט מספר דקות שיחה ואת סכום התשלומים הקבועים.
@@ -145,6 +108,45 @@ double finalPrice = price + price * 0.18;
 
 Console.WriteLine("final price including V.A.T is: ₪" + finalPrice);
 {% endhighlight %}
+</details>
+
+
+## תרגיל 1.1.2 1.2.5.2 – חילוף בין ספלים
+
+בבית המלוכה האנגלי שותים שתייה חמה מדי יום בשעה 17:00, תה בספלים המיועדים לתה בלבד, וקפה בספלים המיועדים לקפה בלבד.  
+אחד המשרתים התבלבל ומזג בטעות תה בספל של קפה, וקפה בספל של תה.  
+פתח אלגוריתם שיעזור למשרת להחליף בין תכולת הספלים.
+
+
+
+<details markdown="1">
+<summary>פתרון</summary>
+**פתרון מילולי:**  
+1. קח כוס ריקה.  
+2. העבר את התה הנמצא בספל הקפה אל הכוס הריקה.  
+3. העבר את הקפה הנמצא בספל התה אל ספל הקפה.  
+4. העבר את התה הנמצא בכוס אל ספל התה.  
+
+{% highlight csharp linenos %}string cupTea = "coffee";
+string cupCoffee = "tea";
+string emptyCup;
+
+// שלב 1: כוס ריקה
+emptyCup = cupCoffee;
+
+// שלב 2: מזוג את הקפה מהתה לספל הקפה
+cupCoffee = cupTea;
+
+// שלב 3: מזוג את התה מהכוס הריקה לספל התה
+cupTea = emptyCup;
+
+Console.WriteLine("Cup of tea contains: " + cupTea);
+Console.WriteLine("Cup of coffee contains: " + cupCoffee);
+{% endhighlight %}
+
+</details>
+
+
 
 ### מוכן לאתגר?
 
