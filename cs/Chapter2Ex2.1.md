@@ -8,7 +8,6 @@ lang: he
 ---
 [⬅ מעבר לתרגול 2.2 - תרגילים בתנאים מורכבים](/cs/Chapter2Ex2.2)
 
-## תרגילים 2.1 – תנאים פשוטים
 
 ### 2.1.1 בדיקת פלינדרום
 
@@ -16,7 +15,8 @@ lang: he
 
 <details markdown="1"><summary>פתרון</summary>
 
-{% highlight csharp linenos %}int num = 363;
+{% highlight csharp linenos %}Console.Write("Enter a 3 digit number: ");
+int num = int.Parse(Console.ReadLine()); // הניחו לצורך מעקב שנקלט המספר 363
 int units = num % 10;
 int hundreds = num / 100;
 if (units == hundreds)
@@ -76,13 +76,13 @@ Console.WriteLine("odd");
 
 ### 2.1.4 מציאת מקסימום
 
-**משימה.** כתבו תוכנית שבהם `a` ו־`b` שלמים. אחל `max = a`, ואם `b > a` קבע `max = b`. לסוף הדפס `max`.
+**משימה.** כתבו תוכנית שבהם `a` ו־`b` שלמים. אתחלו `max = a`, ואם `b > a` קבע `max = b`. לבסוף הדפיסו `max`.
 
 ---
 
 ### 2.1.5 בדיקת חיוביות
 
-**משימה.** כתבו תוכנית שקולטת מספר `x` ומדפיצה:
+**משימה.** כתבו תוכנית הקולטת מספר `x` ומדפיסה:
 
 * "positive" אם `x > 0`
 * "zero" אם `x == 0`
