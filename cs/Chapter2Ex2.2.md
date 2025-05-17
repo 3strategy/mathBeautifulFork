@@ -7,17 +7,23 @@ mathjax: true
 lang: he
 ---
 
-### תרגיל 2.2.1 שנת גלישת-שעון
+### תרגיל 2.2.1 שנה מעוברת
 
 כתבו תוכנית שקולטת שנה לועזית `year`. הדפס:
 
 * "leap" אם מעוברת,
 * אחרת "common".
+כל שנה המקיימת אחד מהתנאים הבאים היא שנה מעוברת:
+
+* השנה מתחלקת ב-4 אך אינה מתחלקת ב-100
+* השנה מתחלקת ב-400.
+
+למשל, 2004 היא שנה מעוברת, אך 1900 אינה שנה מעוברת, משום שהיא מתחלקת ב-100, אך לא ב-400. 2000 היא שנה מעוברת, משום שהיא מתחלקת ב-400.
 
 <details markdown="1"><summary>פתרון</summary>
 
 {% highlight csharp linenos %}bool isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-Console.WriteLine(isLeap ? "leap" : "common");
+Console.WriteLine(isLeap ? "leap" : "common");  // ternary הערה. בפתרון זה נעשה שימוש בתנאי מקוצר 
 {% endhighlight %}
 
 </details>
