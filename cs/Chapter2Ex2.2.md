@@ -1,15 +1,15 @@
 ---
 layout: page
 title: "תנאים וביטויים לוגיים"
-subtitle: "תרגול 2.2 תנאים מורכבים"
+subtitle: "תרגול תרגיל 2.2 תנאים מורכבים"
 author: גיא סידס
 mathjax: true
 lang: he
 ---
 
-### 2.2.1 שנת גלישת-שעון
+### תרגיל 2.2.1 שנת גלישת-שעון
 
-**משימה.** כתבו תוכנית שקולטת שנה לועזית `year`. הדפס:
+כתבו תוכנית שקולטת שנה לועזית `year`. הדפס:
 
 * "leap" אם מעוברת,
 * אחרת "common".
@@ -24,33 +24,33 @@ Console.WriteLine(isLeap ? "leap" : "common");
 
 ---
 
-### 2.2.2 נקודה בתוך מלבן
+### תרגיל 2.2.2 נקודה בתוך מלבן
 
-**משימה.** קולטים שני מספרים ממשיים `x`, `y`. הדפס "inside" אם (x,y) נמצאים בתוך מלבן 0\<x<10 ו-0\<y<5. אחרת "outside".
+קולטים שני מספרים ממשיים `x`, `y`. הדפס "inside" אם (x,y) נמצאים בתוך מלבן  $$0<x<10$$ ו- $$0<y<5$$. אחרת "outside".
 
 ---
 
-### 2.2.3 תו חוקי
+### תרגיל 2.2.3 תו חוקי
 
-**משימה.** כתבו תוכנית שקולטת תו `ch`. הדפס:
+כתבו תוכנית שקולטת תו `ch`. הדפס:
 
 * "vowel" אם הוא a, e, i, o, u ( או A, E, I, O, U )
 * אחרת "consonant"
 
 ---
 
-### 2.2.4 שני מתוך שלושה
+### תרגיל 2.2.4 שני מתוך שלושה
 
-**משימה.** נתנים שלושה ערכים בוליאניים `p`, `q`, `r`. הדפס:
+נתנים שלושה ערכים בוליאניים `p`, `q`, `r`. הדפס:
 
 * "at least two true" אם לפחות שניים בהם true,
 * אחרת "fewer than two"
 
 ---
 
-### 2.2.5 פלינדרום ומחלקה ב-11
+### תרגיל 2.2.5 פלינדרום ומחלקה ב-11
 
-**משימה.** כתבו תוכנית שקולטת מספר תלת-ספרתי `n`. הדפס:
+כתבו תוכנית שקולטת מספר תלת-ספרתי `n`. הדפס:
 
 * "palindrome & div11" אם פלינדרום ומתחלק ב-11
 * "palindrome" רק פלינדרום
@@ -62,13 +62,13 @@ Console.WriteLine(isLeap ? "leap" : "common");
 {% highlight csharp linenos %}bool isPalindrome = (n / 100 == n % 10);
 bool isDiv11 = (n % 11 == 0);
 if (isPalindrome && isDiv11)
-Console.WriteLine("palindrome & div11");
+    Console.WriteLine("palindrome & div11");
 else if (isPalindrome)
-Console.WriteLine("palindrome");
+    Console.WriteLine("palindrome");
 else if (isDiv11)
-Console.WriteLine("div11");
+    Console.WriteLine("div11");
 else
-Console.WriteLine("none");
+    Console.WriteLine("none");
 {% endhighlight %}
 
 </details>

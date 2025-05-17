@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "תנאים וביטויים לוגיים"
-subtitle: "תרגול 2.1 תנאים פשוטים"
+subtitle: "תרגול תרגיל 2.1 תנאים פשוטים"
 author: גיא סידס
 mathjax: true
 lang: he
@@ -9,9 +9,9 @@ lang: he
 [⬅ מעבר לתרגול 2.2 - תרגילים בתנאים מורכבים](/cs/Chapter2Ex2.2)
 
 
-### 2.1.1 בדיקת פלינדרום
+### תרגיל 2.1.1 בדיקת פלינדרום
 
-**משימה.** כתבו תוכנית ב-C# שקולטת מספר תלת-ספרתי חיובי (`num`) ומדפיצה הודעה אם המספר הוא פלינדרום.
+כתבו תוכנית ב-C# שקולטת מספר תלת-ספרתי חיובי (`num`) ומדפיצה הודעה אם המספר הוא פלינדרום.
 
 <details markdown="1"><summary>פתרון</summary>
 
@@ -21,11 +21,11 @@ int units = num % 10;
 int hundreds = num / 100;
 if (units == hundreds)
 {
-Console.WriteLine(\$"{num} is a palindrome");
+    Console.WriteLine(\$"{num} is a palindrome");
 }
 else
 {
-Console.WriteLine(\$"{num} is not a palindrome");
+    Console.WriteLine(\$"{num} is not a palindrome");
 }
 {% endhighlight %}
 
@@ -43,20 +43,20 @@ Console.WriteLine(\$"{num} is not a palindrome");
 
 ---
 
-### 2.1.2 בדיקת זוגיות
+### תרגיל 2.1.2 בדיקת זוגיות
 
-**משימה.** כתבו תוכנית שקולטת מספר שלם `n` ומדפיצה "even" אם הוא זוגי, אחרת "odd".
+כתבו תוכנית שקולטת מספר שלם `n` ומדפיצה "even" אם הוא זוגי, אחרת "odd".
 
 <details markdown="1"><summary>פתרון</summary>
 
 {% highlight csharp linenos %}int n = 8;
 if (n % 2 == 0)
 {
-Console.WriteLine("even");
+    Console.WriteLine("even");
 }
 else
 {
-Console.WriteLine("odd");
+    Console.WriteLine("odd");
 }
 {% endhighlight %}
 
@@ -64,9 +64,9 @@ Console.WriteLine("odd");
 
 ---
 
-### 2.1.3 השוואת שני מספרים
+### תרגיל 2.1.3 השוואת שני מספרים
 
-**משימה.** כתבו תוכנית שבודקת שני שלמים `a` ו־`b` ומדפיצה:
+כתבו תוכנית שבודקת שני שלמים `a` ו־`b` ומדפיצה:
 
 * "a > b"
 * "a == b"
@@ -74,15 +74,15 @@ Console.WriteLine("odd");
 
 ---
 
-### 2.1.4 מציאת מקסימום
+### תרגיל 2.1.4 מציאת מקסימום
 
-**משימה.** כתבו תוכנית שבהם `a` ו־`b` שלמים. אתחלו `max = a`, ואם `b > a` קבע `max = b`. לבסוף הדפיסו `max`.
+כתבו תוכנית שבהם `a` ו־`b` שלמים. אתחלו `max = a`, ואם `b > a` קבע `max = b`. לבסוף הדפיסו `max`.
 
 ---
 
-### 2.1.5 בדיקת חיוביות
+### תרגיל 2.1.5 בדיקת חיוביות
 
-**משימה.** כתבו תוכנית הקולטת מספר `x` ומדפיסה:
+כתבו תוכנית הקולטת מספר `x` ומדפיסה:
 
 * "positive" אם `x > 0`
 * "zero" אם `x == 0`
