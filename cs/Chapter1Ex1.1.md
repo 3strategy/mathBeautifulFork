@@ -17,15 +17,15 @@ lang: he
 
 
 <details>
-<summary>פתרון</summary>
+<summary markdown="1">פתרון</summary>
 **פתרון מילולי:**  
 1. קח כוס ריקה.  
 2. העבר את התה הנמצא בספל הקפה אל הכוס הריקה.  
 3. העבר את הקפה הנמצא בספל התה אל ספל הקפה.  
 4. העבר את התה הנמצא בכוס אל ספל התה.  
 
-{% highlight csharp linenos %}string cupTea = "קפה";
-string cupCoffee = "תה";
+{% highlight csharp linenos %}string cupTea = "coffee";
+string cupCoffee = "tea";
 string emptyCup;
 
 // שלב 1: כוס ריקה

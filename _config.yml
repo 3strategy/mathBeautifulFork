@@ -23,7 +23,7 @@ author: גיא סידס
 
 navbar-links:
 
-  קישורים חיצוניים:
+  חיצוני:
     - שרית, לצוות החינוכי: "https://saritsamuel2016.mozello.co.il/"
     - my geva: "https://my.geva.co.il/"
     - חוברות בגרויות גבע: "https://my.geva.co.il/wp-content/uploads/mivhanim/806.pdf"
@@ -54,7 +54,7 @@ navbar-links:
     - מרוכבים: "/summaries/ComplexNumbers.pdf"
     - וקטורים: "/summaries/Vectors.pdf"
 
-  סיכומי יא:
+  יא:
     - מציאת אס' וחורים: "/summaries/CheckingDerivativesAsymptotesAndHoles.pdf"
     - חקירות טריגו: "/summaries/TrigonomtricFunctionAnalysis.pdf"
     - בעיות קיצון: "/summaries/Optimization.pdf"
@@ -63,7 +63,7 @@ navbar-links:
     - סדרות: "/summaries/Sequences.pdf"
     - אינדוקציה: "/summaries/induction.pdf"
 
-  סיכומי יוד:
+  יוד:
     - קדם אנליזה: "/summaries/PreAnalysis.pdf"
     - גיאומטריה וטריגו: "/summaries/GeometryAndTrigo.pdf"
     - פונקציות מנה: "/summaries/RationalFunctionAnalysis.pdf"
