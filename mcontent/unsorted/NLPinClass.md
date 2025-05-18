@@ -8,8 +8,8 @@ lang: he
 
 [⬅ מעבר למלא מקורי](/mcontent/unsorted/NLPfullmanual)
 [⬅ 4.5 מעבר למלא משופר](/mcontent/unsorted/NLPfullnew)
-[⬅ 4.5 מעבר למקוצר משופר](/mcontent/unsorted/Nlpfull4.5)
-[⬅4.5 מעבר למקוצר משופר אחרון](/mcontent/unsorted/Nlp4.5short)
+[⬅ מעבר לגרסה הארוכה](/mcontent/unsorted/NlpFull)
+[⬅ מעבר לגרסה הקצרה](/mcontent/unsorted/NlpShort)
 
 ## מהו NLP (Neuro-Linguistic Programming)?
 
