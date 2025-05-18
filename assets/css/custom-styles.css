@@ -255,6 +255,11 @@ button:hover {
 }
 
 
+.box-note, .box-warning, .box-error, .box-success {
+    margin-right: 0.3125rem;
+    padding-right: 1.3rem;
+}
+
 .box-success {
     background-color: var(--backs-col);
 }
@@ -311,6 +316,7 @@ table tr:nth-child(2n) {
 
 code {
     color: var(--code-col) !important;
+    font-size: 110%;
     /*main color for all code*/
     background-color: var(--codeback-col) !important;
     /*main background for all INLINE code*/
