@@ -254,3 +254,50 @@ found = number == 5; // true יקבל את הערך found
 if (found)
     Console.WriteLine("Number found");
     {% endhighlight %}
+
+## **בדיקת פלינדרום. **טבלת מעקב
+
+כתבו תוכנית ב-C# שקולטת מספר תלת-ספרתי חיובי (`num`) ומדפיצה הודעה אם המספר הוא פלינדרום. פלינדרום הוא מילה, מספר, משפט או כל רצף סמלים אחר, שקריאתו מימין לשמאל ומשמאל לימין היא זהה.
+
+<details markdown="1"><summary>פתרון</summary>
+
+{% highlight csharp linenos %}Console.Write("Enter a 3 digit number: ");
+int num = int.Parse(Console.ReadLine()); // הניחו לצורך מעקב שנקלט המספר 363
+int units = num % 10;
+int hundreds = num / 100;
+if (units == hundreds)
+{
+    Console.WriteLine(\$"{num} is a palindrome");
+}
+else
+{
+    Console.WriteLine(\$"{num} is not a palindrome");
+}
+{% endhighlight %}
+
+**טבלת מעקב עבור קלט `363`:**
+
+| שורה | `num` | `units` | `hundreds` | `units == hundreds` | פלט                    |
+| ---- | ---- | ------- | ---------- | ------------------- | ---------------------- |
+| 2  |363  | –       | –          | –                   | קריאת הקלט             |
+| 3  |363  | 3       | –          | –                   | `units = 363 % 10`     |
+| 4  |363  | 3       | 3          | –                   | `hundreds = 363 / 100` |
+| 5  |363  | 3       | 3          | **true**            | `363 is a palindrome`  |
+{: .table-en}
+
+
+**ניתן לעקוב ולרשום רק מה שמשתנה. דוגמא למעקב עבור קלט `563`:**
+
+| שורה | `num` | `units` | `hundreds` | `units == hundreds` | פלט                    |
+| ---- | ---- | ------- | ---------- | ------------------- | ---------------------- |
+| 2   |563 |         |            |                     |             |
+| 3   |    | 3       |            |                    |      |
+| 4   |    |         | 5          |                     |   |
+| 5   |    |         |            | **false**            |   |
+| 11  |    |         |            |            | `563 is not a palindrome`  |
+{: .table-en}
+
+
+</details>
+
+[⬅ מעבר לתרגול 2.1 - תרגילים בתנאים פשוטים](/cs/Chapter2Ex2.1)
