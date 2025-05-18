@@ -123,7 +123,7 @@ body {
 ul, ol {
   display: flex;              /* or display: grid; */
   flex-direction: column;     /* for flex only */
-  gap: 1.5rem;                /* uniform spacing between items */
+  gap: 0.8rem;                /* uniform spacing between items */
 }
 
 .subq {
