@@ -120,6 +120,15 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;              /* or display: grid; */
+  flex-direction: column;     /* for flex only */
+  gap: 1.5rem;                /* uniform spacing between items */
+}
+
 .subq {
     /* indent the whole block */
     margin-inline-start: 2em;
