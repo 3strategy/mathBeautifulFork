@@ -2,6 +2,7 @@
 layout: page 
 title: "🔢 קשר בין פולינום לגרף" 
 subtitle: "מערך שיעור"
+mathjax: true
 lang: he
 ---
 <!-- https://chatgpt.com/c/682c67eb-7f98-800e-add4-8c055722c75f -->
