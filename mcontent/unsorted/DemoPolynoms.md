@@ -45,7 +45,15 @@ $$ f(x) = (x-1)(x+2)(x-3) $$
 {: .box-warning}
 **הערה** עד גבול מסויים וכל עוד יש 3 שורשים הגאוגברה תציג סימנים מעל ומתחת לציר ה-x. ה-checkboxes מאפשרים להסתיר/להציג את הסימנים של הנחש ו/או את הגרף. בכל מקרה היצוג האלגברי מופיע מתחת לציר
 
-[![Geogebra](/assets/img/GeogebraSnake.png)](https://www.geogebra.org/classic/h379jjtn)
+<!-- [![Geogebra](/assets/img/GeogebraSnake.png)](https://www.geogebra.org/classic/h379jjtn)
+[⬅ מעבר לגאוגברה](https://www.geogebra.org/classic/h379jjtn) -->
+<a href="https://www.geogebra.org/classic/h379jjtn" target="_blank">
+  <img src="/assets/img/GeogebraSnake.png" alt="Geogebra">
+</a>
+
+<a href="https://www.geogebra.org/classic/h379jjtn" target="_blank">
+  ⬅ מעבר לגאוגברה
+</a>
 
 <details markdown="1"><summary>לסיכום השלבים בשיטת הנחש</summary>
 
