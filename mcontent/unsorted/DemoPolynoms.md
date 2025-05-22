@@ -35,6 +35,8 @@ lang: he
 
 **שאלה לכיתה:** לקישור לחומר קודם (ותמונת מצב הידע בכיתה): איך מציירים את $$f(x)=(x+1)(x-2)$$ 
 
+[איך מציירים את $$f(x)=(x+1)(x-2)$$](#){: title="לקישור לחומר קודם (ותמונת מצב הידע בכיתה)" }
+
 **שאלה לכיתה:** ומה אם יש 3 גורמים?
 <details markdown="1">
 <summary>על מה אפשר להסכים כרגע?</summary>
@@ -71,8 +73,8 @@ lang: he
 ---
 
 ## **3. שיטת הנחש 🐍 – הסבר ותרגול**
-- כיצד נשרטט את הגרף הבא?
-  $$ \quad  f(x)  \quad  =  \underset{\downarrow}{(x+1)}\underset{\downarrow}{(x-2)}\underset{\downarrow}{(x-4)} \\
+  כיצד נשרטט את הגרף הבא?
+  $$ \quad \quad  f(x)  \quad  =  \underset{\downarrow}{(x+1)}\underset{\downarrow}{(x-2)}\underset{\downarrow}{(x-4)} \\
   f(x)=0 ⟹ x=-1, x=2, x=4 $$
 <details markdown="1">
 <summary>פירוט הצבות</summary>
