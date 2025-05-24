@@ -31,10 +31,25 @@ function toggleTheme() {
   }
 }
 
-// On page load: check cookie and set theme accordingly
-window.onload = function() {
-  const theme = getCookie("theme");
-  if (theme === "light") {
-    document.body.classList.add("light-theme");
+// call this to toggle “big text+layout”
+function toggleSize() {
+  const body = document.body;
+  if (body.classList.contains("large-theme")) {
+    body.classList.remove("large-theme");
+    setCookie("size", "normal", 365);
+  } else {
+    body.classList.add("large-theme");
+    setCookie("size", "large", 365);
   }
+}
+
+// on load, restore both theme & size
+window.onload = function() {
+  // existing theme restore
+  const theme = getCookie("theme");
+  if (theme === "light") document.body.classList.add("light-theme");
+
+  // new size restore
+  const size = getCookie("size");
+  if (size === "large") document.body.classList.add("large-theme");
 }

@@ -41,42 +41,6 @@ h2 {
 
 /* Overrides for Light theme */
 .light-theme {
-    font-size: 1.6rem;
-
-    pre {
-        font-size: 1.9rem;
-    }
-
-    h2,
-    h3 {
-        margin-top: 7rem
-    }
-
-    .container-md {
-        transform: scale(1.5);
-        transform-origin: top right;
-        max-width: 100% !important;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .beautiful-jekyll-footer {
-        display: none;
-    }
-
-
-    /* 1) Ensure the subtitle sits above the note */
-    /* .page-subtitle {
-        position: relative;
-        z-index: 1;
-        margin-bottom: 0.5em;
-    } */
-
-    /* 2) Push the first note down out of the way */
-    .box-note:first-of-type {
-        margin-top: 4em;
-    }
-
     --page-col: #FFFFFF;
     --text-col: #404040;
     --link-col: #008AFF;
@@ -110,6 +74,38 @@ h2 {
 
     --tab-nth-child: #f8f8f8;
 }
+
+/* 3rd “large but dark” theme: sizing + layout overrides */
+.large-theme {
+    font-size: 1.6rem;
+}
+
+.large-theme pre {
+    font-size: 1.9rem;
+}
+
+.large-theme h2,
+.large-theme h3 {
+    margin-top: 7rem;
+}
+
+.large-theme .container-md {
+    transform: scale(1.5);
+    transform-origin: top right;
+    max-width: 100% !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.large-theme .beautiful-jekyll-footer {
+    display: none;
+}
+
+/* push the first note down, just like in light-theme */
+.large-theme .box-note:first-of-type {
+    margin-top: 4em;
+}
+
 
 html {
     direction: rtl;

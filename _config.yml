@@ -72,6 +72,7 @@ navbar-links:
 
   תכנים:
     - החלפת רקע: "javascript:toggleTheme();"
+    - החלפת גודל: "javascript:toggleSize();"
     - מעגל יחידה PHET: "/mcontent/TrigoPhet/"
     - אימון טריגו: "/ttrainer/"
     - שיעורים: "/lessons.html"
