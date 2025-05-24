@@ -11,10 +11,22 @@ lang: he
 בפרק זה נכיר את שפת C#, סביבת הפיתוח Visual Studio, נלמד על משתנים, קלט, פלט והמרות בין סוגים שונים של משתנים.
 {: .box-note}
 
+## IL לפני הכל, אם אתם מורים, או אם אתם עדיין לא רשומים לקמפוס
+<details markdown="1">
+<summary>רישום למצפן ולקמפוס</summary>
+
+[רישום למצפן. למורים שעדיין לא נרשמו](https://mpm.education.gov.il/rishum/mobile/rishumOvedOraa/0/homePage)
+
+[קישור לרישום לקמפוס](https://campus.gov.il/)
+
+[קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/)
+
+<details>
+
 ## סביבת העבודה (Visual Studio)
 סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#. 
 [קישור להורדת גרסת community](https://visualstudio.microsoft.com/vs/community/)
-בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [netfiddle](https://dotnetfiddle.net/) או [programiz](https://www.programiz.com/csharp-programming/online-compiler/)
+בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [netfiddle](https://dotnetfiddle.net/),  [programiz](https://www.programiz.com/csharp-programming/online-compiler/), [onecompiler](https://onecompiler.com/csharp), [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
 
 ## התקנת ויז'ואל סטודיו 202x Community
 
