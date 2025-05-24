@@ -21,7 +21,7 @@ lang: he
 
 [קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/)
 
-<details>
+</details>
 
 ## סביבת העבודה (Visual Studio)
 סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#. 
