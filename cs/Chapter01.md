@@ -13,7 +13,27 @@ html {
 body {
   text-align: left !important;
 }
+
+/* Remove bullets & left padding from your task list */
+ul.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make sure individual items don’t reintroduce their own markers */
+ul.task-list li {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* (Optional) Tweak spacing so your checkbox and text line up neatly */
+ul.task-list .task-list-item-checkbox {
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
 </style>
+
 
 
 # Track Your Progress
