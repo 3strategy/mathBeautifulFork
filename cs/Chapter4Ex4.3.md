@@ -21,7 +21,7 @@ lang: he
 - השתמש במונה.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -36,7 +36,7 @@ lang: he
 number: 149, Sum: 14
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -53,7 +53,7 @@ number: 149, Sum: 14
   $$6 = 6 \Rightarrow$$ מספר כופל.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -66,7 +66,7 @@ number: 149, Sum: 14
 - לדוגמה: במספר $$2873$$ יש זוגיות: 2, 8. אי זוגיות: 7, 3 → תיקו.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -80,7 +80,7 @@ number: 149, Sum: 14
 - רמז: כתוב פונקציה בשם ‎IsPrime‎.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -91,7 +91,7 @@ number: 149, Sum: 14
 מצא את המספר התלת־ספרתי הקטן ביותר שסכום ספרותיו שווה ל־$$18$$.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא ללא פתרון</summary>
 
 </details>
 
@@ -105,7 +105,7 @@ number: 149, Sum: 14
 - שמור את המספר והמכפלה הגבוהה ביותר.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -118,7 +118,7 @@ number: 149, Sum: 14
 - לדוגמה: $$294 \Rightarrow \max = 9, \min = 2, הפרש = 7$$
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -132,7 +132,7 @@ number: 149, Sum: 14
 - החזר את השלישייה עם הממוצע הגבוה ביותר.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -145,7 +145,7 @@ number: 149, Sum: 14
 - הצג את המספר ואת ערך ההפרש $$\text{Sum} - \text{Product}$$
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 

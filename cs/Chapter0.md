@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "List of Subtopics and Concepts (Lowest Granularity)"
+title: "רשימת תתי נושאים למעקב למידה"
 author: גיא סידס
 date: 2025-04-05
 lang: en
@@ -60,21 +60,22 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Integer division and remainder (modulus %) האופרטור שארית חלוקה
 
-- [ ] Explicit type conversions (casting, e.g. (double)x) המרת טיפוסים מפורשת
+- [ ] Explicit type conversions (**casting**, e.g. `(double)x` ) המרת טיפוסים מפורשת
 
 - [ ] Implicit conversions המרה אוטומטית
 
-- [ ] Tracking program execution (טבלאות מעקב)
-
-- [ ] Debugging with breakpoints שימוש ב-breakpoints
 
 # Chapter 2: תנאים, ביטויים לוגיים ושארית חלוקה
 
-- [ ] Boolean expressions (==, !=, >, <, >=, <=) ביטויים בוליאניים
+- [ ] Comparison operators  אופרטורים של השוואה
+
+- [ ] Conditional statements (if, else if, else) משפטי תנאי
+
+- [ ] Boolean expressions  ביטויים בוליאניים
 
 - [ ] Logical operators (&&, ||, !) אופרטורים לוגיים
 
-- [ ] Conditional statements (if, else if, else) משפטי תנאי
+- [ ] משמעות הבלוק `{הסוגריים המסולסלים}` 
 
 - [ ] Nested conditional statements משפטי תנאי מקוננים
 
@@ -88,6 +89,11 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Tracking tables (טבלאות מעקב) for conditional logic טבלאות מעקב לביצוע מותנה
 
+- [ ] Debugging with breakpoints שימוש ב-breakpoints
+
+- [ ] איפוס סביבת העבודה Windows ⟶ Reset Window Layout
+
+
 # Chapter 3: המחלקה Math, Random
 
 - [ ] Introduction to the Math class (Math.Pow, Math.Sqrt, Math.Abs) המחלקה המתמטית
@@ -99,6 +105,7 @@ ul.task-list .task-list-item-checkbox {
 - [ ] Generating random numbers within specific ranges הגרלת מספר שלם בטווח מוגדר
 
 - [ ] Applications of random numbers in simple problems שימושים של ראנדום
+
 
 # Chapter 4: לולאות for
 
@@ -114,14 +121,18 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Breaking loops prematurely with break שימוש בהוראת break ליציאה מוקדמת מלולאה
 
+
+# Chapter 4b: נושאים מתקדמים בתחביר לולאות (ללא קינון)
+
 - [ ] **ToAdd: as a chapter 3b: stuff we can do inside a for statement נושאים מתקדמים בתחביר לולאת for**
-- [ ] **3b: Keeping i value after the loop שמירה על האינדקס**
+
+- [ ] Keeping i value after the loop שמירה על האינדקס**
 
 - [ ] **Multiple initializations**
 
 - [ ] **multiple conditions, multiple increments or statements**
 
-- [ ] **omisions of the i initialization**
+- [ ] **omisions of the `i` initialization**
 
 - [ ] **omission of the increment statement**
 
@@ -131,7 +142,10 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Tracking loops execution with tables (טבלאות מעקב)
 
-- [ ] Using breakpoints to debug loops שימוש ב-breakpoints לדיבוג לולאות
+- [ ] Using **breakpoints** to debug loops שימוש ב-breakpoints לדיבוג לולאות
+
+- [ ] עד לשלב זה הנושא **Variable Scope** אמור להיות ברור
+
 
 # Chapter 5: לולאות while
 
@@ -152,6 +166,7 @@ ul.task-list .task-list-item-checkbox {
 - [ ] Debugging while loops with breakpoints 
 
 - [ ] Tracking tables (טבלאות מעקב בלולאות)
+
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
