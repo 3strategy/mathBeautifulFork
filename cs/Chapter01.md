@@ -20,11 +20,11 @@ body {
 
 Below is the list of sub-topics. Just click the boxes, and your choices will be saved in **localStorage**.
 
-- [ ] Understanding the 7-layer model
-- [ ] Bit-level TCP/UDP flag
-- [ ] Other IP protocol values
-- [ ] WebSockets vs. TCP
-- [ ] …etc…
+[ ] Understanding the 7-layer model
+[ ] Bit-level TCP/UDP flag
+[ ] Other IP protocol values
+[ ] WebSockets vs. TCP
+[ ] …etc…
 
 <script>
 // 1) Gather all GFM task-list checkboxes, assign stable IDs
