@@ -13,7 +13,30 @@ html {
 body {
   text-align: left !important;
 }
+nav.navbar {
+  direction: rtl !important;
+  text-align: right !important;
+}
+/* Remove bullets & left padding from your task list */
+ul.task-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make sure individual items don’t reintroduce their own markers */
+ul.task-list li {
+  list-style: none;
+  margin-left: 0;
+}
+
+/* (Optional) Tweak spacing so your checkbox and text line up neatly */
+ul.task-list .task-list-item-checkbox {
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
 </style>
+
 
 # Chapter 1: הדפסה, משתנים והמרות
 
@@ -63,7 +86,7 @@ Using logical conditions for decision making שימוש בתנאי לקבלת ה
 
 Flag variables (boolean variables to remember conditions or states) משתנה המשמש כדגל
 
-Tracking tables (טבלאות מעקב) for conditional logic טבלאות מעקב
+Tracking tables (טבלאות מעקב) for conditional logic טבלאות מעקב לביצוע מותנה
 
 # Chapter 3: המחלקה Math, Random
 
@@ -126,4 +149,31 @@ Flags and state tracking in loops
 
 Using break and return to control loop execution
 
-Debugging while loops with breakpoints and tracking tables (טבלאות מעקב)
+Debugging while loops with breakpoints 
+
+Tracking tables (טבלאות מעקב בלולאות)
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const cbs = Array.from(document.querySelectorAll('li input[type=checkbox]'));
+
+  cbs.forEach((cb, i) => {
+    // give it a stable id…
+    cb.id = `subtopic-${i}`;
+
+    // …and make it interactive
+    cb.removeAttribute('disabled');
+  });
+
+  // load previous state
+  const saved = JSON.parse(localStorage.getItem('subtopics_progress') || '{}');
+  cbs.forEach(cb => { if (saved[cb.id]) cb.checked = true });
+
+  // on any change, rebuild+save
+  cbs.forEach(cb => cb.addEventListener('change', () => {
+    const states = {};
+    cbs.forEach(x => states[x.id] = x.checked);
+    localStorage.setItem('subtopics_progress', JSON.stringify(states));
+  }));
+});
+</script>

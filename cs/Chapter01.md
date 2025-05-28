@@ -13,7 +13,10 @@ html {
 body {
   text-align: left !important;
 }
-
+nav.navbar {
+  direction: rtl !important;
+  text-align: right !important;
+}
 /* Remove bullets & left padding from your task list */
 ul.task-list {
   list-style: none;
