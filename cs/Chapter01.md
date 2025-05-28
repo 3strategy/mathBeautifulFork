@@ -20,23 +20,29 @@ body {
 
 Below is the list of sub-topics. Just click the boxes, and your choices will be saved in **localStorage**.
 
-[ ] Understanding the 7-layer model
-[ ] Bit-level TCP/UDP flag
-[ ] Other IP protocol values
-[ ] WebSockets vs. TCP
-[ ] …etc…
+- [ ] Understanding the 7-layer model
+- [ ] Bit-level TCP/UDP flag
+- [ ] Other IP protocol values
+- [ ] WebSockets vs. TCP
+- [ ] …etc…
 
 <script>
-// 1) Gather all GFM task-list checkboxes, assign stable IDs
 document.addEventListener('DOMContentLoaded', () => {
   const cbs = Array.from(document.querySelectorAll('li input[type=checkbox]'));
-  cbs.forEach((cb, i) => cb.id = `subtopic-${i}`);
 
-  // 2) Load saved states
+  cbs.forEach((cb, i) => {
+    // give it a stable id…
+    cb.id = `subtopic-${i}`;
+
+    // …and make it interactive
+    cb.removeAttribute('disabled');
+  });
+
+  // load previous state
   const saved = JSON.parse(localStorage.getItem('subtopics_progress') || '{}');
   cbs.forEach(cb => { if (saved[cb.id]) cb.checked = true });
 
-  // 3) On any change, rebuild and save the map
+  // on any change, rebuild+save
   cbs.forEach(cb => cb.addEventListener('change', () => {
     const states = {};
     cbs.forEach(x => states[x.id] = x.checked);
