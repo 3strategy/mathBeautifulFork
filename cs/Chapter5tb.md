@@ -69,6 +69,17 @@ while (n != 0)
 Console.WriteLine("Stopped.");
 {% endhighlight %}
 
+פלט לדוגמא של הלולאה:
+
+```
+Enter number (0 to stop): 5
+You entered: 5
+Enter number (0 to stop): 3
+You entered: 3
+Enter number (0 to stop): 0
+Stopped.
+```
+
 ## לולאות while ושימוש ב-break
 
 **אפשר לעצור לולאה בכל שלב בעזרת `break`**
@@ -80,9 +91,10 @@ while (true)
 {
     Console.Write("Enter number (0 to stop): ");
     n = int.Parse(Console.ReadLine());
+    Console.WriteLine("You entered: " + n); // מימוש שידפיס גם את 0
     if (n == 0)
         break;
-    Console.WriteLine("You entered: " + n);
+                
 }
 Console.WriteLine("Stopped.");
 {% endhighlight %}
@@ -90,16 +102,17 @@ Console.WriteLine("Stopped.");
 פלט לדוגמא של הלולאה:
 
 ```
+Enter number (0 to stop): 5
+You entered: 5
 Enter number (0 to stop): 3
 You entered: 3
-Enter number (0 to stop): 7
-You entered: 7
 Enter number (0 to stop): 0
+You entered: 0 // שורה זו לא מופיעה במימוש הקודם ונובעת מכך ששורה 6 לפני תנאי היציאה
 Stopped.
 ```
 
 {: .box-warning}
-אין חובה ללמד break אולם השימוש בו מותר. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while דרך יחידה (גם אם אני אציג לכם את שתי הדרכים)
+אין חובה ללמד break אולם השימוש בו מותר. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while בדרך אחת, אחידה (גם אם כאן מוצגות שתי הדרכים)
 
 {% highlight csharp linenos %}int number;
 while (true)
