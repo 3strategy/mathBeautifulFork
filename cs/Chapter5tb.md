@@ -132,7 +132,7 @@ Console.WriteLine("The number entered is: " + number);
 
 
 <details markdown="1">
-<summary markdown="1">**שימוש מומלץ ולא מומלץ בפקודת break בלולאות**</summary>
+<summary>שימוש מומלץ ולא מומלץ בפקודת break בלולאות</summary>
 
 השימוש בפקודת `break` יכול להיות שימושי מאוד במצבים מסוימים, אך עלול להפריע לקריאות הקוד במצבים אחרים. להלן המלצות מתי להשתמש ומתי להימנע:
 
