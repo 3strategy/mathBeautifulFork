@@ -114,7 +114,7 @@ Stopped.
 ```
 
 {: .box-warning}
-אין חובה ללמד break אולם השימוש בו מותר. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while בדרך אחת, אחידה (גם אם כאן מוצגות שתי הדרכים)
+אין חובה ללמד break אולם השימוש בו מותר. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while בדרך אחת, אחידה (גם אם כאן מוצגות שתי הדרכים). [Misra rule relaxation regarding break](https://forum.misra.org.uk/archive/index.php?thread-46.html)
 
 {% highlight csharp linenos %}int number;
 while (true) // break דוגמא 1 במימוש באמצעות 
