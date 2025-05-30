@@ -113,41 +113,99 @@ while (true)
 Console.WriteLine("The number entered is: " + number);
 {% endhighlight %}
 
-## דגלים (flags) בלולאות while
 
-ניתן להשתמש במשתני דגל כדי לשלוט בהפעלת לולאות:
 
-{% highlight csharp linenos %}bool continueLoop = true;
-int number;
+<details markdown="1">
+<summary>**שימוש מומלץ ולא מומלץ בפקודת break בלולאות**</summary>
 
-while (continueLoop)
+השימוש בפקודת `break` יכול להיות שימושי מאוד במצבים מסוימים, אך עלול להפריע לקריאות הקוד במצבים אחרים. להלן המלצות מתי להשתמש ומתי להימנע:
+
+### מתי נכון להשתמש ב-break?
+
+#### 1. **בדיקת תנאי פשוט כמו בדיקת מספר ראשוני**:
+
+השימוש ב-`break` מבהיר מאוד את הכוונה לסיים ברגע שמצאנו שהמספר אינו ראשוני.
+
+```csharp
+int num = 17;
+bool isPrime = true;
+int i = 2;
+
+while (i < num)
 {
-    Console.Write("Enter a number (0 to exit): ");
-    number = int.Parse(Console.ReadLine());
-
-    if (number == 0)
+    if (num % i == 0)
     {
-        continueLoop = false;
+        isPrime = false;
+        break; // עצירה ברגע שהתברר שהמספר אינו ראשוני
     }
-    else
-    {
-        Console.WriteLine("The number entered is: " + number);
-    }
+    i++;
 }
-{% endhighlight %}
 
-## טבלת מעקב ללולאת while
+if (isPrime)
+    Console.WriteLine("Prime number");
+else
+    Console.WriteLine("Not a prime number");
+```
 
-| שורת קוד | count | פלט |
-|-----------|-------|-----|
-| התחלה    | 0     | 0   |
-| איטרציה 1 | 1     | 1   |
-| איטרציה 2 | 2     | 2   |
-| איטרציה 3 | 3     | 3   |
-| איטרציה 4 | 4     | 4   |
-{: .table-en}
+#### 2. **בלולאת קליטת קלט ממשתמש עם יציאה ברורה**:
+
+```csharp
+while (true)
+{
+    string input = Console.ReadLine();
+    if (input == "exit")
+        break; // יציאה ברורה מהלולאה
+}
+```
+
+### מתי מומלץ להימנע מ-break?
+
+#### 1. **כשהתנאי לסיום פשוט וברור מספיק ויכול להיות מוצג בכותרת הלולאה**:
+
+עדיף לשים את התנאי בתוך ההגדרה של הלולאה:
+
+```csharp
+int num = 17;
+bool isPrime = true;
+int i = 2;
+
+while (i < num && isPrime)
+{
+    if (num % i == 0)
+        isPrime = false;
+    i++;
+}
+
+if (isPrime)
+    Console.WriteLine("Prime number");
+else
+    Console.WriteLine("Not a prime number");
+```
+
+---
+
+### עצות נוספות ממומחה:
+(חלק מההסבר מבוסס על ידע נוסף שעדיין לא למדנו)
+
+> בגדול זה משתנה קצת מחברה לחברה, בסוף לרוב החברות יש הסבר פנימי למה מותר ומה אסור.
+>
+> אבל הגישה שהיא לדעתו הכי טובה היא כזו:
+>
+> אם הקוד בתוך הלולאה הוא באורך של מספר שורות ומאוד קריא, אין שום בעיה להשתמש ב-break. הוא מעדיף את זה על פני הגדרת משתנה בוליאני והוספת if או משהו כזה.
+>
+> מה שלא מומלץ, זה להשתמש בזה בתוך קוד ארוך ומסובך שבתוך לולאה. קל מאוד לשכוח מה-break בקונטקסט כזה.
+>
+> למרות שכמובן, אם ישנו קוד ארוך ומסובך בתוך לולאה, כנראה שמשהו כבר לא בסדר – ושאמורה להיות פונקציה (או אפילו פונקציות) שמוגדרת מחוץ ללולאה ומסדרת את העניין בצורה טובה. ואז שוב אפשר להשתמש ב-break 😀
+
+---
+
+לסיכום, השתמשו ב-`break` כאשר הוא תורם לקריאות הקוד וליעילות, אך הקפידו להימנע משימוש בו כשהוא עלול להקשות על הבנת הקוד.
+
+</details>
+
+
+
 
 {: .box-warning}
-
 **אזהרה:** ודאו תמיד שלולאת `while` מכילה תנאי שיגרום להפסקת הלולאה, כדי למנוע לולאה אינסופית.
 
