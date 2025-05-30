@@ -17,7 +17,7 @@ lang: he
 כתוב תוכנית שסופרת כמה מספרים זוגיים יש בין 1 ל־100 (כולל).
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -28,7 +28,7 @@ lang: he
 כתוב תוכנית שקולטת מחרוזת ואות, וסופרת כמה פעמים האות מופיעה במחרוזת (לא משנה אם גדולה או קטנה).
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -39,7 +39,7 @@ lang: he
 כתוב תוכנית שקולטת מספר $$n$$ מהמשתמש ומדפיסה את סכום כל המספרים מ־1 עד $$n$$.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -47,11 +47,11 @@ lang: he
 
 ### 4.4.4 — סכום ספרות במספר
 
-כתוב פונקציה שמקבלת מספר שלם ומחזירה את סכום הספרות שלו.
+כתוב תכנית המקבלת מספר שלם ומדפיסה את סכום הספרות שלו.
 לדוגמה: עבור $$352$$ הפלט יהיה $$10$$.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -62,7 +62,7 @@ lang: he
 כתוב פונקציה שמקבלת מספר $$n$$ ומחזירה את $$n!$$ (עצרת).
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -73,7 +73,7 @@ lang: he
 כתוב תוכנית שמקבלת מספרים $$x$$ ו־$$n$$ ומחזירה את $$x^n$$ ללא שימוש ב־Math.pow אלא באמצעות לולאה בלבד.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -86,7 +86,7 @@ lang: he
 מצא כמה מספרים בטווח $$[1, n]$$ מתחלקים ב־3, ומה סכומם.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -97,7 +97,7 @@ lang: he
 כתוב תוכנית שמוצאת את כל המספרים מ־10 עד 999 שסכום ספרותיהם שווה למכפלת הספרות שלהם.
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -121,7 +121,7 @@ lang: he
 (דורש לולאה מקוננת)
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 
@@ -134,7 +134,7 @@ lang: he
 (דורש לולאה מקוננת)
 
 <details>
-<summary>פתרון</summary>
+<summary>ללא פתרון</summary>
 
 </details>
 

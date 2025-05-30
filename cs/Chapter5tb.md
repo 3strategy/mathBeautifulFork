@@ -41,13 +41,13 @@ The number is: 4
 ניתן להשתמש בלולאת `while` לקבלת קלט מהמשתמש עד לקבלת ערך תקין:
 
 {% highlight csharp linenos %}int number;
-Console.Write("הזן מספר חיובי: ");
+Console.Write("Enter a positive number: ");
 number = int.Parse(Console.ReadLine());
 
 while (number <= 0)
 {
     Console.WriteLine("Invalid number, try again.");
-    Console.Write("הזן מספר חיובי: ");
+    Console.Write("Enter a positive number: ");
     number = int.Parse(Console.ReadLine());
 }
 Console.WriteLine("The number entered is: " + number);
@@ -79,6 +79,22 @@ while (true)
 3
 4
 ```
+
+{: .box-warning}
+אין חובה ללמד break אולם השימוש בו מותר. בעיני גם מומלץ, אך יש הרבה מורים שלא אוהבים. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while דרך יחידה (גם אם אני אציג לכם את שתי הדרכים)
+
+{% highlight csharp linenos %}int number;
+while (true)
+{
+    Console.Write("Enter a positive number: ");
+    number = int.Parse(Console.ReadLine());
+    if (number > 0)
+        break; // יציאה מיידית מהלולאה
+    //אם הגענו לכאן, הקלט לא היה תקין
+    Console.WriteLine("Invalid number, try again.");
+}
+Console.WriteLine("The number entered is: " + number);
+{% endhighlight %}
 
 ## דגלים (flags) בלולאות while
 
