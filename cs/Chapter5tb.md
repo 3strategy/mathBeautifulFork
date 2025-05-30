@@ -19,7 +19,7 @@ lang: he
 המבנה הכללי:
 
 {% highlight csharp linenos %}int counter = 0;
-while (counter < 5)
+while (counter < 3)
 {
     Console.WriteLine("The number is: " + counter);
     counter++;
@@ -32,13 +32,13 @@ while (counter < 5)
 The number is: 0
 The number is: 1
 The number is: 2
-The number is: 3
-The number is: 4
 ```
+{: .box-warning}
+זוהי כמובן בחירה שגויה של מימוש. מקרה בו יודעים את מספר החזרות, יש לממש באמצעות לולאת for
 
 ## לולאה לקבלת קלט מהמשתמש
 
-ניתן להשתמש בלולאת `while` לקבלת קלט מהמשתמש עד לקבלת ערך תקין:
+דוגמא 1: ניתן להשתמש בלולאת `while` לקבלת קלט מהמשתמש עד לקבלת ערך תקין:
 
 {% highlight csharp linenos %}int number;
 Console.Write("Enter a positive number: ");
@@ -53,35 +53,52 @@ while (number <= 0)
 Console.WriteLine("The number entered is: " + number);
 {% endhighlight %}
 
-## לולאות while ושימוש ב-break
+### דוגמא 2: עצירת הקלט בהתקיים תנאי:
 
-אפשר לעצור את הלולאה בכל שלב בעזרת `break`:
+{% highlight csharp linenos %}Console.Write("Enter number (0 to stop): ");
+int n = int.Parse(Console.ReadLine());
 
-{% highlight csharp linenos %}int count = 0;
-while (true)
+while (n != 0)
 {
-    Console.WriteLine(count);
-    count++;
-
-    if (count == 5)
-    {
-        break; // עצירת הלולאה
-    }
+    Console.WriteLine("You entered: " + n);
+    Console.Write("Enter number (0 to stop): ");
+    n = int.Parse(Console.ReadLine());
 }
+
+Console.WriteLine("Stopped.");
 {% endhighlight %}
 
-פלט הלולאה:
+## לולאות while ושימוש ב-break
+
+**אפשר לעצור לולאה בכל שלב בעזרת `break`**
+
+**דוגמא 3:** בדוגמא זו, מימוש באמצעות break, הזהה בתוצאה לדוגמא 2 של (עצירת קלט):
+
+{% highlight csharp linenos %}int n;
+while (true)
+{
+    Console.Write("Enter number (0 to stop): ");
+    n = int.Parse(Console.ReadLine());
+    if (n == 0)
+        break;
+    Console.WriteLine("You entered: " + n);
+}
+Console.WriteLine("Stopped.");
+{% endhighlight %}
+
+פלט לדוגמא של הלולאה:
 
 ```
-0
-1
-2
-3
-4
+Enter number (0 to stop): 3
+You entered: 3
+Enter number (0 to stop): 7
+You entered: 7
+Enter number (0 to stop): 0
+Stopped.
 ```
 
 {: .box-warning}
-אין חובה ללמד break אולם השימוש בו מותר. בעיני גם מומלץ, אך יש הרבה מורים שלא אוהבים. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while דרך יחידה (גם אם אני אציג לכם את שתי הדרכים)
+אין חובה ללמד break אולם השימוש בו מותר. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while דרך יחידה (גם אם אני אציג לכם את שתי הדרכים)
 
 {% highlight csharp linenos %}int number;
 while (true)
