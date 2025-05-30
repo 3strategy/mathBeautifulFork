@@ -33,8 +33,9 @@ The number is: 0
 The number is: 1
 The number is: 2
 ```
-{: .box-warning}
+
 זוהי כמובן בחירה שגויה של מימוש. מקרה בו יודעים את מספר החזרות, יש לממש באמצעות לולאת for
+{: .box-warning}
 
 ## לולאה לקבלת קלט מהמשתמש
 
@@ -116,7 +117,7 @@ Console.WriteLine("The number entered is: " + number);
 
 
 <details markdown="1">
-<summary>**שימוש מומלץ ולא מומלץ בפקודת break בלולאות**</summary>
+<summary markdown="1">**שימוש מומלץ ולא מומלץ בפקודת break בלולאות**</summary>
 
 השימוש בפקודת `break` יכול להיות שימושי מאוד במצבים מסוימים, אך עלול להפריע לקריאות הקוד במצבים אחרים. להלן המלצות מתי להשתמש ומתי להימנע:
 
