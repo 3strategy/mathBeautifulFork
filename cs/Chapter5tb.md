@@ -131,6 +131,139 @@ Console.WriteLine("The number entered is: " + number);
 
 
 
+---
+layout: page
+title: "פרק 5 - לולאות while"
+subtitle: "ביצוע פעולות חוזרות באמצעות לולאות while"
+author: גיא סידס
+lang: he
+---
+
+{: .box-note}
+**הערה:** בפרק זה נלמד כיצד להשתמש בלולאות מסוג while, שמבצעות פעולה כל עוד תנאי מסוים מתקיים.
+
+{: box-warning}
+**סדר הוראה:** יש מורים המעדיפים ללמד לולאת while לפני לולאת for. עשו כפי שמרגיש לכם נכון
+
+## מבנה לולאת while
+
+לולאת `while` משמשת לביצוע פעולה מספר לא מוגדר של פעמים, כל עוד התנאי מתקיים.
+
+המבנה הכללי:
+
+{% highlight csharp linenos %}int counter = 0;
+while (counter < 3)
+{
+    Console.WriteLine("The number is: " + counter);
+    counter++;
+}
+{% endhighlight %}
+
+דוגמת פלט:
+
+```
+The number is: 0
+The number is: 1
+The number is: 2
+```
+
+זוהי כמובן בחירה שגויה של מימוש. מקרה בו יודעים את מספר החזרות, יש לממש באמצעות לולאת for
+{: .box-warning}
+
+## דוגמא 1: לולאה עד לקבלת קלט רצוי מהמשתמש
+
+דוגמא 1: ניתן להשתמש בלולאת `while` לקבלת קלט מהמשתמש עד לקבלת ערך תקין:
+
+{% highlight csharp linenos %}int number;
+// ביצוע קלט כפול 
+// לפני כניסה ללולאה number -עלינו לדאוג לערך ב
+Console.Write("Enter a positive number: ");
+number = int.Parse(Console.ReadLine());
+
+while (number <= 0) // יתכן שלא תרוץ כלל
+{
+    Console.WriteLine("Invalid number, try again.");
+    Console.Write("Enter a positive number: ");
+    number = int.Parse(Console.ReadLine());
+}
+Console.WriteLine("The number entered is: " + number);
+{% endhighlight %}
+
+### דוגמא 2: עצירת הקלט בהתקיים תנאי:
+
+{% highlight csharp linenos %}Console.Write("Enter number (0 to stop): ");
+int n = int.Parse(Console.ReadLine());
+
+while (n != 0)
+{
+    Console.WriteLine("You entered: " + n);
+    Console.Write("Enter number (0 to stop): ");
+    n = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Stopped.");
+{% endhighlight %}
+
+פלט לדוגמא של הלולאה:
+
+```
+Enter number (0 to stop): 5
+You entered: 5
+Enter number (0 to stop): 3
+You entered: 3
+Enter number (0 to stop): 0
+Stopped.
+```
+
+## לולאות while ושימוש ב-break
+
+**אפשר לעצור לולאה בכל שלב בעזרת `break`**
+
+**דוגמא 3:** בדוגמא זו, מימוש באמצעות break, הזהה בתוצאה לדוגמא 2 של (עצירת קלט):
+
+{% highlight csharp linenos %}int n;
+while (true)
+{
+    Console.Write("Enter number (0 to stop): ");
+    n = int.Parse(Console.ReadLine());
+    Console.WriteLine("You entered: " + n); // מימוש שידפיס גם את 0
+    if (n == 0)
+        break;
+                
+}
+Console.WriteLine("Stopped.");
+{% endhighlight %}
+
+פלט לדוגמא של הלולאה:
+
+```
+Enter number (0 to stop): 5
+You entered: 5
+Enter number (0 to stop): 3
+You entered: 3
+Enter number (0 to stop): 0
+You entered: 0 // שורה זו לא מופיעה במימוש הקודם ונובעת מכך ששורה 6 לפני תנאי היציאה
+Stopped.
+```
+
+{: .box-warning}
+אין חובה ללמד break אולם השימוש בו מותר. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while בדרך אחת, אחידה (גם אם כאן מוצגות שתי הדרכים). אם אתם מלמדים - אז הימנעו מכפל פקודות (קלט כפול - הוא קוד רע, והוא מוצדק רק אם מחליטים להימנע מ-break בכל מחיר), ואם לא
+
+{% highlight csharp linenos %}int number;
+while (true) // break דוגמא 1 במימוש באמצעות 
+{
+    Console.Write("Enter a positive number: ");
+    number = int.Parse(Console.ReadLine());
+    if (number > 0) // תנאי יציאה מהלולאה
+        break; // אם הגענו לכאן, הקלט עונה על הדרישות 
+   
+    Console.WriteLine("Invalid number, try again.");
+}
+Console.WriteLine("The number entered is: " + number);
+{% endhighlight %}
+
+
+
 <details markdown="1">
 <summary>שימוש מומלץ ולא מומלץ בפקודת break בלולאות</summary>
 
@@ -199,6 +332,32 @@ else
 ```
 
 ---
+
+### עצות נוספות ממומחה:
+(חלק מההסבר מבוסס על ידע נוסף שעדיין לא למדנו)
+
+> בגדול זה משתנה קצת מחברה לחברה, בסוף לרוב החברות יש הסבר פנימי למה מותר ומה אסור.
+>
+> אבל הגישה שהיא לדעתו הכי טובה היא כזו:
+>
+> אם הקוד בתוך הלולאה הוא באורך של מספר שורות ומאוד קריא, אין שום בעיה להשתמש ב-break. הוא מעדיף את זה על פני הגדרת משתנה בוליאני והוספת if או משהו כזה.
+>
+> מה שלא מומלץ, זה להשתמש בזה בתוך קוד ארוך ומסובך שבתוך לולאה. קל מאוד לשכוח מה-break בקונטקסט כזה.
+>
+> למרות שכמובן, אם ישנו קוד ארוך ומסובך בתוך לולאה, כנראה שמשהו כבר לא בסדר – ושאמורה להיות פונקציה (או אפילו פונקציות) שמוגדרת מחוץ ללולאה ומסדרת את העניין בצורה טובה. ואז שוב אפשר להשתמש ב-break 😀
+
+---
+
+לסיכום, השתמשו ב-`break` כאשר הוא תורם לקריאות הקוד וליעילות, אך הקפידו להימנע משימוש בו כשהוא עלול להקשות על הבנת הקוד.
+
+</details>
+
+
+
+
+{: .box-warning}
+**אזהרה:** ודאו תמיד שלולאת `while` מכילה תנאי שיגרום להפסקת הלולאה, כדי למנוע לולאה אינסופית.
+
 
 ### עצות נוספות ממומחה:
 (חלק מההסבר מבוסס על ידע נוסף שעדיין לא למדנו)
