@@ -37,15 +37,17 @@ The number is: 2
 זוהי כמובן בחירה שגויה של מימוש. מקרה בו יודעים את מספר החזרות, יש לממש באמצעות לולאת for
 {: .box-warning}
 
-## לולאה לקבלת קלט מהמשתמש
+## דוגמא 1: לולאה עד לקבלת קלט רצוי מהמשתמש
 
 דוגמא 1: ניתן להשתמש בלולאת `while` לקבלת קלט מהמשתמש עד לקבלת ערך תקין:
 
 {% highlight csharp linenos %}int number;
+// ביצוע קלט כפול 
+// לפני כניסה ללולאה number -עלינו לדאוג לערך ב
 Console.Write("Enter a positive number: ");
 number = int.Parse(Console.ReadLine());
 
-while (number <= 0)
+while (number <= 0) // יתכן שלא תרוץ כלל
 {
     Console.WriteLine("Invalid number, try again.");
     Console.Write("Enter a positive number: ");
@@ -115,13 +117,13 @@ Stopped.
 אין חובה ללמד break אולם השימוש בו מותר. נראה בהמשך תרגילים פתורים עם ובלי הוראה זו. רצוי להקנות לתלמידים  while בדרך אחת, אחידה (גם אם כאן מוצגות שתי הדרכים)
 
 {% highlight csharp linenos %}int number;
-while (true)
+while (true) // break דוגמא 1 במימוש באמצעות 
 {
     Console.Write("Enter a positive number: ");
     number = int.Parse(Console.ReadLine());
-    if (number > 0)
-        break; // יציאה מיידית מהלולאה
-    //אם הגענו לכאן, הקלט לא היה תקין
+    if (number > 0) // תנאי יציאה מהלולאה
+        break; // אם הגענו לכאן, הקלט עונה על הדרישות 
+   
     Console.WriteLine("Invalid number, try again.");
 }
 Console.WriteLine("The number entered is: " + number);
