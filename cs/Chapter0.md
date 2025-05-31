@@ -81,6 +81,8 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] משמעות הבלוק `{הסוגריים המסולסלים}` 
 
+- [ ] סגנונות כתיבת סוגריים
+
 - [ ] Nested conditional statements משפטי תנאי מקוננים
 
 - [ ] Modulo operation % in conditional contexts השימוש בשארית חלוקה בתוך תנאי
@@ -108,14 +110,14 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Applications of random numbers in simple problems שימושים של ראנדום
 
-- [ ] **Debugging with breakpoints** שימוש ב-breakpoints
+- [ ] Debugging with breakpoints שימוש ב-breakpoints, סרטון
 
 
 # Chapter 4: לולאות for
 
-- [ ] Basic loop concept and the purpose of repetition הרעיון הבסיסי בלולאות
+- [ ] Basic loop concept and the purpose of repetition ביצוע חוזר. לולאות
 
-- [ ] Structure of a for loop (initialization; condition; increment) מבנה לולאת פור
+- [ ] Structure of a `for` loop (initialization; condition; increment) מבנה לולאת for
 
 - [ ] Loop execution flow מהלך ביצוע הלולאה
 
@@ -123,24 +125,26 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Using loop counters שימוש במונים
 
-- [ ] Breaking loops prematurely with break שימוש בהוראת break ליציאה מוקדמת מלולאה
+- [ ] Using loop sum שימוש בצוברים
+
+- [ ] Breaking loops prematurely with `break` שימוש בהוראת break ליציאה מוקדמת מלולאה
 
 
 # Chapter 4b: נושאים מתקדמים בתחביר לולאות (ללא קינון)
 
-- [ ] Keeping i value after the loop שמירה על האינדקס
+- [ ] Retaining i value after the loop שימור ערך האינדקס לאחר סיום הלולאה
 
 - [ ] **Multiple initializations**
 
 - [ ] **multiple conditions, multiple increments or statements**
 
-- [ ] **omisions of the `i` initialization**
+- [ ] **Omisions of the `i` initialization**
 
 - [ ] **BAD Practice: omission of the increment statement**
 
-- [ ] **BAD Practice: interfering with i inside the block to extend the loop when a condition is met (for example when an input did not meet criteria and we wish to collect a valid predefined number of inputs)**
+- [ ] **BAD Practice:** interfering with i inside the block to extend the loop when a condition is met (for example when an input did not meet criteria and we wish to collect a valid predefined number of inputs)
 
-- [ ] **interfering with the loop using continue statement**
+- [ ] **Skipping part of one loop using `continue` statement**
 
 - [ ] Tracking loops execution with tables (טבלאות מעקב)
 

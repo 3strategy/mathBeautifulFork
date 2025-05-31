@@ -172,6 +172,9 @@ if (found)
 
 ## החלפת ערכים בין משתנים
 
+השאלה שייכת לפרק 1, אך לא מתאימה ברמת הקושי לשיעור ראשון ולכן נמצאת לכאן
+{: .box-note}
+
 כאשר אנו רוצים להחליף ערכים בין שני משתנים, נדרש לנו משתנה עזר שלישי. 
 זוהי אנלוגיה דומה לשאלה: **כיצד מחליפים תוכן בין שני ספלי תה?**
 
@@ -185,6 +188,9 @@ if (found)
 3. נשפוך את התוכן של ספל C לתוך ספל B
 
 באותו אופן פועלת החלפת ערכים בתכנות - נדרש משתנה עזר זמני (temp).
+
+<details markdown="1">
+<summary>פתרון</summary>
 
 {% highlight csharp linenos %}static void Main()
 {
@@ -209,26 +215,31 @@ if (found)
 }
 {% endhighlight %}
 
+</details>
+
 ## סגנונות כתיבת סוגריים בקוד
 סגנון C# מקובל (Allman) הופיע עד כה ואנו נכתוב רק בצורה זו
 
 סגנון Java (K&R) כאן פתיחת הסוגריים היא בהמשך להוראה הפותחת את הבלוק
-{% highlight csharp linenos %}bool found = false;
+```csharp
+bool found = false;
 int number = 5;
 
-if (number == 5) {
+// java style block brackets
+if (number == 5) { 
     found = true;
 }
 
 if (found) {
     Console.WriteLine("Number found");
 }
-{% endhighlight %}
+```
 
 {: .box-success}
 **כתיבה ללא סוגריים:** בדוגמא שלנו ניתן גם להתעלם מסוגריים מפני שבתוך הבלוק מופיעה הוראה בודדת. כתיבה זו מומלצת מרגע שתרגישו בנח איתה. גם כאשר כותבים ללא סוגריים מקובל מאד מעבר שורה
 
-{% highlight csharp linenos %}bool found = false;
+```csharp
+bool found = false;
 int number = 5;
 
 if (number == 5)
@@ -236,7 +247,7 @@ if (number == 5)
 
 if (found) 
     Console.WriteLine("Number found");
-{% endhighlight %}
+```
 
 {: .box-warning}
 **אזהרה:** שימו לב להשתמש תמיד בשני סימני שוויון (`==`) לבדיקת שוויון בתנאים.
