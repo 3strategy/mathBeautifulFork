@@ -37,12 +37,14 @@ ul.task-list .task-list-item-checkbox {
 }
 </style>
 
+## בעמוד זה תוכלו לסמן לעצמכם נושאים שאתם כבר מבינים ולעקוב אחר הלמידה
+פשוט סמנו את הנושאים. הסימון אמור להישאר על המחשב שלכם
 
 # Chapter 1: הדפסה, משתנים והמרות
 
-- [ ] Introduction to C# language
+- [ ] רישום במצפן
 
-- [ ] Environment setup: Visual Studio IDE basics
+- [ ] VS2022 התקנת
 
 - [ ] Structure of a basic C# program (Main method, class, namespace) מבנה תכנית בסיסית
 
@@ -63,6 +65,8 @@ ul.task-list .task-list-item-checkbox {
 - [ ] Explicit type conversions (**casting**, e.g. `(double)x` ) המרת טיפוסים מפורשת
 
 - [ ] Implicit conversions המרה אוטומטית
+
+- [ ] הקיצורים cw ⟶ ⟶, Ctrl k d, Ctrl /
 
 
 # Chapter 2: תנאים, ביטויים לוגיים ושארית חלוקה
@@ -136,7 +140,7 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] **omission of the increment statement**
 
-- [ ] **interfering with i inside the block to extend the loop when a condition is met (for example when an input did not meet criteria and we wish to collect a valid predefined number of inputs)**
+- [ ] **BAD Practice: interfering with i inside the block to extend the loop when a condition is met (for example when an input did not meet criteria and we wish to collect a valid predefined number of inputs)**
 
 - [ ] **interfering with the loop using continue statement**
 

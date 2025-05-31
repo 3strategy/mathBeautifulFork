@@ -76,11 +76,12 @@ navbar-links:
     - מעגל יחידה PHET: "/mcontent/TrigoPhet/"
     - אימון טריגו: "/ttrainer/"
     - שיעורים: "/lessons.html"
+    - מבחן זמני: "/mathtests/582q3/"
     # - מי אני: "aboutme"
 
   מדמח מחזור 3:
-    - פרק 1: "/cs/Chapter1/"
-    - מבחן זמני: "/mathtests/582q3/"
+    - פרק 0 מעקב למידה: "/cs/Chapter0/"
+    - פרק 1 קלט ופלט: "/cs/Chapter1/"
     - תרגול 1.1: "/cs/Chapter1Ex1.1/"
     - הטיפוס תו 1: "/cs/Chapter1Char"
     - קיצורים: "/cs/Shortcuts/"
