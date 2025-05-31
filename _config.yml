@@ -23,6 +23,18 @@ author: גיא סידס
 
 navbar-links:
 
+  מדמח מחזור 3:
+    - פרק 0 מעקב התקדמות: "/cs/Chapter0/"
+    - פרק 1 קלט ופלט: "/cs/Chapter1/"
+    - תרגול 1.1: "/cs/Chapter1Ex1.1/"
+    - הטיפוס תו 1: "/cs/Chapter1Char"
+    - קיצורים: "/cs/Shortcuts/"
+    - פרק 2 if: "/cs/Chapter2/"
+    - פרק 3 Math: "/cs/Chapter3/"
+    - פרק 4 for: "/cs/Chapter4/"
+    - פרק 5 while: "/cs/Chapter5/"
+    - פרק 4b עוד על for: "/cs/Chapter4b/"
+
   חיצוני:
     - שרית, לצוות החינוכי: "https://saritsamuel2016.mozello.co.il/"
     - my geva: "https://my.geva.co.il/"
@@ -68,28 +80,21 @@ navbar-links:
     - גיאומטריה וטריגו: "/summaries/GeometryAndTrigo.pdf"
     - פונקציות מנה: "/summaries/RationalFunctionAnalysis.pdf"
     - פונקציות שורש: "/summaries/RadicalFunctionAnalysis.pdf"
-
+    - קיצון שיעור 1: "/mcontent/unsorted/OptimizationLesson1"
+    - קיצון שיעור 1 תרגול גיאומטריות: "/mcontent/unsorted/OptimizationLesson2"
 
   תכנים:
-    - החלפת רקע: "javascript:toggleTheme();"
-    - החלפת גודל: "javascript:toggleSize();"
     - מעגל יחידה PHET: "/mcontent/TrigoPhet/"
     - אימון טריגו: "/ttrainer/"
     - שיעורים: "/lessons.html"
     - מבחן זמני: "/mathtests/582q3/"
     # - מי אני: "aboutme"
+    - החלפת רקע: "javascript:toggleTheme();"
+    - החלפת גודל: "javascript:toggleSize();"
+    
+  ט': 
+    - הנחש: "/mcontent/unsorted/Snake"
 
-  מדמח מחזור 3:
-    - פרק 0 מעקב למידה: "/cs/Chapter0/"
-    - פרק 1 קלט ופלט: "/cs/Chapter1/"
-    - תרגול 1.1: "/cs/Chapter1Ex1.1/"
-    - הטיפוס תו 1: "/cs/Chapter1Char"
-    - קיצורים: "/cs/Shortcuts/"
-    - פרק 2 if: "/cs/Chapter2/"
-    - פרק 3 Math: "/cs/Chapter3/"
-    - פרק 4 for: "/cs/Chapter4/"
-    - פרק 5 while: "/cs/Chapter5/"
-    - פרק 4b עוד על for: "/cs/Chapter4b/"
 
 ################
 # --- Logo --- #

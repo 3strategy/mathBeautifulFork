@@ -93,8 +93,6 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Tracking tables (טבלאות מעקב) for conditional logic טבלאות מעקב לביצוע מותנה
 
-- [ ] Debugging with breakpoints שימוש ב-breakpoints
-
 - [ ] איפוס סביבת העבודה Windows ⟶ Reset Window Layout
 
 
@@ -109,6 +107,8 @@ ul.task-list .task-list-item-checkbox {
 - [ ] Generating random numbers within specific ranges הגרלת מספר שלם בטווח מוגדר
 
 - [ ] Applications of random numbers in simple problems שימושים של ראנדום
+
+- [ ] **Debugging with breakpoints** שימוש ב-breakpoints
 
 
 # Chapter 4: לולאות for
@@ -128,9 +128,7 @@ ul.task-list .task-list-item-checkbox {
 
 # Chapter 4b: נושאים מתקדמים בתחביר לולאות (ללא קינון)
 
-- [ ] **ToAdd: as a chapter 3b: stuff we can do inside a for statement נושאים מתקדמים בתחביר לולאת for**
-
-- [ ] Keeping i value after the loop שמירה על האינדקס**
+- [ ] Keeping i value after the loop שמירה על האינדקס
 
 - [ ] **Multiple initializations**
 
@@ -138,7 +136,7 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] **omisions of the `i` initialization**
 
-- [ ] **omission of the increment statement**
+- [ ] **BAD Practice: omission of the increment statement**
 
 - [ ] **BAD Practice: interfering with i inside the block to extend the loop when a condition is met (for example when an input did not meet criteria and we wish to collect a valid predefined number of inputs)**
 
@@ -146,7 +144,7 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Tracking loops execution with tables (טבלאות מעקב)
 
-- [ ] Using **breakpoints** to debug loops שימוש ב-breakpoints לדיבוג לולאות
+- [ ] Using **breakpoints** to debug loops שימוש ב-breakpoints לדיבוג לולאות. אין כאן משהו שונה. פשוט בשלב זה רצוי כבר לדעת כיצד משתמשים.
 
 - [ ] עד לשלב זה הנושא **Variable Scope** אמור להיות ברור
 
@@ -163,13 +161,12 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Infinite loops and stopping conditions
 
-- [ ] Flags and state tracking in loops
+- [ ] `bool` flags שימוש בדגלים. ניתן יהיה להכיר זאת טוב יותר בחלק ב'.
 
-- [ ] Using break and return to control loop execution
+- [ ] Using `break` to control loop execution שימוש בהוראה `break` (for those who know functions: using return in a loop)
 
-- [ ] Debugging while loops with breakpoints 
+- [ ] Debugging while loops with breakpoints (שוב, אין כאן משהו חדש)
 
-- [ ] Tracking tables (טבלאות מעקב בלולאות)
 
 
 <script>
