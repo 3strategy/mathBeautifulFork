@@ -66,7 +66,6 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Implicit conversions המרה אוטומטית
 
-- [ ] הקיצורים cw ⟶ ⟶, Ctrl k d, Ctrl /
 
 
 # Chapter 2: תנאים, ביטויים לוגיים ושארית חלוקה
@@ -95,6 +94,8 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Tracking tables (טבלאות מעקב) for conditional logic טבלאות מעקב לביצוע מותנה
 
+- [ ] string interpolation using `$"a is {a} "` 
+
 - [ ] איפוס סביבת העבודה Windows ⟶ Reset Window Layout
 
 
@@ -111,6 +112,8 @@ ul.task-list .task-list-item-checkbox {
 - [ ] Applications of random numbers in simple problems שימושים של ראנדום
 
 - [ ] Debugging with breakpoints שימוש ב-breakpoints, סרטון
+
+- [ ] הקיצורים הקריטיים cw ⟶ ⟶ הדפסה, Ctrl k d יישור, Ctrl / הערות, Ctrl z לביטול
 
 
 # Chapter 4: לולאות for
