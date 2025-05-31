@@ -11,10 +11,10 @@ lang: he
 
 כתבו תוכנית שקולטת שנה לועזית `year`. הדפס:
 
-* "leap" אם מעוברת,
-* אחרת "common".
+* "leap" או "Meuberet" אם מעוברת יש להדפיס,
+* אחרת "common" או "Normal".
 
-כל שנה המקיימת אחד מהתנאים הבאים היא שנה מעוברת:
+כל שנה המקיימת אחד מהתנאים הבאים היא שנה מעוברת לפי הלוח הגרגוריאני:
 
 * השנה מתחלקת ב-4 אך אינה מתחלקת ב-100
 * השנה מתחלקת ב-400.
@@ -22,6 +22,30 @@ lang: he
 למשל, 2004 היא שנה מעוברת, אך 1900 אינה שנה מעוברת, משום שהיא מתחלקת ב-100, אך לא ב-400. 2000 היא שנה מעוברת, משום שהיא מתחלקת ב-400.
 
 <details markdown="1"><summary>פתרון</summary>
+
+{% highlight csharp linenos %}static void Main(string[] args)
+{
+    Console.Write("Enter a 4 digit year: ");
+    int year = int.Parse(Console.ReadLine());
+
+    bool isLeap = false;
+
+    if (year % 4 == 0)
+    {
+        if (year % 100 != 0 || year % 400 == 0)
+        {
+            isLeap = true;
+        }
+    }
+
+    if (isLeap)
+        Console.WriteLine("Meuberet");
+    else
+        Console.WriteLine("Normal");
+}
+{% endhighlight %}
+
+**פתרון נוסף מקוצר**
 
 {% highlight csharp linenos %}bool isLeap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 Console.WriteLine(isLeap ? "leap" : "common");  // ternary הערה. בפתרון זה נעשה שימוש בתנאי מקוצר 
