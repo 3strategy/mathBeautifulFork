@@ -82,22 +82,22 @@ s, **r, t, r, t**, a, b, b, b, a
 {% highlight csharp linenos %}public static void Main()
 {
     // קליטה של זוג ראשון
-    Console.WriteLine("Enter two int numbers");
-    int previous1 = int.Parse(Console.ReadLine());
-    int previous2 = int.Parse(Console.ReadLine());
+    Console.WriteLine("Enter 2 int numbers");
+    int prev1 = int.Parse(Console.ReadLine()); // storing history in prev1 (previous1)
+    int prev2 = int.Parse(Console.ReadLine()); // for storing history.
 
     for (int i = 0; i < 108; i++)
     {
-        Console.WriteLine("Enter two int numbers");
+        Console.WriteLine("Enter 2 int numbers");
         int current1 = int.Parse(Console.ReadLine());
         int current2 = int.Parse(Console.ReadLine());
-        if (current1 + current2 < previous1 + previous2)
+        if (current1 + current2 < prev1 + prev2)
         {
             Console.WriteLine("smaller");
         }
         // למה צריך לשים כאן ולא להתאפק לסיבוב הבא?
-        previous1 = current1; // החלק החשוב בפעולה
-        previous2 = current2;
+        prev1 = current1; // החלק החשוב בפעולה
+        prev2 = current2;
     }
 }
 {% endhighlight %}
@@ -107,22 +107,22 @@ s, **r, t, r, t**, a, b, b, b, a
 
 ## טבלת מעקב
 
-| # (שורות)  | previous1 | previous2 | current1 | current2 | i | i<108 | if  | פלט                |
-|---------|-----|-----|----|----|-----|-------|-----|-------------------------|
-| 1-4     |     |     |    |    | |    |                                        | Enter two int numbers |
-| 5,6     | 90  | 110 |    |    |     |                     |           |                   |
-| 8       |     |     |    |    | 0  |true  |                     |                   |
-| 9       |     |     |    |    |    |      |                                        | Enter two int numbers |
-| 11-13   |     |     | 200| 300|  |    |              false              |                       |
-| 18-19   | 200 | 300 |    |    |  |    |                                 |                       |
-| 8-10    |     |     |    |    |1 | true |                               | Enter two int numbers |
-| 11-13   |     |     | 150| 100|  |      |  true                                    |            |
-| 15      |     |     |    |    |   |     |                                        |    smaller      |
-| 18-19   | 150 | 100 |    |    |   |    |                                 |                       |
-| 8-10    |     |     |    |    | 2 | true  |                             | Enter two int numbers      |
-| ...     |     |     |    |    |...| ...|                                        | ...                |
-| 8       |     |     |    |    |108| false |                                        | ← יציאה מהלולאה   |
-|         |     |     |    |    || |                                        | סיום התוכנית      |
+| # (שורות)| prev1 | prev2 | current1 | current2 | i | i<108 | if  |        פלט                  |
+|---------|-----|-----|----|----|----|---------------------|----------------|-----------------------|
+| 1-4     |     |     |    |    |    |      |                               | Enter 2 int numbers |
+| 5,6     | 90  | 110 |    |    |    |      |                               |                       |
+| 8       |     |     |    |    | 0  |true  |                               |                       |
+| 9       |     |     |    |    |    |      |                               | Enter 2 int numbers |
+| 11-13   |     |     | 200| 300|    |    |              false              |                       |
+| 18-19   | 200 | 300 |    |    |    |    |                                 |                       |
+| 8-10    |     |     |    |    |1   | true |                               | Enter 2 int numbers |
+| 11-13   |     |     | 150| 100|    |      |  true                         |                       |
+| 15      |     |     |    |    |    |      |                               |       smaller      |
+| 18-19   | 150 | 100 |    |    |    |      |                               |                       |
+| 8-10    |     |     |    |    | 2  | true |                               | Enter 2 int numbers |
+| ...     |     |     |    |    |... | ...  |                               | ...                |
+| 8       |     |     |    |    |108 | false|                               | ← יציאה מהלולאה   |
+|         |     |     |    |    |    |      |                               | סיום התוכנית      |
 {: .table-en}
 
 </details>
