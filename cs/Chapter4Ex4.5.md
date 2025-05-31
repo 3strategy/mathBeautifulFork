@@ -9,7 +9,7 @@ lang: he
 {: .box-note}
 **הערה:** בתרגילים הבאים נדרש לבצע פעולות על נתונים עוקבים במערך (תווים או מספרים). כדי להשוות בין ערכים סמוכים, נשתמש בגִּלְגוּל (שמירת היסטוריה) או בסריקה של שלשות במערך.
 
-## שאלה 1
+## שאלה 4.5.1
 
 כתבו תוכנית הקולטת 30 תווים ובודקת כמה תווים עוקבים יש בקלט.  
 (טיפוס תווי הוא טיפוס סדרתי שניתן להשוואה ולבדיקה גדול/קטן – המערכת מבצעת השוואה אוטומטית מול קוד ה- ASCII של התו).
@@ -24,7 +24,7 @@ lang: he
 
 ---
 
-## שאלה 2
+## שאלה 4.5.2
 
 כתבו תוכנית הקולטת 50 מספרים ובודקת כמה שלשות סמוכות בהן המספר האמצעי גדול משני המספרים הסמוכים לו.
 
@@ -59,7 +59,7 @@ Console.WriteLine(count); // פלט: 3
 
 ---
 
-## שאלה 3
+## שאלה 4.5.3
 
 כתבו תוכנית הקולטת 40 תווים ובודקת כמה שלשות סמוכות בהן האמצעי שונה משני התווים הסמוכים והם שווים ביניהם.
 
@@ -71,4 +71,59 @@ s, **r, t, r, t**, a, b, b, b, a
 2
 ```
 
+---
+
+## שאלה 4.5.4 
+עקבו אחרי הקוד הבא
+
+{% highlight csharp linenos %}public static void Main()
+{
+    // קליטה של זוג ראשון
+    Console.WriteLine("Enter two int numbers");
+    int previous1 = int.Parse(Console.ReadLine());
+    int previous2 = int.Parse(Console.ReadLine());
+
+    for (int i = 0; i < 108; i++)
+    {
+        Console.WriteLine("Enter two int numbers");
+        int current1 = int.Parse(Console.ReadLine());
+        int current2 = int.Parse(Console.ReadLine());
+        if (current1 + current2 < previous1 + previous2)
+        {
+            Console.WriteLine("smaller");
+        }
+        // למה צריך לשים כאן ולא להתאפק לסיבוב הבא?
+        previous1 = current1; // החלק החשוב בפעולה
+        previous2 = current2;
+    }
+}
+{% endhighlight %}
+
+
+<details markdown="1"><summary>פתרון</summary>
+
+## טבלת מעקב
+
+| # (שורות)     | previous1 | previous2 | current1 | current2 | i | i<108 | if (current1+current2 < previous1+previous2) | פלט                      |
+|---------------|-----------|-----------|----------|----------|---|-------|----------------------------------------------|--------------------------|
+| 1-4           |           |           |          |          |   |       |                                              | Enter two int numbers    |
+| 5             | 90        |           |          |          |   |       |                                              |                         |
+| 6             | 90        | 110       |          |          |   |       |                                              |                         |
+| 7             |           |           |          |          | 0 | true  |                                              |                         |
+| 8-9           |           |           |          |          |   |       |                                              | Enter two int numbers    |
+| 10            |           |           | 200      |          |   |       |                                              |                         |
+| 11            |           |           | 200      | 300      |   |       |                                              |                         |
+| 12            | 90        | 110       | 200      | 300      | 0 | true  | false                                        |                         |
+| 18-19         | 200       | 300       |          |          | 1 | true  |                                              |                         |
+| 8-9           |           |           |          |          |   |       |                                              | Enter two int numbers    |
+| 10            |           |           | 150      |          |   |       |                                              |                         |
+| 11            |           |           | 150      | 100      |   |       |                                              |                         |
+| 12            | 200       | 300       | 150      | 100      | 1 | true  | true                                         | smaller                 |
+| 18-19         | 150       | 100       |          |          | 2 | true  |                                              |                         |
+| ...           |           |           |          |          |...| ...   |                                              | ...                      |
+| (i=108)       |           |           |          |          |108| false |                                              | ← יציאה מהלולאה         |
+|               |           |           |          |          |   |       |                                              | סיום התוכנית            |
+{: .table-en}
+
+</details>
 ---
