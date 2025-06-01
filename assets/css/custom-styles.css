@@ -40,14 +40,14 @@ pre {
     /*main background for all INLINE code*/
     /* --code-img: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1.5em, rgba(255, 255, 255, 0.02) 1.5em, rgba(255, 255, 255, 0.02) 1.5em); */
 
-    pre{
-          background: repeating-linear-gradient(
-            rgba(255,255,255, 0.08) 0,
-            rgba(255,255,255, 0.08) var(--line-height),
-            rgba(255,255,255, 0.52) var(--line-height),
-            rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
-        );
-    }
+ 
+        --code-img: repeating-linear-gradient(
+        rgba(255,255,255, 0.08) 0,
+        rgba(255,255,255, 0.08) var(--line-height),
+        rgba(255,255,255, 0.52) var(--line-height),
+        rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
+    );
+    
 
     --code-met-col: #DCDCAA;
     --code-keyw-col: #D8A0DF;
@@ -85,14 +85,14 @@ pre {
     /* --code-img: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04) 1.5em, rgba(0, 0, 0, 0.02) 1.5em, rgba(0, 0, 0, 0.02) 1.5em); */
 
 
-    pre{
-          background: repeating-linear-gradient(
-            rgba(255,0,0, 0.38) 0,
-            rgba(255,0,0, 0.38) var(--line-height),
-            rgba(255,255,255, 0.52) var(--line-height),
-            rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
-        );
-    }
+
+        --code-img: repeating-linear-gradient(
+        rgba(255,0,0, 0.38) 0,
+        rgba(255,0,0, 0.38) var(--line-height),
+        rgba(255,255,255, 0.52) var(--line-height),
+        rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
+    );
+ 
     --code-met-col: #74531F;
     --code-keyw-col:#9108C4;
     --code-bracets-col:#040404;
