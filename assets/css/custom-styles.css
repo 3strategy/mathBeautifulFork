@@ -107,14 +107,14 @@ h2 {
 
   @media (max-width: 1400px) {
 
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 
     pre {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
 
     .container-md {
-      transform: scale(1.2);
+      transform: scale(1.3);
     }
   }
 }
