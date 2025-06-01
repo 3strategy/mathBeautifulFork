@@ -48,23 +48,28 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Structure of a basic C# program (Main method, class, namespace) מבנה תכנית בסיסית
 
-- [ ] Basic output using Console.WriteLine and Console.Write פלט בסיסי
+- [ ] Basic output: Console.WriteLine and Console.Write פלט בסיסי
 
 - [ ] Variables and their types (int, double, string) משתנים וטיפוסי משתנים
 
-- [ ] Declaration and initialization of variables הכרזה ואיתחול
+- [ ] Declaration and initialization of variables הכרזה ואיתחול משתנים
 
 - [ ] Reading input from the console (Console.ReadLine) ביצוע קלט
 
-- [ ] Converting strings to numerical types (int.Parse, double.Parse) המרת משתנים
+- [ ] Converting strings to numerical types (int.Parse, double.Parse) המרת מחרוזות למספר
 
 - [ ] Arithmetic operations (+, -, *, /) אופרטורים חשבוניים
 
-- [ ] Integer division and remainder (modulus %) האופרטור שארית חלוקה
+- [ ] Integer division: 10/4 equals 2 חלוקה בשלמים 
+
+- [ ] remainder (modulus %) האופרטור שארית חלוקה
 
 - [ ] Explicit type conversions (**casting**, e.g. `(double)x` ) המרת טיפוסים מפורשת
 
 - [ ] Implicit conversions המרה אוטומטית
+
+- [ ] אופרטורים מיוחדים `+=, -=, *=, /=, ++, --`
+
 
 
 

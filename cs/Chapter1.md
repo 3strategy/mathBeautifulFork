@@ -2,6 +2,7 @@
 layout: page 
 title: "פרק 1 - מבוא לשפת #C, הדפסה ומשתנים" 
 subtitle: "התקנת הסביבה, הדפסה, משתנים, המרות וקלט"
+mathjax: true
 lang: he
 ---
 <!-- https://chatgpt.com/c/67f0f869-af10-800e-8479-c8fd3873432c -->
@@ -42,7 +43,7 @@ lang: he
 **לפניכם סרטון הדרכה קצר, מותאם לצפיה מטלפון, צעד אחר צעד להתקנת סביבת העבודה.**
 {% include youtube.html id="yhBm8yLmIkM" %} 
 
-## שלבי יצירת תוכנית חדשה ב-Visual Studio 202x:
+## שלבי יצירת תוכנית חדשה ב-Visual Studio 2022:
 1. פתחו פרויקט חדש מסוג Console App.
 2. יוצג לפניכם קוד התוכנית הבסיסית:
 
@@ -65,7 +66,7 @@ Hello, World!
 ```
 
 
-## הסבר נוסף: יצירת פרוייקט בויז'ואל סטדיו 202x
+## הסבר נוסף: יצירת פרוייקט בויז'ואל סטודיו 2022
 לפניכם סרטון הסבר על יצירת פרוייקט חדש. פעמים רבות כל תכנית שלנו תהיה פרוייקט חדש ולכן כדאי לתת שם משמעותי באנגלית לפרוייקט:
 {% include youtube.html id="NlFeUFfRkxs" %} 
 
@@ -199,15 +200,29 @@ Console.WriteLine("Next year you will NOT be: " + age + 1);
 {% endhighlight %}
 
 
+## חלוקה בשלמים
+חלוקת שלם בשלם תתפרש תמיד כפעולת חלוקה בשלמים.
+
+מספר_שלם / מספר_שלם
+למשל:   3 = 3 / 10
+
+כאשר המחלק או המחולק מטיפוס ממשי, טיפוס הערך המוחזר (התוצאה) הוא ממשי.
+$$13 / 5 = 2$$
+$$13.0 / 5 = 2.6$$
+$$13 / 5.0 = 2.6$$
+$$21.5 % 5 = 1.5$$
+
+
 
 ## חישובים והמרות (casting)
-לעיתים נדרש להמיר משתנה מסוג אחד לאחר. נשתמש ב-casting:
+לעיתים נדרש להמיר משתנה מסוג אחד לאחר. נשתמש ב-**casting**:
 
-{% highlight csharp linenos %}int a = 5; 
-int b = 2; 
+{% highlight csharp linenos %}int a = 5;
+int b = 2;
 double result = (double)a / b; // 2.5
-
-Console.WriteLine(result); {% endhighlight %}
+double result2 = a / b; // 2
+Console.WriteLine(result);
+Console.WriteLine(result2); {% endhighlight %}
 
 
 

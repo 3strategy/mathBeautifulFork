@@ -104,7 +104,7 @@ Console.Write("Enter computer price: "); // כדי לא לעבור שורה Writ
 
 double price = double.Parse(Console.ReadLine());
 
-double finalPrice = price + price * 0.18;
+double finalPrice = price + price * 0.18; // price * 1.18  אפשר גם
 
 Console.WriteLine("final price including V.A.T is: ₪" + finalPrice);
 {% endhighlight %}
@@ -113,17 +113,16 @@ Console.WriteLine("final price including V.A.T is: ₪" + finalPrice);
 
 
 
-### מוכן לאתגר?
+### המשך תרגול
 
-אם סיימת לתרגל תרגילים אלו בהצלחה, זה הזמן ליישם את הידע שלך בתרגול מותאם.
+אם סיימתם לתרגל תרגילים אלו בהצלחה, המשיכו לתרגילים הבאים או למטלת הבית
 
 [⬅ מעבר לתרגול 1.2 - משתנים והשמה](/cs/Chapter1Ex1.2)
 
 [⬅ מעבר לתרגול 1.3 - חישובים והמרות מתקדמות](/cs/Chapter1Ex1.3)
 
-[⬅ מעבר להסבר על הטיפוס char תו](/cs/Chapter1Char)
+[⬅ מעבר להסבר על **הטיפוס char** תו](/cs/Chapter1Char)
 
-[⬅ לקריאה על קיצורים שימושיים וכתיבת קיצורים snippets נוספים](/cs/Shortcuts)
+[⬅ לקריאה על **קיצורים שימושיים** וכתיבת קיצורים snippets נוספים](/cs/Shortcuts)
 
 
-</details>
