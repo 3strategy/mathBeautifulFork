@@ -28,6 +28,7 @@ lang: he
 <details markdown="1"><summary>התקנה ועבודה ב-VS2022</summary>
 
 ## סביבת העבודה (Visual Studio)
+התקינו את התוכנה **בזמנכם החופשי.** אני אוכל לעזור ל-3-4 שרוצים עזרה ומעדיפים להתחיל התקנה במהלך השיעור.
 
 סביבת הפיתוח שלנו תהיה Visual Studio 2022, המשמשת לכתיבת קוד בשפת C#. 
 [כנסו לקישור והתקינו את גרסת community](https://visualstudio.microsoft.com/vs/community/)
@@ -45,7 +46,7 @@ lang: he
 1. פתחו פרויקט חדש מסוג Console App.
 2. יוצג לפניכם קוד התוכנית הבסיסית:
 
-{% highlight csharp linenos %}namespace HelloWorld 
+{% highlight csharp linenos %}namespace ConsoleApp1 
 { 
     class Program 
     { 
@@ -84,16 +85,15 @@ Hello, World!
 
 ## תכנית ראשונה
 כנסו לאתר [**netfiddle**](https://dotnetfiddle.net/)  ותפגשו את התוכנית הראשונה:
-{% highlight csharp linenos %}namespace HelloWorld 
-{ 
-    class Program 
-    { 
-        public static void Main(string[] args) 
-        { 
-            Console.WriteLine("Hello, World!"); 
-        } 
-    } 
-} 
+{% highlight csharp linenos %}using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World");
+	}
+}
 {% endhighlight %}
 אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/) הכפתור F5 עובד.
 
