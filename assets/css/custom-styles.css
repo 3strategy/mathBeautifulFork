@@ -4,6 +4,17 @@ h2 {
     margin-top: 3em
 }
 
+
+pre {
+    direction: ltr !important;
+    text-align: left !important;
+    /* color:#5696D6; main color for all code */
+      /* shrink the font’s line-height: */
+    --line-height: 1.3em;
+    line-height: var(--line-height);
+
+}
+
 /* Default: Dark theme (as built from _config.yml) */
 :root {
     --page-col: #121212;
@@ -28,12 +39,16 @@ h2 {
     --code-back-col: #353535;
     /*main background for all INLINE code*/
     /* --code-img: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1.5em, rgba(255, 255, 255, 0.02) 1.5em, rgba(255, 255, 255, 0.02) 1.5em); */
-    --code-img: repeating-linear-gradient(
-    rgba(255,255,255, 0.08) 0,         /* color A start */
-    rgba(255,255,255, 0.08) 1em,    /* color A end */
-    rgba(255,255,255, 0.52) 1em,    /* color B start */
-    rgba(255,255,255, 0.52) 2em     /* color B end */
-    );
+
+    pre{
+          background: repeating-linear-gradient(
+            rgba(255,255,255, 0.08) 0,
+            rgba(255,255,255, 0.08) var(--line-height),
+            rgba(255,255,255, 0.52) var(--line-height),
+            rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
+        );
+    }
+
     --code-met-col: #DCDCAA;
     --code-keyw-col: #D8A0DF;
     --code-bracets-col: #EEEEDD;
@@ -70,12 +85,14 @@ h2 {
     /* --code-img: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04) 1.5em, rgba(0, 0, 0, 0.02) 1.5em, rgba(0, 0, 0, 0.02) 1.5em); */
 
 
-    --code-img: repeating-linear-gradient(
-    rgba(0, 0, 0, 0.04) 0,         /* color A start */
-    rgba(0, 0, 0, 0.04) 1em,    /* color A end */
-    rgba(0, 0, 0, 0.52) 1em,    /* color B start */
-    rgba(0, 0, 0, 0.52) 2em     /* color B end */
-    );
+    pre{
+          background: repeating-linear-gradient(
+            rgba(255,0,0, 0.38) 0,
+            rgba(255,0,0, 0.38) var(--line-height),
+            rgba(255,255,255, 0.52) var(--line-height),
+            rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
+        );
+    }
     --code-met-col: #74531F;
     --code-keyw-col:#9108C4;
     --code-bracets-col:#040404;
@@ -86,14 +103,7 @@ h2 {
 
     --tab-nth-child: #f8f8f8;
 }
-pre {
-    direction: ltr !important;
-    text-align: left !important;
-    /* color:#5696D6; main color for all code */
-      /* shrink the font’s line-height: */
-    line-height: 1.3em;
 
-}
 
 .large-theme {
   font-size: 1.6em;
