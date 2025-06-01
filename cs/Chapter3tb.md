@@ -68,8 +68,6 @@ Console.WriteLine("Dice roll result: " + dice);
 | פלט      | 4    | Dice roll result: 4  |
 {: .table-en}
 
-{: .box-warning}
-**אזהרה:** שימו לב שכל פעם שתיצרו מופע חדש של Random (`new Random()`), ייתכן שתקבלו תוצאות דומות אם תיצרו מופעים חדשים במהירות רבה מאוד (לדוגמה בלולאה). מומלץ ליצור מופע אחד ולהשתמש בו לאורך כל התוכנית.
 
 [⬅ מעבר לתרגול 3.1 - המחלקות Math, Random](/cs/Chapter3Ex3.1)
 
