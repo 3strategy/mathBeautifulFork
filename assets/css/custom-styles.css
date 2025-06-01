@@ -4,15 +4,15 @@ h2 {
     margin-top: 3em
 }
 
+/* Define line-height variable globally */
+:root {
+    --line-height: 1.3em;
+}
 
 pre {
     direction: ltr !important;
     text-align: left !important;
-    /* color:#5696D6; main color for all code */
-      /* shrink the font’s line-height: */
-    --line-height: 1.3em;
     line-height: var(--line-height);
-
 }
 
 /* Default: Dark theme (as built from _config.yml) */
@@ -35,19 +35,11 @@ pre {
     --backe-col: #521212;
 
     --code-col: #5696D6;
-    /*main color for all code*/
     --code-back-col: #353535;
-    /*main background for all INLINE code*/
-    /* --code-img: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1.5em, rgba(255, 255, 255, 0.02) 1.5em, rgba(255, 255, 255, 0.02) 1.5em); */
-
-    pre{
-          background: repeating-linear-gradient(
-            rgba(255,255,255, 0.08) 0,
-            rgba(255,255,255, 0.08) var(--line-height),
-            rgba(255,255,255, 0.52) var(--line-height),
-            rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
-        );
-    }
+    
+    /* Dark theme gradient colors */
+    --pre-bg-color-1: rgba(255,255,255, 0.08);
+    --pre-bg-color-2: rgba(255,255,255, 0.52);
 
     --code-met-col: #DCDCAA;
     --code-keyw-col: #D8A0DF;
@@ -57,6 +49,16 @@ pre {
     --code-numbers-col: #B5CEA8;
     --code-types-col: #5696D6;
     --tab-nth-child: #222222;
+}
+
+/* Apply the gradient background to pre elements */
+pre {
+    background: repeating-linear-gradient(
+        var(--pre-bg-color-1) 0,
+        var(--pre-bg-color-1) var(--line-height),
+        var(--pre-bg-color-2) var(--line-height),
+        var(--pre-bg-color-2) calc(var(--line-height) * 2)
+    );
 }
 
 /* Overrides for Light theme */
@@ -79,77 +81,65 @@ pre {
     --backe-col: #f4dddb;
 
     --code-col: #2666c6;
-    /*main color for all code*/
     --code-back-col: #FFFFFF;
-    /*main background for all INLINE code*/
-    /* --code-img: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04) 1.5em, rgba(0, 0, 0, 0.02) 1.5em, rgba(0, 0, 0, 0.02) 1.5em); */
+    
+    /* Light theme gradient colors */
+    --pre-bg-color-1: rgba(255,0,0, 0.38);
+    --pre-bg-color-2: rgba(255,255,255, 0.52);
 
-
-    pre{
-          background: repeating-linear-gradient(
-            rgba(255,0,0, 0.38) 0,
-            rgba(255,0,0, 0.38) var(--line-height),
-            rgba(255,255,255, 0.52) var(--line-height),
-            rgba(255,255,255, 0.52) calc(var(--line-height) * 2)
-        );
-    }
     --code-met-col: #74531F;
-    --code-keyw-col:#9108C4;
-    --code-bracets-col:#040404;
-    --code-vars-col:#1F377F;
+    --code-keyw-col: #9108C4;
+    --code-bracets-col: #040404;
+    --code-vars-col: #1F377F;
     --code-comments-col: #008000;
     --code-numbers-col: #000;
     --code-types-col: #0000FF;
-
     --tab-nth-child: #f8f8f8;
 }
 
-
 .large-theme {
-  font-size: 1.6em;
-
-  pre {
-    font-size: 1.0em; 
-  }
-
-  h2,
-  h3 {
-    margin-top: 7em;
-  }
-
-  .container-md {
-    transform: scale(1.5);
-    transform-origin: top right;
-    max-width: 100% !important;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
-
-  .beautiful-jekyll-footer {
-    display: none;
-  }
-
-  /* push the first note down */
-  .box-note:first-of-type {
-    margin-top: 4em;
-  }
-
-
-  @media (max-width: 1400px) {
-
-    font-size: 0.9em;
+    font-size: 1.6em;
 
     pre {
-      font-size: 1em;
+        font-size: 1.0em; 
+    }
+
+    h2,
+    h3 {
+        margin-top: 7em;
     }
 
     .container-md {
-      transform: scale(1.4);
+        transform: scale(1.5);
+        transform-origin: top right;
+        max-width: 100% !important;
+        padding-left: 1em;
+        padding-right: 1em;
     }
-  }
+
+    .beautiful-jekyll-footer {
+        display: none;
+    }
+
+    /* push the first note down */
+    .box-note:first-of-type {
+        margin-top: 4em;
+    }
+
+    @media (max-width: 1400px) {
+        font-size: 0.9em;
+
+        pre {
+            font-size: 1em;
+        }
+
+        .container-md {
+            transform: scale(1.4);
+        }
+    }
 }
 
-
+/* Rest of your CSS remains the same... */
 html {
     direction: rtl;
 }
@@ -160,25 +150,20 @@ body {
 }
 
 ul, ol {
-  display: flex;              /* or display: grid; */
-  flex-direction: column;     /* for flex only */
-  gap: 0.6em;                /* uniform spacing between items */
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
 }
 
 .subq {
-    /* indent the whole block */
     margin-inline-start: 2em;
-    /* (optional) if you want hanging-indent so that the א. “sticks out” */
     text-indent: -1.5em;
     padding-inline-start: 1.5em;
 }
 
 .hebrew-list {
-    /* use Hebrew alphabet for list markers */
     list-style-type: hebrew;
-    /* indent from the main text—adjust to taste */
     margin-inline-start: 2em;
-    /* if you want the marker inside the text block: */
     list-style-position: inside;
 }
 
@@ -199,23 +184,7 @@ canvas {
     gap: 3px;
     box-sizing: border-box;
     padding: 25px;
-    /* margin: 5px; */
 }
-
-/* .btn {
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(237, 237, 208); 
-    color: black; 
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-    .btn:hover {
-        background-color: #3367d6;
-    } */
 
 #status-message {
     font-size: 3em;
@@ -272,7 +241,6 @@ button {
     padding: 15px 8px;
     font-size: 18px;
     background-color: var(--backn-col);
-    /* color: white; */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -284,11 +252,9 @@ button:hover {
 
 .math-button {
     display: inline-block;
-    /* background-color: #000; */
     margin: 0;
 }
 
-/* Increase the size of MathJax output */
 .MathJax {
     font-weight: bold;
     font-size: 120% !important;
@@ -296,9 +262,7 @@ button:hover {
     padding-left: 0.1em;
     padding-right: 0.1em;
     padding-bottom: 0em;
-    /* background-color: var(--backn-col); */
 }
-
 
 .box-note, .box-warning, .box-error, .box-success {
     margin-right: 0.3125em;
@@ -325,14 +289,11 @@ button:hover {
     border-radius: 0;
 }
 
-/* table formatting */
 .table-en {
-    /* to override rtl on any section that needs ltr */
     direction: ltr;
 }
 
 .table-he {
-    /* to overide ltr on any section that needs rtl */
     direction: rtl;
     text-align: right;
 }
@@ -344,16 +305,12 @@ table {
 table td,
 th {
     border-color: #333333 !important;
-
     border-bottom-color: #775555 !important;
 }
 
 table tr:nth-child(2n) {
     background-color: var(--tab-nth-child);
 }
-
-/* ====================================== */
-/* main code formatting overriding Rouge */
 
 .highlight>pre {
     background-image: var(--code-img);
@@ -362,100 +319,29 @@ table tr:nth-child(2n) {
 code {
     color: var(--code-col) !important;
     font-size: 110%;
-    /*main color for all code*/
     background-color: var(--codeback-col) !important;
-    /*main background for all INLINE code*/
 }
 
+/* JavaScript Code formatting */
+pre code span.kd { color: #5696D6; }
+pre code span.nx { color: #9CDCFE; }
+pre code span.o { color: #B4B4B4; }
+pre code span.p { color: var(--code-bracets-col) !important; }
+pre code span.k { color: var(--code-keyw-col) !important; }
+pre code span.mi { color: #88FF88 !important; }
+pre code span.dl { color: #F4BBA3 !important; }
+pre code span.s2 { color: #D69D85 !important; }
+pre code span.kc { color: #569CD6 !important; }
+pre .lineno { color: #666666 !important; }
 
-
-/* ====================================== */
-
-/* JavaScript Code formatting for both table and non-table contexts */
-pre code span.kd {
-    color: #5696D6;
-}
-
-pre code span.nx {
-    /* most stuff */
-    color: #9CDCFE;
-}
-
-pre code span.o {
-    /* operators */
-    color: #B4B4B4;
-}
-
-pre code span.p {
-    /* brackets */
-    color: var(--code-bracets-col) !important;
-}
-
-pre code span.k {
-    /* keywords */
-    color: var(--code-keyw-col) !important;
-}
-
-pre code span.mi {
-    /* mishtanim variables */
-    color: #88FF88 !important;
-}
-
-pre code span.dl {
-    /* גרשיים */
-    color: #F4BBA3 !important;
-}
-
-pre code span.s2 {
-    /* מחרוזות מצוטטות */
-    color: #D69D85 !important;
-}
-
-pre code span.kc {
-    /* קבועי true false */
-    color: #569CD6 !important;
-}
-
-/* Line numbers */
-pre .lineno {
-    color: #666666 !important;
-}
-
-/*=====================================================================*/
-/* CSharp Code formatting for both table and non-table contexts */
-
-pre code span.nf {
-    /* methods */
-    color: var(--code-met-col) !important;
-}
-
-pre code span.n {
-    /* variables names and class names 9CDCFE */
-    color: var(--code-vars-col) !important;
-}
-
-pre code span.kt {
-    /* types * 5696D6*/
-    color: var(--code-types-col) !important;
-
-
-}
-
-pre code span.m {
-    /* misparim */
-    color: var(--code-numbers-col) !important;
-}
-
-pre code span.s {
-    /* מחרוזות מצוטטות */
-    color: #D69D85 !important;
-}
-
-pre code span.c1 {
-    /* הערות בעברית */
+/* CSharp Code formatting */
+pre code span.nf { color: var(--code-met-col) !important; }
+pre code span.n { color: var(--code-vars-col) !important; }
+pre code span.kt { color: var(--code-types-col) !important; }
+pre code span.m { color: var(--code-numbers-col) !important; }
+pre code span.s { color: #D69D85 !important; }
+pre code span.c1 { 
     color: var(--code-comments-col) !important;
     font-family: 'Arimo';
     font-weight: bold;
 }
-
-/*=====================================================================*/
