@@ -32,7 +32,7 @@ h2 {
     
     /* Dark theme gradient colors */
     --pre-bg-1: rgba(255,255,255, 0.08);
-    --pre-bg-2: rgba(255,255,255, 0.52);
+    --pre-bg-2: rgba(255,255,255, 0.02);
 
     --code-img: repeating-linear-gradient(
         var(--pre-bg-1) 0,
@@ -75,8 +75,8 @@ h2 {
     --code-back-col: #FFFFFF;
     
     /* Light theme gradient colors */
-    --pre-bg-1: rgba(255,0,0, 0.38);
-    --pre-bg-2: rgba(255,255,255, 0.52);
+    --pre-bg-1: rgba(0,0,0, 0.04);
+    --pre-bg-2: rgba(0,0,0, 0.02);
 
     --code-img: repeating-linear-gradient(
         var(--pre-bg-1) 0,
