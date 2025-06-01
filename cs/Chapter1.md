@@ -11,11 +11,12 @@ lang: he
 בפרק זה נכיר את שפת C#, סביבת הפיתוח Visual Studio, נלמד על משתנים, קלט, פלט והמרות בין סוגים שונים של משתנים.
 {: .box-note}
 
-## IL לפני הכל, אם אתם מורים, או אם אתם עדיין לא רשומים לקמפוס
 <details markdown="1">
 <summary>רישום למצפן ולקמפוס</summary>
 
 [רישום למצפן. למורים שעדיין לא נרשמו](https://mpm.education.gov.il/rishum/mobile/rishumOvedOraa/0/homePage)
+
+[קלאסרום של גיא](https://classroom.google.com/c/NzY2NTYyODk0OTA5?cjc=ga6rbvoa)
 
 [קישור לרישום לקמפוס](https://campus.gov.il/)
 
