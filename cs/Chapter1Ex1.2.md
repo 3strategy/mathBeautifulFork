@@ -202,13 +202,13 @@ int age = int.Parse(Console.ReadLine());
 Console.WriteLine(name + " is " + age + " y.o.");
 {% endhighlight %}
 
+</details>
 
 ## תרגיל 1.2.10 – חילוף בין ספלים
 
 <a id="swapValuesMeaningful"></a>
 
-**מומלץ לחכות עם שאלה זו לשיעור 2**
-גרסה חלופית מופיעה [כאן](/cs/Chapter2#swapValues)
+**מומלץ לחכות עם שאלה זו לשיעור 2.** גרסה חלופית מופיעה [כאן](/cs/Chapter2#swapValues)
 
 בבית המלוכה האנגלי שותים שתייה חמה מדי יום בשעה 17:00, תה בספלים המיועדים לתה בלבד, וקפה בספלים המיועדים לקפה בלבד.  
 אחד המשרתים התבלבל ומזג בטעות תה בספל של קפה, וקפה בספל של תה.  
@@ -257,4 +257,4 @@ Console.WriteLine("Cup of coffee contains: " + cupCoffee);
 
 [⬅ מעבר להסבר על הטיפוס char תו](/cs/Chapter1Char)
 
-</details>
+

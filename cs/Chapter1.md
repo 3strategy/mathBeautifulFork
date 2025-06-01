@@ -39,13 +39,14 @@ lang: he
 {% include youtube.html id="yhBm8yLmIkM" %} 
 
 
-בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
-- [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
-- [netfiddle](https://dotnetfiddle.net/),  
-- [programiz](https://www.programiz.com/csharp-programming/online-compiler/), 
-- [onecompiler](https://onecompiler.com/csharp), 
-- [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
 {: .box-note}
+בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
+* [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
+* [netfiddle](https://dotnetfiddle.net/),  
+* [programiz](https://www.programiz.com/csharp-programming/online-compiler/), 
+* [onecompiler](https://onecompiler.com/csharp), 
+* [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
+
 
 
 ## שלבי יצירת תוכנית חדשה ב-Visual Studio 202x:
@@ -64,7 +65,7 @@ lang: he
 } 
 {% endhighlight %}
 
-הריצו את התוכנית בלחיצה על מקש F5, וראו שהיא מדפיסה:
+הריצו את התוכנית בלחיצה על מקש F5 או ⏵, וראו שהיא מדפיסה:
 
 ```
 Hello, World!
