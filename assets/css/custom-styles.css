@@ -38,8 +38,15 @@ pre {
     --code-back-col: #353535;
     
     /* Dark theme gradient colors */
-    --pre-bg-color-1: rgba(255,255,255, 0.08);
-    --pre-bg-color-2: rgba(255,255,255, 0.52);
+    --pre-bg-1: rgba(255,255,255, 0.08);
+    --pre-bg-2: rgba(255,255,255, 0.52);
+
+    --code-img: repeating-linear-gradient(
+        var(--pre-bg-1) 0,
+        var(--pre-bg-1) var(--line-height),
+        var(--pre-bg-2) var(--line-height),
+        var(--pre-bg-2) calc(var(--line-height) * 2)
+    );
 
     --code-met-col: #DCDCAA;
     --code-keyw-col: #D8A0DF;
@@ -51,15 +58,6 @@ pre {
     --tab-nth-child: #222222;
 }
 
-/* Apply the gradient background to pre elements */
-pre {
-    background: repeating-linear-gradient(
-        var(--pre-bg-color-1) 0,
-        var(--pre-bg-color-1) var(--line-height),
-        var(--pre-bg-color-2) var(--line-height),
-        var(--pre-bg-color-2) calc(var(--line-height) * 2)
-    );
-}
 
 /* Overrides for Light theme */
 .light-theme {
@@ -84,8 +82,16 @@ pre {
     --code-back-col: #FFFFFF;
     
     /* Light theme gradient colors */
-    --pre-bg-color-1: rgba(255,0,0, 0.38);
-    --pre-bg-color-2: rgba(255,255,255, 0.52);
+    --pre-bg-1: rgba(255,0,0, 0.38);
+    --pre-bg-2: rgba(255,255,255, 0.52);
+
+    --code-img: repeating-linear-gradient(
+        var(--pre-bg-1) 0,
+        var(--pre-bg-1) var(--line-height),
+        var(--pre-bg-2) var(--line-height),
+        var(--pre-bg-2) calc(var(--line-height) * 2)
+    );
+
 
     --code-met-col: #74531F;
     --code-keyw-col: #9108C4;
