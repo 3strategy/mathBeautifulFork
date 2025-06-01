@@ -4,10 +4,6 @@ h2 {
     margin-top: 3em
 }
 
-/* Define line-height variable globally */
-:root {
-    --line-height: 1.3em;
-}
 
 pre {
     direction: ltr !important;
@@ -17,6 +13,7 @@ pre {
 
 /* Default: Dark theme (as built from _config.yml) */
 :root {
+    --line-height: 1.3em;
     --page-col: #121212;
     --text-col: #E0E0E0;
     --link-col: #82AAFF;
@@ -84,14 +81,6 @@ pre {
     /* Light theme gradient colors */
     --pre-bg-1: rgba(255,0,0, 0.38);
     --pre-bg-2: rgba(255,255,255, 0.52);
-
-    --code-img: repeating-linear-gradient(
-        var(--pre-bg-1) 0,
-        var(--pre-bg-1) var(--line-height),
-        var(--pre-bg-2) var(--line-height),
-        var(--pre-bg-2) calc(var(--line-height) * 2)
-    );
-
 
     --code-met-col: #74531F;
     --code-keyw-col: #9108C4;
