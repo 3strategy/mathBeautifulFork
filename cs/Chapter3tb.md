@@ -39,15 +39,15 @@ Console.WriteLine(result);
 
 יצירת מספר אקראי שלם בין 1 ל-10:
 
-{% highlight csharp linenos %}Random rand = new Random();
-int number = rand.Next(1, 11); // 1-10
+{% highlight csharp linenos %}Random rnd = new Random();
+int number = rnd.Next(1, 11); // 1-10
 Console.WriteLine(number);
 {% endhighlight %}
 
 יצירת מספר אקראי ממשי בין 0 ל-1:
 
-{% highlight csharp linenos %}Random rand = new Random();
-double number = rand.NextDouble();
+{% highlight csharp linenos %}Random rnd = new Random();
+double number = rnd.NextDouble();
 Console.WriteLine(number);
 {% endhighlight %}
 
@@ -55,8 +55,8 @@ Console.WriteLine(number);
 
 הדמיית הטלת קובייה:
 
-{% highlight csharp linenos %}Random rand = new Random();
-int dice = rand.Next(1, 7); // 1-6
+{% highlight csharp linenos %}Random rnd = new Random();
+int dice = rnd.Next(1, 7); // 1-6
 Console.WriteLine("Dice roll result: " + dice);
 {% endhighlight %}
 

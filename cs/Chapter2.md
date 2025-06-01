@@ -17,9 +17,10 @@ lang: he
 
 דוגמאות לביטויים לוגיים:
 
-{% highlight csharp linenos %}int age = 18;
-bool isAdult = age >= 18; // התוצאה תהיה true
-{% endhighlight %}
+```csharp
+int age = 18;
+bool isAdult = age >= 18; // isAdult שיכנס למשתנה true תוצאה הביטוי תהיה
+```
 
 ## אופרטורים של השוואה ואופרטורים לוגיים ##
 
