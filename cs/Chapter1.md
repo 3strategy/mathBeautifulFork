@@ -25,18 +25,22 @@ lang: he
 </details>
 
 ## סביבת העבודה (Visual Studio)
-סביבת הפיתוח שלנו תהיה Visual Studio, המשמשת לכתיבת קוד בשפת C#. 
-[קישור להורדת גרסת community](https://visualstudio.microsoft.com/vs/community/)
-בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [C#interactive](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), [netfiddle](https://dotnetfiddle.net/),  [programiz](https://www.programiz.com/csharp-programming/online-compiler/), [onecompiler](https://onecompiler.com/csharp), [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
 
-## התקנת ויז'ואל סטודיו 202x Community
+סביבת הפיתוח שלנו תהיה Visual Studio 2022, המשמשת לכתיבת קוד בשפת C#. 
+[כנסו לקישור והתקינו את גרסת community](https://visualstudio.microsoft.com/vs/community/)
+{: .box-success}
 
-{: .box-warning}
-שימו לב לבחור בגרסת ה-Community. בכל גרסה אחרת תתקעו בבעיית רישוי לאחר מספר שבועות
+שימו לב: הקישור הוא **לגרסת ה-Community**. בכל גרסה אחרת תתקעו בבעיית רישוי לאחר מספר שבועות
+{: .box-error}
 
-לפניכם סרטון הדרכה קצר, מותאם לצפיה מטלפון, צעד אחר צעד להתקנת סביבת העבודה. 
+## התקנת ויז'ואל סטודיו 2022 Community
 
+**לפניכם סרטון הדרכה קצר, מותאם לצפיה מטלפון, צעד אחר צעד להתקנת סביבת העבודה.**
 {% include youtube.html id="yhBm8yLmIkM" %} 
+
+
+בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [C#interactive](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), [netfiddle](https://dotnetfiddle.net/),  [programiz](https://www.programiz.com/csharp-programming/online-compiler/), [onecompiler](https://onecompiler.com/csharp), [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
+{: .box-note}
 
 
 ## שלבי יצירת תוכנית חדשה ב-Visual Studio 202x:
