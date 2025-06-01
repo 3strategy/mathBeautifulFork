@@ -41,11 +41,11 @@ lang: he
 
 {: .box-note}
 בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
+* [**netfiddle מומלץ**](https://dotnetfiddle.net/),  
+* [onecompiler קלט מוזר](https://onecompiler.com/csharp), 
 * [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
-* [netfiddle](https://dotnetfiddle.net/),  
-* [programiz](https://www.programiz.com/csharp-programming/online-compiler/), 
-* [onecompiler](https://onecompiler.com/csharp), 
 * [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
+* [programiz ללא קלט ולא מגיב](https://www.programiz.com/csharp-programming/online-compiler/), 
 
 
 
