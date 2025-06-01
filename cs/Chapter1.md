@@ -39,7 +39,12 @@ lang: he
 {% include youtube.html id="yhBm8yLmIkM" %} 
 
 
-בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון [C#interactive](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), [netfiddle](https://dotnetfiddle.net/),  [programiz](https://www.programiz.com/csharp-programming/online-compiler/), [onecompiler](https://onecompiler.com/csharp), [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
+בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
+- [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
+- [netfiddle](https://dotnetfiddle.net/),  
+- [programiz](https://www.programiz.com/csharp-programming/online-compiler/), 
+- [onecompiler](https://onecompiler.com/csharp), 
+- [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
 {: .box-note}
 
 
