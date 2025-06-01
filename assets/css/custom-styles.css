@@ -10,9 +10,6 @@ pre {
     text-align: left !important;
     /* color:#5696D6; main color for all code */
       /* shrink the font’s line-height: */
-    --line-height: 1.3em;
-    line-height: var(--line-height);
-
 }
 
 /* Default: Dark theme (as built from _config.yml) */
@@ -39,7 +36,11 @@ pre {
     --code-back-col: #353535;
     /*main background for all INLINE code*/
     /* --code-img: linear-gradient(rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.08) 1.5em, rgba(255, 255, 255, 0.02) 1.5em, rgba(255, 255, 255, 0.02) 1.5em); */
+    pre {
+        --line-height: 1.3em;
+        line-height: var(--line-height);
 
+    }
  
         --code-img: repeating-linear-gradient(
         rgba(255,255,255, 0.08) 0,
@@ -83,7 +84,11 @@ pre {
     --code-back-col: #FFFFFF;
     /*main background for all INLINE code*/
     /* --code-img: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04) 1.5em, rgba(0, 0, 0, 0.02) 1.5em, rgba(0, 0, 0, 0.02) 1.5em); */
+    pre {
+        --line-height: 1.3em;
+        line-height: var(--line-height);
 
+    }
 
 
         --code-img: repeating-linear-gradient(
