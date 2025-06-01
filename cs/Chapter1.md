@@ -12,7 +12,7 @@ lang: he
 {: .box-note}
 
 <details markdown="1">
-<summary>רישום למצפן ולקמפוס</summary>
+<summary>מינהלות - רישום למצפן ולקמפוס</summary>
 
 [רישום למצפן. למורים שעדיין לא נרשמו](https://mpm.education.gov.il/rishum/mobile/rishumOvedOraa/0/homePage)
 
@@ -23,6 +23,9 @@ lang: he
 [קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/)
 
 </details>
+
+
+<details markdown="1"><summary>התקנה ועבודה ב-VS2022</summary>
 
 ## סביבת העבודה (Visual Studio)
 
@@ -37,17 +40,6 @@ lang: he
 
 **לפניכם סרטון הדרכה קצר, מותאם לצפיה מטלפון, צעד אחר צעד להתקנת סביבת העבודה.**
 {% include youtube.html id="yhBm8yLmIkM" %} 
-
-
-{: .box-note}
-בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
-* [**netfiddle מומלץ**](https://dotnetfiddle.net/),  
-* [onecompiler קלט מוזר](https://onecompiler.com/csharp), 
-* [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
-* [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
-* [programiz ללא קלט ולא מגיב](https://www.programiz.com/csharp-programming/online-compiler/), 
-
-
 
 ## שלבי יצירת תוכנית חדשה ב-Visual Studio 202x:
 1. פתחו פרויקט חדש מסוג Console App.
@@ -70,12 +62,41 @@ lang: he
 ```
 Hello, World!
 ```
-אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶
 
 
 ## הסבר נוסף: יצירת פרוייקט בויז'ואל סטדיו 202x
 לפניכם סרטון הסבר על יצירת פרוייקט חדש. פעמים רבות כל תכנית שלנו תהיה פרוייקט חדש ולכן כדאי לתת שם משמעותי באנגלית לפרוייקט:
 {% include youtube.html id="NlFeUFfRkxs" %} 
+
+
+</details>
+
+## סביבות Online
+
+{: .box-note}
+בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
+* [**netfiddle מומלץ**](https://dotnetfiddle.net/),  
+* [onecompiler קלט מוזר](https://onecompiler.com/csharp), 
+* [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
+* [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
+* [programiz ללא קלט ולא מגיב](https://www.programiz.com/csharp-programming/online-compiler/), 
+
+
+## תכנית ראשונה
+כנסו לאתר [**netfiddle**](https://dotnetfiddle.net/)  ותפגשו את התוכנית הראשונה:
+{% highlight csharp linenos %}namespace HelloWorld 
+{ 
+    class Program 
+    { 
+        public static void Main(string[] args) 
+        { 
+            Console.WriteLine("Hello, World!"); 
+        } 
+    } 
+} 
+{% endhighlight %}
+אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/) הכפתור F5 עובד.
+
 
 
 ## משתנים והשמה
@@ -89,6 +110,8 @@ double average = 85.5; // משתנה המכיל מספר ממשי
 string name = "Sara"; // משתנה המכיל מחרוזת
 {% endhighlight %}
 
+בשונה מפייתון חובה להכריז מראש על הטיפוס של כל משתנה
+{: .box-success}
 
 ## הכרזה על משתנה לעומת השמה
 ניתן להפריד בין שלב הכרזת המשתנה לבין שלב השמת הערך. לפעמים נכריז עליו ואז ניתן לו ערך בשלב מאוחר יותר.
@@ -168,24 +191,15 @@ Hello, Dan
 פקודת `()Console.ReadLine` מחזירה תמיד טקסט. כדי להמיר טקסט למספר, נשתמש ב- `()int.Parse` או `()double.Parse`:
 
 {% highlight csharp linenos %}Console.Write("Enter your age: "); 
-int age = int.Parse(Console.ReadLine()); // `int` דוגמא לקלט והמרה שלו לתוך משתנה מטיפוס שלם
+// `int` דוגמא לקלט והמרה שלו לתוך משתנה מטיפוס שלם
+int age = int.Parse(Console.ReadLine()); 
 
-Console.WriteLine("Next year you will be " + (age + 1)); // הסוגריים מאפשרים לבצע חישוב לפני ההדפסה
-Console.WriteLine("Next year you will NOT be: " + age + 1); // ללא סוגריים נקבל שרשור מחרוזות
+// הסוגריים מאפשרים לבצע חישוב לפני ההדפסה
+Console.WriteLine("Next year you will be " + (age + 1)); 
+// ללא סוגריים נקבל שרשור מחרוזות
+Console.WriteLine("Next year you will NOT be: " + age + 1); 
 {% endhighlight %}
 
-
-{: .box-success}
-קיימות שיטות שונות לקריאת קלט מהמשתמש, [ותכנית הלימודים](https://meyda.education.gov.il/files/CSIT/CS_1-2-4_ver_2-63.pdf#page=56) אינה מתייחסת אליהן באופן ספציפי. בבחינות הבגרות, בכל מקום שיהיה צורך בביצוע פעולת קלט, הצורך ימומש ויתועד כדלקמן:
-```קריאה לפעולת קלט שקוראת ומחזירה ערך מסוג int x = ...// int  ```
-**בחינות נערכות בכתב יד עם חומר פתוח מודפס.**
-
-
-{: .box-error}
-**אזהרה:** אם תקלידו קלט שאינו מספרי לפונקציית `int.Parse`, התוכנית תקרוס!
-
-{: .box-note}
-איננו מלמדים פונקציות המרה בטוחות כגון `int.TryParse`
 
 
 ## חישובים והמרות (casting)
@@ -212,6 +226,9 @@ Console.WriteLine(result); {% endhighlight %}
 {: .table-en}
 
 
+<details>
+<summary>הרחבות - לקרוא בבית</summary>
+
 ## אופרטורים מיוחדים ##
 
 | אופרטור | תפקיד                                                | דוגמא לשימוש מקוצר   | פעולת השמה מקבילה       |
@@ -225,10 +242,20 @@ Console.WriteLine(result); {% endhighlight %}
 {: .table-en}
 
 
+{: .box-success}
+קיימות שיטות שונות לקריאת קלט מהמשתמש, [ותכנית הלימודים](https://meyda.education.gov.il/files/CSIT/CS_1-2-4_ver_2-63.pdf#page=56) אינה מתייחסת אליהן באופן ספציפי. בבחינות הבגרות, בכל מקום שיהיה צורך בביצוע פעולת קלט, הצורך ימומש ויתועד כדלקמן:
+```קריאה לפעולת קלט שקוראת ומחזירה ערך מסוג int x = ...// int  ```  או, בקצרה ```int n = //קלוט מספר שלם```
+**בחינות נערכות בכתב יד עם חומר פתוח מודפס.**
 
-### מוכן.ה לאתגר?
 
-אם סיימת לקרוא והכל ברור, זה הזמן ליישם את הידע שלך בתרגול מותאם.
+{: .box-error}
+**אזהרה:** אם תקלידו קלט שאינו מספרי לפונקציית `int.Parse`, התוכנית תקרוס!
 
+{: .box-note}
+איננו מלמדים פונקציות המרה בטוחות כגון `int.TryParse`
+
+</details>
+
+### תרגול
 [⬅ עבור לתרגול 1 - משתנים קלט והשמה](/cs/Chapter1Ex1.1)
 
