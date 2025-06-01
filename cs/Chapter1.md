@@ -85,14 +85,12 @@ Hello, World!
 
 ## תכנית ראשונה
 כנסו לאתר [**netfiddle**](https://dotnetfiddle.net/)  ותפגשו את התוכנית הראשונה:
-{% highlight csharp linenos %}using System;
-					
-public class Program
+{% highlight csharp linenos %}public class Program
 {
-	public static void Main()
-	{
-		Console.WriteLine("Hello World");
-	}
+    public static void Main()
+    {
+        Console.WriteLine("Hello World");
+    }
 }
 {% endhighlight %}
 אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/) הכפתור F5 עובד.
