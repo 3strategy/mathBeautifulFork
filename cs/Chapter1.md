@@ -218,8 +218,7 @@ $$10 / 3 = 3$$
 
 $$13 / 5 = 2\\
 13.0 / 5 = 2.6\\
-13 / 5.0 = 2.6\\
-21.5 % 5 = 1.5$$
+13 / 5.0 = 2.6$$
 
 
 
@@ -249,7 +248,7 @@ Console.WriteLine(result2); {% endhighlight %}
 
 
 <details markdown="1">
-<summary>הרחבות - לקרוא בבית</summary>
+<summary>הרחבות - אופרטורים מיוחדים, בקשת קלט במהלך בחינה, שגיאות</summary>
 
 ## אופרטורים מיוחדים ##
 
@@ -266,7 +265,7 @@ Console.WriteLine(result2); {% endhighlight %}
 
 {: .box-success}
 קיימות שיטות שונות לקריאת קלט מהמשתמש, [ותכנית הלימודים](https://meyda.education.gov.il/files/CSIT/CS_1-2-4_ver_2-63.pdf#page=56) אינה מתייחסת אליהן באופן ספציפי. בבחינות הבגרות, בכל מקום שיהיה צורך בביצוע פעולת קלט, הצורך ימומש ויתועד כדלקמן:
-```קריאה לפעולת קלט שקוראת ומדפיסה ערך מסוג int x = ...// int  ```  או, בקצרה ```קלוט מספר שלם int n = //```
+```קריאה לפעולת קלט שקוראת ומדפיסה ערך מסוג int x = ...// int  ```  או, בקצרה ```קלוט מספר שלם = //  int n ```
 **בחינות נערכות בכתב יד עם חומר פתוח מודפס.**
 
 
@@ -274,10 +273,56 @@ Console.WriteLine(result2); {% endhighlight %}
 **אזהרה:** אם תקלידו קלט שאינו מספרי לפונקציית `int.Parse`, התוכנית תקרוס!
 
 {: .box-note}
-איננו מלמדים פונקציות המרה בטוחות כגון `int.TryParse`
+איננו מלמדים פונקציות המרה בטוחות כגון `int.TryParse`, ואיננו מלמדים לכידת שגיאות `try catch`
 
 ## על ההבדלים בין C# ל- JAVA:
 [קישור לעמוד ההבדלים בקמפוס](https://app.campus.gov.il/learning/course/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/block-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1+type@sequential+block@406b8c0a7da64bdaa85116e8b42c3811/block-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1+type@vertical+block@659fd534e88041169d768f5f21c5876d){:target="_blank"}
+
+</details>
+
+<details><summary>הרחבה לגבי שמות משתנים</summary>
+## ❌ תווים אסורים בשמות משתנים
+
+**תווים אסורים** בשמות משתנים
+
+```
+! @ # $ % ^ & * ( ) - + = ~ ` [ ] { } \ | ; : ' " , . < > / ?
+```
+
+* **רווחים** אסורים
+* **ספרות (0-9)** לא יכולות להופיע **כתו ראשון**.
+
+---
+
+## ✅ שמות משתנים חוקיים ב-C\#
+
+```csharp
+int myVar;
+int _index; // משמש לסוגים מיוחדים לפי קונבנציה
+int count2;
+int ümlaut; // די גרוע
+int @int;  // @ שם שהוא מילה שמורה, באמצעות מעקף @ ממש ממש רע
+```
+
+כלומר, הקוד שלהלן חוקי, אבל ממש ממש אסור לכתוב ככה:
+```csharp
+int דירבלק = 7;
+Console.WriteLine(דירבלק);
+```
+
+---
+
+## ❌ שמות משתנים לא חוקיים ב-C\#
+
+```csharp
+int 1stValue;   // Starts with a digit ❌
+int my-var;     // Hyphens are not allowed ❌
+int class;      // "class" is a reserved keyword ❌
+int full name;  // Space not allowed ❌
+int %value;     // Special character ❌
+```
+
+---
 
 </details>
 
