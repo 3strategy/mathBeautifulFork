@@ -79,7 +79,7 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Boolean expressions  ביטויים בוליאניים
 
-- [ ] Logical operators (&&, ||, !) אופרטורים לוגיים
+- [ ] Logical operators `&&, ||, !` אופרטורים לוגיים
 
 - [ ] משמעות הבלוק `{הסוגריים המסולסלים}` 
 
