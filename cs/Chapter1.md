@@ -77,8 +77,7 @@ Hello, World!
 ## סביבות Online
 
 {: .box-note}
-בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
-* [**netfiddle מומלץ:**](https://dotnetfiddle.net/){:target="_blank"},
+בשיעור הראשון, עד להתקנת VS2022 במחשבים שלכם, נעבוד בסביבות Online. האתר המומלץ ל-C# נמצא [**בקישור הבא: netfiddle.**](https://dotnetfiddle.net/){:target="_blank"}. יש מורים שמעדיפים ללמד רק בסביבות Online.
 
 <details><summary>סביבות נוספות</summary>  
 * [onecompiler קלט מוזר](https://onecompiler.com/csharp), 
@@ -88,7 +87,7 @@ Hello, World!
 </details>
 
 ## תכנית ראשונה
-כנסו לאתר [**netfiddle**](https://dotnetfiddle.net/){:target="_blank"}  ותפגשו את התוכנית הראשונה:
+**כנסו לאתר** [netfiddle](https://dotnetfiddle.net/){:target="_blank"}  והריצו את התוכנית הראשונה:
 {% highlight csharp linenos %}public class Program
 {
     public static void Main()
@@ -97,12 +96,11 @@ Hello, World!
     }
 }
 {% endhighlight %}
-אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} הכפתור F5 עובד.
-
+לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} וב-VS עובד גם הכפתור **F5**.
 
 
 ## משתנים והשמה
-משתנה הוא תא בזיכרון המכיל ערך שניתן לשינוי.
+משתנה הוא תא בזיכרון המכיל ערך הניתן לשינוי.
 
 דוגמאות להגדרת משתנים בשפת C#:
 
