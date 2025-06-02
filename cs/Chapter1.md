@@ -15,13 +15,13 @@ lang: he
 <details markdown="1">
 <summary>מינהלות - רישום למצפן ולקמפוס</summary>
 
-[רישום למצפן. למורים שעדיין לא נרשמו](https://mpm.education.gov.il/rishum/mobile/rishumOvedOraa/0/homePage)
+[רישום למצפן. למורים שעדיין לא נרשמו](https://mpm.education.gov.il/rishum/mobile/rishumOvedOraa/0/homePage){:target="_blank"}
 
-[קלאסרום של גיא](https://classroom.google.com/c/NzY2NTYyODk0OTA5?cjc=ga6rbvoa)
+[קלאסרום של גיא](https://classroom.google.com/c/NzY2NTYyODk0OTA5?cjc=ga6rbvoa){:target="_blank"}
 
-[קישור לרישום לקמפוס](https://campus.gov.il/)
+[קישור לרישום לקמפוס](https://campus.gov.il/){:target="_blank"}
 
-[קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/)
+[קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/){:target="_blank"}
 
 </details>
 
@@ -32,7 +32,7 @@ lang: he
 התקינו את התוכנה **בזמנכם החופשי.** אני אוכל לעזור ל-3-4 שרוצים עזרה ומעדיפים להתחיל התקנה במהלך השיעור.
 
 סביבת הפיתוח שלנו תהיה Visual Studio 2022, המשמשת לכתיבת קוד בשפת C#. 
-[כנסו לקישור והתקינו את גרסת community](https://visualstudio.microsoft.com/vs/community/)
+[כנסו לקישור והתקינו את גרסת community](https://visualstudio.microsoft.com/vs/community/){:target="_blank"}
 {: .box-success}
 
 שימו לב: הקישור הוא **לגרסת ה-Community**. בכל גרסה אחרת תתקעו בבעיית רישוי לאחר מספר שבועות
@@ -77,15 +77,17 @@ Hello, World!
 
 {: .box-note}
 בשיעורים הראשונים - עד להתקנת התוכנה במחשבים שלכם, נעבוד באתרי C#Online כגון 
-* [**netfiddle מומלץ**](https://dotnetfiddle.net/),  
+* [**netfiddle מומלץ:**](https://dotnetfiddle.net/){:target="_blank"},
+
+<details><summary>סביבות נוספות</summary>  
 * [onecompiler קלט מוזר](https://onecompiler.com/csharp), 
 * [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
 * [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
 * [programiz ללא קלט ולא מגיב](https://www.programiz.com/csharp-programming/online-compiler/), 
-
+</details>
 
 ## תכנית ראשונה
-כנסו לאתר [**netfiddle**](https://dotnetfiddle.net/)  ותפגשו את התוכנית הראשונה:
+כנסו לאתר [**netfiddle**](https://dotnetfiddle.net/){:target="_blank"}  ותפגשו את התוכנית הראשונה:
 {% highlight csharp linenos %}public class Program
 {
     public static void Main()
@@ -94,7 +96,7 @@ Hello, World!
     }
 }
 {% endhighlight %}
-אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/) הכפתור F5 עובד.
+אם אתם בסביבת Online לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} הכפתור F5 עובד.
 
 
 
