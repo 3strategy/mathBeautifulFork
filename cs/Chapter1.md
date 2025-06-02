@@ -79,7 +79,7 @@ Hello, World!
 {: .box-note}
 בשיעור הראשון, עד להתקנת VS2022 במחשבים שלכם, נעבוד בסביבות Online. האתר המומלץ ל-C# נמצא [**בקישור הבא: netfiddle.**](https://dotnetfiddle.net/){:target="_blank"}. יש מורים שמעדיפים ללמד רק בסביבות Online.
 
-<details><summary>סביבות נוספות</summary>  
+<details markdown="1"><summary>סביבות אונליין נוספות</summary>  
 * [onecompiler קלט מוזר](https://onecompiler.com/csharp), 
 * [C#מיקרוסופט אינטרקטיבי ללא קלט](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world?tutorial-step=3#code-try-0), 
 * [tutorialspoint](https://www.tutorialspoint.com/compile_csharp_online.php), 
@@ -99,7 +99,7 @@ Hello, World!
 
 2. לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} וב-VS עובד גם הכפתור **F5**.
 
-2. נסו וגלו כי ניתן לרשום רק נקודה אחרי המילה Console ולהשלים את הכתיבה על ידי בחירה (מופיעה רשימה שלמה של פקודות ותכונות איתן נוכל לעבוד). לא כולן עובדות בסביבות אונליין. נסו להוסיף שורה ולהדפיס את השם שלכם מתחת לכיתוב `Hello World`.
+2. נסו וגלו כי ניתן לרשום רק נקודה אחרי המילה Console ולהשלים את הכתיבה על ידי בחירה (מופיעה רשימה שלמה של פקודות ותכונות איתן נוכל לעבוד). לא כולן עובדות בסביבות אונליין. **נסו להוסיף שורה ולהדפיס את השם שלכם** מתחת לכיתוב `Hello World`.
 
 ## משתנים והשמה
 משתנה הוא תא בזיכרון המכיל ערך הניתן לשינוי.
