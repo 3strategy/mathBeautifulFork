@@ -46,8 +46,6 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] VS2022 התקנת
 
-- [ ] Structure of a basic C# program (Main method, class, namespace) מבנה תכנית בסיסית
-
 - [ ] Basic output: Console.WriteLine and Console.Write פלט בסיסי
 
 - [ ] Variables and their types (int, double, string) משתנים וטיפוסי משתנים
@@ -99,7 +97,7 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Tracking tables (טבלאות מעקב) for conditional logic טבלאות מעקב לביצוע מותנה
 
-- [ ] string interpolation using `$"a is {a} "` 
+- [ ] string interpolation using `$"a is {a} "` שרשור מחרוזות
 
 - [ ] איפוס סביבת העבודה Windows ⟶ Reset Window Layout
 
@@ -179,6 +177,7 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Debugging while loops with breakpoints (שוב, אין כאן משהו חדש)
 
+<!-- - [ ] Structure of a basic C# program (Main method, class, namespace) מבנה תכנית בסיסית -->
 
 
 <script>

@@ -2,6 +2,7 @@
 layout: page
 title: "קיצורים ב-VS"
 subtitle: "טבלאות קיצורים"
+tags: [קיצורים]
 author: גיא סידס
 lang: he
 ---

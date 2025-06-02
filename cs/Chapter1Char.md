@@ -2,6 +2,7 @@
 layout: page
 title: "הטיפוס char"
 subtitle: "הסבר על משתנים מסוג תו / char"
+tags: [תווים, ascii, casting]
 author: גיא סידס
 lang: he
 ---

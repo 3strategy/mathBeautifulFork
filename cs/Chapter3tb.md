@@ -2,6 +2,7 @@
 layout: page
 title: "פרק 3 - המחלקה Math, Random"
 subtitle: "חישובים מתמטיים ומספרים אקראיים"
+tags: [המחלקה Random, המתמטית, הגרלות, פונקציות מתמטיות]
 author: גיא סידס
 lang: he
 ---

@@ -2,6 +2,7 @@
 layout: page 
 title: "תרגול 1.4 – שארית חלוקה" 
 subtitle: "בתרגול זה נתמקד בפעולות חלוקה ושארית"
+tags: [interpolation, שרשור מחרוזות]
 lang: he
 ---
 
@@ -17,6 +18,9 @@ lang: he
 כתבו תכנית שתקבל שני מספרים שלמים n1, n2  
 והדפס את תוצאת החלוקה n1 / n2, ואת השארית n1 % n2
 
+{: .box-success}
+**שרשור מחרוזות:** בפתרון המוצע נעשה שימוש ב-$ כתחביר מומלץ ונח לשירשור מחרוזות (string interpolation). תחביר דומה משמש גם בפייתון כאשר משתמשים בתחילית 'f לפני המחרוזת. תחביר זה לא קיים ב-
+
 <details><summary>פתרון</summary>
 
 {% highlight csharp linenos %}
@@ -28,6 +32,7 @@ int remainder = n1 % n2; // calculate remainder
 
 Console.WriteLine($"Quotient: {quotient}, Remainder: {remainder}");
 {% endhighlight %}
+
 
 </details>
 
@@ -49,6 +54,9 @@ int spend = total - save; // the rest is for spending
 
 Console.WriteLine($"Saved: {save}, Spent: {spend}");
 {% endhighlight %}
+
+{: .box-success}
+**שרשור מחרוזות:** בפתרון זה נעשה שימוש ב-$ כתחביר מומלץ ונח לשירשור מחרוזות (string interpolation). תחביר דומה משמש גם בפייתון כאשר משתמשים בתחילית 'f לפני המחרוזת. תחביר זה לא קיים ב-
 
 </details>
 
