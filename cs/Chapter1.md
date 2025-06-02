@@ -88,15 +88,15 @@ Hello, World!
 
 ## תכנית ראשונה
 1. **כנסו לאתר** [netfiddle](https://dotnetfiddle.net/){:target="_blank"}  והריצו את התוכנית הראשונה:
-  {% highlight csharp linenos %}public class Program
-  {
-    public static void Main()
+    {% highlight csharp linenos %}public class Program
     {
-        Console.WriteLine("Hello World");
+        public static void Main()
+        {
+            Console.WriteLine("Hello World");
+        }
     }
-  }
-  {% endhighlight %}
-  לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} וב-VS עובד גם הכפתור **F5**.
+    {% endhighlight %}
+    לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} וב-VS עובד גם הכפתור **F5**.
 
 2. נסו וגלו כי ניתן לרשום רק את התחלת המילה Console ולהשלים את הכתיבה בלחיצה על כפתור tab
 
