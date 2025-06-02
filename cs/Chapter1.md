@@ -88,19 +88,19 @@ Hello, World!
 
 ## תכנית ראשונה
 1. **כנסו לאתר** [netfiddle](https://dotnetfiddle.net/){:target="_blank"}  והריצו את התוכנית הראשונה:
-{% highlight csharp linenos %}public class Program
-{
+  {% highlight csharp linenos %}public class Program
+  {
     public static void Main()
     {
         Console.WriteLine("Hello World");
     }
-}
-{% endhighlight %}
-לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} וב-VS עובד גם הכפתור **F5**.
+  }
+  {% endhighlight %}
+  לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} וב-VS עובד גם הכפתור **F5**.
 
-1. נסו וגלו כי ניתן לרשום רק את התחלת המילה Console ולהשלים את הכתיבה בלחיצה על כפתור tab
+2. נסו וגלו כי ניתן לרשום רק את התחלת המילה Console ולהשלים את הכתיבה בלחיצה על כפתור tab
 
-1. נסו עוד ותראו כי לאחר שרושמים נקודה אחרי המילה מופיעה רשימה שלמה של פקודות ותכונות איתן נוכל לעבוד. בידקו אם אתם יכולים להחליף צבע הדפסה.
+3. נסו עוד ותראו כי לאחר שרושמים נקודה אחרי המילה מופיעה רשימה שלמה של פקודות ותכונות איתן נוכל לעבוד. בידקו אם אתם יכולים להחליף צבע הדפסה.
 
 ## משתנים והשמה
 משתנה הוא תא בזיכרון המכיל ערך הניתן לשינוי.
