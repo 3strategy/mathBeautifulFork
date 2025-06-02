@@ -131,9 +131,9 @@ ul.task-list .task-list-item-checkbox {
 
 - [ ] Practical examples of for loops דוגמאות ללולאות
 
-- [ ] Using loop counters שימוש במונים
+- [ ] Using loop counters שימוש במונה
 
-- [ ] Using loop sum שימוש בצוברים
+- [ ] Using loop sum שימוש בצובר
 
 - [ ] Breaking loops prematurely with `break` שימוש בהוראת break ליציאה מוקדמת מלולאה
 
