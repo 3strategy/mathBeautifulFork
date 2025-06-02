@@ -1,8 +1,8 @@
 ---
 layout: page 
 title: "תרגול 4.3 לולאות for: מינימום מקסימום ספירה צבירה ושארית חלוקה" 
-subtitle: "שאלות בלולאות הדורשות קינון או לולאה הקוראת לפונקציה for" 
-tags: [קינון, מונים, צוברים, min, max, sum, count, תרגול for]
+subtitle: "שאלות for" 
+tags: [מונים, צוברים, min, max, sum, count, תרגול for]
 mathjax: true
 lang: he
 ---
