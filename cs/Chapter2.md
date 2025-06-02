@@ -332,6 +332,7 @@ else
 
 </details>
 
+## תרגול
 [⬅ מעבר לתרגול 2.1 - תרגילים בתנאים פשוטים](/cs/Chapter2Ex2.1)
 
 ## סרטון הסבר על שימוש ב- breakpoints למציאת שגיאות
@@ -342,3 +343,7 @@ else
 לפניכם סרטון הדרכה קצר, המסביר כיצד ניתן לדבג בעזרת breakpoints.
 
 {% include youtube.html id="yjl6vQVFXb0" %} 
+
+## סרטונים
+[סרטוני פרק 2: ביטויים לוגיים](https://www.youtube.com/playlist?list=PLw4P_RdfuzSjVGWRUCg9qWvDkkSWrANtP){:target="_blank"}
+[סרטוני פרק 4: משפטי תנאי](https://www.youtube.com/playlist?list=PLw4P_RdfuzSitIvnpWSgqZLJHot9__eSG){:target="_blank"}

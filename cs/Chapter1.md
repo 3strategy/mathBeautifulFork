@@ -278,8 +278,13 @@ Console.WriteLine(result2); {% endhighlight %}
 {: .box-note}
 איננו מלמדים פונקציות המרה בטוחות כגון `int.TryParse`
 
+## על ההבדלים בין C# ל- JAVA:
+[קישור לעמוד ההבדלים בקמפוס](https://app.campus.gov.il/learning/course/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/block-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1+type@sequential+block@406b8c0a7da64bdaa85116e8b42c3811/block-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1+type@vertical+block@659fd534e88041169d768f5f21c5876d){:target="_blank"}
+
 </details>
 
-### תרגול
+## תרגול
 [⬅ עברו לתרגול 1.1 - משתנים קלט והשמה](/cs/Chapter1Ex1.1)
 
+## סרטונים
+[סרטוני פרק 1](https://youtube.com/playlist?list=PLw4P_RdfuzSirWjKrYrwudzauSKkwqC1z&si=7_UxQuHnK-BcW1k8){:target="_blank"}

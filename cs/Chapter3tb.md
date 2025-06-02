@@ -70,6 +70,12 @@ Console.WriteLine("Dice roll result: " + dice);
 {: .table-en}
 
 
+## תרגול
+
 [⬅ מעבר לתרגול 3.1 - המחלקות Math, Random](/cs/Chapter3Ex3.1)
 
 [⬅ להיכרות עם הקיצורים השימושיים והוספת קיצורים משלכם snippets נוספים](/cs/Shortcuts)
+
+## סרטונים
+[סרטוני פרק 3: המחלקה Math](https://www.youtube.com/playlist?list=PLw4P_RdfuzShCTd4wgIlDn_Mhum2Pdbai){:target="_blank"}
+

@@ -162,6 +162,13 @@ Console.WriteLine("Number of changes: " + count);
 
 </details>
 
+## תרגול
+
 [⬅ עבור לתרגול 4.5 - לולאות for: גילגול (שמירת היסטוריה)](/cs/Chapter4Ex4.5)
 
 [⬅ עבור לתרגול 4.3 לולאות for: מינימום מקסימום ספירה צבירה ושארית חלוקה](/cs/Chapter4Ex4.3)
+
+
+## סרטונים
+[סרטוני פרק 6: לולאות for](https://www.youtube.com/playlist?list=PLw4P_RdfuzShl0iRsytc83T2ZHm3kvUAD){:target="_blank"}
+
