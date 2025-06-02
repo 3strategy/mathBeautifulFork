@@ -3,6 +3,8 @@ layout: page
 title: "פרק 5 - לולאות while"
 subtitle: "ביצוע פעולות חוזרות באמצעות לולאות while"
 author: גיא סידס
+tags: [פירוק מספר, בניית מספר, while, בעד ונגד break]
+mathjax: true
 lang: he
 ---
 
@@ -143,16 +145,16 @@ title: פירוק ובניית מספר שלם - C#
 
 {% highlight csharp linenos %}public static void Main()
 {
-    Console.Write("Enter an integer: "); // יש להדפיס באנגלית כדי להימנע מבעיות קידוד
+    Console.Write("Enter an integer: ");
     int num = int.Parse(Console.ReadLine());
-    while (num > 0)
+    while (num > 0) // המספר יאבד ספרה בכל סיבוב
     {
         int digit = num % 10; // חילוץ ספרה אחרונה
         Console.WriteLine(digit); // הדפסת הספרה
-        num /= 10; // num = num / 10
+        // num = num / 10 קיצוץ ספרה
+        num /= 10; // המספר יאבד ספרה בכל סיבוב
     }
 }
-
 {% endhighlight %}
 
 ---
@@ -164,9 +166,9 @@ title: פירוק ובניית מספר שלם - C#
 **דוגמה:**  
 כדי לבנות את המספר 374 מהספרות 3, 7, 4 (בסדר הזה):  
 - מתחילים מ־0  
-- מוסיפים 3 → 0×10+3=3  
-- מוסיפים 7 → 3×10+7=37  
-- מוסיפים 4 → 37×10+4=374  
+- מוסיפים 3 $$→ 0×10+3=3$$  
+- מוסיפים 7 $$→ 3 × 10 + 7 = 37$$  
+- מוסיפים 4 $$→ 37 × 10 + 4 = 374$$  
 
 ---
 

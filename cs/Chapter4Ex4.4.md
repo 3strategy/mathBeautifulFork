@@ -2,6 +2,7 @@
 layout: page 
 title: "תרגול 4.4 לולאות for: שאלות נוספות והשלמות" 
 subtitle: "המשך שאלות תרגול בלולאות for" 
+tags: [מונים, צוברים, sum, count, תרגול for]
 mathjax: true
 lang: he
 ---
