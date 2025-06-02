@@ -131,8 +131,68 @@ Console.WriteLine("The number entered is: " + number);
 
 
 
+---
+title: פירוק ובניית מספר שלם - C#
+---
+
+## פירוק מספר
+
+פירוק מספר בלולאת while מתבצע ע\"י חילוץ ספרות בעזרת מודולו 10, והתקדמות ע\"י חלוקה ב־10 עד שהמספר מסתיים.
+
+### קוד C#: מדפיס את כל הספרות של מספר שלם
+
+{% highlight csharp linenos %}public static void Main()
+{
+    Console.Write("Enter an integer: "); // יש להדפיס באנגלית כדי להימנע מבעיות קידוד
+    int num = int.Parse(Console.ReadLine());
+    while (num > 0)
+    {
+        int digit = num % 10; // חילוץ ספרה אחרונה
+        Console.WriteLine(digit); // הדפסת הספרה
+        num /= 10; // num = num / 10
+    }
+}
+
+{% endhighlight %}
+
+---
+
+## בניית מספר מתוך ספרות
+
+כדי לבנות מספר מתוך רצף ספרות (ללא מערכים), נכפול את המספר הקיים ב-10 ונוסיף את הספרה החדשה בכל שלב.
+
+**דוגמה:**  
+כדי לבנות את המספר 374 מהספרות 3, 7, 4 (בסדר הזה):  
+- מתחילים מ־0  
+- מוסיפים 3 → 0×10+3=3  
+- מוסיפים 7 → 3×10+7=37  
+- מוסיפים 4 → 37×10+4=374  
+
+---
+
+## דוגמת קוד: הפיכת סדר הספרות
+
+הקוד הבא קולט מספר, בונה מחדש את המספר בסדר ספרות הפוך (למשל 1234 → 4321) ומדפיס את התוצאה.
+
+{% highlight csharp linenos %}public static void Main()
+{
+    Console.Write("Enter an integer: "); // יש להדפיס באנגלית כדי להימנע מבעיות קידוד
+    int num = int.Parse(Console.ReadLine());
+    int reversed = 0;
+    while (num > 0)
+    {
+        int digit = num % 10; // חילוץ ספרה אחרונה
+        reversed = reversed * 10 + digit; // הוספה מימין
+        num /= 10; // num = num / 10 
+    }
+    Console.WriteLine("Reversed number: " + reversed); // הדפסת המספר ההפוך באנגלית
+}
+{% endhighlight %}
+
+
+
 <details markdown="1">
-<summary>שימוש מומלץ ולא מומלץ בפקודת break בלולאות</summary>
+<summary>הרחבה: שימוש מומלץ ולא מומלץ בפקודת break בלולאות</summary>
 
 השימוש בפקודת `break` יכול להיות שימושי מאוד במצבים מסוימים, אך עלול להפריע לקריאות הקוד במצבים אחרים. להלן המלצות מתי להשתמש ומתי להימנע:
 
