@@ -87,7 +87,7 @@ Hello, World!
 </details>
 
 ## תכנית ראשונה
-**כנסו לאתר** [netfiddle](https://dotnetfiddle.net/){:target="_blank"}  והריצו את התוכנית הראשונה:
+1. **כנסו לאתר** [netfiddle](https://dotnetfiddle.net/){:target="_blank"}  והריצו את התוכנית הראשונה:
 {% highlight csharp linenos %}public class Program
 {
     public static void Main()
@@ -98,6 +98,9 @@ Hello, World!
 {% endhighlight %}
 לחצו פשוט על כפתור ההרצה ▶. ב-[**netfiddle**](https://dotnetfiddle.net/){:target="_blank"} וב-VS עובד גם הכפתור **F5**.
 
+1. נסו וגלו כי ניתן לרשום רק את התחלת המילה Console ולהשלים את הכתיבה בלחיצה על כפתור tab
+
+1. נסו עוד ותראו כי לאחר שרושמים נקודה אחרי המילה מופיעה רשימה שלמה של פקודות ותכונות איתן נוכל לעבוד. בידקו אם אתם יכולים להחליף צבע הדפסה.
 
 ## משתנים והשמה
 משתנה הוא תא בזיכרון המכיל ערך הניתן לשינוי.
@@ -149,26 +152,8 @@ double x, y, z; // הכרזה בלבד
 
 
 
-
-
-
-## טיפוסים נוספים שלא נלמד
-יש בשפת C# עוד סוגים רבים של משתנים, אך הם אינם חלק מהתוכנית הלימודית שלנו:
-
-- `short`, `byte`, `sbyte`
-- `float`, `decimal`
-- `long`, `ulong`
-- `BigInteger`
-- ועוד רבים נוספים...
-
-{: .box-note}
-הקורס שלנו מתמקד **בחשיבה אלגוריתמית** ולא במגוון הרחב של טיפוסים שקיימים בשפה מסוימת. אנו נתרגל את העקרונות בעזרת טיפוסים בסיסיים בלבד.
-
 {: .box-success}
-שמות משתנים תמיד יתחילו באות קטנה. כל מילה חדשה, באות גדולה. למשל. 
-```csharp 
-string firstName;
-```
+שמות משתנים תמיד יתחילו באות קטנה. כל מילה חדשה, באות גדולה. למשל `string firstName`. בדומה להרבה שפות השפה היא case sensitive (כלומר יש התייחסות לאותיות קטנות וגדולות guy שונה מ- guY).
 
 ## הדפסה וקלט מהמשתמש
 נשתמש בפקודות Console לכתיבה ולקבלת קלט:
@@ -177,7 +162,7 @@ string firstName;
 Console.Write("Enter your name: "); // פלט ובו בקשת קלט מהמשתמש
 string name = Console.ReadLine(); // name קלט מהשמתמש והשמה לתוך המשתנה
 
-Console.WriteLine("Hello, " + name); // פלט
+Console.WriteLine("Hello, " + name); // פלט כולל מעבר שורה
 ```
 
 אם המשתמש יכתוב "Dan", הפלט יהיה:
@@ -186,6 +171,7 @@ Console.WriteLine("Hello, " + name); // פלט
 Enter your name: Dan
 Hello, Dan
 ```
+
 
 
 פלט עברי בדרך כלל לא נתמך ב-Console לכן מומלץ לעבוד באנגלית. 
@@ -280,7 +266,7 @@ Console.WriteLine(result2); {% endhighlight %}
 
 </details>
 
-<details><summary>הרחבה לגבי שמות משתנים</summary>
+<details markdown="1"><summary>הרחבה לגבי שמות משתנים</summary>
 ## ❌ תווים אסורים בשמות משתנים
 
 **תווים אסורים** בשמות משתנים
@@ -323,6 +309,21 @@ int %value;     // Special character ❌
 ```
 
 ---
+
+
+## טיפוסי משתנים נוספים שלא נלמד
+יש בשפת C# עוד סוגים רבים של משתנים, אך הם אינם חלק מהתוכנית הלימודית שלנו:
+
+- `short`, `byte`, `sbyte`
+- `float`, `decimal`
+- `long`, `ulong`
+- `BigInteger`
+- nullable types: `int?, double?, bool? ...`
+- ועוד רבים נוספים...
+
+{: .box-note}
+הקורס שלנו מתמקד **בחשיבה אלגוריתמית** ולא במגוון הרחב של טיפוסים שקיימים בשפה מסוימת. לכן, נתרגל את העקרונות בעזרת טיפוסים בסיסיים בלבד.
+
 
 </details>
 
