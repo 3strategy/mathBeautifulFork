@@ -23,6 +23,7 @@ lang: he
 [קישור לרישום לקמפוס](https://campus.gov.il/){:target="_blank"}
 
 [קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/){:target="_blank"}
+
 <!-- ------------------ זמני ----------------- -->
 [קבוצת **ואצאפ** **תל-אביב**. קישור זמני](https://chat.whatsapp.com/L6jkLn6p6m40iLqs5JsDD8)
 </details>
