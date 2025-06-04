@@ -99,8 +99,7 @@ Console.WriteLine("Box volume: " + volume);
 
 הדפס את finalPrice.
 
-{% highlight csharp linenos %}Console.OutputEncoding = Encoding.UTF8; // להצגת תווים עבריים וסימנים. אין זה מספיק להצגת אותיות בסדר הנכון
-Console.Write("Enter computer price: "); // כדי לא לעבור שורה Write פלט ובו אנו מבקשים קלט. מקובל לרשום 
+{% highlight csharp linenos %}Console.Write("Enter computer price: "); // כדי לא לעבור שורה Write פלט ובו אנו מבקשים קלט. מקובל לרשום 
 
 double price = double.Parse(Console.ReadLine());
 
