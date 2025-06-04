@@ -18,14 +18,13 @@ lang: he
 
 [רישום למצפן. למורים שעדיין לא נרשמו](https://mpm.education.gov.il/rishum/mobile/rishumOvedOraa/0/homePage){:target="_blank"}
 
-[קלאסרום של  תל-אביב (גיא)](https://classroom.google.com/c/NzY2NTYyODk0OTA5?cjc=ga6rbvoa){:target="_blank"}
+[קלאסרום של  תל-אביב (גיא)](https://classroom.google.com/c/NzY2NTYyODk0OTA5){:target="_blank"}
 
 [קישור לרישום לקמפוס](https://campus.gov.il/){:target="_blank"}
 
 [קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/){:target="_blank"}
 
-<!-- ------------------ זמני ----------------- -->
-[קבוצת **ואצאפ** **תל-אביב**. קישור זמני](https://chat.whatsapp.com/L6jkLn6p6m40iLqs5JsDD8)
+
 </details>
 
 
