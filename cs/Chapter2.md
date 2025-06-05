@@ -346,4 +346,5 @@ else
 
 ## סרטונים
 [סרטוני פרק 2: ביטויים לוגיים](https://www.youtube.com/playlist?list=PLw4P_RdfuzSjVGWRUCg9qWvDkkSWrANtP){:target="_blank"}
+
 [סרטוני פרק 4: משפטי תנאי](https://www.youtube.com/playlist?list=PLw4P_RdfuzSitIvnpWSgqZLJHot9__eSG){:target="_blank"}
