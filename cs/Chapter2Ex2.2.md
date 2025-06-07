@@ -61,13 +61,35 @@ Console.WriteLine(isLeap ? "leap" : "common");  // ternary הערה. בפתרו�
 
 ---
 
-### תרגיל 2.2.3 תו חוקי
+### תרגיל 2.2.3 תו חוקי. שאלה מעט מעייפת
 
 כתבו תוכנית הקולטת תו `ch`. הדפס:
 
 * "vowel" אם הוא a, e, i, o, u ( או A, E, I, O, U )
 * אחרת "consonant"
 
+
+<details markdown="1"><summary>פתרון</summary>
+
+{% highlight csharp linenos %}public static void Main()
+{
+    Console.Write("Enter a character: ");
+    char ch = char.Parse(Console.ReadLine());
+
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+    {
+        Console.WriteLine("vowel");
+    }
+    else
+    {
+        Console.WriteLine("consonant");
+    }
+}
+{% endhighlight %}
+
+
+</details>
 ---
 
 ### תרגיל 2.2.4 שני מתוך שלושה
