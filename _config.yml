@@ -26,6 +26,7 @@ navbar-links:
   מדמח מחזור 3:
     - פרק 0 מעקב התקדמות: "/cs/Chapter0/"
     - פרק 1 קלט ופלט: "/cs/Chapter1/"
+    - פרק 1 השלמות: "/cs/Chapter1b/"
     - תרגול 1.1: "/cs/Chapter1Ex1.1/"
     - הטיפוס תו 1: "/cs/Chapter1Char"
     - קיצורים: "/cs/Shortcuts/"
