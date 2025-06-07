@@ -57,3 +57,30 @@ ch = (char)num;
 string emoji = "😀";
 ```
 
+
+
+## תרגול - הריצו את שתי גרסאות הקוד הבאות
+
+{% highlight csharp linenos %}static void Main(String[] args)
+{
+    int num;
+    char ch;
+    ch = 'c';
+    num = ch;
+    Console.WriteLine("num=" + num);
+    Console.WriteLine("ch=" + ch);
+}
+{% endhighlight %}
+
+**בגרסה הבאה יש שגיאה.** העתיקו את הקוד, הריצו אותו, וזהו מה השגיאה (בעזרת הודעות השגיאה של VS):
+
+{% highlight csharp linenos %}static void Main(String[] args)
+{
+    int num;
+    char ch;
+    ch = 'c';
+    num = ch;
+    Console.WriteLine("num=" + num);
+    Console.WriteLine("ch=" + ch);
+}
+{% endhighlight %}

@@ -2,7 +2,7 @@
 layout: page 
 title: "השלמות פרק 1 - הדפסות ומשתנים" 
 subtitle: "התקנת הסביבה, הדפסה, משתנים, המרות וקלט"
-tags: [השמה לעומת הכרזה, החלפה בין משתנים]
+tags: [השמה לעומת הכרזה, טבלת מעקב, החלפה בין משתנים]
 mathjax: true
 lang: he
 ---
@@ -87,3 +87,38 @@ y = y + 1; // שגיאה: שימוש במשתנה ללא ערך התחלתי
 {: .box-note}
 
 </details>
+
+## טבלת מעקב
+טבלת מעקב מציגה את הערכים של המשתנים בכל שורת קוד רלוונטית לצורך הבנת השינויים שלהם במהלך הריצה.
+
+לדוגמא נעקוב אחר הקוד הבא:
+
+{% highlight csharp linenos %}static void Main(String[] args)
+{
+    int a = 5;       // initial value of a
+    int b = 3;       // initial value of b
+
+    a = a + b;  
+    b = a - b; 
+    a = a - b;  
+
+    Console.WriteLine($"a = {a}, b = {b}");
+}
+{% endhighlight %}
+
+## Tracking Table
+
+Only the cells for variables that change on each line are filled. Unchanged cells are left blank.
+
+| # | a | b |
+| ---- | - | - |
+| 3    | 5 |   |
+| 4    |   | 3 |
+| 6    | 8 |   |
+| 7    |   | 5 |
+| 8    | 3 |   |
+{: .table-en}
+פלט סופי
+`a = 3, b = 5`
+
+**מה מטרת הקוד?** (זוהי שאלה ששואלים בכל פעם שמבצעים מעקב)
