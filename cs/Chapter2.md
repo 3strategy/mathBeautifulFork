@@ -1,298 +1,81 @@
 ---
 layout: page
-title: "פרק 2 - תנאים, ביטויים לוגיים ושארית חלוקה"
-subtitle: "תנאים, החלטות וביטויים לוגיים"
-tags: [logical expressions, ביטויים בוליאנים, תנאים מורכבים, אופרטורי השוואה, אופרטורים לוגיים, טבלת מעקב, טבלאות]
-mathjax: true
+title: "פרק 2 המחלקה Math, Random"
+subtitle: "חישובים מתמטיים ומספרים אקראיים"
+tags: [המחלקה Random, המתמטית, הגרלות, פונקציות מתמטיות, טבלת מעקב]
+author: גיא סידס
 lang: he
 ---
 <!-- https://chatgpt.com/c/67f0f869-af10-800e-8479-c8fd3873432c -->
 
-
 {: .box-note}
-**הערה:** בפרק זה נלמד כיצד לקבל החלטות בתוכנית שלנו באמצעות תנאים, ביטויים לוגיים ושימוש בשארית החלוקה.
+**בקצרה:** בפרק זה נכיר את השימוש במחלקות Math ו-Random של שפת C#, המאפשרות לנו לבצע חישובים מתמטיים ולהשתמש במספרים אקראיים.
 
+## שימוש במחלקה Math
 
-## משפטי תנאי - if, else
+המחלקה `Math` מאפשרת לבצע חישובים מתמטיים מורכבים באופן פשוט.
 
-משפט תנאי מאפשר לנו לבצע פעולה מסוימת רק אם תנאי מסוים מתקיים.
+דוגמאות נפוצות:
 
-מבנה משפט תנאי פשוט:
+{% highlight csharp linenos %}double result = Math.Pow(2, 3); // חזקה - התוצאה 8
+Console.WriteLine(result);
 
-{% highlight csharp linenos %}
-int score = 85;
-if (score >= 60) // Logical Expression לביטוי שבסוגריים קוראים ביטוי לוגי
-{
-    Console.WriteLine("Passed the exam!");
-}
-{% endhighlight %}
+result = Math.Sqrt(16); // שורש ריבועי - התוצאה 4
+Console.WriteLine(result);
 
-מבנה משפט תנאי עם else:
+result = Math.Abs(-10); // ערך מוחלט - התוצאה 10
+Console.WriteLine(result);
 
-{% highlight csharp linenos %}int score = 55;
-if (score >= 60) // false הביטוי הלוגי כאן הוא 
-{
-    Console.WriteLine("Passed the exam!");
-}
-else // לכן שורה 4 לא תבוצע ושורה 8 תבוצע
-{
-    Console.WriteLine("Failed the exam, try again.");
-}
-{% endhighlight %}
+result = Math.Round(3.567, 2); // עיגול ל-2 ספרות אחרי הנקודה - התוצאה 3.57
+Console.WriteLine(result);
 
-### דוגמא פתורה לתנאי עם else if:
-כתבו תוכנית ראשית (עם public static void Main()) המקבלת מהמשתמש גיל ומדפיסה :
-
-"minor" אם הגיל קטן מ-18
-אחרת אם הגיל בין 18 ל-64 (כולל) — "adult"
-אחרת — "senior"
-
-{% highlight csharp linenos %}public static void Main()
-{
-    Console.Write("Enter age: ");
-    int age = int.Parse(Console.ReadLine());
-
-    if (age < 18)
-        Console.WriteLine("minor");
-    else if (age <= 64)
-        Console.WriteLine("adult");
-    else
-        Console.WriteLine("senior");
-}
+result = Math.Floor(3.9); // עיגול כלפי מטה - התוצאה 3
+Console.WriteLine(result);
 {% endhighlight %}
 
 
-## אופרטורים של השוואה ואופרטורים לוגיים ##
+## מספרים אקראיים (Random)
 
+נשתמש במחלקה `Random` כדי לייצר מספרים אקראיים.
 
+יצירת מספר אקראי שלם בין 1 ל-10:
 
-| במתמטיקה  | אופרטור | סוג האופרטור       | תיאור                                      | דוגמה בקוד                       |
-|------------|---------|--------------------|---------------------------------------------|----------------------------------|
-| $$=$$    | `==`    | השוואה             | שווה                                       | `if (x == y) { … }`              |
-| $$\neq$$ | `!=`    | השוואה             | לא שווה                                   | `if (x != y) { … }`              |
-| $$>$$    | `>`     | השוואה             | גדול מ                                     | `if (x > y) { … }`               |
-| $$<$$    | `<`     | השוואה             | קטן מ                                      | `if (x < y) { … }`               |
-| $$\ge$$  | `>=`    | השוואה             | גדול או שווה                              | `if (x >= y) { … }`              |
-| $$\le$$  | `<=`    | השוואה             | קטן או שווה                               | `if (x <= y) { … }`              |
-| $$\land$$| `&&`    | לוגי               | AND (וגם)                                  | `if (a > 0 && b > 0) { … }`       |
-| $$\lor$$ | `||`    | לוגי               | OR (או)                                    | `if (a == 0 || b == 0) { … }`     |
-| $$\lnot$$| `!`     | לוגי               | NOT (שלילה)                                | `bool ok = !isReady;`            |
+{% highlight csharp linenos %}Random rnd = new Random();
+int number = rnd.Next(1, 11); // 1-10
+Console.WriteLine(number);
+{% endhighlight %}
+
+יצירת מספר אקראי ממשי בין 0 ל-1:
+
+{% highlight csharp linenos %}Random rnd = new Random();
+double number = rnd.NextDouble();
+Console.WriteLine(number);
+{% endhighlight %}
+
+## דוגמא לשימוש במספרים אקראיים
+
+הדמיית הטלת קובייה:
+
+{% highlight csharp linenos %}Random rnd = new Random();
+int dice = rnd.Next(1, 7); // 1-6
+Console.WriteLine("Dice roll result: " + dice);
+{% endhighlight %}
+
+## טבלת מעקב (דוגמה לשימוש ב-Random)
+
+| שורת קוד | dice | פלט                     |
+|-----------|------|-------------------------|
+| הגדרה    | 4    |                         |
+| פלט      | 4    | Dice roll result: 4  |
 {: .table-en}
 
-
-
-## ביטויים לוגיים והשוואות
-
-ביטויים לוגיים מאפשרים לנו לקבל החלטות על בסיס השוואה בין ערכים.
-
-דוגמא לביטוי לוגי היא הביטוי `a >= 18`:
-באנגלית : Logical Expression
-
-```csharp
-int age = 18;
-// הנה שורה קצת מוזרה ננסה להבין אותה יחד
-bool isAdult = age >= 18; // isAdult שיכנס למשתנה true תוצאה הביטוי תהיה
-```
-
-דוגמאות לביטויים לוגיים
-```csharp
-// השוואה פשוטה:
-x > 0         // חיובי x אמת אם 
-
-// שילוב עם AND:
-(x > 0) && (x % 2 == 0)  
-// חיובי ו־זוגי x אמת אם
-
-// ושלילה OR שילוב עם:
-!(y < 10) || (z == 5)  
-// y >= 10   אמת אם זד שווה לחמש או
-
-// ביטוי מורכב:
-(a != b) && ((c > d) || (e <= f))
-// אמת אם a לא שווה ל־b וגם (c גדול מ־d או e קטן/שווה ל־f)
-```
-
-
-## שארית חלוקה. שימוש במודולו (%)
-
-האופרטור `%` (מודולו) מחזיר את שארית החלוקה בין שני מספרים. שארית החלוקה של 10 ב-3 היא 1. נושא זה מבלבל תלמידים ויש לחזור על ההקניה בנקודות זמן שונות לכל אורך השנה. אין ל-% שום קשר לחישוב אחוזים. ניתן להעזר בו לקביעת זוגיות / אי-זוגיות , לבידוד של ספרות במספר ועוד.
-
-```csharp 
-int number = 7;
-if (number % 2 == 0)
-{
-    Console.WriteLine("Mispar zugi (even number)");
-}
-else
-{
-    Console.WriteLine("Mispar e-zugi (odd number)");
-}
-```
-
-אם המשתנה הוא 7, הפלט יהיה:
-
-```
-Mispar e-zugi (odd number)
-```
-
-עדיף לעבוד באנלית. יש להנחות את התלמידים לעבוד פונטי במקרה שאינם מכירים מילה מסויימת באנגלית (כך נמנע מצבים מיותרים בהם בזמן בחינה פונים אליכם לתרגום מילים לאנגלית). בסביבת [אונליין כגון netfiddle](https://dotnetfiddle.net/) ניתן להדפיס עברית
-{: .box-success}
-
-## שימוש באופרטורים לוגיים לכתיבת תנאים מורכבים
-כיצד משלבים כמה תנאים בעזרת 'וגם', 'או', ו'לא'
-
-אופרטורים לוגיים מאפשרים לנו לבדוק תנאים מורכבים: 
-מקרים בהם צריכים ששני תנאים יתקיימו (וגם) או מצבים בהם יש כמה אפשרויות כל אחת מהן טובה (או)
-
-- `&&` (וגם)
-- `||` (או)
-- `!` (שלילה, לא)
-
-דוגמה:
-
-{% highlight csharp linenos %}int age = 25;
-bool hasLicense = true;
-
-if (age >= 18 && hasLicense) 
-{
-    Console.WriteLine("You can drive a car");
-}
-else
-{
-    Console.WriteLine("You cannot drive a car");
-}
-{% endhighlight %}
-
-## משתני דגל (Flags)
-
-משתנה דגל הוא משתנה לוגי שנועד לזכור מצב מסוים.
-
-{% highlight csharp linenos %}bool found = false;
-int number = 5;
-
-if (number == 5)
-{
-    found = true;
-}
-
-if (found)
-{
-    Console.WriteLine("Number found");
-}
-{% endhighlight %}
-
-
-
-
-
-
-## סגנונות כתיבת סוגריים בקוד
-סגנון C# מקובל (Allman) הופיע עד כה ואנו נכתוב רק בצורה זו
-
-סגנון Java (K&R) כאן פתיחת הסוגריים היא בהמשך להוראה הפותחת את הבלוק
-```csharp
-bool found = false;
-int number = 5;
-
-// java style block brackets
-if (number == 5) { 
-    found = true;
-}
-
-if (found) {
-    Console.WriteLine("Number found");
-}
-```
-
-{: .box-success}
-**כתיבה ללא סוגריים:** בדוגמא שלנו ניתן גם להתעלם מסוגריים מפני שבתוך הבלוק מופיעה הוראה בודדת. כתיבה זו מומלצת מרגע שתרגישו בנח איתה. גם כאשר כותבים ללא סוגריים מקובל מאד מעבר שורה
-
-```csharp
-bool found = false;
-int number = 5;
-
-if (number == 5)
-    found = true;
-
-if (found) 
-    Console.WriteLine("Number found");
-```
-
-{: .box-warning}
-**אזהרה:** שימו לב להשתמש תמיד בשני סימני שוויון (`==`) לבדיקת שוויון בתנאים. זו אחת השגיאות הנפוצות ביותר בתנאים, והיא חוסמת קימפול
-
----
-
-{: .box-success}
-ניתן בדוגמא שלנו לותר על התנאי הראשון. ולבצע השמה של תוצאת הביטוי הלוגי
-
-{% highlight csharp linenos %}bool found = false;
-int number = 5;
-
-found = number == 5; // true יקבל את הערך found
-
-if (found)
-    Console.WriteLine("Number found");
-    {% endhighlight %}
-
-## בדיקת פלינדרום. **טבלת מעקב**
-
-כתבו תוכנית ב-C# הקולטת מספר תלת-ספרתי חיובי (`num`) ומדפיצה הודעה אם המספר הוא פלינדרום. פלינדרום הוא מילה, מספר, משפט או כל רצף סמלים אחר, שקריאתו מימין לשמאל ומשמאל לימין היא זהה.
-
-<details markdown="1"><summary>פתרון</summary>
-
-{% highlight csharp linenos %}Console.Write("Enter a 3 digit number: ");
-int num = int.Parse(Console.ReadLine()); // הניחו לצורך מעקב שנקלט המספר 363
-int units = num % 10; // בידוד הספרה הימנית
-int hundreds = num / 100; // בידוד הספרה השמאלית
-if (units == hundreds)
-{
-    Console.WriteLine($"{num} is a palindrome");
-}
-else
-{
-    Console.WriteLine($"{num} is not a palindrome");
-}
-{% endhighlight %}
-
-**טבלת מעקב עבור קלט `363`:**
-טבלת מעקב מאפשרת לעקוב אחר ביצוע הקוד על דף נייר. בבחינות מופיעות כמעט תמי 7ד דוגמאות קוד ודרישה לבצע מעקב. בסוף המעקב תתקבקשו בנוסף לקבוע מה מטרת הקוד.
-
-| שורה | `num` | `units` | `hundreds` | `units == hundreds` | פלט                    |
-| ---- | ---- | ------- | ---------- | ------------------- | ---------------------- |
-| 2  |363  | –       | –          | –                   |            |
-| 3  |363  | 3       | –          | –                   |     |
-| 4  |363  | 3       | 3          | –                   | |
-| 5  |363  | 3       | 3          | **true**            | `363 is a palindrome`  |
-{: .table-en}
-
-
-**ניתן לעקוב ולרשום רק מה שמשתנה. דוגמא למעקב עבור קלט `563`:**
-
-| שורה | `num` | `units` | `hundreds` | `units == hundreds` | פלט                    |
-| ---- | ---- | ------- | ---------- | ------------------- | ---------------------- |
-| 2   |563 |         |            |                     |             |
-| 3,4  |    | 3       |  5          |                    |      |
-| 5   |    |         |            | **false**            |   |
-| 11  |    |         |            |            | `563 is not a palindrome`  |
-{: .table-en}
-
-
-</details>
 
 ## תרגול
-[⬅ מעבר לתרגול 2.1 - תרגילים בתנאים פשוטים](/cs/Chapter2Ex2.1)
 
-## סרטון הסבר על שימוש ב- breakpoints למציאת שגיאות
+[⬅ מעבר לתרגול 2.1 - המחלקות Math, Random](/cs/Chapter2Ex2.1)
 
-{: .box-success}
-איתור שגיאות בקוד (דיבוג) הוא חלק בלתי נפרד מתכנות ומפיתוח חשיבה אלגוריתמית. הדרך המרכזית כיום בזמן הפיתוח, היא שימוש ב-breakpoint. דרך זו מתווספת לדרך ישנה ושימושית לא פחות - הדפסות ביניים (ובקוד מסחרי משתמשים בנוסף בכתיבה ללוג, משלוח הודעות וחיבור debugger שאיננו מלמדים).
-
-לפניכם סרטון הדרכה קצר, המסביר כיצד ניתן לדבג בעזרת breakpoints.
-
-{% include youtube.html id="yjl6vQVFXb0" %} 
+[⬅ להיכרות עם הקיצורים השימושיים והוספת קיצורים משלכם snippets נוספים](/cs/Shortcuts)
 
 ## סרטונים
-[סרטוני פרק 2: ביטויים לוגיים](https://www.youtube.com/playlist?list=PLw4P_RdfuzSjVGWRUCg9qWvDkkSWrANtP){:target="_blank"}
+[סרטוני פרק 3: המחלקה Math](https://www.youtube.com/playlist?list=PLw4P_RdfuzShCTd4wgIlDn_Mhum2Pdbai){:target="_blank"}
 
-[סרטוני פרק 4: משפטי תנאי](https://www.youtube.com/playlist?list=PLw4P_RdfuzSitIvnpWSgqZLJHot9__eSG){:target="_blank"}
