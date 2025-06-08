@@ -33,6 +33,7 @@ lang: he
 
 <details markdown="1"> <summary>דוגמא שימושית לקובץ כזה שמוסיף את הקיצור ip ואת הקיצור cr</summary>
 
+[לחצו על הקישור להורדת קובץ קיצורים מעודכן](/cs/rl.snippet)
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
