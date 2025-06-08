@@ -134,3 +134,140 @@ $$ y = x^3 + 6x - 10 $$
 
 ---
 
+## 2.1.6 אתגר: מציאת מספר המדריכים
+בשלב זה של הלמידה - זו שאלת אתגר. מקובל לתת שאלה זו כתרגול של תנאי, ושארית חלוקה. כיוון שנלמד Math לפני תנאים, היא תהווה דוגמא לשימוש בפונקציה Math.Ceiling.
+{: .box-note}
+
+לפי חוקי תנועות הנוער יש להקצות מדריך אחד לכל 10 חניכים שמשתתפים במחנה קיץ.
+
+כתבו תוכנית ראשית שקולטת את מספר החניכים ומדפיסה כמה מדריכים יש להקצות, לפי הכלל הבא:
+
+* אם יש עד 10 חניכים – מדריך אחד.
+
+* אם יש 11–20 חניכים – שני מדריכים.
+
+* אם יש 21–30 חניכים – שלושה מדריכים.
+
+* וכן הלאה.
+
+<details markdown="1"><summary>פתרון + פירוט סדר הפעולות</summary>
+
+{% highlight csharp linenos %}static void Main(String[] args)
+{
+    Console.Write("Enter a number: ");
+    int num1 = int.Parse(Console.ReadLine());
+    // ?נראה כמו סינית
+    int result = (int)Math.Ceiling((double)num1 / 10);
+    Console.WriteLine(result);
+}
+{% endhighlight %}
+
+**כאן GPT בהרחבה מלאה של השלבים כדי להדגים את סדר הפעולות**
+{% highlight csharp linenos %}static void Main(string[] args)
+{
+    // 1. Prompt the user
+    Console.Write("Enter a number: ");
+
+    // 2. Read the input as a string
+    string input = Console.ReadLine();
+
+    // 3. Parse the string to an integer
+    int num1 = int.Parse(input);
+
+    // 4. Convert the integer to double
+    double num1Double = (double)num1;
+
+    // 5. Divide by 10
+    double division = num1Double / 10;
+
+    // 6. Apply the ceiling function
+    double ceilingValue = Math.Ceiling(division);
+
+    // 7. Cast back to int (can skip this)
+    int result = (int)ceilingValue;
+
+    // 8. Print the result
+    Console.WriteLine(result);
+}
+{% endhighlight %}
+
+**וכאן עוד גרסאות מקוצרות על בסיס אותו רעיון**
+
+```csharp
+static void Main(String[] args)
+{
+    Console.Write("Enter a number: ");
+    // וכאן, מקוצר בצורה מוגזמת
+    Console.WriteLine(Math.Ceiling(
+        double.Parse(Console.ReadLine()) / 10));
+}
+
+static void Main(String[] args)
+{
+    Console.Write("Enter a number: ");
+    // ועוד דוגמא מקוצרת שכופה תוצאה ממשית בעזרת 10.0
+    Console.WriteLine(Math.Ceiling(
+        int.Parse(Console.ReadLine()) / 10.0));
+        // כאן ללא 10.0 הקוד לא מתקמפל
+        // double דורשת לקבל Math.Ceiling הפונקציה
+}
+```
+
+
+</details>
+
+## 2.1.7 אתגר: כמה ימים בפברואר. שימוש בתיקרה
+גם את השאלה הזו נותנים כשאלה פשוטה כשמלמדים תנאים. אבל, תמיד יהיו בקבוצה תלמידים עם ידע מהחטיבה ששאלות כאלו לא מאתגרות אותם. כדאי לדרוש מהם לפתור ללא שימוש בתנאים.
+{: .box-note}
+
+
+לפי היומן היוליאני (על שם יוליוס קיסר) אם שנה מתחלקת ב-4 ללא שארית יהיו בפברואר 29 ימים במקום 28. 
+כתבו תכנית הקולטת מספר שנה ומדפיסה כמה ימים יהיו בפברואר, מבלי להשתמש בתנאי.
+
+אופן החישוב כאן מבוסס על אותה הטכניקה שהודגמה בשאלה הקודמת
+
+<details markdown="1"><summary>פתרון</summary>
+
+```csharp
+Console.Write("Enter a number: ");
+int year = int.Parse(Console.ReadLine());
+int extra = (int)Math.Ceiling(year / 4.0) - year / 4;
+Console.WriteLine($"February of {year} has {29 - extra} days");
+```
+
+תהליך החשיבה מפתרון (בדוגמא כאן) כלל זיהוי שאם נבצע חלוקה בממשי, נקבל את השארית כעשרוני, וניתן לעגל מעלה (כל המקרים עם שבר עשרוני ורק הם, יגדלו ב-1). כך נקבל הפרש בין שתי תוצאות החלוקה. בהמשך אם ננסה להדפיס $$28+extra$$ זה לא יעבוד. אחרי חשיבה נוספת ניתן לזהות שיש צורך ב- $$29 - extra$$. לא תמיד רואים מיד את הסוף.
+{: .box-note}
+
+</details>
+
+
+## 2.1.8 אתגר 2: כמה ימים בפברואר ללא שימוב בפונקצית תקרה
+
+רק לאחר הפתרון חשבתי שיש אפשרות לבצע זאת **באמצעות שארית חלוקה** באופן הבא:
+ראשית עושים **רדוקציה** לשאלה
+
+רדוקציה היא טכניקה שבה לוקחים בעיה 𝐴 A (לרוב מורכבת או לא ידועה) וממירים אותה—בצורה אלגוריתמית ויעילה—לבעיה 
+𝐵 B שכבר יודעים כיצד לפתור או שהיא "פשוטה יותר" מבחינת הבנה/יישום. המרה זו כוללת:
+
+נסו לכתוב מיפוי של המספרים המתחלקים ב-4 ל-4 ושל כל האחרים ל-1
+ 
+לאחר מכן תוכלו להשתמש בכך כדי להדפיס אם יש 28 או 29 ימים בדרך שהוצגה קודם
+
+
+<details markdown="1"><summary>פתרון - מיפוי ל-0 ו-1</summary>
+
+```csharp
+static void Main(String[] args)
+{
+    Random rnd = new Random();
+    int num = rnd.Next(4,9);
+    int zeroOr1 = (num % 4 + 3) / 4;
+    Console.WriteLine($"{num} maps to {zeroOr1}");
+}
+```
+
+ראשית כמה מילים על אספקת פתרונות. היו מודעים לכך שאין בעיה לקבל פתרון מ-GPT על הכל.
+מה שיקבע אם התלמיד הוא כזה שמאתגר את עצמו - הוא מוטיביציה פנימית. כשהחלטתי לדוגמא להוסיף את השאלה הזו (מתוך הפרק של תנאים) אף פעם לא ניסיתי לפתור אותה באופן הזה קודם. אבל אני מרגיש חייב לנסות לבד. אני מאמין שגם אתם, וגם הרבה תלמידים ינסו לפתור לבד. מי שהמטרה שלהם היא לעקוף את התרגול, יפגשו את האפקט בבחינה. 
+{: .box-note}
+
+</details>
