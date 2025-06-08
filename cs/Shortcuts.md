@@ -23,76 +23,27 @@ lang: he
 
 
 {: .box-success}
-בהמשך נראה כיצד לבנות קיצורים משלנו באמצעות snippets. סתם😀, ההמשך כבר כאן. מי שרוצים מוזמנים להוסיף
+כעת נוסיף קובץ קיצורים משלנו כדי ליעל את העבודה. 
 
-## כתיבת snippet
-יש לכתוב קובץ מתאים בסיומת snippet ולשים אותו בתיקיה הבאה:
+## שילוב snippet שהוכן מראש
+נוסיף כעת קובץ קיצורים שימושי. יש לעקוב אחר השלבים הבאים. הקובץ יוסיף את הקיצורים ip לביצוע קלט ו- `int.Parse`, את הקיצור  cr עבור `Console.ReadLine()` ואת הקיצור main לכתיבת הכותרת של תכנית ראשית.
 
-%USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
-{: .table-en}
+1. [לחצו על הקישור להורדת קובץ קיצורים מעודכן](/cs/rl.snippet)
+2. פתחו את סייר הקבצים ע"י הקלדת explorer בשורת החיפוש
+3. הדביקו את הנתיב בשורת הכתובת של סייר הקבצים 
+    `%USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets`
+4. העתיקו את הקובץ שהורדתם לתיקייה שנפתחה
 
-<details markdown="1"> <summary>דוגמא שימושית לקובץ כזה שמוסיף את הקיצור ip ואת הקיצור cr</summary>
 
-[לחצו על הקישור להורדת קובץ קיצורים מעודכן](/cs/rl.snippet)
 
-```
-<?xml version="1.0" encoding="utf-8" ?>
-<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
-    <CodeSnippet Format="1.0.0">
-        <Header>
-            <Title>cr</Title>
-            <Shortcut>cr</Shortcut>
-            <Description>Code snippet for Console.ReadLine</Description>
-            <Author>Whoever you want it to be</Author>
-            <SnippetTypes>
-                <SnippetType>Expansion</SnippetType>
-            </SnippetTypes>
-        </Header>
-        <Snippet>
-            <Declarations>
-                <Literal Editable="false">
-                    <ID>SystemConsole</ID>
-                    <Function>SimpleTypeName(global::System.Console)</Function>
-                </Literal>
-            </Declarations>
-            <Code Language="csharp"><![CDATA[$SystemConsole$.ReadLine();]]>
-            </Code>
-        </Snippet>
-    </CodeSnippet>
-    <CodeSnippet Format="1.0.0">
-        <Header>
-            <Title>ip</Title>
-            <Shortcut>ip</Shortcut>
-            <Description>Code snippet for int.Parse(Console.ReadLine</Description>
-            <Author>Whoever you want it to be</Author>
-            <SnippetTypes>
-                <SnippetType>Expansion</SnippetType>
-            </SnippetTypes>
-        </Header>
-        <Snippet>
-            <Declarations>
-                <Literal Editable="false">
-                    <ID>SystemConsole</ID>
-                    <Function>SimpleTypeName(global::System.Console)</Function>
-                </Literal>
-            </Declarations>
-            <Code Language="csharp"><![CDATA[int n = int.Parse($SystemConsole$.ReadLine());]]>
-            </Code>
-        </Snippet>
-    </CodeSnippet>
 
-</CodeSnippets>
-```
-
-</details>
-
-## קיצורי מקשים לעריכת קוד
+## קיצורי מקשים (קיימים), לעריכת קוד
 
 | קיצור מקשים     | פעולה                                      |
 |------------------|--------------------------------------------|
 | `Ctrl + K, C`      | הפוך לשורת הערה (comment)                |
 | `Ctrl + K, U`     | הסר שורת הערה (uncomment)                |
-| `Ctrl + /`     | צור / בטל שורת הערה, תואם pycharm, inteliJ  |
+| `/ + Ctrl`     | צור / בטל שורת הערה, תואם pycharm, inteliJ  |
 | `Ctrl + K, D`     | יישור קוד (format/align)                  |
 | `F12`             | קפיצה להגדרת משתנה/פונקציה              |
 | `Ctrl + Z`        | ביטול פעולה (Undo)                        |
