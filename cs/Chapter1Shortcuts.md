@@ -31,8 +31,12 @@ lang: he
 1. [לחצו על הקישור להורדת קובץ קיצורים מעודכן](/cs/rl.snippet)
 2. פתחו את סייר הקבצים ע"י הקלדת explorer בשורת החיפוש
 3. הדביקו את הנתיב בשורת הכתובת של סייר הקבצים 
-    `%USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets`
-4. העתיקו את הקובץ שהורדתם לתיקייה שנפתחה. במידת הצורך ניתן לפתוח עוד explorer
+
+---
+%USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
+---
+
+4.העתיקו את הקובץ שהורדתם לתיקייה שנפתחה. במידת הצורך ניתן לפתוח עוד explorer
 
 אם הקיצורים עובדים, הקלדת `ip ⟶⟶` תוסיף את הקוד הבא:
 ```csharp
