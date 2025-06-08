@@ -24,6 +24,7 @@ lang: he
 
 [קישור לקורס יסודות בקמפוס](https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/){:target="_blank"}
 
+[מצגת החשיפה של ההשתלמות](https://docs.google.com/presentation/d/1bJKwPhASzTI2te4ET5bD9VIVATF2L5ue5iWR3c2c7EI/edit?usp=drivesdk{:target="_blank"})
 
 </details>
 
