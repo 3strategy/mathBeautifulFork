@@ -138,3 +138,7 @@ y = y + 1; // שגיאה: שימוש במשתנה ללא ערך התחלתי
 לפניכם סרטון הדרכה קצר, המסביר כיצד ניתן לדבג בעזרת breakpoints.
 
 {% include youtube.html id="yjl6vQVFXb0" %} 
+
+[⬅ להיכרות עם הקיצורים השימושיים והוספת קיצורים משלכם snippets נוספים](/cs/Chapter1Shortcuts)
+
+[⬅ מעבר לטיפוס תו `char`](/cs/Chapter1Char)

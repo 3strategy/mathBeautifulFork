@@ -86,7 +86,7 @@ Console.WriteLine("Dice roll result: " + dice);
 
 [⬅ מעבר לתרגול 2.1 - המחלקות Math, Random](/cs/Chapter2Ex2.1)
 
-[⬅ להיכרות עם הקיצורים השימושיים והוספת קיצורים משלכם snippets נוספים](/cs/Shortcuts)
+[⬅ להיכרות עם הקיצורים השימושיים והוספת קיצורים משלכם snippets נוספים](/cs/Chapter1Shortcuts)
 
 ## סרטונים
 [סרטוני פרק 3: המחלקה Math](https://www.youtube.com/playlist?list=PLw4P_RdfuzShCTd4wgIlDn_Mhum2Pdbai){:target="_blank"}
