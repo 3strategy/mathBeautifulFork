@@ -26,13 +26,25 @@ Console.WriteLine(result);
 result = Math.Abs(-10); // ערך מוחלט - התוצאה 10
 Console.WriteLine(result);
 
-result = Math.Round(3.567, 2); // עיגול ל-2 ספרות אחרי הנקודה - התוצאה 3.57
+result = Math.Round(3.565, 2); // עיגול ל-2 ספרות אחרי הנקודה - התוצאה 3.57
 Console.WriteLine(result);
 
 result = Math.Floor(3.9); // עיגול כלפי מטה - התוצאה 3
 Console.WriteLine(result);
+
+result = Math.Ceiling(3.9); // עיגול כלפי מעלה - התוצאה 4
+Console.WriteLine(result);
 {% endhighlight %}
 
+**floor הוא עיגול מטה, ולא סתם מחיקה של השבר**
+```csharp
+static void Main(String[] args)
+{
+    double r = -1.2;
+    Console.WriteLine($"after casting {(int)r}"); // -1
+    Console.WriteLine($"after floor {Math.Floor(r)}"); // -2
+}
+```
 
 ## מספרים אקראיים (Random)
 
