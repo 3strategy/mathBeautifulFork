@@ -32,9 +32,13 @@ lang: he
 2. פתחו את סייר הקבצים ע"י הקלדת explorer בשורת החיפוש
 3. הדביקו את הנתיב בשורת הכתובת של סייר הקבצים 
     `%USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets`
-4. העתיקו את הקובץ שהורדתם לתיקייה שנפתחה
+4. העתיקו את הקובץ שהורדתם לתיקייה שנפתחה. במידת הצורך ניתן לפתוח עוד explorer
 
-
+אם הקיצורים עובדים, הקלדת `ip ⟶⟶` תוסיף את הקוד הבא:
+```csharp
+Console.Write("Enter a number: ");
+int num1 = int.Parse(Console.ReadLine());
+```
 
 
 ## קיצורי מקשים (קיימים), לעריכת קוד
