@@ -68,23 +68,61 @@ lang: he
 - את שלושת המספרים
 - את המספר הגדול ביותר
 - את השורש הריבועי המעוגל ל-0 ספרות דיוק של כל אחד מהמספרים
-- הודעה מתאימה אם יש לפחות שני מספרים שהשורש המעוגל שלהם שווה
+- **כאן נדרש שימוש בתנאי. לא למדנו.** הודעה מתאימה אם יש לפחות שני מספרים שהשורש המעוגל שלהם שווה
 
 השתמשו באובייקט מסוג Random ובפונקציות ממחלקת Math.
 
 ---
 
 <details markdown="1">
-<summary>גרסה מתקדמת: שימוש בפונקציה</summary>
+<summary>פתרון</summary>
 
-כתבו פונקציה void (שאינה מחזירה ערך) שמגרילה שלושה מספרים שלמים בטווח 20 עד 40, ומדפיסה:
-- את שלושת המספרים
-- את המספר הגדול ביותר
-- את השורש הריבועי המעוגל ל-0 ספרות דיוק של כל אחד
-- הודעה מתאימה אם יש לפחות שני מספרים שהשורש המעוגל שלהם שווה
+{% highlight csharp linenos %}public static Random rnd = new Random();
 
-השתמשו באובייקט מסוג Random ובפונקציות ממחלקת Math.  
-הציגו גם את התכנית הראשית המבצעת קריאה לפונקציה.
+/// <summary>
+/// Q213 הגרלה. מציאת הגדול ביותר. עיגול שורשים, שימוש בתנאי
+/// </summary>
+public static void Q213()
+{
+    int num1 = rnd.Next(20, 41);
+    int num2 = rnd.Next(20, 41);
+    int num3 = rnd.Next(20, 41);
+    int max = Math.Max(num1, num2);
+    max = Math.Max(max, num3);
+    // או בפקודה אחת:
+    max = Math.Max(num3, Math.Max(num1, num2));
+    Console.WriteLine($"max is: {max}");
+
+    double sqr1 = Math.Round(Math.Sqrt(num1), 2);
+    double sqr2 = Math.Round(Math.Sqrt(num2), 2);
+    double sqr3 = Math.Round(Math.Sqrt(num3), 2);
+
+    Console.WriteLine($"sqr1: {sqr1}, sqr2: {sqr2}, sqr3: {sqr3}");
+
+    // תנאים עדיין לא למדנו
+    // else if, else תנאי פשוט עם
+    if (sqr1 == sqr2)
+        Console.WriteLine("at least 1 has same root.");
+    else if (sqr2 == sqr3)
+        Console.WriteLine("at least 1 has same root.");
+    else if (sqr3 == sqr1)
+        Console.WriteLine("at least 1 has same root.");
+
+    // שימוש בתנאי מורכב:
+    if (sqr1 == sqr2 || sqr1 == sqr3 || sqr2 == sqr3)
+        Console.WriteLine($"at least 1 has " + // מעבר שורה לא עובר שורה
+            "the same root:\n\there, using a compound logical expression");
+    // כן עובר שורה \n  מוסיף טאב \t
+}
+
+/// <summary>
+/// (כתיבת הערות. קריאה מתכנית ראשית לפעולה(פונקציה
+/// </summary>
+public static void Main()
+{
+    Q213();
+}
+{% endhighlight %}
 
 </details>
 
