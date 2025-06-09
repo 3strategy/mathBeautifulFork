@@ -29,12 +29,11 @@ lang: he
 נוסיף כעת קובץ קיצורים שימושי. יש לעקוב אחר השלבים הבאים. הקובץ יוסיף את הקיצורים ip לביצוע קלט ו- `int.Parse`, את הקיצור  cr עבור `Console.ReadLine()` ואת הקיצור main לכתיבת הכותרת של תכנית ראשית.
 
 1. [לחצו על הקישור להורדת קובץ קיצורים מעודכן](/cs/rl.snippet)
-2. פתחו את סייר הקבצים ע"י הקלדת explorer בשורת החיפוש
+2. פתחו את **סייר הקבצים** ע"י הקלדת explorer בשורת החיפוש
 3. הדביקו את הנתיב בשורת הכתובת של סייר הקבצים 
 
----
-%USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
----
+
+    %documents%\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
 
 4.העתיקו את הקובץ שהורדתם לתיקייה שנפתחה. במידת הצורך ניתן לפתוח עוד explorer
 
