@@ -139,11 +139,14 @@ y = y + 1; // שגיאה: שימוש במשתנה ללא ערך התחלתי
 
 {% include youtube.html id="N4QehxQAuNI" %} 
 
+---
+
+## הוספת התוסף codeblocks ל- google docs
 
 <details><summary>הוספת codeblocks, פירמוט הקוד, ודגש על חלוקה בשלמים</summary>
 אלו 2 סרטונים שהכנתי ושלחתי בקבוצה. קשה לי להאמין שנספיק להדגים את זה. צפו בהם בזמנכם החופשי. כפי שכבר שאלו בקבוצה "למה צריך לפרמט?" והתשובה היתה לא צריך. זה nice to have זה הכל.
 
-## הוספת התוסף codeblocks ל- google docs
+
 
 {% include youtube.html id="XWyQMcTWURU" %} 
 
