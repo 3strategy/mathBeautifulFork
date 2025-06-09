@@ -2,6 +2,13 @@
 layout: page 
 ---
 
+<style>
+    body {
+        border:none !important;
+        border-left:none !important;
+    }
+</style>
+
 ```csharp
 // היא מחוץ לפונקציות rnd יצירת מופע של 
 static public Random rnd = new Random(); // ריק פרט לבדיקות seed משאירים
