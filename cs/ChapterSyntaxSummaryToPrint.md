@@ -1,13 +1,8 @@
 ---
-layout: page 
+layout: page-to-print
 ---
 
-<style>
-    body {
-        border:none !important;
-        border-left:none !important;
-    }
-</style>
+
 
 ```csharp
 // היא מחוץ לפונקציות rnd יצירת מופע של 
