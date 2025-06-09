@@ -32,6 +32,7 @@ navbar-links:
     - קיצורים: "/cs/Chapter1Shortcuts/"
     - פרק 2 Math,Random: "/cs/Chapter2/"
     - תרגול 2.1: "/cs/Chapter2Ex2.1/"
+    - תקציר עד כאן: "/cs/ChapterSyntaxSummary"
     - פרק 3 if: "/cs/Chapter3/"
     - פרק 4 for: "/cs/Chapter4/"
     - פרק 5 while: "/cs/Chapter5/"

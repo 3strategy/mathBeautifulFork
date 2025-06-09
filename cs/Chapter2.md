@@ -105,4 +105,5 @@ Console.WriteLine("Dice roll result: " + dice);
 ## סרטונים
 [סרטוני פרק 3: המחלקה Math](https://www.youtube.com/playlist?list=PLw4P_RdfuzShCTd4wgIlDn_Mhum2Pdbai){:target="_blank"}
 
-
+[⬅ תקציר עם מספרי שורות כולל קצת דברים שלא למדנו](/cs/ChapterSyntaxSummary)
+[⬅ תקציר להדפסה קצת דברים שלא למדנו](/cs/ChapterSyntaxSummaryToPrint)
