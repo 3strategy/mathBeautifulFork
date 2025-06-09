@@ -64,9 +64,9 @@ string emoji = "😀";
 {% highlight csharp linenos %}static void Main(String[] args)
 {
     int num;
-    char ch;
-    ch = 'c';
-    num = ch;
+    char ch; 
+    ch = 'c'; // c has ascii value 99
+    num = ch; // implicit type conversion from char to int
     Console.WriteLine("num=" + num);
     Console.WriteLine("ch=" + ch);
 }
@@ -78,8 +78,8 @@ string emoji = "😀";
 {
     int num;
     char ch;
-    ch = 'c';
-    num = ch;
+    num = 99;
+    ch = num;
     Console.WriteLine("num=" + num);
     Console.WriteLine("ch=" + ch);
 }
