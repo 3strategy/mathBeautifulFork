@@ -32,9 +32,13 @@ lang: he
 2. פתחו את **סייר הקבצים** ע"י הקלדת explorer בשורת החיפוש
 3. הדביקו את הנתיב בשורת הכתובת של סייר הקבצים 
 
-
+    
     documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
+    
+    או
 
+    מסמכים\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
+    
     או
 
     %USERPROFILE%\Documents\Visual Studio 2022\Code Snippets\Visual C#\My Code Snippets
