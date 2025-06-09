@@ -59,11 +59,13 @@ else // לכן שורה 4 לא תבוצע ושורה 8 תבוצע
 {% endhighlight %}
 
 ### דוגמא פתורה לתנאי עם else if:
-כתבו תוכנית ראשית (עם public static void Main()) המקבלת מהמשתמש גיל ומדפיסה :
+כתבו תוכנית הקולטת גיל ומדפיסה :
 
-"minor" אם הגיל קטן מ-18
-אחרת אם הגיל בין 18 ל-64 (כולל) — "adult"
-אחרת — "senior"
+- "minor" אם הגיל קטן מ-18
+- אחרת אם הגיל בין 18 ל-64 (כולל) — "adult"
+- אחרת — "senior"
+
+<details><summary>פתרון</summary>
 
 {% highlight csharp linenos %}public static void Main()
 {
@@ -79,6 +81,7 @@ else // לכן שורה 4 לא תבוצע ושורה 8 תבוצע
 }
 {% endhighlight %}
 
+</details>
 
 ## אופרטורים של השוואה ואופרטורים לוגיים ##
 
