@@ -1,7 +1,8 @@
 ---
 layout: page 
-title: "35482"
-subtitle: "12 May 2025 Q -question number"
+title: "תרגול 4.1 - לולאות for"
+subtitle: "תרגול בלולאות for"
+tags: מונה
 mathjax: true
 lang: he
 ---
