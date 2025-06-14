@@ -134,7 +134,7 @@ Console.WriteLine("The number entered is: " + number);
 
 
 ---
-title: פירוק ובניית מספר שלם - C#
+# פירוק ובניית מספר שלם - C#
 ---
 
 ## פירוק מספר
@@ -266,6 +266,6 @@ else
 ## תרגול
 
 ## סרטונים
-## סרטונים
+
 [סרטוני פרק 7: לולאות while](https://www.youtube.com/playlist?list=PLw4P_RdfuzSiWmGL7PdjcY5Sd8Fqeguo4){:target="_blank"}
 
