@@ -102,6 +102,11 @@ navbar-links:
     
   ט': 
     - הנחש: "/mcontent/unsorted/Snake"
+    - c6: "/cs2/Chapter6.md"
+    - c6bad: "/cs2/Chapter6bad.md"
+    - c6ex1: "/cs2/Chapter6Ex6.1.md"
+    - c6ex2: "/cs2/Chapter6Ex6.2.md"
+    - 6ex3Turt: "/cs2/Chapter6Ex6.3.md"
 
 
 ################
