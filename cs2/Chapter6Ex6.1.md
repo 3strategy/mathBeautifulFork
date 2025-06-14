@@ -28,18 +28,16 @@ lang: he
 
 <details markdown="1"><summary>פתרון</summary>
 
-{% highlight csharp linenos %}
-public static void Asterix4()
+{% highlight csharp linenos %}public static void Asterix4()
 {
-int rows = 5;
-for (int i = rows; i > 0; i--)
-{
-for (int j = 0; j < i; j++)
-{
-Console.Write("\* ");
-}
-Console.WriteLine();
-}
+    int rows = 5;
+    for (int i = rows; i > 0; i--)
+    {
+        for (int j = 0; j < i; j++)
+            Console.Write("* ");
+
+        Console.WriteLine();
+    }
 }
 {% endhighlight %}
 
@@ -57,17 +55,16 @@ Console.WriteLine();
 
 <details markdown="1"><summary>פתרון</summary>
 
-{% highlight csharp linenos %}
-public static void Numbers4()
+{% highlight csharp linenos %}public static void Numbers4()
 {
-for (int i = 5; i >= 1; i--)
-{
-for (int j = 1; j <= i; j++)
-{
-Console.Write(\$"{j} ");
-}
-Console.WriteLine();
-}
+    int rows = 5;
+    for (int i = rows; i > 0; i--)
+    {
+        for (int j = 1; j <= i; j++)
+            Console.Write($"{j} ");
+
+        Console.WriteLine();
+    }
 }
 {% endhighlight %}
 
@@ -85,18 +82,16 @@ A
 
 <details markdown="1"><summary>פתרון</summary>
 
-{% highlight csharp linenos %}
-public static void Chars4()
+{% highlight csharp linenos %}public static void Chars4()
 {
-int rows = 5;
-for (int i = rows; i > 0; i--)
-{
-for (char c = 'A'; c < 'A' + i; c++)
-{
-Console.Write(\$"{c} ");
-}
-Console.WriteLine();
-}
+    int rows = 5;
+    for (int i = rows; i > 0; i--)
+    {
+        for (char j = 'A'; j < 'A' + i; j++)
+            Console.Write($"{j} ");
+
+        Console.WriteLine();
+    }
 }
 {% endhighlight %}
 
@@ -118,16 +113,17 @@ Console.WriteLine();
 
 <details markdown="1"><summary>פתרון</summary>
 
-{% highlight csharp linenos %}
-public static void Asterix5()
+{% highlight csharp linenos %}public static void Asterix5()
 {
-int rows = 5;
-for (int i = 0; i < rows; i++)
-{
-for (int s = 0; s < i; s++) Console.Write("  ");
-for (int j = 0; j < rows - i; j++) Console.Write("\* ");
-Console.WriteLine();
-}
+    int rows = 5;
+    for (int i = 0; i < rows; i++)
+    {
+        for (int s = 0; s < i; s++) 
+            Console.Write("  ");
+        for (int j = 0; j < rows - i; j++) 
+            Console.Write("* ");
+        Console.WriteLine();
+    }
 }
 {% endhighlight %}
 
@@ -145,16 +141,17 @@ Console.WriteLine();
 
 <details markdown="1"><summary>פתרון</summary>
 
-{% highlight csharp linenos %}
-public static void Numbers5()
+{% highlight csharp linenos %}public static void Numbers5()
 {
-int rows = 5;
-for (int i = 0; i < rows; i++)
-{
-for (int s = 0; s < i; s++) Console.Write("  ");
-for (int j = 1; j <= rows - i; j++) Console.Write(\$"{j} ");
-Console.WriteLine();
-}
+    int rows = 5;
+    for (int i = 0; i < rows; i++)
+    {
+        for (int s = 0; s < i; s++) 
+            Console.Write("  ");
+        for (int j = 1; j <= rows - i; j++) 
+            Console.Write($"{j} ");
+        Console.WriteLine();
+    }
 }
 {% endhighlight %}
 
@@ -172,16 +169,17 @@ A B C D E
 
 <details markdown="1"><summary>פתרון</summary>
 
-{% highlight csharp linenos %}
-public static void Chars5()
+{% highlight csharp linenos %}public static void Chars5()
 {
-int rows = 5;
-for (int i = 0; i < rows; i++)
-{
-for (int s = 0; s < i; s++) Console.Write("  ");
-for (char c = 'A'; c < 'A' + rows - i; c++) Console.Write(\$"{c} ");
-Console.WriteLine();
-}
+    int rows = 5;
+    for (int i = 0; i < rows; i++)
+    {
+        for (int s = 0; s < i; s++) 
+            Console.Write("  ");
+        for (char c = 'A'; c < 'A' + rows - i; c++) 
+            Console.Write($"{c} ");
+        Console.WriteLine();
+    }
 }
 {% endhighlight %}
 
