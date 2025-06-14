@@ -80,6 +80,7 @@ int n = int.Parse(Console.ReadLine());
 
     Console.WriteLine($"number: {maxNum}, Sum: {maxSum}");  
 }  
+{% endhighlight %}
 
 </details>
 
