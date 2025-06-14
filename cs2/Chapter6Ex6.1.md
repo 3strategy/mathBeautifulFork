@@ -1,7 +1,7 @@
 ---
 layout: page 
 title: "תרגול 6.1 - לולאות for מקוננות"
-subtitle: "תרגול בלולאות for"
+subtitle: "תרגול בלולאות for: Patterns"
 tags: קינון, כוכביות, patterns
 mathjax: true
 lang: he

@@ -62,4 +62,25 @@ else
 * "zero" אם `x == 0`
 * אחרת "negative"
 
+
+## 3.1.6 כמה ימים בפברואר
+
+לפי היומן היוליאני (על שם יוליוס קיסר) אם שנה מתחלקת ב-4 ללא שארית יהיו בפברואר 29 ימים במקום 28. 
+כתבו תכנית הקולטת מספר שנה ומדפיסה כמה ימים יהיו בפברואר, (שימוש בתנאי). ניתן לפתור גם ללא תנאים באמצעות Ceiling. 
+
+<details markdown="1"><summary>פתרון</summary>
+
+```csharp
+Console.Write("Enter a number: ");
+int year = int.Parse(Console.ReadLine());
+if (year % 4 == 0)
+    Console.WriteLine("29 days");
+else
+    Console.WriteLine("28 days");
+```
+
+</details>
+
+
+
 [⬅ מעבר לתרגול 3.2 - תרגילים בתנאים מורכבים](/cs/Chapter3Ex3.2)

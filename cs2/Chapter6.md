@@ -61,9 +61,13 @@ lang: he
 
 </details>
 
-## תבניות הדפסה
+## תבניות הדפסה Patterns
+
+{: .box-note} 
+המונח Patterns מעט מטעה מפני שבמקום הוא משמש לתיאור תבניות פתרון בתכנות, וכאן הכוונה לדגמים גרפיים שנדפיס למסך
 
 ### Pattern 1
+בכל אחד מה- Patterns ניתן להתחיל בתרגול הבסיסי עם כוכביות, ולאחר מכן לשפר אותו כדי להדפיס מספרים או תווים. ניתן להמציא עוד תרגילים דומים בהם התבנית המספרית או התווים שיש להדפיס מקיימים חוקיות שונה.
 
 **Asterix1**
 
@@ -74,6 +78,8 @@ lang: he
 * * * *
 * * * * *
 ```
+
+---
 
 {% highlight csharp linenos %}public static void Asterix1()
 {
@@ -103,7 +109,7 @@ lang: he
 ```
 
 
-<details markdown="1"><summary>פתרון. נסו לשנות את הקוד שבדוגמא הקודמת לפני שאתם פותחים</summary>
+<details markdown="1"><summary>פתרון. נסו לשנות את הקוד שבדוגמא הקודמת לפני שאתם מציצים</summary>
 {% highlight csharp linenos %}public static void Numbers1()
 {
     for (int i = 0; i < 5; i++)
@@ -190,7 +196,7 @@ A B C D E
 1 2 3 4 5
 ```
 
-<details markdown="1"><summary>פתרון. נסו לשנות את הקוד שבדוגמא הקודמת לפני שאתם פותחים</summary>
+<details markdown="1"><summary>פתרון. נסו לשנות את הקוד שבדוגמא הקודמת לפני שאתם מציצים</summary>
 
 
 {% highlight csharp linenos %}public static void Numbers2()
@@ -371,4 +377,15 @@ A B C D E
 </details>
 
 
-התרגילים וה-patterns מבוססים על: [GeeksforGeeks - Pattern Programs in C](https://www.geeksforgeeks.org/c/pattern-programs-in-c/)
+תרגילי ה-patterns מבוססים על: [GeeksforGeeks - Pattern Programs in C](https://www.geeksforgeeks.org/c/pattern-programs-in-c/)
+
+
+## תרגול
+[⬅ עברו לתרגול 6.1 - Patterns לולאות מקוננות עם פתרונות](/cs2/Chapter6Ex6.1)
+
+[⬅ עברו לתרגול 6.2 - לולאות מקוננות כללי](/cs2/Chapter6Ex6.2)
+
+[⬅ עברו לתרגול 6.3 - Patterns לולאות מקוננות ללא פתרונות](/cs2/Chapter6Ex6.3)
+
+[⬅ עברו לתרגול 6.4 - לולאות מקוננות - Karel The Robot](/cs2/Chapter6Ex6.4KKarel)
+
