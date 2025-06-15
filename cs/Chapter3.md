@@ -46,7 +46,9 @@ if (score >= 60) // Logical Expression לביטוי שבסוגריים קורא�
 }
 {% endhighlight %}
 
-מבנה משפט תנאי עם else:
+---
+
+**מבנה משפט תנאי עם else:**
 
 {% highlight csharp linenos %}int score = 55;
 if (score >= 60) // false הביטוי הלוגי כאן הוא 
@@ -58,6 +60,24 @@ else // לכן שורה 4 לא תבוצע ושורה 8 תבוצע
     Console.WriteLine("Failed the exam, try again.");
 }
 {% endhighlight %}
+
+---
+
+**מבנה מלא עם else if ועם else**
+
+{% highlight csharp linenos %}string color = "Green";
+if (color == "Red")
+    Console.WriteLine("Color is red");
+else if (color == "Green")
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine("Color is green");
+}
+else
+    Console.WriteLine($"Color is {color}");
+{% endhighlight %}
+
+---
 
 ### דוגמא פתורה לתנאי עם else if:
 כתבו תוכנית הקולטת גיל ומדפיסה :
