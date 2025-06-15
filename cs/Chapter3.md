@@ -53,7 +53,7 @@ if (score >= 60) // Logical Expression לביטוי שבסוגריים קורא�
 
 ---
 
-**מבנה משפט תנאי עם else:**
+## מבנה משפט תנאי עם else:
 
 {% highlight csharp linenos %}int score = 55;
 if (score >= 60) // false הביטוי הלוגי כאן הוא 
@@ -69,7 +69,7 @@ else // לכן שורה 4 לא תבוצע ושורה 8 תבוצע
 
 ---
 
-**מבנה מלא עם else if ועם else**
+## מבנה מלא עם else if ועם else
 
 {% highlight csharp linenos %}string color = "Green";
 if (color == "Red")
