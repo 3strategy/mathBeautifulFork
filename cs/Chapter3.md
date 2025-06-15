@@ -136,6 +136,21 @@ else
 דוגמא לביטוי לוגי היא הביטוי `a >= 18`:
 באנגלית : Logical Expression
 
+## משתנה בוליאני true / false
+```csharp
+Console.WriteLine(“Enter 2 numbers”);
+num1 = int.Parse(Console.ReadLine());
+num2 = int.Parse(Console.ReadLine());
+found = (num1 == num2);
+
+if (found)
+	Console.WriteLine(“The numbers are equal!”);
+else
+	Console.WriteLine(“The numbers are not equal.”);
+```
+
+
+
 ```csharp
 int age = 18;
 // הנה שורה קצת מוזרה ננסה להבין אותה יחד
