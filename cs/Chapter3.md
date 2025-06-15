@@ -137,6 +137,8 @@ else
 באנגלית : Logical Expression
 
 ## משתנה בוליאני true / false
+משתנה שמכיל את הערך true או false. יכול להכיל תוצאה של ביטוי בוליאני
+
 ```csharp
 Console.WriteLine(“Enter 2 numbers”);
 num1 = int.Parse(Console.ReadLine());
@@ -149,7 +151,7 @@ else
 	Console.WriteLine(“The numbers are not equal.”);
 ```
 
-
+**דוגמא נוספת:**
 
 ```csharp
 int age = 18;
