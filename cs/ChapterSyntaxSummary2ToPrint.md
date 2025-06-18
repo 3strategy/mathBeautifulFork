@@ -7,6 +7,7 @@ layout: page-to-print
 ```csharp
 // היא מחוץ לפונקציות rnd יצירת מופע של 
 static public Random rnd = new Random(); // ריק פרט לבדיקות seed משאירים
+
 /// <summary>
 /// /// תיעוד מעל הפעולה. תשובה לשאלה 3.2.2 בעזרת הקיצור 
 /// </summary>
@@ -33,32 +34,36 @@ public static void Q322()
   int tensDig = max / 10 % 10; // (ספרת עשרות (בעקבות חלוקה ב-10 וחילוץ ספרה
   bool minIsZugi = min % 2 == 0; // חישוב זוגיות (ביטוי לוגי) והשמת התוצאה במשתנה
 }
+
 static void Q333()
 {
-  int num = 5;
+  int num = 5, length = 10;
   if (num == 0)
-     Console.WriteLine("First condition met");
-  else if (x == 1)
+    Console.WriteLine("First condition met");
+  else if (num == 1)
   {
-     Console.WriteLine("Second condition met");
-     Console.WriteLine("Only multiple statments require a block");
+    Console.WriteLine("Second condition met");
+    Console.WriteLine("Only multiple statments require a block");
   }
   else
-     Console.WriteLine("Will happen if nothing else happened");
+    Console.WriteLine("Will happen if nothing else happened");
 
   // בסוף כל סיבוב ;  בתחילת סיבוב ;  במעבר ראשון
   for (int i = 0;    i < length;      i++)
   {
-     // פעמים length יבוצע for בלוק
+    // פעמים length יבוצע for בלוק
+    if (num > 17) // אם לא קורה משהו חריג
+      break; // יציאה מוקדמת מלולאה
   }
-  for (int i = length - 1; i >= 0; i--) // reversed loop
+  for (int i = length - 1; i >= 0; i--) { }// reversed loop
 
-  while (num > 0)
+  while (num > 0) // שימושי כשלא ידוע מספר החזרות
   {
-     // יבוצע כל עוד התנאי מתקיים
+    // מתקיים num > 0 יבוצע כל עוד התנאי 
   }
 }
-static void Main() // אחד בלבד !!! כאן הקוד יתחיל לרוץ Main יש
+
+public static void Main() // אחד בלבד !!! כאן הקוד יתחיל לרוץ Main יש
 {
   Q322(); // Q322 (קריאה לפעולה (פונקציה
   Q333(); // הדרך לכתוב ולהפעיל כמה תכניות באותו פרוייקט

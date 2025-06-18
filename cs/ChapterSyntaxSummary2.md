@@ -10,14 +10,13 @@ lang: he
 [⬅ תחביר. קישור לגרסה להדפסה כולל קצת דברים שלא למדנו](/cs/ChapterSyntaxSummary2ToPrint)
 לפני הדפסה רצוי לשנות את צבע האתר ללבן (בתפריט תכנים יש שינוי צבע)
 
-{% highlight csharp linenos %}using System.ComponentModel.Design;
-
-namespace ConsoleApp121; //{} ניתן לרשום ; וכך "לחסוך" זוג סוגריים 
+{% highlight csharp linenos %}namespace ConsoleApp121; //{} ניתן לרשום ; וכך "לחסוך" זוג סוגריים 
 
 internal class Program
 {
   // היא מחוץ לפונקציות rnd יצירת מופע של 
   static public Random rnd = new Random(); // ריק פרט לבדיקות seed משאירים
+
   /// <summary>
   /// /// תיעוד מעל הפעולה. תשובה לשאלה 3.2.2 בעזרת הקיצור 
   /// </summary>
@@ -44,12 +43,13 @@ internal class Program
     int tensDig = max / 10 % 10; // (ספרת עשרות (בעקבות חלוקה ב-10 וחילוץ ספרה
     bool minIsZugi = min % 2 == 0; // חישוב זוגיות (ביטוי לוגי) והשמת התוצאה במשתנה
   }
+
   static void Q333()
   {
-    int num = 5;
+    int num = 5, length = 10;
     if (num == 0)
       Console.WriteLine("First condition met");
-    else if (x == 1)
+    else if (num == 1)
     {
       Console.WriteLine("Second condition met");
       Console.WriteLine("Only multiple statments require a block");
@@ -61,15 +61,18 @@ internal class Program
     for (int i = 0;    i < length;      i++)
     {
       // פעמים length יבוצע for בלוק
+      if (num > 17) // אם לא קורה משהו חריג
+        break; // יציאה מוקדמת מלולאה
     }
-    for (int i = length - 1; i >= 0; i--) // reversed loop
+    for (int i = length - 1; i >= 0; i--) { }// reversed loop
 
-      while (num > 0)
-      {
-        // יבוצע כל עוד התנאי מתקיים
-      }
+    while (num > 0) // שימושי כשלא ידוע מספר החזרות
+    {
+      // מתקיים num > 0 יבוצע כל עוד התנאי 
+    }
   }
-  static void Main() // אחד בלבד !!! כאן הקוד יתחיל לרוץ Main יש
+
+  public static void Main() // אחד בלבד !!! כאן הקוד יתחיל לרוץ Main יש
   {
     Q322(); // Q322 (קריאה לפעולה (פונקציה
     Q333(); // הדרך לכתוב ולהפעיל כמה תכניות באותו פרוייקט
