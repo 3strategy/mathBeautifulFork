@@ -1,7 +1,7 @@
 ---
 layout: page 
 title: "סיכום תחביר" 
-subtitle: "סיכום תחביר. כרגע כולל את שיעורים 1, 2 ועוד קצת"
+subtitle: "סיכום תחביר. כולל כל חלק א"
 tags: [סיכום, תחביר, syntax]
 mathjax: true
 lang: he
