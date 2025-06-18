@@ -7,21 +7,12 @@ mathjax: true
 lang: he
 ---
 
-לא למדנו עדיין את שורות 26, 27, 29,30,31 אבל רשמתי בכל זאת 
-
-הפירמוטים בשורות 26,27 לא למבחן (זה פשוט מאד נח אז רציתי שיהיה לכם)
-
-לא למדנו (אכין סרטון) איך לרשום מספר תוכניות באותו עמוד (כל מה שקורה בשורות 33-40). שורה 36 היא נקודת ההתחלה, ומשם הקוד ימשיך ל-Q322 כלומר לבצע את שורה 10 ואילך. מי שצפה בקמפוס כבר פגש את זה.
-
-[⬅ תחביר. קישור לגרסה להדפסה כולל קצת דברים שלא למדנו](/cs/ChapterSyntaxSummaryToPrint)
-
+[⬅ תחביר. קישור לגרסה להדפסה כולל קצת דברים שלא למדנו](/cs/ChapterSyntaxSummary2ToPrint)
 לפני הדפסה רצוי לשנות את צבע האתר ללבן (בתפריט תכנים יש שינוי צבע)
 
-[⬅ תחביר. קישור לגרסה להדפסה כולל כל חלק א](/cs/ChapterSyntaxSummary2ToPrint)
+{% highlight csharp linenos %}using System.ComponentModel.Design;
 
-[⬅ תחביר. קישור לגרסה כולל כל חלק א](/cs/ChapterSyntaxSummary2)
-
-{% highlight csharp linenos %}namespace ConsoleApp121; //{} ניתן לרשום ; וכך "לחסוך" זוג סוגריים 
+namespace ConsoleApp121; //{} ניתן לרשום ; וכך "לחסוך" זוג סוגריים 
 
 internal class Program
 {
@@ -35,11 +26,11 @@ internal class Program
     Console.WriteLine("Enter something: "); // פלט/הדפסה/בקשה/הודעה להמשתמש
     int min = int.Parse(Console.ReadLine()); // קלט מספר שלם, המרה, והשמה. 
 
-    int max = // בבחינה מספיק לרשום כך ========== קלוט מספר שלם  =========
+    int max = 5; // בבחינה מספיק לרשום כך ========== קלוט מספר שלם  =========
 
-    int temp = rnd.Next(5, 11); // מגריל בין 5 ל-10
+    int temp = rnd.Next(9, 31); // מגריל בין 9 ל-30
 
-    int max = Math.Max(temp, min); // מחזירה (כאן) שלם, הגדול מבינהם
+    max = Math.Max(temp, min); // מחזירה (כאן) שלם, הגדול מבינהם
     min = Math.Min(temp, min); // אסור להכריז פעם שניה על משתנה
     double avg = (double)(min + max) / 2; // התוצאה תהיה שלם (casting) ללא
     avg = Math.Round(avg, 3);  // ל-3 ספרות avg מעגל את 
@@ -53,16 +44,38 @@ internal class Program
     int tensDig = max / 10 % 10; // (ספרת עשרות (בעקבות חלוקה ב-10 וחילוץ ספרה
     bool minIsZugi = min % 2 == 0; // חישוב זוגיות (ביטוי לוגי) והשמת התוצאה במשתנה
   }
-  static void Main2()
+  static void Q333()
   {
+    int num = 5;
+    if (num == 0)
+      Console.WriteLine("First condition met");
+    else if (x == 1)
+    {
+      Console.WriteLine("Second condition met");
+      Console.WriteLine("Only multiple statments require a block");
+    }
+    else
+      Console.WriteLine("Will happen if nothing else happened");
+
+    // בסוף כל סיבוב ;  בתחילת סיבוב ;  במעבר ראשון
+    for (int i = 0;    i < length;      i++)
+    {
+      // פעמים length יבוצע for בלוק
+    }
+    for (int i = length - 1; i >= 0; i--) // reversed loop
+
+      while (num > 0)
+      {
+        // יבוצע כל עוד התנאי מתקיים
+      }
   }
   static void Main() // אחד בלבד !!! כאן הקוד יתחיל לרוץ Main יש
   {
     Q322(); // Q322 (קריאה לפעולה (פונקציה
-    Main2(); // הדרך לכתוב ולהפעיל כמה תכניות באותו פרוייקט
+    Q333(); // הדרך לכתוב ולהפעיל כמה תכניות באותו פרוייקט
   }
 }
 {% endhighlight %}
 
 
-[⬅ תחביר. קישור לגרסה להדפסה כולל קצת דברים שלא למדנו](/cs/ChapterSyntaxSummaryToPrint)
+[⬅ תחביר. קישור לגרסה להדפסה כולל קצת דברים שלא למדנו](/cs/ChapterSyntaxSummary2ToPrint)
