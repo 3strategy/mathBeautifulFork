@@ -29,7 +29,8 @@ lang: he
 
 .chess-board th {
   background-color: #ddd;
-  font-size: 14px;
+  color: #000090;
+
 }
 
 .white {
@@ -42,7 +43,7 @@ lang: he
 </style>
 
 
-<table class="chess-board">
+<table class="chess-board, table-en">
   <tr>
     <th></th>
     <th>0</th>
@@ -145,7 +146,7 @@ lang: he
 </table>
 
 
-<details><summary>לנוחותכם מצורף קוד המצייר את הלוח ועליו הצריח והפרש במיקום שנקלט מהמשתמש</summary>
+<details><summary>לנוחותכם מצורף קוד להעתקה המצייר את הלוח ועליו הצריח והפרש במיקום שנקלט מהמשתמש.</summary>
 
 {% highlight csharp linenos %}class Program
 {
@@ -191,9 +192,10 @@ lang: he
     if (true)
       Console.WriteLine("\nrook threathens bishop");
 
-    // TODO: עדכנו את התנאי כדי לזהות איום של פרש
+    // TODO: עדכנו את התנאי כדי לזהות איום של רץ
     if (true)
       Console.WriteLine("\nbishop threatens rook");
+
   }
 
   static void DrawBoard(string[,] board)
@@ -221,6 +223,8 @@ lang: he
 {% endhighlight %}
 
 </details>
+
+## עליכם להשלים את הקוד כדי לזהות מצבים על הלוח
 
 ## 3.3.1 רץ נמצא על משבצות שחורות
 עדכנו את התנאי בשורה מממ בקוד כדי לזהות אם הרץ נמצא על המשבצות השחורות.
