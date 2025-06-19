@@ -39,9 +39,41 @@ The number is: 2
 זוהי כמובן בחירה שגויה של מימוש. מקרה בו יודעים את מספר החזרות, יש לממש באמצעות לולאת for
 {: .box-warning}
 
-## דוגמא 1: לולאה עד לקבלת קלט רצוי מהמשתמש
+## דוגמא 1: צבירת משקעים – Counting Rainfall
 
-דוגמא 1: ניתן להשתמש בלולאת `while` לקבלת קלט מהמשתמש עד לקבלת ערך תקין:
+קלטו כמויות משקעים יומיות (במ"מ). השאלה: אחרי כמה ימים עברה כמות הגשם המצטברת יעד של 100 מ"מ. 
+
+
+#### פלט רצוי:
+
+```
+Enter rainfall for day 1: 30
+Enter rainfall for day 2: 20
+Enter rainfall for day 3: 25
+Enter rainfall for day 4: 35
+
+Target reached after 4 days.
+```
+<details><summary>פתרון</summry>
+
+{% highlight csharp linenos %}int totalRainfall = 0;
+int daysCount = 0;
+
+while (totalRainfall < 100)
+{
+    daysCount++;
+    Console.Write($"Enter rainfall for day {daysCount}: ");
+    int dailyRainfall = int.Parse(Console.ReadLine());
+    totalRainfall += dailyRainfall; // צבירה
+}
+
+Console.WriteLine($"\nTarget reached after {daysCount} days.");
+{% endhighlight %}
+
+
+## דוגמא 2: לולאה עד לקבלת קלט רצוי מהמשתמש
+
+דוגמא 2: ניתן להשתמש בלולאת `while` לקבלת קלט מהמשתמש עד לקבלת ערך תקין:
 
 {% highlight csharp linenos %}int number;
 // ביצוע קלט כפול 
@@ -58,7 +90,7 @@ while (number <= 0) // יתכן שלא תרוץ כלל
 Console.WriteLine("The number entered is: " + number);
 {% endhighlight %}
 
-### דוגמא 2: עצירת הקלט בהתקיים תנאי:
+### דוגמא 3: עצירת הקלט בהתקיים תנאי (שימוש בזקיף):
 
 {% highlight csharp linenos %}Console.Write("Enter number (0 to stop): ");
 int n = int.Parse(Console.ReadLine());
@@ -88,7 +120,7 @@ Stopped.
 
 **אפשר לעצור לולאה בכל שלב בעזרת `break`**
 
-**דוגמא 3:** בדוגמא זו, מימוש באמצעות break, הזהה בתוצאה לדוגמא 2 של (עצירת קלט):
+**דוגמא 4:** בדוגמא זו, מימוש באמצעות break, הזהה בתוצאה לדוגמא 3 של (עצירת קלט):
 
 {% highlight csharp linenos %}int n;
 while (true)
