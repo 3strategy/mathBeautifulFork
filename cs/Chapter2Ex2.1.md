@@ -100,9 +100,9 @@ public static void Q213()
     max = Math.Max(num3, Math.Max(num1, num2));
     Console.WriteLine($"max is: {max}");
 
-    double sqr1 = Math.Round(Math.Sqrt(num1), 2);
-    double sqr2 = Math.Round(Math.Sqrt(num2), 2);
-    double sqr3 = Math.Round(Math.Sqrt(num3), 2);
+    double sqr1 = Math.Round(Math.Sqrt(num1));
+    double sqr2 = Math.Round(Math.Sqrt(num2), 0);
+    double sqr3 = Math.Round(Math.Sqrt(num3), 0);
 
     Console.WriteLine($"sqr1: {sqr1}, sqr2: {sqr2}, sqr3: {sqr3}");
 
