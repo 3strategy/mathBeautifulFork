@@ -20,7 +20,7 @@ lang: he
 </details>
 
 <details markdown="1"><summary>פתרון</summary>  
-{% highlight csharp linenos %}static void Main()
+{% highlight csharp linenos %}public static void Main()
 {
     int sum = 0;
     int count = 0;
@@ -35,48 +35,35 @@ lang: he
 
         if (num < 0) // זיהינו קלט שלילי – נפסיק בלולאה הבאה
             isValid = false;
+        else
+            Console.WriteLine($"Valid num: {num}");
     }
 
     Console.WriteLine($"Total sum: {sum}");
     Console.WriteLine($"Numbers entered: {count}");
-    if(sum > 100) // if(isValid) אותה תוצאה תושג עם
+    if (sum > 100) // if(isValid) אותה תוצאה תושג עם
         Console.WriteLine($"Target was reached");
     else
         Console.WriteLine("Target was NOT reached");
 }
+// בפתרון זה המספר השלילי נספר ונסכם
 {% endhighlight %}
 
+
+```
+Enter an integer: 35
+Valid num: 35
+Enter an integer: 42
+Valid num: 42
+Enter an integer: 28
+Valid num: 28
+Total sum: 105
+Numbers entered: 3
+Target was reached
+
+```
 </details>
 
-
-<details markdown="1"><summary>פתרון עם קלט כפול</summary>  
-{% highlight csharp linenos %}static void Main()
-{
-    int sum = 0;
-    int count = 0;
-
-    Console.Write("Enter an integer. negative to stop: ");
-    int num = int.Parse(Console.ReadLine());
-
-    while (num >= 0 || sum < 100)
-    {
-        count++;
-        sum += num;
-
-        Console.Write("Enter an integer. negative to stop: ");
-        int num = int.Parse(Console.ReadLine());
-    }
-
-    Console.WriteLine($"Total sum: {sum}");
-    Console.WriteLine($"Numbers entered: {count}");
-    if(sum > 100)
-        Console.WriteLine($"Target was reached");
-    else
-        Console.WriteLine("Target was NOT reached");
-}
-
-{% endhighlight %}
-</details>
 
 
 ## 5.3.2  
@@ -118,6 +105,62 @@ lang: he
         Console.WriteLine("Target was NOT reached");
 }{% endhighlight %}
 </details>
+
+
+<details markdown="1"><summary>פתרון עם קלט כפול</summary>  
+{% highlight csharp linenos %}public static void Main()
+{
+    int sum = 0;
+    int count = 0;
+
+    Console.Write("Enter an integer. negative to stop: ");
+    int num = int.Parse(Console.ReadLine());
+
+    while (num >= 0 && sum < 100)
+    {
+        Console.WriteLine($"Valid num: {num}");
+        count++;
+        sum += num;
+
+        Console.Write("Enter an integer. negative to stop: ");
+        num = int.Parse(Console.ReadLine());
+    }
+
+    Console.WriteLine($"Total sum: {sum}");
+    Console.WriteLine($"Numbers entered: {count}");
+    if (sum > 100)
+        Console.WriteLine($"Target was reached");
+    else
+        Console.WriteLine("Target was NOT reached");
+}
+// הערה: בפתרון זה תגובה מידית לקלט שלילי, אבל לא להגעה ליעד
+{% endhighlight %}
+
+**עצירה מיידית בקלט שלילי**
+```
+Enter an integer. negative to stop: 35
+Valid num: 35
+Enter an integer. negative to stop: 45
+Valid num: 45
+Enter an integer. negative to stop: -2
+Total sum: 80
+Numbers entered: 2
+Target was NOT reached
+```
+**בדוגמת הקלט להלן הסכום כבר עובר את 100 ועדיין מבקשים שוב קלט. זה לא מושלם הקלט לא יספר ולא יסכם, אבל אנו מבקשים אותו סתם**
+```
+Enter an integer. negative to stop: 35
+Valid num: 35
+Enter an integer. negative to stop: 42
+Valid num: 42
+Enter an integer. negative to stop: 28
+Valid num: 28
+Enter an integer. negative to stop:
+```
+
+
+</details>
+
 
 
 ## 5.3.3  
