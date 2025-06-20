@@ -54,7 +54,7 @@ Enter rainfall for day 4: 35
 
 Target reached after 4 days.
 ```
-<details><summary>פתרון</summry>
+<details><summary>פתרון</summary>
 
 {% highlight csharp linenos %}int totalRainfall = 0;
 int daysCount = 0;
@@ -70,6 +70,7 @@ while (totalRainfall < 100)
 Console.WriteLine($"\nTarget reached after {daysCount} days.");
 {% endhighlight %}
 
+</details>
 
 ## דוגמא 2: לולאה עד לקבלת קלט רצוי מהמשתמש
 
