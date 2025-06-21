@@ -139,17 +139,14 @@ $$
 <details markdown="1"><summary>הרחבה</summary>
 
 **הוכחה קצרה**  
-כדי לחשב  
-$$\(\displaystyle S_n = A_1 + A_1q + A_1q^2 + \dots + A_1q^{n-1}\)$$,  
-נכפול ב־ $$q$$ ונחסר:
+כדי לחשב $$S_n = a_1 + a_1q + a_1q^2 + \dots + a_1q^{n-1}$$,  
+נכפול ב־ $$q$$ ונחסר משוואות:
 
-$$\[
-\begin{aligned}
+$$\begin{aligned}
 qS_n &= a_1q + a_1q^2 + \dots + a_1q^n,\\
 S_n - qS_n &= a_1 - a_1q^n,\\
 S_n(1 - q) &= a_1(1 - q^n),\\
-S_n &= a_1\,\frac{q^n - 1}{q - 1}.
-\end{aligned}
-\]$$
+S_n &= a_1\,\frac{q^n - 1}{q - 1}
+\end{aligned}$$
 
 </details>
