@@ -153,3 +153,161 @@ $$n$$ ומדפיסה שתי מילים:
 
 ## 3.2.8 מיון של שלושה מספרים
 כתבו תוכנית הקולטת (או מגרילה) שלושה מספרים שלמים $$a, b, c$$ ומדפיסה אותם בסדר עולה.
+
+---
+
+## קמפוס שאלה 5 אפיון משולשים
+
+כתבו : תוכנית הקולטת 3 מספרים ממשיים ומדפיסה האם מדובר במשולש ומה סוג המשולש :
+- משולש שווה צלעות
+- משולש שווה שוקיים
+- משולש ישר זוית
+- משולש שווה צלעות וישר זווית
+- משולש רגיל
+
+ניתן להניח שהקלט תקין. תזכורת: במשולש, סכום 2 צלעות גדול מן הצלע השלישית.
+
+שימו לב :
+יש להדפיס פעם אחת את סוג המשולש במדוייק
+למשל : משולש ישר זווית ושווה שוקיים
+וכן, משולש שווה צלעות ולא גם משולש שווה שוקיים וגם משולש שווה צלעות
+
+
+
+<details markdown="1"><summary>השוואת פתרון נכון ושגוי ובדיקת מקרים</summary>
+
+על מנת לבדוק משולשים באופן כללי יש לרנדם את ערכי הצלעות בין 1 ל-13
+על מנת לבדוק תקינות ישר זווית יש לבחור אקארי בין 3 ל-5 (כדי ליצור יותר סיכוי ל ישר זווית). בדיקה של $$1,1,\sqrt{2}$$ מראה ששני הפתרונות שגויים וגם הפתרון בקמפוס דורש תיקון קל.
+
+בהמשך לאחר שנלמד פעולות נכיר טכניקות בדיקה יותר נוחות, אבל המינימום הנדרש הוא להפוך את הפתרון לפונצקיה המקבלת ערכי צלעות כדי לבדוק הרבה אפשרויות בצורה פשוטה..
+
+{% highlight csharp linenos %}static Random rnd = new Random();
+
+public static void Main()
+{
+    double a, b, c;
+    for (int i = 0; i < 10; i++)
+    {
+        a = rnd.Next(3, 6);
+        b = rnd.Next(3, 6);
+        c = rnd.Next(3, 6); ;
+        Student1Solution(a, b, c);
+        Student2Solution(a, b, c);
+        Guy(a, b, c);
+        Console.WriteLine("====================\n");
+    }
+    a = 1; b = 1; c = Math.Sqrt(2);
+    Student1Solution(a, b, c);
+    Student2Solution(a, b, c);
+    Guy(a, b, c);
+}
+static void Student1Solution(double a, double b, double c)
+{
+    // (פתרון נכון פרט למשולש שו"ש ישר זווית (לפי תוצאות הבדיקות שלי
+    Console.WriteLine($"a: {a},  b: {b},  c: {c}");
+    bool IsTriangle = ((a + b) > c && (a + c) > b && (b + c) > a);
+    bool EquilateralTri = ((a == b) && (a == c));
+    bool IsoscelesTri = IsTriangle && !EquilateralTri && ((a == b) ||
+            (a == c) || (b == c));
+    bool RATri = ((Math.Pow(a, 2) == (Math.Pow(b, 2) + Math.Pow(c, 2))) ||
+                    (Math.Pow(b, 2) == (Math.Pow(a, 2) + Math.Pow(c, 2))) ||
+                    (Math.Pow(c, 2) == (Math.Pow(a, 2) + Math.Pow(b, 2))));
+
+    if (!IsTriangle)
+        Console.WriteLine($"These three numbers" +
+            $" don't represent a triangle");
+    else if (EquilateralTri)
+        Console.WriteLine($"These three numbers" +
+            $" represent an equilateral triangle");
+    else if (IsoscelesTri)
+    {
+        if (RATri)
+            Console.WriteLine($"These three numbers represent " +
+                $"a right angle isosceles triangle");
+        else
+            Console.WriteLine($"These three numbers represent " +
+                $"an isosceles triangle");
+    }
+    else if (RATri)
+        Console.WriteLine($"These three numbers represent " +
+                    $"a right angle triangle");
+    else
+        Console.WriteLine($"These three numbers represent an regular triangle");
+}
+
+static void Student2Solution(double side1, double side2, double side3)
+{
+    // פתרון שגוי (בעקבות הבדיקה ההשוואתית)
+    Console.WriteLine("Hello, World!");
+    /*
+        * תוכנית הקולטת 3 מספרים ממשיים ומדפיסה האם מדובר במשולש ומה סוג המשולש :
+                                    - משולש שווה צלעות
+                                    - משולש שווה שוקיים
+                                    - משולש ישר זוית
+                                    - משולש שווה צלעות וישר זווית
+                                    - משולש רגיל
+    */
+    //Console.WriteLine("Enter the 3 sides of the trinangle, from the small to the big");
+
+    if (side1 == side2 && side2 == side3)
+    {
+        Console.WriteLine("The 3 sides are equal");
+    }
+    else if (side1 == side2 || side2 == side3)
+    {
+        Console.WriteLine("The trinangle has 2 sides equal");
+    }
+    else if (Math.Abs(side3 * side3 - (side1 * side1 + side2 * side2)) < 0.0001)
+    {
+        Console.WriteLine("The triangle is right-angled.");
+    }
+    else
+    {
+        Console.WriteLine("This is regular triangle");
+    }
+
+}
+
+/// <summary>
+/// תיקון על פתרון קמפוס. שימו לב שבקמפוס יש פתרונות לשאלות הפתוחות
+/// בדיקה האם מדובר במשולש
+/// **** if (!(a + b > c && a + c > b && b + c > a)) ****
+/// כללי דה מורגן: הכנסת ה"שלילה" לתוך הסוגריים הופכת
+/// את התנאי **לקריא יותר**. כמו הכנסת מינוס לתוך סוגריים
+/// (נהפוך את כל הסימנים (גם הופך ל-או, גדול הופך לקטן שווה
+/// </summary>
+public static void Guy(double a, double b, double c)
+{
+
+    if ((a + b <= c || a + c <= b || b + c <= a))
+        Console.WriteLine("!!! Not a triangle !!!");
+    else
+    {
+        //1,1,√2 האם משולש ישר זוית // חייבים לעגל טיפה כדי לטפל בממשיים 
+        bool isRight = 
+            (Math.Round(Math.Pow(a, 2) + Math.Pow(b, 2), 5) == Math.Round(Math.Pow(c, 2), 5) ||
+                Math.Round(Math.Pow(a, 2) + Math.Pow(c, 2), 5) == Math.Round(Math.Pow(b, 2), 5) ||
+                Math.Round(Math.Pow(b, 2) + Math.Pow(c, 2), 5) == Math.Round(Math.Pow(a, 2), 5));
+        // בדיקה האם משולש שווה שוקיים
+        if (a == b || a == c || b == c)
+        {
+            // בדיקה האם משולש שווה צלעות
+            if (a == b && b == c) // ממקרים פרטיים לכלליים
+                Console.WriteLine("Equilateral triangle");
+            else if (isRight)// הדפסה אם שווה שוקיים או שווה שוקיים וישר זוית.
+                Console.WriteLine("Isosceles right triangle");
+            else // ברירת מחדל - המקרה הכללי
+                Console.WriteLine("Isosceles triangle");
+        }
+        else
+        {
+            if (isRight)
+                Console.WriteLine("Right triangle");
+            else
+                Console.WriteLine("Regular triange");
+        }
+    }
+}
+{% endhighlight %}
+
+</details>
