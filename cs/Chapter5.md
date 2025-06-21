@@ -306,5 +306,5 @@ else
 
 ## סרטונים
 
-[סרטוני פרק 7: לולאות while](https://www.youtube.com/playlist?list=PLw4P_RdfuzSiWmGL7PdjcY5Sd8Fqeguo4){:target="_blank"}
+[סרטוני פרק 6: לולאות while](https://www.youtube.com/playlist?list=PLw4P_RdfuzSiWmGL7PdjcY5Sd8Fqeguo4){:target="_blank"}
 
