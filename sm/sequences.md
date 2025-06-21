@@ -3,6 +3,7 @@ layout: page
 title: "סדרה הנדסית"
 author: גיא סידס
 lang: he
+mathjax: true
 ---
 
 ## סדרה
