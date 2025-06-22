@@ -152,7 +152,7 @@ public static void QFindMax()
 ```
 
 
-#### מקסימום. גרסה עם קלט כפול
+### מקסימום. גרסה עם קלט כפול
 **בפועל תבחרו מה שנראה לכם נכון ותלמדו רק טכניקה אחת**
 
 ```csharp
@@ -180,7 +180,7 @@ public static void QFindMax()
 
 ```
 
-
+### מינימום
 ```csharp
 /// <summary>
 /// מציאת הקלט המינימלי. 
@@ -210,7 +210,7 @@ public static void QFindMin()
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>מציאה אם מספר הוא ראשוני</summary>
 
 ## מציאת מספר ראשוני - דוגמא לשימוש בדגל וב-break
