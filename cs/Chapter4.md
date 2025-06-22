@@ -123,8 +123,9 @@ Number: 5, cumulative sum: 15
 [⬅ עבור לתרגול 4.2 - לולאות for: מונה, צובר, מינימום ומקסימום](/cs/Chapter4Ex4.2)
 
 # דברים שראינו בשיעור והוספתי אחרי 
+
 <details markdown="1">
-<summary>מציאת מקסימות</summary>
+<summary>מציאת מקסימום</summary>
 
 ## ראינו כיצד מוצאים מקסימום ומינימום
 
@@ -209,7 +210,7 @@ public static void QFindMin()
 
 </details>
 
-
+<details>
 <summary>מציאה אם מספר הוא ראשוני</summary>
 
 ## מציאת מספר ראשוני - דוגמא לשימוש בדגל וב-break
