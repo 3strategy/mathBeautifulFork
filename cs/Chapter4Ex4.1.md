@@ -15,8 +15,21 @@ lang: he
 
 כתבו תוכנית המדמה משחק זה. בכל תור יוצגו תוצאות הטלת הסביבונים (מספר בין 1 ל-4), ובסיום יוצג מספר הנקודות שצבר השחקן.
 
-<details><summary>אין פתרון</summary>
-
+<details><summary>פתרון</summary>
+static void Main()
+{
+    int num1, num2;
+    int count = 0;
+    for (int i = 0; i < 30; i++)
+    {
+        num1 = rnd.Next(1, 5);
+        num2 = rnd.Next(1, 5);
+        Console.WriteLine($"sevivon1: {num1} sevivon2: {num2} ");
+        if (num1 == num2)
+            count++;
+    }
+    Console.WriteLine(count);
+}
 </details>
 
 ## שאלה 4.1.2
