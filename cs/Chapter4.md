@@ -122,7 +122,150 @@ Number: 5, cumulative sum: 15
 
 [⬅ עבור לתרגול 4.2 - לולאות for: מונה, צובר, מינימום ומקסימום](/cs/Chapter4Ex4.2)
 
+# דברים שראינו בשיעור והוספתי אחרי 
+<details markdown="1">
+<summary>מציאת מקסימות</summary>
+
+## ראינו כיצד מוצאים מקסימום ומינימום
+
+```csharp
+public static void QFindMax()
+{
+    // קלוט 5 שלמים
+    int num, max;
+
+    max = int.MinValue; // איתחול למינימלי האפשרי
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.Write("Enter a number: ");
+        num = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(num);
+        if (num > max)
+            max = num;
+    }
+    Console.WriteLine($"max is {max}");
+}
+
+```
+
+
+#### מקסימום. גרסה עם קלט כפול
+**בפועל תבחרו מה שנראה לכם נכון ותלמדו רק טכניקה אחת**
+
+```csharp
+/// <summary>
+/// מציאת הקלט המקסימלי מתוך 5 מספרים. קלט כפול. 
+/// </summary>
+public static void QFindMax()
+{
+    int num, max;
+    // קלט כפול. 
+    Console.Write("Enter a number: "); // קלט כפול
+    max = int.Parse(Console.ReadLine());
+
+    for (int i = 0; i < 4; i++) // חזרה אחת פחות
+    {
+        Console.Write("Enter a number: ");
+        num = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(num);
+        if (num > max)
+            max = num;
+    }
+    Console.WriteLine($"max is {max}");
+}
+
+```
+
+
+```csharp
+/// <summary>
+/// מציאת הקלט המינימלי. 
+/// </summary>
+public static void QFindMin()
+{
+    // קלוט 5 שלמים ומצא את המינימלי
+    int num, min;
+
+    min = int.MaxValue;
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.Write("Enter a number: ");
+        num = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(num);
+        if (num < min)
+            min = num;
+    }
+    Console.WriteLine($"min is {min}");
+}
+```
+
+
+
+
+</details>
+
+
+<summary>מציאה אם מספר הוא ראשוני</summary>
+
+## מציאת מספר ראשוני - דוגמא לשימוש בדגל וב-break
+
+#### גרסה התחלתית שגויה - התקדמות בצעדים קטנים
+```csharp
+public static void QIsPrime()
+{   // גרסה התחלתית שגויה. צריך להתקדם בצעדים קטנים
+
+    //Console.Write("Enter a number: ");
+    int num1 = 60;// int.Parse(Console.ReadLine());
+    // לולאה לבדיקה אם המספר הוא ראשוני
+    for (int i = 2; i < num1; i++)
+    {
+        if (num1 % i == 0) // מתחלק בדיוק
+        {
+            Console.WriteLine("Not prime");
+        }
+    }
+    Console.WriteLine("IsPrime");
+}
+```
+
+#### גרסה סופית, ללא אופטימיזציות
+
+```csharp
+public static void QIsPrime()
+{
+    //Console.Write("Enter a number: ");
+    int num1 = 60000;// int.Parse(Console.ReadLine());
+    bool isPrime = true; //דגל 
+    // לולאה לבדיקה אם המספר הוא ראשוני
+    for (int i = 2; i < num1; i++)
+    {
+        if (num1 % i == 0) // מתחלק בדיוק
+        {
+            Console.WriteLine("Not prime");
+            isPrime = false;
+            break; // יציאה מיידית מהלולאה לפני שהסתיימה
+        }
+    }
+    // בסי שארפ אין אפשרות מובנית לדעת אם הלולאה הסתיימה רגיל
+    // break או שהיה 
+    if (isPrime)
+        Console.WriteLine("IsPrime");
+}
+```
+
+
+</details>
+
+
 ---
+
+# כל מה שמכאן ואילך לא למדנו!!!!!!!!!!!!!
+
 ## גילגול (שמירת היסטוריה)
 
 לעיתים בלולאות יש צורך **לשמור את הערך מהאיטרציה הקודמת** כדי להשוות אותו לערך הנוכחי, לדוגמא כאשר רוצים לבדוק אם הקלט הנוכחי שונה מהקלט הקודם, או למצוא רצפים משתנים.
