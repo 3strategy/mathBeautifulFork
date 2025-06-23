@@ -363,6 +363,10 @@ else
 
 [⬅ מעבר לתרגול 3.2 - תרגילים בתנאים מורכבים ושארית חלוקה](/cs/Chapter3Ex3.2)
 
+[⬅ מעבר לתרגול מתקדם 3.3 - איומים בלוח שחמט](/cs/Chapter3Ex3.4)
+
+[⬅ מעבר לתרגול מתקדם 3.4 - מיונים ואפיונים](/cs/Chapter3Ex3.4)
+
 ## סרטונים
 [סרטוני פרק 2: ביטויים לוגיים](https://www.youtube.com/playlist?list=PLw4P_RdfuzSjVGWRUCg9qWvDkkSWrANtP){:target="_blank"}
 
