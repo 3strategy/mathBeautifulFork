@@ -3,7 +3,7 @@ layout: page
 title: "פרק 5 - לולאות while"
 subtitle: "ביצוע פעולות חוזרות באמצעות לולאות while"
 author: גיא סידס
-tags: [פירוק מספר, בניית מספר, while, בעד ונגד break]
+tags: [פירוק מספר, בניית מספר, while, בעד ונגד break , MISRA Rules]
 mathjax: true
 lang: he
 ---

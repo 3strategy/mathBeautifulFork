@@ -2,7 +2,7 @@
 layout: page
 title: פרק 4ב' - הרחבת תחביר לולאת for
 subtitle: לולאות for — תחביר גמיש ויצירתי
-tags: [csharp, for-loop, beginners, advanced]
+tags: [csharp, for-loop, MISRA Rules]
 lang: he
 ---
 
