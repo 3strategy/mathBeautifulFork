@@ -43,7 +43,8 @@ mathjax: true
 
 * **חיתוך מאורעות $$(A \cap B)$$** – המאורע שבו התוצאה משותפת גם ל-A וגם ל-B.
     **↳ כופלים בין הסתברויות.**
-    <details mathjax="1"><summary>דוגמא והרחבה</summary>
+
+    <details markdown="1"><summary>דוגמא והרחבה</summary>
     * בדרך כלל (נדייק זאת בהמשך) ההסתברות $$P(A \cap B) = P(A)\cdot P(B)$$. כך למשל, הסיכוי להוציא 3 בקוביה הוא  $$\frac{1}{6}$$ והסיכוי להוציא פעמיים רצוף 3 הוא $$\frac{1}{6}\cdot\frac{1}{6} \\ P(A \cap B) = P(A)\cdot P(B)\;\overset{\text{אמ״מ}}{\iff}\;\text{בלתי תלויים B -ו A}$$ 
     נעמיק במושג "בלתי תלויים" בהמשך
     </details>
@@ -52,7 +53,8 @@ mathjax: true
     $$
     P(A \cap B) = 0
     $$
-    <details mathjax="1"><summary>דוגמא</summary>
+
+    <details markdown="1"><summary>דוגמא</summary>
     * **דוגמה – מאורעות זרים**:  
     שקית מכילה 3 כדורים אדומים ו־2 כדורים כחולים.  
     - Ω = $$\{R_1,R_2,R_3,B_1,B_2\}$$  
@@ -72,6 +74,7 @@ mathjax: true
 
 * **איחוד מאורעות $$(A \cup B)$$:** מאורע הכולל את כל התוצאות ששייכות ל-A או ל-B.  
     **↳ מחברים בין הסתברויות.**
-    <details mathjax="a"><summary>הערה</summary>
+
+    <details markdown="1"><summary>הערה</summary>
     $$(A \cup B) = P(A)+(B) - P(A \cap B)$$ נעמיק בכך בהמשך
     </details>
