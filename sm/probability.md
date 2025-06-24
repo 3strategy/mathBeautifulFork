@@ -58,9 +58,9 @@ mathjax: true
     <details markdown="1"><summary>דוגמא</summary> 
     שקית מכילה 3 כדורים אדומים ו־2 כדורים כחולים.
     $$\begin{aligned}
-    Ω = \{R_1,R_2,R_3,B_1,B_2\},\\
-    A = \{R_1,R_2,R_3\},\\
-    B = \{B_1,B_2\}
+    Ω &= \{🔴_1,🔴_2,🔴_3,🔵_1,🔵_2\},\\
+    A &= \{🔴_1,🔴_2,🔴_3\},\\
+    B &= \{🔵_1,🔵_2\}
     \end{aligned}$$  
 
     כיוון ש-$$A \cap B = \varnothing$$, מתקיים:
@@ -77,7 +77,7 @@ mathjax: true
 * **איחוד מאורעות $$(A \cup B)$$:** מאורע הכולל את כל התוצאות ששייכות ל-A או ל-B.  
     **↲ מחברים בין הסתברויות.**
 
-    <details markdown="1"><summary>הערה</summary>
+    <details markdown="1"><summary>דיוק</summary>
     $$(A \cup B) = P(A)+(B) - P(A \cap B)$$ נעמיק בכך בהמשך
     </details>
 
