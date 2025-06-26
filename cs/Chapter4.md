@@ -92,7 +92,7 @@ for (int i = 1; i <= 10; i++)
 
 **פתרון לדוגמה:**
 
-int sum = 0; // משתנה צובר
+{% highlight csharp linenos %}int sum = 0; // משתנה צובר
 for (int i = 1; i <= 5; i++)
 {
     sum += i;
