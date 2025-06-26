@@ -42,18 +42,27 @@ lang: he
 
 נסרוק כל שלשה סמוכה במערך, ונספור כמה פעמים המספר האמצעי גדול משני המספרים הסמוכים. 
 
-{% highlight csharp linenos %}int[] arr = new int[] {25, 40, 30, 9, 80, 40, 45, 42};
-int count = 0;
-
-for (int i = 1; i < arr.Length - 1; i++)
+{% highlight csharp linenos %}public static void Main()
 {
-    if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1])
+    int count = 0;
+    int prev = -800; // באופן שהקוד כתוב לא תהיה שגיאה בגין חפיפה
+    int prevPrev = 700; // בלי קשר לערכים שנשים.
+ 
+    for (int i = 0; i < 50; i++)
     {
-        count++;
-    }
-}
+        Console.Write("Enter a number: ");
+        int current = int.Parse(Console.ReadLine());
 
-Console.WriteLine(count); // פלט: 3
+        // i>1 דואג שיהיה לנו למה להשוות החל מסיבוב שלישי
+        if (i > 1 && prev > current && prev > prevPrev)
+            count++;
+
+        prevPrev = prev; // שמירת היסטוריה
+        prev = current; // שמירת היסטוריה
+    }
+
+    Console.WriteLine("Number of occurences: " + count);
+}
 {% endhighlight %}
 
 </details>

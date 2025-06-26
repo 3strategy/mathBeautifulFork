@@ -92,7 +92,7 @@ for (int i = 1; i <= 10; i++)
 
 **פתרון לדוגמה:**
 
-{% highlight csharp linenos %}int sum = 0; // משתנה צובר
+int sum = 0; // משתנה צובר
 for (int i = 1; i <= 5; i++)
 {
     sum += i;
@@ -275,7 +275,67 @@ public static void QIsPrime()
 כתבו תכנית הקולטת מ-10 תלמידים שם תלמיד וציון. התוכנית תדפיס את שם התלמיד שקיבל את הציון הגבוה ביותר.
 - יכולים לבדוק באמצעות rnd במקום קלט. - פשוט תגרילו אות בתור שם תלמיד
 
+<details markdown="1">
+<summary>תשתית לפתרון כולל רנדומיזציה של תו לשם</summary>
 
+```csharp
+public static void Main()
+{
+    int num, max;
+    max = -1; // איתחול למינימלי האפשרי
+    char myInitial = '-'; // האות הראשונה של שם התלמיד
+    // use of unitialized variable האיתחול מראש - כדי למנוע שגיאת 
+
+    for (int i = 0; i < 10; i++)
+    {
+        //random השאלה פתורה באמצעות 
+        myInitial = (char)rnd.Next(65, 100); 
+        num = rnd.Next(20, 100);
+
+        Console.WriteLine(myInitial);
+        Console.WriteLine(num);
+        if (num > max)
+            max = num;
+    }
+    Console.WriteLine($"max is {max}");
+    Console.WriteLine(myInitial); // חייב להגדיר בחוץ ולאתחל
+}
+```
+</details>
+
+<details markdown="1">
+<summary>פתרון</summary>
+
+{% highlight csharp linenos %}
+/// <summary>
+/// המטרה לקלוט 10 שמות תלמידים וציונים שלהם
+/// ולהדפיס את שם התלמיד שקיבל את הציון הגבוה ביותר
+///  ========== שפרו את הקוד כדי שיבצע את מה שנדרש =========
+///  ========  כרגע הוא סתם מוצא ציון מקסימלי
+/// </summary>
+public static void Main()
+{
+    int max;
+    max = -1; // איתחול לגודל שאינו בטווח האפשרויות
+    string bestName = "";
+    for (int i = 0; i < 10; i++)
+    {
+        Console.WriteLine("Enter name");
+        string name = Console.ReadLine();
+
+        Console.Write("Enter grade: ");
+        int num = int.Parse(Console.ReadLine());
+
+        if (num > max) //מצאנו מקסימום חדש 
+        {
+            max = num;
+            bestName = name;
+        }
+    }
+    Console.WriteLine($"Mr {bestName} got the best grade: {max}");
+
+}
+{% endhighlight %}
 
 ## גילגול (שמירת היסטוריה)
 
