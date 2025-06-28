@@ -49,13 +49,19 @@ public static void SumEven100()
 
 <div class="mermaid">
 flowchart TD
-    LA[LauncherActivity] -->|Intent| SPLASH[SplashActivity]
-    SPLASH -->|User chooses| MAIN["MainActivity<br/>(Fragments)"]
-    MAIN --> WVF["WebViewFragment :ttrainer"]
-    MAIN --> DBF[DataFragment]
-    MAIN --> SET[SettingsFragment]
-    LA   --> WA["WalletActivity<br/>(Android Template)"]
-    style MAIN fill:#4fc3f7,stroke:#0277bd,stroke-width:4px,color:#fff
+    Start[1.Program Starts] --> Main
+    Main["Main Method"] --> SayHello[SayHello Function<br/>Prints Hello World]
+    SayHello --> Main
+    Main --> AddNumbers[AddNumbers Function<br/>Calculates 3 plus 5<br/>Prints result]
+    AddNumbers --> Main
+    Main --> SayGoodbye[SayGoodbye Function<br/>Prints Goodbye]
+    SayGoodbye --> Main
+    Main --> End[5.Program Ends]
+    
+    style Main fill:#4fc3f7,stroke:#0277bd,stroke-width:4px,color:#fff
+    style SayHello fill:#ffb74d,stroke:#f57c00,stroke-width:2px
+    style AddNumbers fill:#ffb74d,stroke:#f57c00,stroke-width:2px
+    style SayGoodbye fill:#ffb74d,stroke:#f57c00,stroke-width:2px
 </div>
 
 </details>
