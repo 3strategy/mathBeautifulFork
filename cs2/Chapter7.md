@@ -45,16 +45,16 @@ public static void SumEven100()
 ```
 </details>
 
-<details open markdown="1"><summary>גרף זרימת ריצה (Mermaid)</summary>
+<details open markdown="1"><summary>תרשים זרימה של קריאה ל-3 פונקציות</summary>
 
 <div class="mermaid">
 flowchart TD
     Start([1.התכנית מתחילה בקריאה ל-Main]) --> Main
-    Main["Main Method"] --> |"2.קריאה ל- SayHello();"| SayHello[SayHello הפונקציה<br/> Hello World מדפיסה]
+    Main["Main Method"] --> |"2.קריאה ל- ;()SayHello"| SayHello[הפונקציה SayHello <br/> Hello World מדפיסה]
     SayHello --> |return| Main
     Main --> |"3.קריאה ל- ;()AddNumbers"| AddNumbers[הפונקציה AddNumbers<br/>מחשבת 3+5<br/>ומדפיסה את התוצאה]
     AddNumbers --> |return| Main
-    Main --> |"4.קריאה ל- SayGoodbye();"| SayGoodbye[SayGoodbye הפונקציה<br/>מדפיסה Goodbye]
+    Main --> |"4.קריאה ל- ;()SayGoodbye"| SayGoodbye[הפונקציה SayGoodbye <br/>מדפיסה Goodbye]
     SayGoodbye --> |return| Main
     Main --> End([5.סיום])
     
@@ -64,6 +64,7 @@ flowchart TD
     style SayGoodbye fill:#ffb74d,stroke:#f57c00,stroke-width:2px
     style Start fill:#81c784,stroke:#388e3c,stroke-width:2px
     style End fill:#e57373,stroke:#d32f2f,stroke-width:2px
+    linkStyle default stroke:#666666,stroke-width:3px
 </div>
 
 </details>
