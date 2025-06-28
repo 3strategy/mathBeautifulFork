@@ -49,14 +49,14 @@ public static void SumEven100()
 
 <div class="mermaid">
 flowchart TD
-    Start([1.Program Starts]) --> Main
-    Main["Main Method"] --> |"2.Call SayHello();"| SayHello[SayHello הפונקציה<br/> Hello World מדפיסה]
+    Start([1.התכנית מתחילה בקריאה ל-Main]) --> Main
+    Main["Main Method"] --> |"2.קריאה ל- SayHello();"| SayHello[SayHello הפונקציה<br/> Hello World מדפיסה]
     SayHello --> |return| Main
-    Main --> |"3.AddNumbers();"| AddNumbers[AddNumbers הפונקציה<br/>מחשבת 3+5<br/>מדפיסה את התוצאה]
+    Main --> |"3.קריאה ל- ;()AddNumbers"| AddNumbers[הפונקציה AddNumbers<br/>מחשבת 3+5<br/>ומדפיסה את התוצאה]
     AddNumbers --> |return| Main
-    Main --> |"4.SayGoodbye();"| SayGoodbye[SayGoodbye הפונקציה<br/>Goodbye מדפיסה]
+    Main --> |"4.קריאה ל- SayGoodbye();"| SayGoodbye[SayGoodbye הפונקציה<br/>מדפיסה Goodbye]
     SayGoodbye --> |return| Main
-    Main --> End([5.Program Ends])
+    Main --> End([5.סיום])
     
     style Main fill:#4fc3f7,stroke:#0277bd,stroke-width:4px,color:#fff
     style SayHello fill:#ffb74d,stroke:#f57c00,stroke-width:2px
