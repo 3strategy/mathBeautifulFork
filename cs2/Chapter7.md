@@ -13,8 +13,7 @@ lang: he
 
 פונקציה ללא פרמטרים (void) היא פונקציה שקוראים לה מתוך `Main` כדי לבצע משימה מובחנת ואינה מקבלת קלט חיצוני.
 
-{% highlight csharp linenos %}
-public static void PrintStars10()
+{% highlight csharp linenos %}public static void PrintStars10()
 {
     for (int i = 0; i < 10; i++)
         Console.Write("*");
@@ -33,6 +32,7 @@ public static void Main()
 ### דוגמאות נוספות
 
 <details open markdown="1"><summary>הדפסת סכום המספרים הזוגיים מ-1 עד 100</summary>
+
 ```csharp
 public static void SumEven100()
 {
@@ -42,17 +42,35 @@ public static void SumEven100()
             sum += num;
     Console.WriteLine($"Sum of even numbers 1-100 is {sum}");
 }
-```</details>
+```
+</details>
 
 <details open markdown="1"><summary>גרף זרימת ריצה (Mermaid)</summary>
-```mermaid
+
+<div class="mermaid">
 flowchart TD
-    A[Main מתחיל] --> B[קריאה ל-SumEven100]
-    B --> C[לולאה מ-1 עד 100]
-    C --> D[בדיקת זוגיות וסיכום]
-    D --> E[הצגת התוצאה]
-    E --> F[Main ממשיך]
-```</details>
+    Start([Program Starts]) --> Main
+    
+    Main{{"Main()<br/>Method"}} --> |1. Call| SayHello[SayHello<br/>Prints: Hello World!]
+    SayHello --> |Return| Main
+    
+    Main --> |2. Call| AddNumbers[AddNumbers<br/>5 + 3 = 8<br/>Print result]
+    AddNumbers --> |Return| Main
+    
+    Main --> |3. Call| SayGoodbye[SayGoodbye<br/>Prints: Goodbye!]
+    SayGoodbye --> |Return| Main
+    
+    Main --> End([Program Ends])
+    
+    style Main fill:#4fc3f7,stroke:#0277bd,stroke-width:4px,color:#fff
+    style SayHello fill:#ffb74d,stroke:#f57c00,stroke-width:2px
+    style AddNumbers fill:#ffb74d,stroke:#f57c00,stroke-width:2px
+    style SayGoodbye fill:#ffb74d,stroke:#f57c00,stroke-width:2px
+    style Start fill:#81c784,stroke:#388e3c,stroke-width:2px
+    style End fill:#e57373,stroke:#d32f2f,stroke-width:2px
+</div>
+
+</details>
 
 ## 7.2 פונקציות עם פרמטרים
 
@@ -77,6 +95,7 @@ public static void Main()
 ### דוגמאות נוספות
 
 <details markdown="1"><summary>PrintRectangle(rows, cols)</summary>
+
 ```csharp
 public static void PrintRectangle(int rows, int cols)
 {
@@ -91,6 +110,7 @@ public static void PrintRectangle(int rows, int cols)
 </details>
 
 <details markdown="1"><summary>SayHello(string userName)</summary>
+
 ```csharp
 public static void SayHello(string userName)
 {
