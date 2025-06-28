@@ -106,6 +106,7 @@ navbar-links:
     - c6: "/cs2/Chapter6/"
     - c7: "/cs2/Chapter7"
     - c7: "/cs2/Chapter7Ex7.1"
+    - c7o: "/cs2/Chapter7orig"
     - c7: "/cs2/Chapter7Ex7.2"
     - סדרות: "/sm/sequences/"
     - finalAndroid: "/cs/GuysFinal"
