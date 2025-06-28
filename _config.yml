@@ -104,10 +104,9 @@ navbar-links:
   ט': 
     - הנחש: "/mcontent/unsorted/Snake"
     - c6: "/cs2/Chapter6/"
-    - c6bad: "/cs2/Chapter6bad/"
-    - c6ex1: "/cs2/Chapter6Ex6.1/"
-    - c6ex2: "/cs2/Chapter6Ex6.2/"
-    - 6ex3Turt: "/cs2/Chapter6Ex6.3/"
+    - c7: "/cs2/Chapter7"
+    - c7: "/cs2/Chapter7Ex7.1"
+    - c7: "/cs2/Chapter7Ex7.2"
     - סדרות: "/sm/sequences/"
     - הסתברות: "/sm/probability/"
 
