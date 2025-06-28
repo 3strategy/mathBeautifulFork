@@ -50,24 +50,8 @@ public static void SumEven100()
 <div class="mermaid">
 flowchart TD
     Start([1.Program Starts]) --> Main
-    
     Main{{"Main Method"}} --> |"2.Call SayHello();"| SayHello[SayHello הפונקציה<br/> Hello World מדפיסה]
     SayHello --> |return| Main
-    
-    Main --> |"3.AddNumbers();"| AddNumbers[AddNumbers הפונקציה<br/>מחשבת 3+5<br/>מדפיסה את התוצאה]
-    AddNumbers --> |return| Main
-    
-    Main --> |"4.SayGoodbye();"| SayGoodbye[SayGoodbye הפונקציה<br/>Goodbye מדפיסה]
-    SayGoodbye --> |return| Main
-    
-    Main --> End([5.Program Ends])
-    
-    style Main fill:#4fc3f7,stroke:#0277bd,stroke-width:4px,color:#fff
-    style SayHello fill:#ffb74d,stroke:#f57c00,stroke-width:2px
-    style AddNumbers fill:#ffb74d,stroke:#f57c00,stroke-width:2px
-    style SayGoodbye fill:#ffb74d,stroke:#f57c00,stroke-width:2px
-    style Start fill:#81c784,stroke:#388e3c,stroke-width:2px
-    style End fill:#e57373,stroke:#d32f2f,stroke-width:2px
 </div>
 
 </details>
