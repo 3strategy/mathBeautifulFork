@@ -116,29 +116,11 @@ void ProcessData() {
 
 </details>
 
-### דוגמה 1: טבלת כפל מ-0 עד 10
 
-<details markdown="1"><summary>להלן קוד המציג את טבלת הכפל מ-0×0 עד 10×10:</summary>
-{% highlight csharp linenos %}public static void MultiplicationTable()
-{
-    for (int i = 0; i <= 10; i++)
-    {
-        for (int j = 0; j <= 10; j++)
-        {
-            Console.Write($"{i * j} ");
-            //Console.Write($"{i * j:00} "); //חלופות עיצוב
-            //Console.Write($"{i * j}\t"); //חלופות עיצוב
-        }
-        Console.WriteLine();
-    }
-} {% endhighlight %}
-
-</details>
-
-### דוגמה 2: מלבן של כוכביות
+### דוגמה 1: מלבן של כוכביות
 
 
-<details markdown="1"><summary>להלן קוד המדפיס מלבן של כוכביות בגודל 5×10:</summary>
+<details open markdown="1"><summary>להלן קוד המדפיס מלבן של כוכביות בגודל 5×10:</summary>
 
 
 {% highlight csharp linenos %}public static void StarRectangle()
@@ -158,10 +140,30 @@ void ProcessData() {
 
 </details>
 
+
+### דוגמה 2: טבלת כפל מ-0 עד 10
+
+<details markdown="1"><summary>היעזרו בתבנית שלעיל,וכתבו תכנית המדפיסה את טבלת הכפל מ-0×0 עד 10×10:</summary>
+{% highlight csharp linenos %}public static void MultiplicationTable()
+{
+    for (int i = 0; i <= 10; i++)
+    {
+        for (int j = 0; j <= 10; j++)
+        {
+            Console.Write($"{i * j} ");
+            //Console.Write($"{i * j:00} "); //חלופות עיצוב
+            //Console.Write($"{i * j}\t"); //חלופות עיצוב
+        }
+        Console.WriteLine();
+    }
+} {% endhighlight %}
+
+</details>
+
 ## תבניות הדפסה Patterns
 
 {: .box-note} 
-המונח Patterns מעט מטעה מפני שבמקור הוא משמש לתיאור תבניות פתרון בתכנות, וכאן הכוונה לדגמים גרפיים שנדפיס למסך
+המונח Patterns מעט מטעה מפני שבמקור הוא משמש לתיאור **תבניות עיצוב** (Design patterns), וכאן הכוונה **לדגמים גרפיים** שנדפיס למסך
 
 ### Pattern 1
 בכל אחד מה- Patterns ניתן להתחיל בתרגול הבסיסי עם כוכביות, ולאחר מכן לשפר אותו כדי להדפיס מספרים או תווים. ניתן להמציא עוד תרגילים דומים בהם התבנית המספרית או התווים שיש להדפיס מקיימים חוקיות שונה.
@@ -234,7 +236,7 @@ A B C D E
 ```
 
 ---
-
+<details markdown="1"><summary>נסו גם כאן לפתור לפני שאתם מציצים</summary>
 {% highlight csharp linenos %}public static void Chars1()
 {
     int rows = 5;
@@ -251,6 +253,8 @@ A B C D E
 }
 {% endhighlight %}
 
+</details>
+
 ### Pattern 2 שימוש בשתי לולאות פנימיות
 
 **Asterix2**
@@ -262,6 +266,8 @@ A B C D E
   * * * *
 * * * * *
 ```
+
+<details open markdown="1"><summary>פתרון</summary>
 
 {% highlight csharp linenos %}public static void Asterix2()
 {
@@ -282,6 +288,8 @@ A B C D E
     }
 }
 {% endhighlight %}
+
+</details>
 
 **Numbers2**
 
