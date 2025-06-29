@@ -485,6 +485,10 @@ A B C D E
 תרגילי ה-patterns מבוססים על: [GeeksforGeeks - Pattern Programs in C](https://www.geeksforgeeks.org/c/pattern-programs-in-c/)
 
 
+## קינון בעזרת הצב
+[על בסיס זמן פנוי נלמד לשכפל פרוייקט מגיט ונעבוד עם הצב. תודה לולרי פקר ז"ל על תרומתו להוראת מדעי המחשב](https://github.com/3strategy/Turtle22){:target="_blank"}
+
+
 ## תרגול
 [⬅ עברו לתרגול 6.1 - Patterns לולאות מקוננות עם פתרונות](/cs2/Chapter6Ex6.1)
 
