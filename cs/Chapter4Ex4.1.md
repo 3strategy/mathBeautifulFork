@@ -131,12 +131,34 @@ $$(20+25)^2 = 2025$$
 
 </details>
 
-## שאלה 4.1.10
+## שאלה 4.1.10 (שאלה בלולאות while צריך להעביר!!!)
 
 כתבו תוכנית הקולטת מספר שלם ומדפיסה את סכום ספרותיו. אם במהלך חישוב סכום הספרות מתקבלת הספרה 0, הפסיקו את הלולאה והדפיסו הודעה מיוחדת שהמספר מכיל את הספרה 0.
 
-<details><summary>אין פתרון</summary>
+<details><summary>פתרון</summary>
 
+{% highlight csharp linenos %}
+public static void Main()
+{
+    int sum = 0;
+    bool allOk = true;
+    Console.Write("Enter a number: ");
+    int num = int.Parse(Console.ReadLine());
+    while (num > 0 && allOk) // תנאי יציאה כפול
+    {
+        int digit = num % 10;
+        if (digit == 0) // הדלקת דגל במקרה של בעיה
+            allOk = false; // ברייק לא מספיק: אני מסמן שיצאתי באופן חריג 
+
+        sum += digit; // סכימה
+        num /= 10; // קיצוץ ספרה
+    }
+    if (allOk)
+        Console.WriteLine("sum: " + sum);
+    else
+        Console.WriteLine("Huston we have had a problem: number contained 0");
+}
+{% endhighlight %}
 </details>
 
 [⬅ עבור לתרגול 4.2 - לולאות for: מונה, צובר, מינימום ומקסימום](/cs/Chapter4Ex4.2)
