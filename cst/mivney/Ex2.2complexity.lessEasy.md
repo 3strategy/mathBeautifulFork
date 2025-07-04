@@ -9,6 +9,8 @@ lang: he
 {: .box-note}
 בתרגילי סיבוכיות תידרשו לקבוע את הסיבוכיות ברישום bigO. להגדיר מיהו הקלט n, ולהסביר מדוע זו הסיבוכיות.
 
+
+
 ## הדפסת איברים כפולים במערך
 [link](https://stacks.co.il/console/classroom/cE8hnVaSTt/assignment/cE8hnVaSTt-csharp-gf43iOt4Orku/csharp-rlPsZVJFbmjoTWd)
 

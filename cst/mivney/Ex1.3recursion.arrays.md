@@ -6,6 +6,27 @@ tags: []
 lang: he
 ---
 
+## האם יש איבר זוגי במערך?
+
+כתוב פונקציה `bool EvenExists (int[] arr)` שמחזירה `true` אם קיים איבר זוגי במערך, אחרת `false`
+
+
+```csharp
+public static bool EvenExists(int[] arr, int i = -2)
+{
+    if (i == -1)
+        return false;
+    else if (i == -2)
+        return EvenExists(arr, arr.Length - 1);
+
+    // ממש משנה הסדר: אם הבדיקת מודולו אחרי הקריאה הרקורסיבית
+    // (  הקוד יבצע הרבה פעולת מיותרות (יריץ רקורסיה על כל המערך תמיד
+    else //  את מה שכאן חייבים לכתוב הפוך!!!!!!!!!!!!!!
+        return EvenExists(arr, i - 1) || arr[i] % 2 == 0; //= מימוש גרוע
+}
+```
+
+
 ## חיפוש בינארי רקורסיבי
 [link](https://stacks.co.il/console/classroom/cE8hnVaSTt/review/csharp-ITfVvTg637YTCKG)
 
