@@ -184,6 +184,8 @@ public static void QFindMax()
 
 ```
 
+
+
 ## מינימום
 ```csharp
 /// <summary>
@@ -213,6 +215,48 @@ public static void QFindMin()
 
 
 </details>
+
+<details markdown="1">
+<summary>מציאת מינימום: לימוד משגיאות</summary>
+
+### בפתרון שלהלן הוכנסו כמה גרסאות שגויות לתנאי וגרסה אחת לא יעילה אך נכונה.
+
+```csharp
+public static void QFindMinMistaken()
+{
+    // קלוט 5 שלמים
+    int num, max;
+
+    max = int.MinValue; // איתחול למינימלי האפשרי
+
+    for (int i = 0; i < 5; i++)
+    {
+        Console.Write("Enter a number: ");
+        num = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(num);
+        // לפניכם שתי גרסאות
+        // האם יש גרסה נכונה? שגויה? 
+        // עקבו באמצעות הדוגמא שלהלן
+        //    5                3     5
+        if (max <= Math.Max(next, max)) // גרסה 1
+            max = next; // עקבו אחר גרסה זו
+
+        if (max < Math.Max(next, max)) // גרסה 2
+            max = next; // עקבו אחר גרסה זו
+        
+        // כיצד ניתן לתקן ולשפר
+
+    }
+    Console.WriteLine($"max is {max}");
+}
+
+```
+
+</details>
+
+
+
 
 ## מציאת מספר ראשוני - דוגמא לשימוש בדגל וב-break
 
