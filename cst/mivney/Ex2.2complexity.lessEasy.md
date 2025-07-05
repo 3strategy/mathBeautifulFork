@@ -3,6 +3,7 @@ layout: page
 title: "ex2.2 סיבוכיות"
 subtitle: "יעילות: קצת פחות קל 😀"
 tags: []
+mathjax: true
 lang: he
 ---
 
@@ -46,6 +47,7 @@ Solution.PrintDuplicates(numbers);
 ## מציאת איבר הרוב במערך
 [link](https://stacks.co.il/console/classroom/cE8hnVaSTt/assignment/cE8hnVaSTt-csharp-gf43iOt4Orku/csharp-Kugio0y1OR9d9J2)
 
+
 עליכם לממש פונקציה בשם `FindMajorityElement` אשר מקבלת פרמטר אחד:
 
 1. nums - מערך של מספרים שלמים.
@@ -56,12 +58,14 @@ Solution.PrintDuplicates(numbers);
 
 הפעולה שתכתבו צריכה להיות יעילה ככל הניתן, גם מבחינת סיבוכיות הזמן וגם מבחינת סיבוכיות המקום. תשובה שאינה יעילה מספיק, כלומר שתהיה בסיבוכיות גדולה יותר מזו הנדרשת לפתרון הבעיה תקבל מעט נקודות בלבד.
 
-הנחיות:
+### הנחיות:
 
 1. אם קיים איבר רוב, הפונקציה תחזיר את ערכו.
-2. אם לא קיים איבר רוב, הפונקציה תחזיר 1-.
+2. אם לא קיים איבר רוב, הפונקציה תחזיר $$-1$$.
 3. אין צורך לטפל במקרה של מערך ריק או מערך עם איבר יחיד, המערכים בקלט יכילו לפחות 2 איברים.
-4. השתמשו במבני נתונים מתאימים (כגון Dictionary) כדי לפתור את הבעיה ביעילות.
+4. אין להשתמש במבנה נתונים נוסף משום סוג. לרמז ראו [Boyer–Moore majority vote algorithm](https://en.wikipedia.org/wiki/Boyer%E2%80%93Moore_majority_vote_algorithm)
+
+![אלגוריתם בוייר מור למציאת איבר הרוב אם קיים](image.png)
 
 
 

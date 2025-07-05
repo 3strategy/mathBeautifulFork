@@ -7,29 +7,69 @@ lang: he
 ---
 
 
-## מגדלי האנוי רקורסיבי English
+## מגדלי האנוי רקורסיבי כולל תיאור מעברים
 [link](https://stacks.co.il/console/classroom/cE8hnVaSTt/assignment/cE8hnVaSTt-csharp-hD9dvJkE23yD/csharp-Jq0PUNPjVhTyCT5)
 
-### Task
+עליכם לממש פונקציה רקורסיבית בשם `TowerOfHanoi` עם החתימה הבאה:
 
-You need to implement a recursive function named `TowerOfHanoi` with the following signature:
 ```csharp
 public static int TowerOfHanoi(int n, char from, char to, char aux)
 ```
-The function should solve the classic Tower of Hanoi puzzle for `n` disks. It should move the disks from the `from` peg to the `to` peg, using the `aux` (auxiliary) peg.
+עליכם לממש גרסה של הפונקציה TowerOfHanoi כך בנוסף להחזרת מספר המעברים, היא תדפיס לכל מעבר טקסט ברור עם הוראת המעבר, לדוגמה:
 
-The function must return the total number of moves required to complete the puzzle.
+```Move disk 3 from A to C```
 
-### Parameters:
+בכל שורה תופיע הוראה מן הסוג הנ"ל עבור כל טבעת מהמעבר הראשון ועד האחרון. הפונקציה תמשיך להחזיר את מספר המעברים הכולל, אך המוקד הוא על הצגת שלבי ההעברות
 
-1. n: An integer representing the number of disks to move.
-2. from: A character representing the source peg (e.g., 'A').
-3. to: A character representing the destination peg (e.g., 'C').
-4. aux: A character representing the auxiliary peg (e.g., 'B').
+#### ערך החזרה
 
-### Return Value:
+מספר שלם המייצג את מספר הצעדים הכולל.
 
-1. An integer representing the total number of moves.
+#### דגשים
+
+כדי לזהות את המבנה הרקורסיבי של האנוי יש לבצע רדוקציה לבעיה. לאחר ניתוח המקרים של 1, 2 ו-3 טבעות ניתן להסיק את כלל הנסיגה ולרשום אותו כפונקציה רקורסיבית. 
+
+
+
+## מגדלי האנוי רקורסיבי
+
+
+עליכם לממש פונקציה רקורסיבית בשם `TowerOfHanoi` עם החתימה הבאה:
+
+```csharp
+public static int TowerOfHanoi(int n)
+```
+
+הפונקציה תפתור את חידת מגדל האנוי הקלאסית עבור `n` טבעות. 
+
+הפונקציה חייבת להחזיר את מספר הצעדים הכולל שנדרש לביצוע הפתרון.
+
+#### פרמטרים `n`: מספר שלם המייצג את כמות הטבעות להעברה.
+
+
+#### ערך החזרה
+
+מספר שלם המייצג את מספר הצעדים הכולל.
+
+#### דגשים
+
+כדי לזהות את המבנה הרקורסיבי של האנוי יש לבצע רדוקציה לבעיה. לאחר ניתוח המקרים של 1, 2 ו-3 טבעות ניתן להסיק את כלל הנסיגה ולרשום אותו כפונקציה רקורסיבית. 
+
+---
+
+## שאלה 2: פתרון האנוי באמצעות נוסחה מפורשת (Closed-Form)
+
+במקום פתרון רקורסיבי, מצאו את הנוסחה המפורשת למספר הצעדים הנדרש להעברת `n` טבעות במגדל האנוי.
+
+הנוסחה הרקורסיבית היא זו שקיבלתם בתרגיל הקודם.
+
+המירו אותה לנוסחה מפורשת. לשם כך תוכלו להשתמש באנציקלופדיה לסדרות [OEIS](https://oeis.org/search?q=1%2C4%2C10%2C22%2C46&language=english&go=Search) כדי למצוא את הנוסחה.
+
+---
+
+### הדרכה למציאת נוסחה מפורשת
+
+מרגע שהתקבל כלל נסיגה רקורסיבי, יש לנסות ולפעול על מנת להפוך אותו לנוסחה מפורשת. המעבר דורש ידע בקומבינטוריקה ו/או נסיון. לחילופין באפשרותכם לקחת את הערכים של תחילת הסדרה ולנסות לקבל נוסחה מפורשת באמצעות חיפוש באינטרנט. מקום טוב הוא [האנציקלופדיה לסדרות](https://oeis.org/search?q=1%2C4%2C10%2C22%2C46&language=english&go=Search)
 
 
 
