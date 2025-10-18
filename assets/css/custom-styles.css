@@ -33,16 +33,17 @@ strong {
     --code-back-col: #353535;
     
     /* Dark theme gradient colors */
-    --pre-bg-1: rgba(255,255,255, 0.08);
-    --pre-bg-2: rgba(255,255,255, 0.02);
+    --pre-bg-1: rgba(255, 255, 255, 0.08);
+    --pre-bg-2: rgba(255, 255, 255, 0.02);
 
     --code-img: repeating-linear-gradient(
         var(--pre-bg-1) 0,
-        var(--pre-bg-1) var(--line-height),
-        var(--pre-bg-2) var(--line-height),
+            var(--pre-bg-1) var(--line-height),
+            var(--pre-bg-2) var(--line-height),
         var(--pre-bg-2) calc(var(--line-height) * 2.2)
     );
 
+    --code-ncls-col: #44C9B0;
     --code-met-col: #DCDCAA;
     --code-keyw-col: #D8A0DF;
     --code-bracets-col: #EEEEDD;
@@ -57,7 +58,7 @@ strong {
 /* Overrides for Light theme */
 .light-theme {
     --page-col: #FFFFFF;
-    --text-col: #404040;
+    --text-col: #101010;
     --link-col: #008AFF;
     --hover-col: #0085A1;
     --navbar-col: #EAEAEA;
@@ -77,16 +78,17 @@ strong {
     --code-back-col: #FFFFFF;
     
     /* Light theme gradient colors */
-    --pre-bg-1: rgba(0,0,0, 0.04);
-    --pre-bg-2: rgba(0,0,0, 0.02);
+    --pre-bg-1: rgba(0, 0, 0, 0.04);
+    --pre-bg-2: rgba(0, 0, 0, 0.02);
 
     --code-img: repeating-linear-gradient(
         var(--pre-bg-1) 0,
-        var(--pre-bg-1) var(--line-height),
-        var(--pre-bg-2) var(--line-height),
+            var(--pre-bg-1) var(--line-height),
+            var(--pre-bg-2) var(--line-height),
         var(--pre-bg-2) calc(var(--line-height) * 2.2)
     );
 
+    --code-ncls-col: #2B91AF;
     --code-met-col: #74531F;
     --code-keyw-col: #9108C4;
     --code-bracets-col: #040404;
@@ -101,12 +103,13 @@ strong {
     font-size: 1.8em;
 
     pre {
-        font-size: 1.0em; 
+        font-size: 1.0em;
     }
 
     h1 {
         font-size: 2em;
     }
+
     h2,
     h3 {
         margin-top: 7em;
@@ -140,6 +143,48 @@ strong {
             transform: scale(1.4);
         }
     }
+
+    /* Custom styles for 1280x800 resolution */
+    @media (width: 1280px) and (height: 800px) {
+    html, body {
+        font-size: 1.3em;
+    }
+    .container-md {
+        /* Slightly larger scaling and padding for this resolution */
+        transform: scale(1.7);
+        max-width: 100% !important;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    h1 {
+        font-size: 2.3em;
+    }
+    h2, h3 {
+        font-size: 2em;
+        margin-top: 8em;
+    }
+    pre, code {
+        font-size: 1.15em;
+    }
+    /* You can add more selectors here for further tweaks */
+    }
+
+}
+
+
+/* Mobile-friendly override for the 2 column */
+@media (max-width: 768px) {
+    .two-columns {
+        flex-direction: column; /* stack instead of side-by-side */
+    }
+
+    .two-columns .column {
+        width: 100%;   /* each column takes full width */
+    }
+}
+
+details {
+    margin-top:1.5em;
 }
 
 pre {
@@ -158,10 +203,87 @@ body {
     font-family: 'Arimo', sans-serif;
 }
 
+/* ================= RTL navbar dropdowns ================ */
+/* Align dropdown menus and items to the right for RTL */
+.navbar-custom .nav-item.dropdown .dropdown-menu {
+    text-align: right;
+}
+.navbar-custom .nav-item.dropdown .dropdown-menu .dropdown-item {
+    text-align: right;
+}
+
+/* Submenu caret: point left and place on the left side */
+.navbar-custom .dropdown-submenu > a.dropdown-toggle { position: relative; }
+.navbar-custom .dropdown-submenu > a.dropdown-toggle::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    margin-right: 0.5em;
+}
+
+/* Desktop submenu positioning is handled by theme CSS using dropdown-menu-right
+   For mobile, stack submenus under parent, indented to the right */
+@media (max-width: 1199px) {
+    /* Reset LTR padding */
+    .navbar-custom .dropdown-menu .dropdown-item {
+        padding-left: 0 !important;
+    }
+
+    /* Level 1: direct children in the first dropdown panel */
+    .navbar-custom .dropdown-menu > .dropdown-item,
+    .navbar-custom .dropdown-menu > .dropdown-submenu > a.dropdown-toggle {
+        padding-right: 2rem !important;
+    }
+
+    /* Level 2: items inside a nested submenu panel */
+    .navbar-custom .dropdown-menu > .dropdown-submenu > .dropdown-menu > .dropdown-item,
+    .navbar-custom .dropdown-menu > .dropdown-submenu > .dropdown-menu > .dropdown-submenu > a.dropdown-toggle {
+        padding-right: 3rem !important;
+    }
+
+    .navbar-custom .dropdown-submenu > .dropdown-menu {
+        right: 0;
+        left: auto;
+        margin: 0; /* avoid exposing background gaps */
+    }
+}
+
+/* Ensure dropdown panels inherit navbar background (prevents white strips) */
+.navbar-custom .nav-item.dropdown .dropdown-menu {
+    background-color: var(--navbar-col);
+}
+
+/* --- Mobile navbar: make long menus scrollable --- */
+@media (max-width: 1199px) {
+  /* When the mobile menu is expanded, constrain the fixed navbar to viewport
+     height and allow scrolling so items off-screen become reachable */
+  .navbar-custom.top-nav-expanded {
+    max-height: 100vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Also allow long dropdown panels to scroll within the viewport */
+  .navbar-custom .nav-item.dropdown .dropdown-menu {
+    max-height: calc(100vh - 4rem);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
 ul, ol {
     display: flex;
     flex-direction: column;
     gap: 0.6em;
+}
+
+/* Keep footer social links horizontal despite global UL rule */
+footer .list-inline {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem 1rem;
 }
 
 .subq {
@@ -247,8 +369,8 @@ canvas {
 }
 
 button {
-    padding: 15px 8px;
-    font-size: 18px;
+    padding: 0.3em 0.6em;
+    font-size: 1em;
     background-color: var(--backn-col);
     border: none;
     border-radius: 5px;
@@ -278,7 +400,7 @@ button:hover {
     padding-right: 1.3em;
 }
 
-.box-success {
+.box-success, .hll {
     background-color: var(--backs-col);
 }
 
@@ -298,6 +420,13 @@ button:hover {
     border-radius: 0;
 }
 
+.page-break-after { page-break-after: always; }
+
+.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+
 .table-en {
     direction: ltr;
 }
@@ -312,9 +441,10 @@ button:hover {
   text-align: left;
 }
 
-.table-he {
-    direction: rtl;
-    text-align: right;
+.table-he th,
+.table-he td {
+  text-align: right;
+  direction: rtl;
 }
 
 table {
@@ -354,6 +484,7 @@ pre code span.kc { color: #569CD6 !important; }
 pre .lineno { color: #666666 !important; }
 
 /* CSharp Code formatting */
+pre code span.nc { color: var(--code-ncls-col) !important; }
 pre code span.nf { color: var(--code-met-col) !important; }
 pre code span.n { color: var(--code-vars-col) !important; }
 pre code span.kt { color: var(--code-types-col) !important; }
@@ -363,4 +494,108 @@ pre code span.c1 {
     color: var(--code-comments-col) !important;
     font-family: 'Arimo';
     font-weight: bold;
+}
+
+
+
+/* --- Leaf bullets: opt-in per list via .leafify --- */
+.leafify {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0 ;
+    padding-inline-start: 1.4em;
+}
+
+.leafify>li {
+    position: relative;
+    padding-inline-start: 1.4em;
+    /* replaces padding-left for LTR, padding-right for RTL */
+}
+
+.leafify>li::before {
+    content: "";
+    position: absolute;
+    inset-inline-start: 0;
+    top: .25em;
+    width: 1em;
+    height: 1em;
+    background: no-repeat center/contain;
+    background-image: url('/assets/img/simple_leaf_half.svg');
+}
+
+.two-columns {
+  display: flex;
+  gap: 20px;
+}
+.two-columns .column {
+  flex: 1;
+}
+
+/* ================= Mermaid node styling =============== 
+==========================================================*/
+/* Additional arrow targeting for dark mode */
+.mermaid .arrowheadPath {
+  fill: none !important;
+  stroke: var(--text-col) !important;
+}
+/* Alternative arrow selectors */
+.mermaid .arrowhead {
+  fill: none !important;
+  stroke: var(--text-col) !important;
+}
+.mermaid marker path {
+  fill: none !important;
+  stroke: var(--text-col) !important;
+}
+.mermaid defs marker path {
+  fill: none !important;
+  stroke: var(--text-col) !important;
+}
+/* Catch-all for any arrow markers */
+.mermaid marker[id*="arrow"] path {
+  fill: none !important;
+  stroke: var(--text-col) !important;
+}
+.mermaid marker[id*="Triangle"] path {
+  fill: none !important;
+  stroke: var(--text-col) !important;
+}
+
+/* Mermaid arrow lines */
+.mermaid .flowchart-link {
+  stroke: var(--text-col) !important;
+  stroke-width: 2px !important;
+}
+
+/* All edge paths */
+.mermaid .edgePaths .path {
+  stroke: var(--text-col) !important;
+  stroke-width: 2px !important;
+}
+
+/* Specific targeting for the edge thickness classes */
+.mermaid .edge-thickness-normal {
+  stroke: var(--text-col) !important;
+}
+
+/* Target the marker definitions (arrow heads) */
+.mermaid defs marker[id*="pointEnd"] path,
+.mermaid defs marker[id*="flowchart"] path {
+  fill: none !important;
+  stroke: var(--text-col) !important;
+}
+
+/* Catch-all for any marker paths */
+.mermaid marker path {
+  fill: var(--text-col) !important;
+  stroke: var(--text-col) !important;
+}
+
+/* Target composition markers specifically */
+.mermaid marker[id$="aggregationStart"] path,
+.mermaid marker[id$="aggregationEnd"] path,
+.mermaid marker[id$="compositionStart"] path,
+.mermaid marker[id$="compositionEnd"] path {
+  fill: var(--text-col) !important;
+  stroke: var(--text-col) !important;
 }
