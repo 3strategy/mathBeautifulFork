@@ -23,22 +23,6 @@ author: גיא סידס
 
 navbar-links:
 
-  מדמח מחזור 3:
-    - פרק 0 מעקב התקדמות: "https://יסודות.שלי.com/cs/Chapter0/"
-    - פרק 1 קלט ופלט: "https://יסודות.שלי.com/cs/Chapter1/"
-    - תרגול 1.1: "https://יסודות.שלי.com/cs/Chapter1Ex1.1/"
-    - פרק 1 השלמות: "https://יסודות.שלי.com/cs/Chapter1b/"
-    - הטיפוס תו 1: "https://יסודות.שלי.com/cs/Chapter1Char"
-    - קיצורים: "https://יסודות.שלי.com/cs/Chapter1Shortcuts/"
-    - פרק 2 Math,Random: "https://יסודות.שלי.com/cs/Chapter2/"
-    - תרגול 2.1: "https://יסודות.שלי.com/cs/Chapter2Ex2.1/"
-    - תקציר עד כאן: "https://יסודות.שלי.com/cs/ChapterSyntaxSummary"
-    - פרק 3 if: "https://יסודות.שלי.com/cs/Chapter3/"
-    - פרק 4 for: "https://יסודות.שלי.com/cs/Chapter4/"
-    - פרק 5 while: "https://יסודות.שלי.com/cs/Chapter5/"
-    - פרק 4b עוד על for: "https://יסודות.שלי.com/cs/Chapter4b/"
-    - פרק 6 לולאות מקוננות: "https://יסודות.שלי.com/cs2/Chapter6/"
-    
   חיצוני:
     - אתר יסודות: "https://יסודות.שלי.com"
     - אתר מבני נתונים: "https://מבני.שלי.com"
@@ -58,10 +42,6 @@ navbar-links:
     - תכנית הלימודים 5יח' ובסופה המשפטים: "https://meyda.education.gov.il/files/Mazkirut_Pedagogit/matematika/yod5.pdf"
     - תכנית הלימודים 4יח והמשפטים: "https://meyda.education.gov.il/files/Pop/0files/matmatika/Chativa-Elyona/new-curriculum/curriculum-4units.pdf"
     
-  חיצוני מדמח:
-    - מכתב 503 (מסמך קישורים): https://docs.google.com/document/d/1pzqtdzM2CrUpjx7KYljAHM5lbd1IGOhGfL5ju7XnJVY/edit?usp=sharing
-    - קמפוס יסודות: "https://courses.campus.gov.il/courses/course-v1:MoE+EDU_Matric_ComputerScienceA_HE+2023_1/course/"
-
   חוברות:
     - 581 ממוקדת: "/hovrot/581.pdf"
     - 571 ממוקדת: "/hovrot/571.pdf"
@@ -94,15 +74,16 @@ navbar-links:
     - קיצון שיעור 1: "/mcontent/unsorted/OptimizationLesson1"
     - קיצון שיעור 1 תרגול גיאומטריות: "/mcontent/unsorted/OptimizationLesson2"
 
-  תכנים:
-    - מעגל יחידה PHET: "/mcontent/TrigoPhet/"
-    - אימון טריגו: "/ttrainer/"
-    - שיעורים: "/lessons.html"
-    - מבחן זמני: "/mathtests/582q3/"
-    # - מי אני: "aboutme"
+  הגדרות:
     - החלפת רקע: "javascript:toggleTheme();"
     - החלפת גודל: "javascript:toggleSize();"
-    
+     # - שיעורים: "/lessons.html"
+    # - מבחן זמני: "/mathtests/582q3/"
+ 
+  אימון טריגו:
+    - אימון טריגו: "/ttrainer/"
+    - מעגל יחידה PHET: "/mcontent/TrigoPhet/"
+
   ט': 
     - הנחש: "/mcontent/unsorted/Snake"
     - פרק 7: "https://יסודות.שלי.com/cs2/Chapter7"
