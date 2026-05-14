@@ -1,5 +1,11 @@
 # AGENTS Context Map
 
+## Quick WSL locations
+
+- mathBeautifulFork: `/home/stra/sites/mathBeautifulFork`
+- BeautifulMivney: `/home/stra/repos/BeautifulMivney`
+- BeautifulYesodot: `/home/stra/repos/BeautifulYesodot`
+
 ## Project scope
 
 - This project teaches Israeli 5-unit Bagrut mathematics:
