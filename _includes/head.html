@@ -20,6 +20,15 @@
     {%- endif -%}
   {% endcapture %}
 
+  {%- capture box_note -%}{: .box-note}{%- endcapture -%}
+  {%- capture box_note_no_dot -%}{: box-note}{%- endcapture -%}
+  {%- capture box_warning -%}{: .box-warning}{%- endcapture -%}
+  {%- capture box_error -%}{: .box-error}{%- endcapture -%}
+  {%- capture box_success -%}{: .box-success}{%- endcapture -%}
+  {%- capture table_he -%}{: .table-he}{%- endcapture -%}
+  {%- capture table_en -%}{: .table-en}{%- endcapture -%}
+  {%- capture table_rl -%}{: .table-rl}{%- endcapture -%}
+
   {% capture description %}
     {%- if page.share-description -%}
       {{ page.share-description | strip_html | xml_escape }}
@@ -27,7 +36,7 @@
       {{ page.subtitle | strip_html | xml_escape }}
     {%- else -%}
       {%- assign excerpt_length = site.excerpt_length | default: 50 -%}
-      {{ page.content | strip_html | xml_escape | truncatewords: excerpt_length | strip }}
+      {{ page.content | remove: box_note | remove: box_note_no_dot | remove: box_warning | remove: box_error | remove: box_success | remove: table_he | remove: table_en | remove: table_rl | strip_html | normalize_whitespace | xml_escape | truncatewords: excerpt_length | strip }}
     {%- endif -%}
   {% endcapture %}
 
