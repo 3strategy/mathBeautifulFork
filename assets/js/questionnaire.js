@@ -1,5 +1,5 @@
 (function () {
-  const { useState, useMemo } = React;
+  const { useState, useMemo, useEffect } = React;
   const { createPortal } = ReactDOM;
 
   const LETTERS = ["A", "B", "C", "D"];
@@ -49,6 +49,20 @@
 
   function getAnswerColumns(q) {
     return q?.answerColumns === 1 ? 1 : 2;
+  }
+
+  function queueMathJaxTypeset() {
+    const mathJax = window.MathJax;
+    if (!mathJax) return;
+
+    if (typeof mathJax.typesetPromise === "function") {
+      mathJax.typesetPromise();
+      return;
+    }
+
+    if (mathJax.Hub?.Queue) {
+      mathJax.Hub.Queue(["Typeset", mathJax.Hub]);
+    }
   }
 
   function Pill({ children }) {
@@ -137,6 +151,12 @@
     const answerGridClassNames = q
       ? ["quiz-answers-grid", `quiz-answers-grid-cols-${getAnswerColumns(q)}`]
       : ["quiz-answers-grid", "quiz-answers-grid-cols-2"];
+
+    useEffect(() => {
+      if (a?.revealed) {
+        queueMathJaxTypeset();
+      }
+    }, [a?.revealed, q?.id]);
 
     const progress = useMemo(() => {
       const total = quizQuestions.length;
