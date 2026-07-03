@@ -187,6 +187,17 @@ details {
     margin-top:1.5em;
 }
 
+details > summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.english {
+    direction: ltr;
+    text-align: left;
+}
+
 pre {
     direction: ltr !important;
     text-align: left !important;
@@ -802,6 +813,61 @@ pre code span.c1 {
 
 /* ================= Mermaid node styling =============== 
 ==========================================================*/
+/* Mermaid direction helpers */
+.mermaid.mermaid-ltr {
+  direction: ltr;
+}
+
+.mermaid.mermaid-rtl {
+  direction: rtl;
+}
+
+.mermaid .classDiagram text,
+.mermaid .classDiagram tspan {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+.mermaid.mermaid-ltr svg text,
+.mermaid.mermaid-ltr svg tspan {
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+.mermaid.mermaid-rtl svg text,
+.mermaid.mermaid-rtl svg tspan {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+/* Double labels in flowcharts without applying the rule twice to nested nodes. */
+.mermaid svg:not(.classDiagram) text,
+.mermaid svg:not(.classDiagram) .nodeLabel,
+.mermaid svg:not(.classDiagram) .nodeLabel * {
+  font-size: 2rem !important;
+}
+
+/* Keep flowchart edge labels legible after SVG scaling. */
+.mermaid svg:not(.classDiagram) .edgeLabel,
+.mermaid svg:not(.classDiagram) .edgeLabel * {
+  font-size: 2rem !important;
+}
+
+/* Class diagrams are dense; retain Mermaid's default typography and geometry. */
+.mermaid svg.classDiagram,
+.mermaid svg.classDiagram * {
+  font-size: 1rem !important;
+}
+
+/* Protect dense UML diagrams while Mermaid calculates their SVG dimensions. */
+.mermaid-class-diagram .mermaid svg:not(.classDiagram) text,
+.mermaid-class-diagram .mermaid svg:not(.classDiagram) .nodeLabel,
+.mermaid-class-diagram .mermaid svg:not(.classDiagram) .nodeLabel *,
+.mermaid-class-diagram .mermaid svg:not(.classDiagram) .edgeLabel,
+.mermaid-class-diagram .mermaid svg:not(.classDiagram) .edgeLabel * {
+  font-size: 1rem !important;
+}
+
 /* Additional arrow targeting for dark mode */
 .mermaid .arrowheadPath {
   fill: none !important;
@@ -815,6 +881,7 @@ pre code span.c1 {
 .mermaid marker path {
   fill: none !important;
   stroke: var(--text-col) !important;
+  stroke-width: 2px !important;
 }
 .mermaid defs marker path {
   fill: none !important;
