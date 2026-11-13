@@ -43,8 +43,73 @@ function toggleSize() {
   }
 }
 
+const MENU_SET_COOKIE = "menu-set";
+const MENU_SET_PARAM = "menu";
+const navbar = document.querySelector(".navbar");
+const DEFAULT_MENU_SET = navbar?.dataset.defaultMenuSet;
+
+function getAvailableMenuSets() {
+  // Read configured IDs so an intentionally empty menu view remains selectable.
+  return navbar?.dataset.menuSetIds.trim().split(/\s+/).filter(Boolean) || [];
+}
+
+function applyMenuSet(menuSet) {
+  const availableMenuSets = getAvailableMenuSets();
+  const selectedMenuSet = availableMenuSets.includes(menuSet) ? menuSet : DEFAULT_MENU_SET;
+
+  document.querySelectorAll("[data-menu-sets]").forEach((item) => {
+    const isVisible = item.dataset.menuSets.split(/\s+/).includes(selectedMenuSet);
+    item.hidden = !isVisible;
+  });
+
+  document.querySelectorAll('a[href^="javascript:setMenuSet("]').forEach((choice) => {
+    const isSelected = choice.getAttribute("href").includes(`'${selectedMenuSet}'`);
+    choice.classList.toggle("active", isSelected);
+    choice.setAttribute("aria-current", isSelected ? "true" : "false");
+  });
+
+  return selectedMenuSet;
+}
+
+function setMenuSet(menuSet) {
+  if (!getAvailableMenuSets().length) return;
+  const selectedMenuSet = applyMenuSet(menuSet);
+  setCookie(MENU_SET_COOKIE, selectedMenuSet, 365);
+
+  // Keep the address shareable without reloading or adding a history entry.
+  const url = new URL(window.location.href);
+  url.searchParams.set(MENU_SET_PARAM, selectedMenuSet);
+  if (url.href !== window.location.href) {
+    try {
+      window.history.replaceState(window.history.state, "", url.href);
+    } catch (_) { /* Menu selection still works in restricted embeds. */ }
+  }
+}
+
+function restoreMenuSet() {
+  if (!getAvailableMenuSets().length) return;
+  const requestedMenuSet = new URL(window.location.href).searchParams.get(MENU_SET_PARAM);
+  const availableMenuSets = getAvailableMenuSets();
+  // A tagged page selects its own menu on every arrival, regardless of entry URL.
+  const menuSet = [navbar.dataset.pageMenuSet, requestedMenuSet, getCookie(MENU_SET_COOKIE)]
+    .find(candidate => availableMenuSets.includes(candidate)) || DEFAULT_MENU_SET;
+  setMenuSet(menuSet);
+}
+
+// Back/forward navigation can restore a URL carrying a different menu.
+window.addEventListener('popstate', restoreMenuSet);
+
+// Open every disclosure section on the current page.
+function expandAllDetails() {
+  document.querySelectorAll('details').forEach((details) => {
+    details.open = true;
+  });
+}
+
 // Convert fenced ```mermaid code blocks to <div class="mermaid"> before Mermaid runs
 document.addEventListener('DOMContentLoaded', function () {
+  restoreMenuSet();
+
   try {
     const codeBlocks = document.querySelectorAll('pre > code[class*="language-mermaid"]');
 
@@ -94,6 +159,67 @@ document.addEventListener('DOMContentLoaded', function () {
   } catch (e) {
     // no-op: fail-safe so other scripts continue to run
     console && console.warn && console.warn('Mermaid fence conversion failed:', e);
+  }
+});
+
+// Clean copy for diff blocks: if the user copies only added (+) lines, strip the leading diff marker.
+// This keeps tutorial `diff` blocks readable while allowing direct paste into source files.
+document.addEventListener('copy', function (event) {
+  try {
+    const selection = window.getSelection && window.getSelection();
+    if (!selection || selection.rangeCount === 0 || selection.isCollapsed) return;
+
+    const toElement = (node) => {
+      if (!node) return null;
+      return node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
+    };
+
+    const findDiffContainer = (el) => {
+      if (!el || !el.closest) return null;
+      return el.closest(
+        '.language-diff, .highlighter-rouge.language-diff, code.language-diff, pre code[class*="language-diff"]'
+      );
+    };
+
+    const anchorContainer = findDiffContainer(toElement(selection.anchorNode));
+    const focusContainer = findDiffContainer(toElement(selection.focusNode));
+    if (!anchorContainer || !focusContainer || anchorContainer !== focusContainer) return;
+
+    const selectedText = selection.toString();
+    if (!selectedText || selectedText.indexOf('+') === -1) return;
+
+    const normalized = selectedText.replace(/\r\n/g, '\n');
+    const lines = normalized.split('\n');
+    const nonEmptyLines = lines.filter((line) => line.length > 0);
+    if (nonEmptyLines.length === 0) return;
+
+    // Keep full patch copies intact (headers/hunks/metadata should remain raw).
+    const hasPatchMetadata = nonEmptyLines.some((line) =>
+      /^(diff --git|index |@@|--- |\+\+\+ )/.test(line)
+    );
+    if (hasPatchMetadata) return;
+
+    // Only rewrite clipboard when the user selected pure "added" lines.
+    const allAddedLines = nonEmptyLines.every((line) => line.startsWith('+') && !line.startsWith('+++ '));
+    if (!allAddedLines) return;
+
+    const cleaned = lines.map((line) => (line.startsWith('+') ? line.slice(1) : line)).join('\n');
+    if (cleaned === normalized) return;
+
+    if (event.clipboardData && event.clipboardData.setData) {
+      event.clipboardData.setData('text/plain', cleaned);
+      event.preventDefault();
+      return;
+    }
+
+    // Fallback for browsers that do not expose clipboardData on the copy event.
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(cleaned).catch(() => {});
+      event.preventDefault();
+    }
+  } catch (e) {
+    // Fail-safe: never break normal copy behavior.
+    console && console.warn && console.warn('Diff copy cleanup failed:', e);
   }
 });
 

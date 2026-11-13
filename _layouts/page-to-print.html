@@ -4,11 +4,17 @@ layout: base
 
 {% include header.html type="page" %}
 <style>
-  /* kill every border, shadow and outline site-wide on this page */
-  *, *::before, *::after {
+  /* kill borders/shadows/outlines site-wide on this page (except tables) */
+  *:not(table):not(tr):not(th):not(td),
+  *:not(table):not(tr):not(th):not(td)::before,
+  *:not(table):not(tr):not(th):not(td)::after {
     border: none !important;
     box-shadow: none !important;
     outline: none !important;
+  }
+  /* hide page title in print layout */
+  .page-heading h1 {
+    display: none !important;
   }
 </style>
 
@@ -23,6 +29,7 @@ layout: base
         </div>
       {% endif %}
 
+      <div class="d-print-none">{% include language-versions.html %}</div>
       {{ content }}
 
 

@@ -54,6 +54,9 @@
   {% endif %}
 
   <meta name="description" content="{{ description }}">
+  {% if page.noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {% endif %}
 
   {% if site.mobile-theme-col %}
   <meta name="theme-color" content="{{ site.mobile-theme-col }}">
@@ -181,4 +184,5 @@
     {% endfor %}
   {% endif %}
 
+  {% include language-preference-head.html %}
 </head>

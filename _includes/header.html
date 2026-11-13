@@ -19,18 +19,22 @@
 <header class="header-section {% if page.cover-img %}has-img{% endif %}">
 <div class="intro-header {% if page.cover-img %} big-img {% endif %}">
   {% if page.cover-img or page.title %}
-  <div class="container-md">
+  <div class="{% if page.full-width %}container-fluid{% else %}container-md{% endif %}">
     <div class="row">
-      <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
+      <div class="{% if page.full-width %}col{% else %}col-xl-8 col-lg-10 mx-auto{% endif %}">
         <div class="{{ include.type }}-heading">
-          <h1>{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
+          <h1 dir="auto">{% if page.title %}{{ page.title | strip_html }}{% else %}<br/>{% endif %}</h1>
           {% if page.subtitle %}
             {% if include.type == "page" %}
               <hr class="small">
-              <span class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</span>
+              <span class="{{ include.type }}-subheading" dir="auto">{{ page.subtitle | strip_html }}</span>
             {% else %}
-              <h2 class="{{ include.type }}-subheading">{{ page.subtitle | strip_html }}</h2>
+              <h2 class="{{ include.type }}-subheading" dir="auto">{{ page.subtitle | strip_html }}</h2>
             {% endif %}
+          {% endif %}
+
+          {% if page.credit %}
+            <span class="{{ include.type }}-credit">{{ page.credit | strip_html }}</span>
           {% endif %}
           
           {% if include.type == "post" %} 

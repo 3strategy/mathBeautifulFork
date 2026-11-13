@@ -77,6 +77,7 @@ navbar-links:
   הגדרות:
     - החלפת רקע: "javascript:toggleTheme();"
     - החלפת גודל: "javascript:toggleSize();"
+    - פתיחת כל הפרטים: "javascript:expandAllDetails();"
      # - שיעורים: "/lessons.html"
     # - מבחן זמני: "/mathtests/582q3/"
  
@@ -105,7 +106,7 @@ navbar-links:
 
 # Image to show in the navigation bar - works best with a square image
 # Remove this parameter if you don't want an image in the navbar
-avatar: "favicon.png"
+# avatar: "favicon.png"
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
 round-avatar: false
@@ -243,6 +244,7 @@ footer-hover-col: "#A0C8FF"  # Matching hover color for footer links
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
 site-css:
   - "/assets/css/custom-styles.css"
+  - "/assets/css/code-diff.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
 site-js:
@@ -367,8 +369,17 @@ defaults:
     values:
       layout: "page"
 
+  -
+    scope:
+      path: "interactive"
+    values:
+      full-width: true
+
 # Exclude these files from production site
 exclude:
+  - AGENTS.md
+  - tests/
+  - test-results/
   - CHANGELOG.md
   - CNAME
   - Gemfile
