@@ -24,8 +24,16 @@ author: גיא סידס
 navbar-links:
 
   חיצוני:
-    - אתר יסודות: "https://יסודות.שלי.com"
-    - אתר מבני נתונים: "https://מבני.שלי.com"
+    - CodeClassroom:
+        url: "https://codeclassroom.io"
+        icon: "/assets/img/codeclassroom.svg"
+        wordmark: true
+    - אתר יסודות:
+        url: "https://יסודות.שלי.com"
+        icon: "/assets/img/yesodot-favicon.png"
+    - אתר מבני נתונים:
+        url: "https://מבני.שלי.com"
+        icon: "/assets/img/mivney-favicon.png"
     - שרית, לצוות החינוכי: "https://saritsamuel2016.mozello.co.il/"
     - my geva: "https://my.geva.co.il/"
     - חוברות בגרויות גבע: "https://my.geva.co.il/wp-content/uploads/mivhanim/806.pdf"
