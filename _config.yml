@@ -89,11 +89,9 @@ navbar-links:
      # - שיעורים: "/lessons.html"
     # - מבחן זמני: "/mathtests/582q3/"
  
-  אימון טריגו:
+  תרגול אינטראקטיבי:
     - אימון טריגו: "/ttrainer/"
     - מעגל יחידה PHET: "/mcontent/TrigoPhet/"
-
-  תרגול אינטרקטיבי:
     - אחוזים לחטיבת ביניים: "/interactive/percentages-middle-school"
     - אחוזים לחטיבת ביניים – סדרה ב': "/interactive/percentages-middle-school-2"
     - אחוזים לחטיבת ביניים – סדרה ג': "/interactive/percentages-middle-school-3"
