@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="352" viewBox="0 0 144 176" role="img" aria-labelledby="title">
+  <title id="title">Quadrilateral ABCD with segments BF and DE intersecting at G</title>
+  <style>
+    :root { color: #101010; }
+    @media (prefers-color-scheme: dark) {
+      :root { color: #e0e0e0; }
+    }
+  </style>
+  <g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round">
+    <path d="M75.5 26 L124 76 L75 153.5 L26 76 Z"/>
+    <path d="M26 76 L114.2 91.5 M124 76 L35.8 91.5"/>
+  </g>
+  <g font-family="Times New Roman, Liberation Serif, serif" font-size="13" fill="currentColor">
+    <text x="71" y="22">A</text><text x="128" y="80">B</text>
+    <text x="70" y="167">C</text><text x="13" y="80">D</text>
+    <text x="118" y="100">E</text><text x="26" y="100">F</text>
+    <text x="71" y="101">G</text>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="588" height="352" viewBox="0 0 294 176" role="img" aria-labelledby="title">
+  <title id="title">Triangle ABC with perpendicular CN and segment CM</title>
+  <style>
+    :root { color: #101010; }
+    @media (prefers-color-scheme: dark) {
+      :root { color: #e0e0e0; }
+    }
+  </style>
+  <g fill="none" stroke="currentColor" stroke-linejoin="round">
+    <path d="M74.5 147 V132 H104.5 V147" stroke-width="1"/>
+    <path d="M29 147 L89.5 37.5 L271.5 147 Z M89.5 37.5 V147 M89.5 37.5 L150 147" stroke-width="2"/>
+  </g>
+  <g font-family="Times New Roman, Liberation Serif, serif" font-size="19" fill="currentColor">
+    <text x="19" y="166">A</text><text x="269" y="166">B</text>
+    <text x="83" y="32">C</text><text x="84" y="166">N</text>
+    <text x="145" y="166">M</text>
+  </g>
+</svg>
